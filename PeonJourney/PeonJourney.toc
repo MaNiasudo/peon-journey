@@ -1,0 +1,111 @@
+## Interface: 16001
+## Title: |cffe8c478Peon Journey|r
+## Notes: Free WoW Forever leveling guide 1-60 (with/without dungeons, dungeon-only), professions 1-300, gold. Guide engine: RestedXP Guides free edition (CC BY-NC-SA 4.0).
+## Author: Peon
+## Version: 2.0.0
+## X-Website: https://github.com/MaNiasudo/peon-journey
+## OptionalDeps: Questie
+## SavedVariables: RXPData, RXPDB, RXPSettings, RXPString, PeonJourneyDB
+## SavedVariablesPerCharacter: RXPCData, RXPCTrackingData, RXPCComms, RXPCSettings
+## IconTexture: Interface\AddOns\PeonJourney\Textures\rxp_logo-64
+
+Core.lua
+libs\embeds_Mainline.xml [AllowLoadGameType standard,camelot]
+locale\locales.xml
+UI\includes.xml
+Locale.lua
+Themes.lua
+Communications.lua
+RXPGuides.lua
+GuideWindow.lua
+Help.lua
+SettingsPanel.lua
+DB/forever.xml [AllowLoadGameType camelot]
+HSBatching.lua
+QuestLog.lua
+ActiveItemFrame.lua
+LevelingTracker.lua
+Timers.lua
+Targeting.lua
+Tips.lua
+InventoryManager.lua
+map.lua
+functions.lua
+GuideLoader.lua
+Talents.lua [AllowLoadGameType cata,vanilla,camelot,tbc]
+Guides/Talents/classic.xml [AllowLoadGameType vanilla,camelot]
+ItemUpgrades.lua [AllowLoadGameType tbc,vanilla,camelot,cata]
+CptStadicsVendorTreasures.lua [AllowLoadGameType vanilla,camelot,tbc,wrath]
+
+Guides\Import.lua
+Guides\free\RestedXP-Skyborne.lua
+Guides\free\Alliance-1-10_NightElf.lua
+Guides\free\Alliance-1-13_Human.lua
+Guides\free\Alliance-1-14_DwarfGnome.lua
+Guides\free\Alliance-11-20.lua
+Guides\free\Horde-01-12_Durotar.lua
+Guides\free\Horde-01-14_Undead.lua
+Guides\free\Horde-1-12_Mulgore.lua
+Guides\free\Horde-12-22_Barrens.lua
+Guides\free\Alliance-Mage-1-12.lua
+Guides\free\Alliance-Mage-12-21.lua
+Guides\free\Horde-Mage-12-21.lua
+Guides\free\Alliance-ADV-AoE-Mage-1-22.lua
+Guides\free\dungeon\RestedXP-Skyborne.lua
+Guides\free\dungeon\Alliance-1-10_NightElf.lua
+Guides\free\dungeon\Alliance-1-13_Human.lua
+Guides\free\dungeon\Alliance-1-14_DwarfGnome.lua
+Guides\free\dungeon\Alliance-11-20.lua
+Guides\free\dungeon\Horde-01-12_Durotar.lua
+Guides\free\dungeon\Horde-01-14_Undead.lua
+Guides\free\dungeon\Horde-1-12_Mulgore.lua
+Guides\free\dungeon\Horde-12-22_Barrens.lua
+Guides\Classic-Attunements.lua
+Guides\Classic-0.5.lua
+Guides\PeonJourney\R_Dungeons_A.lua
+Guides\PeonJourney\R_Dungeons_H.lua
+Guides\PeonJourney\R_Full_A.lua
+Guides\PeonJourney\R_Full_H.lua
+Guides\PeonJourney\R_Questing_A.lua
+Guides\PeonJourney\R_Questing_H.lua
+Guides\Class\C_Druid.lua
+Guides\Class\C_Hunter.lua
+Guides\Class\C_Mage.lua
+Guides\Class\C_Paladin.lua
+Guides\Class\C_Priest.lua
+Guides\Class\C_Rogue.lua
+Guides\Class\C_Shaman.lua
+Guides\Class\C_Warlock.lua
+Guides\Class\C_Warrior.lua
+Guides\Professions\P_1_300_Alchemy_A.lua
+Guides\Professions\P_1_300_Alchemy_H.lua
+Guides\Professions\P_1_300_Blacksmithing_A.lua
+Guides\Professions\P_1_300_Blacksmithing_H.lua
+Guides\Professions\P_1_300_Cooking_A.lua
+Guides\Professions\P_1_300_Cooking_H.lua
+Guides\Professions\P_1_300_Enchanting_A.lua
+Guides\Professions\P_1_300_Enchanting_H.lua
+Guides\Professions\P_1_300_Engineering_A.lua
+Guides\Professions\P_1_300_Engineering_H.lua
+Guides\Professions\P_1_300_First_Aid_A.lua
+Guides\Professions\P_1_300_First_Aid_H.lua
+Guides\Professions\P_1_300_Fishing_A.lua
+Guides\Professions\P_1_300_Fishing_H.lua
+Guides\Professions\P_1_300_Herbalism_A.lua
+Guides\Professions\P_1_300_Herbalism_H.lua
+Guides\Professions\P_1_300_Leatherworking_A.lua
+Guides\Professions\P_1_300_Leatherworking_H.lua
+Guides\Professions\P_1_300_Mining_A.lua
+Guides\Professions\P_1_300_Mining_H.lua
+Guides\Professions\P_1_300_Skinning_A.lua
+Guides\Professions\P_1_300_Skinning_H.lua
+Guides\Professions\P_1_300_Tailoring_A.lua
+Guides\Professions\P_1_300_Tailoring_H.lua
+Guides\Gold\G_Daily__Writs_and_Crates__A_.lua
+Guides\Gold\G_Daily__Writs_and_Crates__H_.lua
+Guides\Gold\G_Gold_Farming_at_60.lua
+Guides\Gold\G_Weekly__In_Demand___Blackrock.lua
+Guides\Gold\G_Weekly__In_Demand___Dire_Maul.lua
+
+Data.lua
+Planner.lua

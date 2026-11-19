@@ -1,0 +1,14 @@
+Peon Journey - https://github.com/MaNiasudo/peon-journey
+
+Free and non-commercial. This folder bundles parts with different licenses:
+
+- The guide engine, base textures and the 1-21 starting guides (Guides/free) come from
+  RestedXP Guides, free edition v4.11.37 (https://github.com/RestedXP/RXPGuides).
+  License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (see LICENSE in this folder).
+
+- Peon Journey's own files: Core.lua, Planner.lua, Data.lua, Guides/PeonJourney, Guides/Class,
+  Guides/Professions, Guides/Gold, and the Peon art (rxp-banner, rxp_logo-64, rxp_logo-128,
+  rxp-checked-32, pj-* textures). License: GPL-3.0 (see LICENSES/GPL-3.0.txt in the repository).
+
+Quest data facts come from QuestieDB (https://github.com/Questie/QuestieDB).
+Not affiliated with RestedXP, Questie or Blizzard Entertainment.

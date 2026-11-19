@@ -1,0 +1,3536 @@
+[
+  {
+    "profession": "Alchemy",
+    "skill_key": "alchemy",
+    "forever_changes": [
+      "All six regular healing potions moved from Alchemy to First Aid; Alchemy keeps Discolored Healing Potions, which heal instantly but return 75% of the heal as poison or disease damage over time, and all of them need a Murloc Eye (conquestcapped).",
+      "Discolored Healing Potion recipes are unlocked by a short questline: Odd Child in Westfall (Alliance) or Apothecary Renferrel at the Sepulcher, Silverpine Forest (Horde) (Wowhead, conquestcapped).",
+      "Starter recipes known at 1: Elixir of Minor Force (1 Silverleaf, 1 Empty Vial) and Elixir of Minor Defense (Silverleaf, Peacebloom, Empty Vial); Minor Mana Potion uses Mageroyal, Peacebloom and an Empty Vial (Wowhead tooltips).",
+      "72 new recipes: 29 bought with Merchant's Favor (Azeroth Commerce Authority) from Nina Surefire, Three Corners, Redridge Mountains (Alliance) and Apothecary Durelle, The Barrens (Horde); 15 have no known source (conquestcapped, warcrafttavern).",
+      "New Forever-only herbs Marefoil and Demonsage, plus Death Lotus (a chance from any Mount Hyjal herb, only with the Lotus Claw glove enchant), are reagents for the four skill-300 Flasks of Natural Accuracy, Aggression, Precision and Swiftness; their bonus works only in Mount Hyjal, Hyjal Summit and Barrow Deeps. None of them is needed for 1-300 (warcraft.wiki.gg, wow-professions, conquestcapped).",
+      "Camp objects: Mana Well (20), Fermenter (140), Alchemy Laboratory (300); the Laboratory is required for every flask (conquestcapped).",
+      "No Elixir/Potion/Transmutation Master specializations in Forever; new Recipe: Transmute Legionite at 275 (conquestcapped).",
+      "Extra Artisan trainer for both factions: Master Mycologist Shurome, Felwood; Expert trainers Linzy Blackbolt and Patricia Egan added in Alterac Mountains for Alliance (conquestcapped, dving.net)."
+    ],
+    "rank_caps": {
+      "Apprentice": 75,
+      "Journeyman": 150,
+      "Expert": 225,
+      "Artisan": 300
+    },
+    "rank_requirements": {
+      "Apprentice": "no character level requirement listed for Forever (conquestcapped: none; wow-professions: Apprentice has no level requirement in Forever)",
+      "Journeyman": "char level 10, skill 50 (5 silver)",
+      "Expert": "char level 20, skill 125 (50 silver)",
+      "Artisan": "char level 35, skill 200 (5 gold)"
+    },
+    "artisan_trainer_notes": "Alliance: Kylanna Windwhisper, Feathermoon Stronghold, Feralas (32.4, 43.8). Horde: Rogvar, Stonard, Swamp of Sorrows (48.2, 55.4). Both factions: Master Mycologist Shurome, Emerald Sanctuary (Emerald Circle camp), Felwood (51.4, 82.0). Artisan needs skill 200 and character level 35 (5 gold). Source: conquestcapped (Wowhead's Alchemy overview body did not render).",
+    "steps": [
+      {
+        "from": 1,
+        "to": 12,
+        "recipe": "Elixir of Minor Force",
+        "crafts": 11,
+        "mats_per_craft": [
+          [
+            "Silverleaf",
+            1
+          ],
+          [
+            "Empty Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Known: comes with Apprentice Alchemy (Wowhead lists it as Known)."
+      },
+      {
+        "from": 12,
+        "to": 55,
+        "recipe": "Elixir of Minor Defense",
+        "crafts": 43,
+        "mats_per_craft": [
+          [
+            "Silverleaf",
+            1
+          ],
+          [
+            "Peacebloom",
+            1
+          ],
+          [
+            "Empty Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Known with Apprentice. Train Journeyman at 50 (char level 10). conquestcapped uses this recipe for all of 1-55."
+      },
+      {
+        "from": 55,
+        "to": 65,
+        "recipe": "Minor Mana Potion",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Mageroyal",
+            1
+          ],
+          [
+            "Peacebloom",
+            1
+          ],
+          [
+            "Empty Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 65,
+        "to": 90,
+        "recipe": "Elixir of Minor Fortitude",
+        "crafts": 26,
+        "mats_per_craft": [
+          [
+            "Earthroot",
+            2
+          ],
+          [
+            "Peacebloom",
+            1
+          ],
+          [
+            "Empty Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 90,
+        "to": 120,
+        "recipe": "Elixir of Wisdom",
+        "crafts": 30,
+        "mats_per_craft": [
+          [
+            "Mageroyal",
+            1
+          ],
+          [
+            "Briarthorn",
+            2
+          ],
+          [
+            "Empty Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 120,
+        "to": 160,
+        "recipe": "Lesser Mana Potion",
+        "crafts": 43,
+        "mats_per_craft": [
+          [
+            "Mageroyal",
+            1
+          ],
+          [
+            "Stranglekelp",
+            1
+          ],
+          [
+            "Empty Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Expert at 125 (char level 20)."
+      },
+      {
+        "from": 160,
+        "to": 195,
+        "recipe": "Mana Potion",
+        "crafts": 38,
+        "mats_per_craft": [
+          [
+            "Stranglekelp",
+            1
+          ],
+          [
+            "Kingsblood",
+            1
+          ],
+          [
+            "Leaded Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 195,
+        "to": 205,
+        "recipe": "Elixir of Agility",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Stranglekelp",
+            1
+          ],
+          [
+            "Goldthorn",
+            1
+          ],
+          [
+            "Leaded Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Artisan at 200 (char level 35) before passing 225."
+      },
+      {
+        "from": 205,
+        "to": 225,
+        "recipe": "Greater Mana Potion",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Khadgar's Whisker",
+            1
+          ],
+          [
+            "Goldthorn",
+            1
+          ],
+          [
+            "Leaded Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 225,
+        "to": 226,
+        "recipe": "Philosopher's Stone",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Iron Bar",
+            4
+          ],
+          [
+            "Black Vitriol",
+            1
+          ],
+          [
+            "Purple Lotus",
+            4
+          ],
+          [
+            "Firebloom",
+            4
+          ]
+        ],
+        "recipe_source": "vendor: Alchemist Pestlezugg, Gadgetzan, Tanaris (both factions)",
+        "note": "Recipe: Philosopher's Stone requires Alchemy 225. Keep the stone: transmutes need it."
+      },
+      {
+        "from": 226,
+        "to": 240,
+        "recipe": "Greater Mana Potion",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Khadgar's Whisker",
+            1
+          ],
+          [
+            "Goldthorn",
+            1
+          ],
+          [
+            "Leaded Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 240,
+        "to": 260,
+        "recipe": "Draught of Detect Undead",
+        "crafts": 23,
+        "mats_per_craft": [
+          [
+            "Arthas' Tears",
+            1
+          ],
+          [
+            "Crystal Vial",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 260,
+        "to": 270,
+        "recipe": "Superior Mana Potion",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Sungrass",
+            2
+          ],
+          [
+            "Blindweed",
+            2
+          ],
+          [
+            "Crystal Vial",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Ulthir, Darnassus (Alliance) / Algernon, Undercity (Horde)",
+        "note": "Recipe: Superior Mana Potion requires Alchemy 260 (1g 20s per conquestcapped)."
+      },
+      {
+        "from": 270,
+        "to": 300,
+        "recipe": "Major Discolored Healing Potion",
+        "crafts": 31,
+        "mats_per_craft": [
+          [
+            "Crystal Vial",
+            1
+          ],
+          [
+            "Plaguebloom",
+            1
+          ],
+          [
+            "Murloc Eye",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Taught by special trainers after a short questline: the Odd Child in Westfall (Alliance; at an inn on the road to the Deadmines per conquestcapped) or Apothecary Renferrel at the Sepulcher in Silverpine Forest (Horde; chain starts at a farm in northern Silverpine). Unlock it before 270. conquestcapped instead finishes 265-300 with Elixir of Greater Defense / Superior Mana Potion."
+      }
+    ],
+    "total_mats": [
+      [
+        "Silverleaf",
+        54
+      ],
+      [
+        "Empty Vial",
+        163
+      ],
+      [
+        "Peacebloom",
+        79
+      ],
+      [
+        "Mageroyal",
+        83
+      ],
+      [
+        "Earthroot",
+        52
+      ],
+      [
+        "Briarthorn",
+        60
+      ],
+      [
+        "Stranglekelp",
+        91
+      ],
+      [
+        "Kingsblood",
+        38
+      ],
+      [
+        "Leaded Vial",
+        88
+      ],
+      [
+        "Goldthorn",
+        50
+      ],
+      [
+        "Khadgar's Whisker",
+        40
+      ],
+      [
+        "Iron Bar",
+        4
+      ],
+      [
+        "Black Vitriol",
+        1
+      ],
+      [
+        "Purple Lotus",
+        4
+      ],
+      [
+        "Firebloom",
+        4
+      ],
+      [
+        "Arthas' Tears",
+        23
+      ],
+      [
+        "Crystal Vial",
+        64
+      ],
+      [
+        "Sungrass",
+        20
+      ],
+      [
+        "Blindweed",
+        20
+      ],
+      [
+        "Plaguebloom",
+        31
+      ],
+      [
+        "Murloc Eye",
+        31
+      ],
+      [
+        "Recipe: Philosopher's Stone",
+        1
+      ],
+      [
+        "Recipe: Superior Mana Potion",
+        1
+      ]
+    ],
+    "total_mats_note": "Computed from the step table (Wowhead's craft counts are averages starting from 1). Includes the two vendor recipes.",
+    "sources": [
+      "https://www.wowhead.com/forever/profession-leveling-guides/alchemy",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-alchemy/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-professions/",
+      "https://www.warcrafttavern.com/forever/news/new-alchemy-recipes-for-world-of-warcraft-forever/",
+      "https://warcraft.wiki.gg/wiki/Marefoil",
+      "https://warcraft.wiki.gg/wiki/Demonsage",
+      "https://www.wow-professions.com/forever/herbalism-changes",
+      "https://nether.wowhead.com/forever/tooltip/spell/7183",
+      "https://nether.wowhead.com/forever/tooltip/item/9303",
+      "https://nether.wowhead.com/forever/tooltip/item/13477",
+      "https://www.wowhead.com/forever/spell=1231583"
+    ]
+  },
+  {
+    "profession": "Blacksmithing",
+    "skill_key": "blacksmithing",
+    "forever_changes": [
+      "New material Azerothium Bar (item 249726), smelted with Smelt Azerothium from 2 Pitchblende + 1 Coal per bar (Wowhead reagent chain); used by Bold Dirk (10 per craft) and Enriched Thorium Breastplate (4).",
+      "New Plans: Bold Dirk (Blacksmithing 270; 30 Thorium Bar, 4 Essence of Air, 10 Azerothium Bar, 4 Rugged Leather), sold by Pexmit in Mount Hyjal; Wowhead uses it for 270-300.",
+      "197 new recipes: 61 bought with Merchant's Favor from Stondry Darkhammer (Alliance) / Gor'mak (Horde), e.g. Plans: Crusader's Boots (85), Officer's Pauldrons (210), Enriched Thorium Breastplate (300); 55 with no known source. Plans are soulbound and the pieces bind on pickup (conquestcapped).",
+      "Six mail recipes moved from Blacksmithing to Leatherworking (conquestcapped).",
+      "Coarse Grinding Stone now gives skill up to 90 instead of 75 (November 10 hotfix per conquestcapped).",
+      "Sandpaper is a new reagent used in 25 new Blacksmithing recipes (conquestcapped Engineering page).",
+      "Camp objects: Sharpening Wheel (20), Anvil (140), Master Forge (300), sharing a one-hour cooldown (conquestcapped).",
+      "Armorsmith / Weaponsmith still by quest at level 40 with Blacksmithing 200; interaction with Forever plans untested (conquestcapped). New Expert trainer Alard Schmied, Dalaran, Alterac Mountains."
+    ],
+    "rank_caps": {
+      "Apprentice": 75,
+      "Journeyman": 150,
+      "Expert": 225,
+      "Artisan": 300
+    },
+    "rank_requirements": {
+      "Apprentice": "no character level requirement listed for Forever (conquestcapped: none; wow-professions: Apprentice has no level requirement in Forever)",
+      "Journeyman": "char level 10, skill 50 (5 silver)",
+      "Expert": "char level 20, skill 125 (50 silver)",
+      "Artisan": "char level 35, skill 200 (5 gold)"
+    },
+    "artisan_trainer_notes": "One Artisan trainer for both factions: Brikk Keencraft, Booty Bay, Stranglethorn Vale (29.0, 75.4); he is also the only trainer for Big Black Mace. Artisan needs skill 200 and character level 35. Source: conquestcapped (Wowhead's Blacksmithing overview body did not render).",
+    "steps": [
+      {
+        "from": 1,
+        "to": 30,
+        "recipe": "Rough Sharpening Stone",
+        "crafts": 32,
+        "mats_per_craft": [
+          [
+            "Rough Stone",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Known with Apprentice. Every plan needs a Blacksmith Hammer in your bags (vendor)."
+      },
+      {
+        "from": 30,
+        "to": 65,
+        "recipe": "Rough Grinding Stone",
+        "crafts": 42,
+        "mats_per_craft": [
+          [
+            "Rough Stone",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Journeyman at 50 (char level 10)."
+      },
+      {
+        "from": 65,
+        "to": 75,
+        "recipe": "Copper Chain Belt",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Copper Bar",
+            6
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 75,
+        "to": 80,
+        "recipe": "Silver Skeleton Key",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Silver Bar",
+            1
+          ],
+          [
+            "Rough Grinding Stone",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 80,
+        "to": 90,
+        "recipe": "Rough Bronze Leggings",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Bronze Bar",
+            6
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 90,
+        "to": 100,
+        "recipe": "Runed Copper Belt",
+        "crafts": 13,
+        "mats_per_craft": [
+          [
+            "Copper Bar",
+            10
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 100,
+        "to": 105,
+        "recipe": "Heavy Sharpening Stone",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Heavy Stone",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 105,
+        "to": 110,
+        "recipe": "Runed Copper Belt",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Copper Bar",
+            10
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 110,
+        "to": 125,
+        "recipe": "Rough Bronze Leggings",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Bronze Bar",
+            6
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Expert at 125 (char level 20)."
+      },
+      {
+        "from": 125,
+        "to": 129,
+        "recipe": "Iron Buckle",
+        "crafts": 6,
+        "mats_per_craft": [
+          [
+            "Iron Bar",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 129,
+        "to": 140,
+        "recipe": "Bronze Warhammer",
+        "crafts": 11,
+        "mats_per_craft": [
+          [
+            "Bronze Bar",
+            8
+          ],
+          [
+            "Strong Flux",
+            1
+          ],
+          [
+            "Medium Leather",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 140,
+        "to": 147,
+        "recipe": "Patterned Bronze Bracers",
+        "crafts": 17,
+        "mats_per_craft": [
+          [
+            "Bronze Bar",
+            5
+          ],
+          [
+            "Coarse Grinding Stone",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 147,
+        "to": 155,
+        "recipe": "Green Iron Bracers",
+        "crafts": 8,
+        "mats_per_craft": [
+          [
+            "Iron Bar",
+            6
+          ],
+          [
+            "Green Dye",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 155,
+        "to": 165,
+        "recipe": "Green Iron Leggings",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Iron Bar",
+            8
+          ],
+          [
+            "Heavy Grinding Stone",
+            1
+          ],
+          [
+            "Green Dye",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 165,
+        "to": 183,
+        "recipe": "Green Iron Bracers",
+        "crafts": 31,
+        "mats_per_craft": [
+          [
+            "Iron Bar",
+            6
+          ],
+          [
+            "Green Dye",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 183,
+        "to": 190,
+        "recipe": "Heavy Mithril Gauntlet",
+        "crafts": 7,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            6
+          ],
+          [
+            "Mageweave Cloth",
+            4
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 190,
+        "to": 200,
+        "recipe": "Golden Scale Bracers",
+        "crafts": 16,
+        "mats_per_craft": [
+          [
+            "Steel Bar",
+            5
+          ],
+          [
+            "Heavy Grinding Stone",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Artisan at 200 (char level 35) from Brikk Keencraft, Booty Bay."
+      },
+      {
+        "from": 200,
+        "to": 205,
+        "recipe": "Heavy Mithril Gauntlet",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            6
+          ],
+          [
+            "Mageweave Cloth",
+            4
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 205,
+        "to": 210,
+        "recipe": "Mithril Plate Pants",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            12
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 210,
+        "to": 215,
+        "recipe": "Heavy Mithril Gauntlet",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            6
+          ],
+          [
+            "Mageweave Cloth",
+            4
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 215,
+        "to": 225,
+        "recipe": "Heavy Mithril Breastplate",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            16
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 225,
+        "to": 235,
+        "recipe": "Dense Weightstone",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Dense Stone",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 235,
+        "to": 240,
+        "recipe": "Mithril Coif",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            10
+          ],
+          [
+            "Mageweave Cloth",
+            6
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 240,
+        "to": 246,
+        "recipe": "Heavy Mithril Boots",
+        "crafts": 17,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            14
+          ],
+          [
+            "Thick Leather",
+            4
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 246,
+        "to": 250,
+        "recipe": "Big Black Mace",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            16
+          ],
+          [
+            "Black Pearl",
+            1
+          ],
+          [
+            "Shadowgem",
+            4
+          ],
+          [
+            "Solid Grinding Stone",
+            1
+          ],
+          [
+            "Thick Leather",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "conquestcapped: Big Black Mace is taught only by Brikk Keencraft (the Artisan trainer in Booty Bay)."
+      },
+      {
+        "from": 250,
+        "to": 257,
+        "recipe": "Arcanite Skeleton Key",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Arcanite Bar",
+            1
+          ],
+          [
+            "Dense Grinding Stone",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Needs Arcanite Bars (Alchemy transmute); conquestcapped skips this step for that reason."
+      },
+      {
+        "from": 257,
+        "to": 270,
+        "recipe": "Ebon Shiv",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            12
+          ],
+          [
+            "Truesilver Bar",
+            6
+          ],
+          [
+            "Star Ruby",
+            2
+          ],
+          [
+            "Solid Grinding Stone",
+            1
+          ],
+          [
+            "Thick Leather",
+            2
+          ]
+        ],
+        "recipe_source": "vendor: Magnus Frostwake, Caer Darrow, Western Plaguelands (both factions)",
+        "note": "Plans: Ebon Shiv requires Blacksmithing 230. conquestcapped: Magnus Frostwake only appears after the Scholomance quests."
+      },
+      {
+        "from": 270,
+        "to": 275,
+        "recipe": "Bold Dirk",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Thorium Bar",
+            30
+          ],
+          [
+            "Essence of Air",
+            4
+          ],
+          [
+            "Azerothium Bar",
+            10
+          ],
+          [
+            "Rugged Leather",
+            4
+          ]
+        ],
+        "recipe_source": "vendor: Pexmit, Mount Hyjal (both factions)",
+        "note": "New in Forever. Plans: Bold Dirk requires Blacksmithing 270. Pexmit (<Someone's Minion>) is described by conquestcapped as a rare demon on Mount Hyjal; conquestcapped skips Bold Dirk and says many guides copied it from beta data (its route uses Radiant Breastplate/Gloves/Leggings plans from the Auction House for 257-300). Azerothium Bar is smelted from 2 Pitchblende + 1 Coal."
+      },
+      {
+        "from": 275,
+        "to": 279,
+        "recipe": "Ornate Thorium Handaxe",
+        "crafts": 4,
+        "mats_per_craft": [
+          [
+            "Thorium Bar",
+            20
+          ],
+          [
+            "Large Opal",
+            2
+          ],
+          [
+            "Dense Grinding Stone",
+            2
+          ],
+          [
+            "Rugged Leather",
+            4
+          ]
+        ],
+        "recipe_source": "vendor: Magnus Frostwake, Caer Darrow, Western Plaguelands (both factions)",
+        "note": "Plans: Ornate Thorium Handaxe requires Blacksmithing 250."
+      },
+      {
+        "from": 279,
+        "to": 300,
+        "recipe": "Bold Dirk",
+        "crafts": 24,
+        "mats_per_craft": [
+          [
+            "Thorium Bar",
+            30
+          ],
+          [
+            "Essence of Air",
+            4
+          ],
+          [
+            "Azerothium Bar",
+            10
+          ],
+          [
+            "Rugged Leather",
+            4
+          ]
+        ],
+        "recipe_source": "vendor: Pexmit, Mount Hyjal (both factions)",
+        "note": "Same Pexmit plans as 270-275."
+      }
+    ],
+    "total_mats": [
+      [
+        "Rough Stone",
+        116
+      ],
+      [
+        "Copper Bar",
+        290
+      ],
+      [
+        "Silver Bar",
+        5
+      ],
+      [
+        "Bronze Bar",
+        323
+      ],
+      [
+        "Heavy Stone",
+        5
+      ],
+      [
+        "Iron Bar",
+        336
+      ],
+      [
+        "Strong Flux",
+        11
+      ],
+      [
+        "Medium Leather",
+        11
+      ],
+      [
+        "Coarse Grinding Stone",
+        34
+      ],
+      [
+        "Green Dye",
+        51
+      ],
+      [
+        "Heavy Grinding Stone",
+        44
+      ],
+      [
+        "Mithril Bar",
+        1154
+      ],
+      [
+        "Mageweave Cloth",
+        168
+      ],
+      [
+        "Steel Bar",
+        80
+      ],
+      [
+        "Dense Stone",
+        15
+      ],
+      [
+        "Thick Leather",
+        132
+      ],
+      [
+        "Black Pearl",
+        12
+      ],
+      [
+        "Shadowgem",
+        48
+      ],
+      [
+        "Solid Grinding Stone",
+        32
+      ],
+      [
+        "Arcanite Bar",
+        10
+      ],
+      [
+        "Dense Grinding Stone",
+        18
+      ],
+      [
+        "Truesilver Bar",
+        120
+      ],
+      [
+        "Star Ruby",
+        40
+      ],
+      [
+        "Thorium Bar",
+        950
+      ],
+      [
+        "Essence of Air",
+        116
+      ],
+      [
+        "Azerothium Bar",
+        290
+      ],
+      [
+        "Rugged Leather",
+        132
+      ],
+      [
+        "Large Opal",
+        8
+      ],
+      [
+        "Blacksmith Hammer",
+        1
+      ],
+      [
+        "Plans: Ebon Shiv",
+        1
+      ],
+      [
+        "Plans: Ornate Thorium Handaxe",
+        1
+      ],
+      [
+        "Plans: Bold Dirk",
+        1
+      ]
+    ],
+    "total_mats_note": "Computed from the step table. Grinding stones and Strong Flux are listed as buys (the route has no step that makes them). Includes the Blacksmith Hammer tool and the three vendor plans.",
+    "sources": [
+      "https://www.wowhead.com/forever/profession-leveling-guides/blacksmithing",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-blacksmithing/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-professions/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-engineering/",
+      "https://nether.wowhead.com/forever/tooltip/spell/1252365",
+      "https://nether.wowhead.com/forever/tooltip/spell/10013",
+      "https://nether.wowhead.com/forever/tooltip/item/251468",
+      "https://nether.wowhead.com/forever/tooltip/item/8030",
+      "https://nether.wowhead.com/forever/tooltip/item/12819",
+      "https://www.wowhead.com/forever/npc=266901",
+      "https://www.wowhead.com/forever/npc=11278",
+      "https://www.wowhead.com/forever/spell=16640",
+      "https://www.wowhead.com/forever/spell=9931"
+    ]
+  },
+  {
+    "profession": "Enchanting",
+    "skill_key": "enchanting",
+    "forever_changes": [
+      "New reagent Mote of Magic (item 247786), sold by enchanting supply vendors; the Runed Copper Rod is made from 1 Copper Rod + 1 Mote of Magic (Wowhead tooltip). wow-professions: in starting zones only the vendors on Zephras Isle and in Brill sell it.",
+      "New low-level enchants make 1-70 cheaper: Enchant Bracer - Inferior Stamina (Mote of Magic) and Enchant Chest - Inferior Stamina (Strange Dust) (method.gg, wow-professions, conquestcapped).",
+      "Disenchanting Uncommon or better items gives a skill point each to 20, with a falling chance after that, stopping at 60 (Wowhead). Disenchant sits in the Professions window, not the spellbook (wow-professions).",
+      "Artisan Enchanting is taught only by Annora inside Uldaman (both factions); she also teaches the 230-250 Artisan recipes (conquestcapped, method.gg, wow-professions).",
+      "63 new recipes, 27 of them enchants; the rest are staves, orbs, wands, trinkets, relics and camp items (33 for Merchant's Favor, 21 unknown source) (conquestcapped).",
+      "Arcane Salvager is now made with a Runed Golden Rod instead of a Runed Truesilver Rod (conquestcapped).",
+      "Rod skill levels are disputed: conquestcapped says Forever teaches Silver/Golden/Truesilver Rods at 130/175/220; Wowhead's route makes them at 100/155/200 and method.gg at 104/155/200.",
+      "New Expert trainers: Vanessa Sellers, Dalaran, Alterac Mountains (Alliance) and Melanie Sable, Riverglades (Alliance, Brotherhood of the Horse); Apprentice trainers Eaysaa Brightgust and Nasalanna Windsinger on Zephras Isle (conquestcapped)."
+    ],
+    "rank_caps": {
+      "Apprentice": 75,
+      "Journeyman": 150,
+      "Expert": 225,
+      "Artisan": 300
+    },
+    "rank_requirements": {
+      "Apprentice": "no character level requirement listed for Forever (conquestcapped: none; wow-professions: Apprentice has no level requirement in Forever)",
+      "Journeyman": "char level 10, skill 50 (5 silver)",
+      "Expert": "char level 20, skill 125 (50 silver)",
+      "Artisan": "char level 35, skill 200 (5 gold)"
+    },
+    "artisan_trainer_notes": "Both factions: Annora, inside Uldaman (Badlands); use the back entrance at 65.3, 42.6. She appears only after every enemy in her room is killed; reaching her needs a few elites and a room of scorpions cleared (not soloable at 35 per wow-professions). Artisan needs skill 200 and character level 35; bring Vision Dust for 225-250 (sources: conquestcapped, method.gg, wow-professions).",
+    "steps": [
+      {
+        "from": 1,
+        "to": 2,
+        "recipe": "Runed Copper Rod",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Copper Rod",
+            1
+          ],
+          [
+            "Mote of Magic",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Keep the Runed Copper Rod: every enchant up to 155 needs it. Mote of Magic and Copper Rod are sold by enchanting supply vendors. Wowhead: 'Unconfirmed until checked on a live realm: how a new enchanter gets the first rod.'"
+      },
+      {
+        "from": 2,
+        "to": 20,
+        "recipe": "Disenchant",
+        "crafts": 18,
+        "mats_per_craft": [],
+        "recipe_source": "trainer",
+        "note": "Not a craft: disenchant Uncommon (green) or better items; each one is a skill point up to 20, then the chance drops and it stops at 60 (Wowhead). Other Forever guides (method.gg, wow-professions, conquestcapped) use 18-24x Enchant Bracer - Inferior Stamina (1 Mote of Magic each) here instead."
+      },
+      {
+        "from": 20,
+        "to": 79,
+        "recipe": "Lesser Magic Wand",
+        "crafts": 59,
+        "mats_per_craft": [
+          [
+            "Simple Wood",
+            1
+          ],
+          [
+            "Lesser Magic Essence",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Journeyman at 50 (char level 10)."
+      },
+      {
+        "from": 79,
+        "to": 90,
+        "recipe": "Enchant Chest - Minor Absorption",
+        "crafts": 11,
+        "mats_per_craft": [
+          [
+            "Lesser Magic Essence",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 90,
+        "to": 100,
+        "recipe": "Enchant Bracer - Minor Stamina",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Strange Dust",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 100,
+        "to": 101,
+        "recipe": "Runed Silver Rod",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Silver Rod",
+            1
+          ],
+          [
+            "Strange Dust",
+            3
+          ],
+          [
+            "Lesser Magic Essence",
+            4
+          ],
+          [
+            "Shadowgem",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Keep the Runed Silver Rod: the enchants from here to 155 need it. Conflict: conquestcapped says Forever teaches the Silver Rod at 130 (method.gg makes it at 104, wow-professions at 109); Wowhead preferred."
+      },
+      {
+        "from": 101,
+        "to": 110,
+        "recipe": "Greater Magic Wand",
+        "crafts": 9,
+        "mats_per_craft": [
+          [
+            "Simple Wood",
+            1
+          ],
+          [
+            "Lesser Magic Essence",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 110,
+        "to": 135,
+        "recipe": "Enchant Cloak - Minor Agility",
+        "crafts": 25,
+        "mats_per_craft": [
+          [
+            "Lesser Astral Essence",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Dalria, Ashenvale (Alliance) / Kulwia, Stonetalon Mountains (Horde)",
+        "note": "Formula: Enchant Cloak - Minor Agility requires Enchanting 110. Train Expert at 125 (char level 20)."
+      },
+      {
+        "from": 135,
+        "to": 155,
+        "recipe": "Enchant Bracer - Lesser Stamina",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Soul Dust",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 155,
+        "to": 156,
+        "recipe": "Runed Golden Rod",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Golden Rod",
+            1
+          ],
+          [
+            "Iridescent Pearl",
+            1
+          ],
+          [
+            "Greater Astral Essence",
+            1
+          ],
+          [
+            "Soul Dust",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Keep the Runed Golden Rod: the enchants from here to 200 need it. Conflict: conquestcapped says Forever teaches the Golden Rod at 175 (method.gg 155, wow-professions 150)."
+      },
+      {
+        "from": 156,
+        "to": 185,
+        "recipe": "Enchant Bracer - Lesser Strength",
+        "crafts": 36,
+        "mats_per_craft": [
+          [
+            "Soul Dust",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Dalria, Ashenvale (Alliance) / Kulwia, Stonetalon Mountains (Horde)",
+        "note": "Formula: Enchant Bracer - Lesser Strength requires Enchanting 140."
+      },
+      {
+        "from": 185,
+        "to": 200,
+        "recipe": "Enchant Bracer - Strength",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Vision Dust",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Artisan at 200 (char level 35) from Annora inside Uldaman."
+      },
+      {
+        "from": 200,
+        "to": 201,
+        "recipe": "Runed Truesilver Rod",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Truesilver Rod",
+            1
+          ],
+          [
+            "Black Pearl",
+            1
+          ],
+          [
+            "Greater Mystic Essence",
+            1
+          ],
+          [
+            "Vision Dust",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Keep the Runed Truesilver Rod: the enchants from here to 290 need it. Conflict: conquestcapped says Forever teaches it at 220 (method.gg and wow-professions make it at 200)."
+      },
+      {
+        "from": 201,
+        "to": 220,
+        "recipe": "Enchant Bracer - Strength",
+        "crafts": 26,
+        "mats_per_craft": [
+          [
+            "Vision Dust",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 220,
+        "to": 225,
+        "recipe": "Enchant Cloak - Greater Defense",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Vision Dust",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 225,
+        "to": 230,
+        "recipe": "Enchant Gloves - Agility",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Vision Dust",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 230,
+        "to": 235,
+        "recipe": "Enchant Boots - Stamina",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Vision Dust",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 235,
+        "to": 250,
+        "recipe": "Enchant Chest - Superior Stamina",
+        "crafts": 16,
+        "mats_per_craft": [
+          [
+            "Vision Dust",
+            3
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 250,
+        "to": 265,
+        "recipe": "Lesser Mana Oil",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Dream Dust",
+            1
+          ],
+          [
+            "Purple Lotus",
+            1
+          ],
+          [
+            "Crystal Vial",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Lokhtos Darkbargainer, Blackrock Depths (both factions)",
+        "note": "Formula: Lesser Mana Oil requires Enchanting 250. Wowhead's item page says it is also sold in Silithus (wow-professions names Kania)."
+      },
+      {
+        "from": 265,
+        "to": 294,
+        "recipe": "Enchant Shield - Greater Stamina",
+        "crafts": 30,
+        "mats_per_craft": [
+          [
+            "Dream Dust",
+            6
+          ]
+        ],
+        "recipe_source": "vendor: Mythrin'dir, Darnassus (Alliance) / Daniel Bartlett, Undercity (Horde)",
+        "note": "Formula: Enchant Shield - Greater Stamina requires Enchanting 265; limited stock (conquestcapped)."
+      },
+      {
+        "from": 294,
+        "to": 295,
+        "recipe": "Runed Arcanite Rod",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Arcanite Rod",
+            1
+          ],
+          [
+            "Golden Pearl",
+            1
+          ],
+          [
+            "Illusion Dust",
+            10
+          ],
+          [
+            "Greater Eternal Essence",
+            4
+          ],
+          [
+            "Small Brilliant Shard",
+            4
+          ],
+          [
+            "Large Brilliant Shard",
+            2
+          ]
+        ],
+        "recipe_source": "vendor: Lorelae Wintersong, Moonglade (both factions)",
+        "note": "Formula: Runed Arcanite Rod requires Enchanting 290. Keep the rod: the last enchants need it."
+      },
+      {
+        "from": 295,
+        "to": 300,
+        "recipe": "Enchant Cloak - Superior Defense",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Illusion Dust",
+            8
+          ]
+        ],
+        "recipe_source": "vendor: Lorelae Wintersong, Moonglade (both factions)",
+        "note": "Formula: Enchant Cloak - Superior Defense requires Enchanting 285."
+      }
+    ],
+    "total_mats": [
+      [
+        "Copper Rod",
+        1
+      ],
+      [
+        "Mote of Magic",
+        1
+      ],
+      [
+        "Simple Wood",
+        68
+      ],
+      [
+        "Lesser Magic Essence",
+        92
+      ],
+      [
+        "Strange Dust",
+        23
+      ],
+      [
+        "Silver Rod",
+        1
+      ],
+      [
+        "Shadowgem",
+        1
+      ],
+      [
+        "Lesser Astral Essence",
+        25
+      ],
+      [
+        "Soul Dust",
+        57
+      ],
+      [
+        "Golden Rod",
+        1
+      ],
+      [
+        "Iridescent Pearl",
+        1
+      ],
+      [
+        "Greater Astral Essence",
+        1
+      ],
+      [
+        "Vision Dust",
+        110
+      ],
+      [
+        "Truesilver Rod",
+        1
+      ],
+      [
+        "Black Pearl",
+        1
+      ],
+      [
+        "Greater Mystic Essence",
+        1
+      ],
+      [
+        "Dream Dust",
+        195
+      ],
+      [
+        "Purple Lotus",
+        15
+      ],
+      [
+        "Crystal Vial",
+        15
+      ],
+      [
+        "Arcanite Rod",
+        1
+      ],
+      [
+        "Golden Pearl",
+        1
+      ],
+      [
+        "Illusion Dust",
+        50
+      ],
+      [
+        "Greater Eternal Essence",
+        4
+      ],
+      [
+        "Small Brilliant Shard",
+        4
+      ],
+      [
+        "Large Brilliant Shard",
+        2
+      ],
+      [
+        "Formula: Enchant Cloak - Minor Agility",
+        1
+      ],
+      [
+        "Formula: Enchant Bracer - Lesser Strength",
+        1
+      ],
+      [
+        "Formula: Lesser Mana Oil",
+        1
+      ],
+      [
+        "Formula: Enchant Shield - Greater Stamina",
+        1
+      ],
+      [
+        "Formula: Runed Arcanite Rod",
+        1
+      ],
+      [
+        "Formula: Enchant Cloak - Superior Defense",
+        1
+      ]
+    ],
+    "total_mats_note": "Computed from the step table. The 2-20 disenchant step needs about 18 green-or-better items, not listed. Includes the six vendor formulas.",
+    "sources": [
+      "https://www.wowhead.com/forever/profession-leveling-guides/enchanting",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-enchanting/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-professions/",
+      "https://www.method.gg/wow-forever/enchanting-in-wow-forever-1-300-leveling-guide-and-trainers",
+      "https://www.wow-professions.com/forever/enchanting-leveling-guide",
+      "https://nether.wowhead.com/forever/tooltip/spell/7421",
+      "https://nether.wowhead.com/forever/tooltip/spell/7426",
+      "https://nether.wowhead.com/forever/tooltip/spell/13836",
+      "https://nether.wowhead.com/forever/tooltip/spell/13858",
+      "https://nether.wowhead.com/forever/tooltip/spell/20017",
+      "https://nether.wowhead.com/forever/tooltip/spell/25127",
+      "https://www.wowhead.com/forever/item=20754",
+      "https://nether.wowhead.com/forever/tooltip/item/11039",
+      "https://nether.wowhead.com/forever/tooltip/item/11101",
+      "https://nether.wowhead.com/forever/tooltip/item/16217",
+      "https://nether.wowhead.com/forever/tooltip/item/16243",
+      "https://nether.wowhead.com/forever/tooltip/item/16224",
+      "https://www.wowhead.com/forever/npc=3954",
+      "https://www.wowhead.com/forever/npc=12043",
+      "https://www.wowhead.com/forever/npc=12022"
+    ]
+  },
+  {
+    "profession": "Engineering",
+    "skill_key": "engineering",
+    "forever_changes": [
+      "77 new recipes: 28 bought with Merchant's Favor from Fritz Fizzle, Redridge Mountains (Alliance) and Fizzlefuse, The Barrens (Horde) (45-360 Favor, Azeroth Commerce Authority reputation); 40 with no known source (conquestcapped).",
+      "New Artisan trainer for both factions: Kaylaena Springwhisper, Cenarion Circle camp, Mount Hyjal; new Apprentice trainer Strange Hermit on Zephras Isle (conquestcapped, Icy Veins via search).",
+      "Schematic: Thorium Tube is also sold by Kor'gar at Powderfuse, Riverglades (conquestcapped).",
+      "Sandpaper is a new reagent used in 27 new recipes (25 of them Blacksmithing) (conquestcapped).",
+      "New recipes include Emergency Field Cloak (225), Loot-A-Rang (275), Gnomish Poultryizer (300) and Dimensional Transporter - Mt. Hyjal (300, 10g from Pexmit) (conquestcapped).",
+      "Gnomish or Goblin Engineering is chosen at skill 200 and character level 30; each teaches 11 recipes and is not needed for 300; the quest chain is the Classic one (conquestcapped).",
+      "Swiftstrike Shot and Swiftfeather Arrow are no longer bind on pickup; Gnome racial Engineering Specialization makes engineering devices more reliable (conquestcapped)."
+    ],
+    "rank_caps": {
+      "Apprentice": 75,
+      "Journeyman": 150,
+      "Expert": 225,
+      "Artisan": 300
+    },
+    "rank_requirements": {
+      "Apprentice": "no character level requirement listed for Forever (conquestcapped: none; wow-professions: Apprentice has no level requirement in Forever)",
+      "Journeyman": "char level 10, skill 50 (5 silver)",
+      "Expert": "char level 20, skill 125 (50 silver)",
+      "Artisan": "char level 35, skill 200 (5 gold)"
+    },
+    "artisan_trainer_notes": "Both trainers serve both factions: Buzzek Bracketswing, Gadgetzan, Tanaris (52.2, 27.4) and Kaylaena Springwhisper, Cenarion Circle camp, Mount Hyjal (60.2, 61.4; new in Forever). Artisan needs skill 200 and character level 35 (5 gold). Source: conquestcapped, cross-checked via Icy Veins/dving.net search results.",
+    "steps": [
+      {
+        "from": 1,
+        "to": 30,
+        "recipe": "Rough Blasting Powder",
+        "crafts": 32,
+        "mats_per_craft": [
+          [
+            "Rough Stone",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Known with Apprentice. Wowhead: craft 60 and save (Rough Copper Bomb needs 58). Later steps use 58 Rough Blasting Powder in total but the skill-up crafts make only 32; make 26 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 30,
+        "to": 50,
+        "recipe": "Handful of Copper Bolts",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Copper Bar",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Wowhead: craft 30 and save (Rough Copper Bomb needs 29). Train Journeyman at 50 (char level 10). Later steps use 29 Handful of Copper Bolts in total but the skill-up crafts make only 20; make 9 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 50,
+        "to": 51,
+        "recipe": "Arclight Spanner",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Copper Bar",
+            6
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Keep the Arclight Spanner: most later recipes need it as a tool. conquestcapped also lists a Blacksmith Hammer (vendor) as needed."
+      },
+      {
+        "from": 51,
+        "to": 75,
+        "recipe": "Rough Copper Bomb",
+        "crafts": 29,
+        "mats_per_craft": [
+          [
+            "Copper Bar",
+            1
+          ],
+          [
+            "Handful of Copper Bolts",
+            1
+          ],
+          [
+            "Rough Blasting Powder",
+            2
+          ],
+          [
+            "Linen Cloth",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 75,
+        "to": 90,
+        "recipe": "Coarse Blasting Powder",
+        "crafts": 16,
+        "mats_per_craft": [
+          [
+            "Coarse Stone",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 45 Coarse Blasting Powder in total but the skill-up crafts make only 16; make 29 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 90,
+        "to": 100,
+        "recipe": "Coarse Dynamite",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Coarse Blasting Powder",
+            3
+          ],
+          [
+            "Linen Cloth",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 100,
+        "to": 105,
+        "recipe": "Silver Contact",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Silver Bar",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 105,
+        "to": 125,
+        "recipe": "Bronze Tube",
+        "crafts": 25,
+        "mats_per_craft": [
+          [
+            "Bronze Bar",
+            2
+          ],
+          [
+            "Weak Flux",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Buy Weak Flux from an engineering supplies vendor. Train Expert at 125 (char level 20)."
+      },
+      {
+        "from": 125,
+        "to": 135,
+        "recipe": "Standard Scope",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Bronze Tube",
+            1
+          ],
+          [
+            "Moss Agate",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 135,
+        "to": 150,
+        "recipe": "Whirring Bronze Gizmo",
+        "crafts": 23,
+        "mats_per_craft": [
+          [
+            "Bronze Bar",
+            2
+          ],
+          [
+            "Wool Cloth",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 150,
+        "to": 160,
+        "recipe": "Bronze Framework",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Bronze Bar",
+            2
+          ],
+          [
+            "Medium Leather",
+            1
+          ],
+          [
+            "Wool Cloth",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 15 Bronze Framework in total but the skill-up crafts make only 12; make 3 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 160,
+        "to": 175,
+        "recipe": "Explosive Sheep",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Bronze Framework",
+            1
+          ],
+          [
+            "Whirring Bronze Gizmo",
+            1
+          ],
+          [
+            "Heavy Blasting Powder",
+            2
+          ],
+          [
+            "Wool Cloth",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Wowhead's route has no step that makes the 30 Heavy Blasting Powder; conquestcapped makes 30 from 30 Heavy Stone at 135-150, or buy them."
+      },
+      {
+        "from": 175,
+        "to": 194,
+        "recipe": "Solid Blasting Powder",
+        "crafts": 51,
+        "mats_per_craft": [
+          [
+            "Solid Stone",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Keep the extras: Unstable Trigger and Hi-Explosive Bomb use 48."
+      },
+      {
+        "from": 194,
+        "to": 195,
+        "recipe": "Gyromatic Micro-Adjustor",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Steel Bar",
+            4
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Keep it: goggles and scopes need it as a tool."
+      },
+      {
+        "from": 195,
+        "to": 200,
+        "recipe": "Mithril Tube",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            3
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Artisan at 200 (char level 35). Gnomish/Goblin specialization opens at 200 and level 30; not needed for 300."
+      },
+      {
+        "from": 200,
+        "to": 215,
+        "recipe": "Unstable Trigger",
+        "crafts": 18,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            1
+          ],
+          [
+            "Mageweave Cloth",
+            1
+          ],
+          [
+            "Solid Blasting Powder",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 215,
+        "to": 238,
+        "recipe": "Mithril Casing",
+        "crafts": 33,
+        "mats_per_craft": [
+          [
+            "Mithril Bar",
+            3
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 238,
+        "to": 250,
+        "recipe": "Hi-Explosive Bomb",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Mithril Casing",
+            2
+          ],
+          [
+            "Unstable Trigger",
+            1
+          ],
+          [
+            "Solid Blasting Powder",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 250,
+        "to": 260,
+        "recipe": "Dense Blasting Powder",
+        "crafts": 27,
+        "mats_per_craft": [
+          [
+            "Dense Stone",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 260,
+        "to": 285,
+        "recipe": "Thorium Widget",
+        "crafts": 25,
+        "mats_per_craft": [
+          [
+            "Thorium Bar",
+            3
+          ],
+          [
+            "Runecloth",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Gearcutter Cogspinner, Ironforge (Alliance) / Sovik, Orgrimmar (Horde)",
+        "note": "Schematic: Thorium Widget requires Engineering 260 (1g 26s per conquestcapped)."
+      },
+      {
+        "from": 285,
+        "to": 300,
+        "recipe": "Thorium Tube",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Thorium Bar",
+            6
+          ]
+        ],
+        "recipe_source": "vendor: Xizzer Fizzbolt, Everlook, Winterspring (both factions)",
+        "note": "Schematic: Thorium Tube requires Engineering 275. conquestcapped: also sold by Kor'gar at Powderfuse, Riverglades (new Forever zone)."
+      }
+    ],
+    "total_mats": [
+      [
+        "Rough Stone",
+        58
+      ],
+      [
+        "Copper Bar",
+        64
+      ],
+      [
+        "Linen Cloth",
+        44
+      ],
+      [
+        "Coarse Stone",
+        45
+      ],
+      [
+        "Silver Bar",
+        5
+      ],
+      [
+        "Bronze Bar",
+        126
+      ],
+      [
+        "Weak Flux",
+        25
+      ],
+      [
+        "Moss Agate",
+        10
+      ],
+      [
+        "Wool Cloth",
+        68
+      ],
+      [
+        "Medium Leather",
+        15
+      ],
+      [
+        "Heavy Blasting Powder",
+        30
+      ],
+      [
+        "Solid Stone",
+        102
+      ],
+      [
+        "Steel Bar",
+        4
+      ],
+      [
+        "Mithril Bar",
+        132
+      ],
+      [
+        "Mageweave Cloth",
+        18
+      ],
+      [
+        "Dense Stone",
+        54
+      ],
+      [
+        "Thorium Bar",
+        165
+      ],
+      [
+        "Runecloth",
+        25
+      ],
+      [
+        "Schematic: Thorium Widget",
+        1
+      ],
+      [
+        "Schematic: Thorium Tube",
+        1
+      ]
+    ],
+    "total_mats_note": "Computed from the step table, including extra raw mats for intermediates the route under-produces (Rough Blasting Powder, Handful of Copper Bolts, Coarse Blasting Powder, Bronze Framework). Heavy Blasting Powder is listed as a buy (no route step makes it). Includes the two vendor schematics.",
+    "sources": [
+      "https://www.wowhead.com/forever/profession-leveling-guides/engineering",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-engineering/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-professions/",
+      "https://nether.wowhead.com/forever/tooltip/item/16042",
+      "https://nether.wowhead.com/forever/tooltip/item/16047"
+    ]
+  },
+  {
+    "profession": "Leatherworking",
+    "skill_key": "leatherworking",
+    "forever_changes": [
+      "271 new recipes, the most of any profession: 80 bought with Merchant's Favor, 92 with no known source (conquestcapped).",
+      "Leatherworking now makes mail: Wildthorn Mail, Heavy Timbermaw Belt, Storm Gauntlets, Helm of the Great Chief, Heavy Timbermaw Boots and Invulnerable Mail (skill 245-295) moved over from Blacksmithing (conquestcapped).",
+      "New recipes include Mender's Leather Belt and six more skill-150 belts from Granny Finespindle, Brawler's Leather Hood and five other skill-100 hoods (30 Merchant's Favor), Prowler's / Skulker's Leather Boots (235, 90 Favor), Stalker's Mail Belt / Shoulders (210-250) and 36 skill-300 tier set recipes from Aisarra Nightmeadow (conquestcapped).",
+      "Camp objects: Tanning Rack (140; blueprint drops from Razorclaw the Butcher in Shadowfang Keep) and Sewing Machine (300, needed for advanced recipes) (conquestcapped).",
+      "Synthetic Gordok Ogre Suit moved from Leatherworking to Tailoring (conquestcapped Tailoring page).",
+      "Nightscape Pants is taught only by the Artisan trainers (conquestcapped)."
+    ],
+    "rank_caps": {
+      "Apprentice": 75,
+      "Journeyman": 150,
+      "Expert": 225,
+      "Artisan": 300
+    },
+    "rank_requirements": {
+      "Apprentice": "no character level requirement listed for Forever (conquestcapped: none; wow-professions: Apprentice has no level requirement in Forever)",
+      "Journeyman": "char level 10, skill 50 (5 silver)",
+      "Expert": "char level 20, skill 125 (50 silver)",
+      "Artisan": "char level 35, skill 200 (5 gold)"
+    },
+    "artisan_trainer_notes": "Alliance: Drakk Stonehand, Aerie Peak, The Hinterlands (13.4, 43.4). Horde: Hahrana Ironhide, Camp Mojache, Feralas (74.4, 43.0). Both also teach Nightscape Pants. Artisan needs skill 200 and character level 35. Source: conquestcapped (Wowhead's Leatherworking overview body did not render).",
+    "steps": [
+      {
+        "from": 1,
+        "to": 30,
+        "recipe": "Light Leather",
+        "crafts": 32,
+        "mats_per_craft": [
+          [
+            "Ruined Leather Scraps",
+            3
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Known with Apprentice."
+      },
+      {
+        "from": 30,
+        "to": 45,
+        "recipe": "Light Armor Kit",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Light Leather",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Known with Apprentice."
+      },
+      {
+        "from": 45,
+        "to": 55,
+        "recipe": "Cured Light Hide",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Light Hide",
+            1
+          ],
+          [
+            "Salt",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Journeyman at 50 (char level 10)."
+      },
+      {
+        "from": 55,
+        "to": 85,
+        "recipe": "Embossed Leather Gloves",
+        "crafts": 35,
+        "mats_per_craft": [
+          [
+            "Light Leather",
+            3
+          ],
+          [
+            "Coarse Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 85,
+        "to": 100,
+        "recipe": "Fine Leather Belt",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Light Leather",
+            6
+          ],
+          [
+            "Coarse Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 25 Fine Leather Belt in total but the skill-up crafts make only 20; make 5 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 100,
+        "to": 115,
+        "recipe": "Dark Leather Pants",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Medium Leather",
+            12
+          ],
+          [
+            "Gray Dye",
+            1
+          ],
+          [
+            "Fine Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 115,
+        "to": 118,
+        "recipe": "Gray Leather Boots",
+        "crafts": 7,
+        "mats_per_craft": [
+          [
+            "Medium Leather",
+            4
+          ],
+          [
+            "Fine Thread",
+            2
+          ],
+          [
+            "Gray Dye",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 118,
+        "to": 125,
+        "recipe": "Dark Leather Belt",
+        "crafts": 7,
+        "mats_per_craft": [
+          [
+            "Fine Leather Belt",
+            1
+          ],
+          [
+            "Cured Medium Hide",
+            1
+          ],
+          [
+            "Fine Thread",
+            2
+          ],
+          [
+            "Gray Dye",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Expert at 125 (char level 20)."
+      },
+      {
+        "from": 125,
+        "to": 135,
+        "recipe": "Cured Heavy Hide",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Heavy Hide",
+            1
+          ],
+          [
+            "Salt",
+            3
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 145 Cured Heavy Hide in total but the skill-up crafts make only 22; make 123 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 135,
+        "to": 143,
+        "recipe": "Dark Leather Belt",
+        "crafts": 18,
+        "mats_per_craft": [
+          [
+            "Fine Leather Belt",
+            1
+          ],
+          [
+            "Cured Medium Hide",
+            1
+          ],
+          [
+            "Fine Thread",
+            2
+          ],
+          [
+            "Gray Dye",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 143,
+        "to": 145,
+        "recipe": "Cured Heavy Hide",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Heavy Hide",
+            1
+          ],
+          [
+            "Salt",
+            3
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 145,
+        "to": 155,
+        "recipe": "Toughened Leather Gloves",
+        "crafts": 25,
+        "mats_per_craft": [
+          [
+            "Medium Leather",
+            4
+          ],
+          [
+            "Cured Medium Hide",
+            2
+          ],
+          [
+            "Elixir of Lesser Defense",
+            2
+          ],
+          [
+            "Spider's Silk",
+            2
+          ],
+          [
+            "Fine Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 155,
+        "to": 160,
+        "recipe": "Barbaric Shoulders",
+        "crafts": 5,
+        "mats_per_craft": [
+          [
+            "Heavy Leather",
+            8
+          ],
+          [
+            "Cured Heavy Hide",
+            1
+          ],
+          [
+            "Fine Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 160,
+        "to": 180,
+        "recipe": "Gem-studded Leather Belt",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Cured Heavy Hide",
+            4
+          ],
+          [
+            "Iridescent Pearl",
+            2
+          ],
+          [
+            "Jade",
+            2
+          ],
+          [
+            "Citrine",
+            1
+          ],
+          [
+            "Fine Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Rikqiz, Stranglethorn Vale (both factions)",
+        "note": "Pattern: Gem-studded Leather Belt requires Leatherworking 160."
+      },
+      {
+        "from": 180,
+        "to": 185,
+        "recipe": "Barbaric Shoulders",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Heavy Leather",
+            8
+          ],
+          [
+            "Cured Heavy Hide",
+            1
+          ],
+          [
+            "Fine Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 185,
+        "to": 190,
+        "recipe": "Gem-studded Leather Belt",
+        "crafts": 7,
+        "mats_per_craft": [
+          [
+            "Cured Heavy Hide",
+            4
+          ],
+          [
+            "Iridescent Pearl",
+            2
+          ],
+          [
+            "Jade",
+            2
+          ],
+          [
+            "Citrine",
+            1
+          ],
+          [
+            "Fine Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Rikqiz, Stranglethorn Vale (both factions)"
+      },
+      {
+        "from": 190,
+        "to": 200,
+        "recipe": "Guardian Gloves",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Heavy Leather",
+            4
+          ],
+          [
+            "Cured Heavy Hide",
+            1
+          ],
+          [
+            "Silken Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Artisan at 200 (char level 35)."
+      },
+      {
+        "from": 200,
+        "to": 210,
+        "recipe": "Thick Armor Kit",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Thick Leather",
+            5
+          ],
+          [
+            "Silken Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 210,
+        "to": 225,
+        "recipe": "Nightscape Pants",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Thick Leather",
+            14
+          ],
+          [
+            "Silken Thread",
+            4
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "conquestcapped: Nightscape Pants is taught only by the Artisan trainers (Drakk Stonehand / Hahrana Ironhide), so learn it when you train Artisan."
+      },
+      {
+        "from": 225,
+        "to": 230,
+        "recipe": "Cured Rugged Hide",
+        "crafts": 6,
+        "mats_per_craft": [
+          [
+            "Rugged Hide",
+            1
+          ],
+          [
+            "Refined Deeprock Salt",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 33 Cured Rugged Hide in total but the skill-up crafts make only 6; make 27 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 230,
+        "to": 240,
+        "recipe": "Nightscape Pants",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Thick Leather",
+            14
+          ],
+          [
+            "Silken Thread",
+            4
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 240,
+        "to": 255,
+        "recipe": "Wicked Leather Gauntlets",
+        "crafts": 15,
+        "mats_per_craft": [
+          [
+            "Rugged Leather",
+            8
+          ],
+          [
+            "Black Dye",
+            1
+          ],
+          [
+            "Rune Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Leonard Porter, Western Plaguelands (Alliance) / Werg Thickblade, Tirisfal Glades (Horde)",
+        "note": "Pattern: Wicked Leather Gauntlets requires Leatherworking 235."
+      },
+      {
+        "from": 255,
+        "to": 260,
+        "recipe": "Heavy Scorpid Bracers",
+        "crafts": 6,
+        "mats_per_craft": [
+          [
+            "Rugged Leather",
+            4
+          ],
+          [
+            "Heavy Scorpid Scale",
+            4
+          ],
+          [
+            "Rune Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Zannok Hidepiercer, Silithus (both factions)",
+        "note": "Pattern: Heavy Scorpid Bracers requires Leatherworking 255."
+      },
+      {
+        "from": 260,
+        "to": 270,
+        "recipe": "Wicked Leather Gauntlets",
+        "crafts": 20,
+        "mats_per_craft": [
+          [
+            "Rugged Leather",
+            8
+          ],
+          [
+            "Black Dye",
+            1
+          ],
+          [
+            "Rune Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Leonard Porter, Western Plaguelands (Alliance) / Werg Thickblade, Tirisfal Glades (Horde)"
+      },
+      {
+        "from": 270,
+        "to": 300,
+        "recipe": "Heavy Scorpid Helm",
+        "crafts": 33,
+        "mats_per_craft": [
+          [
+            "Rugged Leather",
+            8
+          ],
+          [
+            "Heavy Scorpid Scale",
+            12
+          ],
+          [
+            "Cured Rugged Hide",
+            1
+          ],
+          [
+            "Rune Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Zannok Hidepiercer, Silithus (both factions)",
+        "note": "Pattern: Heavy Scorpid Helm requires Leatherworking 270."
+      }
+    ],
+    "total_mats": [
+      [
+        "Ruined Leather Scraps",
+        96
+      ],
+      [
+        "Light Hide",
+        10
+      ],
+      [
+        "Salt",
+        445
+      ],
+      [
+        "Coarse Thread",
+        120
+      ],
+      [
+        "Medium Leather",
+        308
+      ],
+      [
+        "Gray Dye",
+        47
+      ],
+      [
+        "Fine Thread",
+        190
+      ],
+      [
+        "Cured Medium Hide",
+        75
+      ],
+      [
+        "Heavy Hide",
+        145
+      ],
+      [
+        "Elixir of Lesser Defense",
+        50
+      ],
+      [
+        "Spider's Silk",
+        50
+      ],
+      [
+        "Heavy Leather",
+        216
+      ],
+      [
+        "Iridescent Pearl",
+        54
+      ],
+      [
+        "Jade",
+        54
+      ],
+      [
+        "Citrine",
+        27
+      ],
+      [
+        "Silken Thread",
+        180
+      ],
+      [
+        "Thick Leather",
+        590
+      ],
+      [
+        "Rugged Hide",
+        33
+      ],
+      [
+        "Refined Deeprock Salt",
+        33
+      ],
+      [
+        "Rugged Leather",
+        568
+      ],
+      [
+        "Black Dye",
+        35
+      ],
+      [
+        "Rune Thread",
+        74
+      ],
+      [
+        "Heavy Scorpid Scale",
+        420
+      ],
+      [
+        "Light Leather",
+        243
+      ],
+      [
+        "Pattern: Gem-studded Leather Belt",
+        1
+      ],
+      [
+        "Pattern: Wicked Leather Gauntlets",
+        1
+      ],
+      [
+        "Pattern: Heavy Scorpid Bracers",
+        1
+      ],
+      [
+        "Pattern: Heavy Scorpid Helm",
+        1
+      ]
+    ],
+    "total_mats_note": "Computed from the step table. Light Leather beyond the 32 made from scraps and all Cured Medium Hide are listed as buys; extra Heavy Hide/Salt and Rugged Hide/Refined Deeprock Salt cover the Cured Heavy Hide and Cured Rugged Hide the later steps need, and extra Light Leather/Coarse Thread cover 5 more Fine Leather Belts. Includes the four vendor patterns.",
+    "sources": [
+      "https://www.wowhead.com/forever/profession-leveling-guides/leatherworking",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-leatherworking/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-professions/",
+      "https://nether.wowhead.com/forever/tooltip/spell/3770",
+      "https://nether.wowhead.com/forever/tooltip/spell/3778",
+      "https://nether.wowhead.com/forever/tooltip/spell/7156",
+      "https://nether.wowhead.com/forever/tooltip/spell/3766",
+      "https://nether.wowhead.com/forever/tooltip/spell/19088",
+      "https://nether.wowhead.com/forever/tooltip/item/14635",
+      "https://nether.wowhead.com/forever/tooltip/item/15725",
+      "https://nether.wowhead.com/forever/tooltip/item/15724",
+      "https://nether.wowhead.com/forever/tooltip/item/15762",
+      "https://www.wowhead.com/forever/npc=2699",
+      "https://www.wowhead.com/forever/npc=12942",
+      "https://www.wowhead.com/forever/npc=12943",
+      "https://www.wowhead.com/forever/npc=12956"
+    ]
+  },
+  {
+    "profession": "Tailoring",
+    "skill_key": "tailoring",
+    "forever_changes": [
+      "180 new recipes: 67 bought with Merchant's Favor, 39 with no known source; e.g. Pristine Circlet / Pristine Sash (30 Favor, skill 60-125), Gilded Slippers, Earthen Silk Slippers, Gilded Sandals (140-235) (conquestcapped).",
+      "New Pattern: Runecloth Cuffs (Tailoring 250; 5 Bolt of Runecloth, 1 Ironweb Spider Silk, 1 Rune Thread), sold only by Pexmit in Mount Hyjal (Wowhead tooltips, conquestcapped).",
+      "New Venomspew Gloves / Cord / Footpads patterns (285 / 290 / 295) from Mishta in Silithus; Bind on Equip blues with Nature Resistance; need Cenarion Circle Friendly (Gloves) or Honored (Cord, Footpads) (Wowhead tooltips, conquestcapped).",
+      "16 skill-300 tier set recipes from Aisarra Nightmeadow; Robes of Fiery Devastation and Felblood Soul Bag (300, source unknown) (conquestcapped).",
+      "Synthetic Gordok Ogre Suit moved from Leatherworking to Tailoring (conquestcapped).",
+      "Camp object Faction Banner (skill 20) increases Spirit and is exclusive with Divine Spirit (conquestcapped).",
+      "New Expert trainer Charles Worth, Kirin Tor camp, Alterac Mountains (Alliance); Apprentice trainers Othesia Evengale and Taleen Shimmerthread on Zephras Isle (conquestcapped)."
+    ],
+    "rank_caps": {
+      "Apprentice": 75,
+      "Journeyman": 150,
+      "Expert": 225,
+      "Artisan": 300
+    },
+    "rank_requirements": {
+      "Apprentice": "no character level requirement listed for Forever (conquestcapped: none; wow-professions: Apprentice has no level requirement in Forever)",
+      "Journeyman": "char level 10, skill 50 (5 silver)",
+      "Expert": "char level 20, skill 125 (50 silver)",
+      "Artisan": "char level 35, skill 200 (5 gold)"
+    },
+    "artisan_trainer_notes": "Alliance: Timothy Worthington, Theramore Isle, Dustwallow Marsh (66.2, 51.6). Horde: Daryl Stack, Tarren Mill, Hillsbrad Foothills (63.4, 20.8). Artisan needs skill 200 and character level 35 (5 gold). Source: conquestcapped (Wowhead's Tailoring overview body did not render).",
+    "steps": [
+      {
+        "from": 1,
+        "to": 43,
+        "recipe": "Bolt of Linen Cloth",
+        "crafts": 54,
+        "mats_per_craft": [
+          [
+            "Linen Cloth",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Known with Apprentice."
+      },
+      {
+        "from": 43,
+        "to": 45,
+        "recipe": "Brown Linen Vest",
+        "crafts": 2,
+        "mats_per_craft": [
+          [
+            "Bolt of Linen Cloth",
+            1
+          ],
+          [
+            "Coarse Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 45,
+        "to": 70,
+        "recipe": "Linen Belt",
+        "crafts": 33,
+        "mats_per_craft": [
+          [
+            "Bolt of Linen Cloth",
+            1
+          ],
+          [
+            "Coarse Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Journeyman at 50 (char level 10)."
+      },
+      {
+        "from": 70,
+        "to": 75,
+        "recipe": "Reinforced Linen Cape",
+        "crafts": 7,
+        "mats_per_craft": [
+          [
+            "Bolt of Linen Cloth",
+            2
+          ],
+          [
+            "Coarse Thread",
+            3
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 75,
+        "to": 81,
+        "recipe": "Bolt of Woolen Cloth",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Wool Cloth",
+            3
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 84 Bolt of Woolen Cloth in total but the skill-up crafts make only 12; make 72 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 81,
+        "to": 100,
+        "recipe": "Woolen Cape",
+        "crafts": 27,
+        "mats_per_craft": [
+          [
+            "Bolt of Woolen Cloth",
+            1
+          ],
+          [
+            "Fine Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 100,
+        "to": 110,
+        "recipe": "Bolt of Silk Cloth",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Silk Cloth",
+            4
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 66 Bolt of Silk Cloth in total but the skill-up crafts make only 10; make 56 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 110,
+        "to": 125,
+        "recipe": "Double-stitched Woolen Shoulders",
+        "crafts": 19,
+        "mats_per_craft": [
+          [
+            "Bolt of Woolen Cloth",
+            3
+          ],
+          [
+            "Fine Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Expert at 125 (char level 20)."
+      },
+      {
+        "from": 125,
+        "to": 132,
+        "recipe": "Azure Silk Hood",
+        "crafts": 7,
+        "mats_per_craft": [
+          [
+            "Bolt of Silk Cloth",
+            2
+          ],
+          [
+            "Blue Dye",
+            2
+          ],
+          [
+            "Fine Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 132,
+        "to": 139,
+        "recipe": "Lesser Wizard's Robe",
+        "crafts": 8,
+        "mats_per_craft": [
+          [
+            "Bolt of Silk Cloth",
+            2
+          ],
+          [
+            "Fine Thread",
+            2
+          ],
+          [
+            "Spider's Silk",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 139,
+        "to": 140,
+        "recipe": "Formal White Shirt",
+        "crafts": 1,
+        "mats_per_craft": [
+          [
+            "Bolt of Silk Cloth",
+            3
+          ],
+          [
+            "Bleach",
+            2
+          ],
+          [
+            "Fine Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 140,
+        "to": 149,
+        "recipe": "Bolt of Mageweave",
+        "crafts": 11,
+        "mats_per_craft": [
+          [
+            "Mageweave Cloth",
+            5
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 85 Bolt of Mageweave in total but the skill-up crafts make only 11; make 74 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 149,
+        "to": 160,
+        "recipe": "Earthen Vest",
+        "crafts": 11,
+        "mats_per_craft": [
+          [
+            "Bolt of Silk Cloth",
+            3
+          ],
+          [
+            "Elemental Earth",
+            1
+          ],
+          [
+            "Fine Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 160,
+        "to": 170,
+        "recipe": "Robe of Power",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Bolt of Mageweave",
+            2
+          ],
+          [
+            "Elemental Earth",
+            2
+          ],
+          [
+            "Elemental Water",
+            2
+          ],
+          [
+            "Elemental Fire",
+            2
+          ],
+          [
+            "Elemental Air",
+            2
+          ],
+          [
+            "Silken Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 170,
+        "to": 180,
+        "recipe": "Black Mageweave Vest",
+        "crafts": 10,
+        "mats_per_craft": [
+          [
+            "Bolt of Mageweave",
+            2
+          ],
+          [
+            "Silken Thread",
+            3
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 180,
+        "to": 190,
+        "recipe": "Orange Mageweave Shirt",
+        "crafts": 11,
+        "mats_per_craft": [
+          [
+            "Bolt of Mageweave",
+            1
+          ],
+          [
+            "Orange Dye",
+            1
+          ],
+          [
+            "Heavy Silken Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 190,
+        "to": 205,
+        "recipe": "Black Mageweave Gloves",
+        "crafts": 17,
+        "mats_per_craft": [
+          [
+            "Bolt of Mageweave",
+            2
+          ],
+          [
+            "Heavy Silken Thread",
+            2
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Train Artisan at 200 (char level 35)."
+      },
+      {
+        "from": 205,
+        "to": 214,
+        "recipe": "Bolt of Runecloth",
+        "crafts": 11,
+        "mats_per_craft": [
+          [
+            "Runecloth",
+            5
+          ]
+        ],
+        "recipe_source": "trainer",
+        "note": "Later steps use 474 Bolt of Runecloth in total but the skill-up crafts make only 11; make 463 more (or buy them). total_mats includes the extra mats."
+      },
+      {
+        "from": 214,
+        "to": 234,
+        "recipe": "Runecloth Belt",
+        "crafts": 21,
+        "mats_per_craft": [
+          [
+            "Bolt of Runecloth",
+            3
+          ],
+          [
+            "Rune Thread",
+            1
+          ]
+        ],
+        "recipe_source": "trainer"
+      },
+      {
+        "from": 234,
+        "to": 250,
+        "recipe": "Runecloth Cloak",
+        "crafts": 18,
+        "mats_per_craft": [
+          [
+            "Bolt of Runecloth",
+            4
+          ],
+          [
+            "Ironweb Spider Silk",
+            1
+          ],
+          [
+            "Rune Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Darnall, Moonglade (both factions)",
+        "note": "Pattern: Runecloth Cloak requires Tailoring 220."
+      },
+      {
+        "from": 250,
+        "to": 260,
+        "recipe": "Runecloth Boots",
+        "crafts": 12,
+        "mats_per_craft": [
+          [
+            "Bolt of Runecloth",
+            4
+          ],
+          [
+            "Ironweb Spider Silk",
+            2
+          ],
+          [
+            "Rugged Leather",
+            4
+          ],
+          [
+            "Rune Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Darnall, Moonglade (both factions)",
+        "note": "Pattern: Runecloth Boots requires Tailoring 235."
+      },
+      {
+        "from": 260,
+        "to": 280,
+        "recipe": "Runecloth Cuffs",
+        "crafts": 25,
+        "mats_per_craft": [
+          [
+            "Bolt of Runecloth",
+            5
+          ],
+          [
+            "Ironweb Spider Silk",
+            1
+          ],
+          [
+            "Rune Thread",
+            1
+          ]
+        ],
+        "recipe_source": "vendor: Pexmit, Mount Hyjal (both factions)",
+        "note": "New in Forever. Pattern: Runecloth Cuffs requires Tailoring 250. conquestcapped skips it: the pattern is sold only by Pexmit, a rare demon on Mount Hyjal (its route uses Runecloth Headband / Runecloth Shoulders patterns from the Auction House for 254-300)."
+      },
+      {
+        "from": 280,
+        "to": 285,
+        "recipe": "Wisdom of the Timbermaw",
+        "crafts": 8,
+        "mats_per_craft": [
+          [
+            "Bolt of Runecloth",
+            8
+          ],
+          [
+            "Essence of Earth",
+            3
+          ],
+          [
+            "Living Essence",
+            3
+          ],
+          [
+            "Ironweb Spider Silk",
+            2
+          ]
+        ],
+        "recipe_source": "vendor: Meilosh, Timbermaw Hold, Felwood (both factions)",
+        "note": "Pattern: Wisdom of the Timbermaw requires Tailoring 255 and Timbermaw Hold - Honored."
+      },
+      {
+        "from": 285,
+        "to": 292,
+        "recipe": "Venomspew Gloves",
+        "crafts": 7,
+        "mats_per_craft": [
+          [
+            "Bolt of Runecloth",
+            4
+          ],
+          [
+            "Small Brilliant Shard",
+            1
+          ],
+          [
+            "Essence of Air",
+            3
+          ],
+          [
+            "Rune Thread",
+            6
+          ]
+        ],
+        "recipe_source": "vendor: Mishta, Cenarion Hold, Silithus (both factions)",
+        "note": "New in Forever. Pattern: Venomspew Gloves requires Tailoring 285 and Cenarion Circle - Friendly (7g 50s per conquestcapped)."
+      },
+      {
+        "from": 292,
+        "to": 299,
+        "recipe": "Venomspew Cord",
+        "crafts": 9,
+        "mats_per_craft": [
+          [
+            "Bolt of Runecloth",
+            6
+          ],
+          [
+            "Small Brilliant Shard",
+            1
+          ],
+          [
+            "Essence of Air",
+            3
+          ],
+          [
+            "Rune Thread",
+            6
+          ]
+        ],
+        "recipe_source": "vendor: Mishta, Cenarion Hold, Silithus (both factions)",
+        "note": "New in Forever. Pattern: Venomspew Cord requires Tailoring 290 and Cenarion Circle - Honored."
+      },
+      {
+        "from": 299,
+        "to": 300,
+        "recipe": "Venomspew Footpads",
+        "crafts": 4,
+        "mats_per_craft": [
+          [
+            "Bolt of Runecloth",
+            5
+          ],
+          [
+            "Small Brilliant Shard",
+            1
+          ],
+          [
+            "Essence of Air",
+            3
+          ],
+          [
+            "Rune Thread",
+            6
+          ]
+        ],
+        "recipe_source": "vendor: Mishta, Cenarion Hold, Silithus (both factions)",
+        "note": "New in Forever. Pattern: Venomspew Footpads requires Tailoring 295 and Cenarion Circle - Honored."
+      }
+    ],
+    "total_mats": [
+      [
+        "Linen Cloth",
+        108
+      ],
+      [
+        "Coarse Thread",
+        56
+      ],
+      [
+        "Wool Cloth",
+        252
+      ],
+      [
+        "Fine Thread",
+        111
+      ],
+      [
+        "Silk Cloth",
+        264
+      ],
+      [
+        "Blue Dye",
+        14
+      ],
+      [
+        "Spider's Silk",
+        16
+      ],
+      [
+        "Bleach",
+        2
+      ],
+      [
+        "Mageweave Cloth",
+        425
+      ],
+      [
+        "Elemental Earth",
+        31
+      ],
+      [
+        "Elemental Water",
+        20
+      ],
+      [
+        "Elemental Fire",
+        20
+      ],
+      [
+        "Elemental Air",
+        20
+      ],
+      [
+        "Silken Thread",
+        50
+      ],
+      [
+        "Orange Dye",
+        11
+      ],
+      [
+        "Heavy Silken Thread",
+        45
+      ],
+      [
+        "Runecloth",
+        2370
+      ],
+      [
+        "Rune Thread",
+        196
+      ],
+      [
+        "Ironweb Spider Silk",
+        83
+      ],
+      [
+        "Rugged Leather",
+        48
+      ],
+      [
+        "Essence of Earth",
+        24
+      ],
+      [
+        "Living Essence",
+        24
+      ],
+      [
+        "Small Brilliant Shard",
+        20
+      ],
+      [
+        "Essence of Air",
+        60
+      ],
+      [
+        "Pattern: Runecloth Cloak",
+        1
+      ],
+      [
+        "Pattern: Runecloth Boots",
+        1
+      ],
+      [
+        "Pattern: Runecloth Cuffs",
+        1
+      ],
+      [
+        "Pattern: Wisdom of the Timbermaw",
+        1
+      ],
+      [
+        "Pattern: Venomspew Gloves",
+        1
+      ],
+      [
+        "Pattern: Venomspew Cord",
+        1
+      ],
+      [
+        "Pattern: Venomspew Footpads",
+        1
+      ]
+    ],
+    "total_mats_note": "Computed from the step table, including the raw cloth for the extra bolts later steps need beyond the bolt-making skill-up crafts. Includes the seven vendor patterns.",
+    "sources": [
+      "https://www.wowhead.com/forever/profession-leveling-guides/tailoring",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-tailoring/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-professions/",
+      "https://nether.wowhead.com/forever/tooltip/spell/1257487",
+      "https://nether.wowhead.com/forever/tooltip/spell/1297120",
+      "https://nether.wowhead.com/forever/tooltip/spell/1297121",
+      "https://nether.wowhead.com/forever/tooltip/spell/1297122",
+      "https://nether.wowhead.com/forever/tooltip/item/254124",
+      "https://nether.wowhead.com/forever/tooltip/item/19215",
+      "https://nether.wowhead.com/forever/tooltip/item/275580",
+      "https://nether.wowhead.com/forever/tooltip/item/275581",
+      "https://nether.wowhead.com/forever/tooltip/item/275582",
+      "https://nether.wowhead.com/forever/tooltip/item/14472",
+      "https://nether.wowhead.com/forever/tooltip/item/14488",
+      "https://www.wowhead.com/forever/npc=7940",
+      "https://www.wowhead.com/forever/npc=11557",
+      "https://www.wowhead.com/forever/npc=15179",
+      "https://www.wowhead.com/forever/npc=266901"
+    ]
+  }
+]

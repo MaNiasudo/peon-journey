@@ -1,0 +1,950 @@
+{
+  "classes": {
+    "Warrior": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Night Elf Defensive Stance side chain (Elanaria / The Shade of Elura)",
+          "start_quest": "Elanaria",
+          "level": 10,
+          "faction": "Alliance",
+          "races": "Night Elf (Darnassus chain)",
+          "reward": "Weapons of Elunite: choose Elunite Axe, Elunite Hammer, Elunite Dagger or Elunite Sword",
+          "why": "Free level 10 weapon of your choice from Smith Mathiel, optional add-on to the Defensive Stance chain",
+          "solo": "solo",
+          "forever": "classic unchanged (Classic quest kept in Forever, no reward change reported)",
+          "source": "https://warcraft.wiki.gg/wiki/Weapons_of_Elunite"
+        },
+        {
+          "quest_or_chain": "Horde Defensive Stance chain, then Thun'grim Firegaze",
+          "start_quest": "Veteran Uzzek",
+          "level": 10,
+          "faction": "Horde",
+          "races": "Orc, Troll, Tauren",
+          "reward": "Forged Steel: choose Thun'grim's Axe, Thun'grim's Mace, Thun'grim's Dagger or Thun'grim's Sword",
+          "why": "Optional follow-up after Path of Defense in The Barrens gives a free level 10 weapon",
+          "solo": "solo",
+          "forever": "classic unchanged (Classic quest kept in Forever, no reward change reported)",
+          "source": "https://warcraft.wiki.gg/wiki/Forged_Steel"
+        },
+        {
+          "quest_or_chain": "Skyborne Defensive Stance quest",
+          "start_quest": "The Skybreaker Bulwark",
+          "level": 10,
+          "faction": "Both",
+          "races": "Skyborne (Zephras Isle)",
+          "reward": "Stormforged Protector (item type and stats unverified) plus Defensive Stance",
+          "why": "Skyborne warriors get an item with their stance; reclaim the Bulwark from Zaal Stormshield at the Shrine of Akir",
+          "solo": "solo",
+          "forever": "new in Forever",
+          "source": "https://www.wowhead.com/forever/quest=94003"
+        },
+        {
+          "quest_or_chain": "Berserker Stance + Whirlwind weapon chain (The Islander, The Affray, The Windwatcher, Cyclonian, Essence of the Exile, The Summoning, Whirlwind Weapon)",
+          "start_quest": "The Islander",
+          "level": 30,
+          "faction": "Both",
+          "races": "",
+          "reward": "Choose Whirlwind Axe (3.60), Whirlwind Sword (2.90) or Whirlwind Warhammer (3.40); all item level 40, +16 Strength, +15 Stamina, about 35.6 DPS",
+          "why": "Best two-hander you can get around 30-40; needs 8 Liferoot, 30 Bloodscalp Tusks (STV) and charms from Arathi for the Essence of the Exile",
+          "solo": "elite",
+          "forever": "changed in Forever: stats +16 Str / +15 Sta (Classic +15/+14), turning in unlocks all three appearances for transmog; Cyclonian is a level 40 elite, a healer helps",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warrior-weapon-quest/"
+        },
+        {
+          "quest_or_chain": "Sunken Temple warrior quest",
+          "start_quest": "A Troubled Spirit",
+          "level": 52,
+          "faction": "Both",
+          "races": "",
+          "reward": "Voodoo Feathers: Fury Visor (plate head), Diamond Flask (warrior trinket), Razorsteel Shoulders (plate shoulders)",
+          "why": "Rare plate and trinket for a dungeon you run anyway; needs two each of the Amber, Blue and Green Voodoo Feathers from the troll guardians",
+          "solo": "group",
+          "forever": "changed in Forever: 12,400 XP (about double), Diamond Flask reworked into a self-heal plus short Strength buff; Icy Veins says Forever gives all three items, Conquest Capped says pick one (unverified, check the reward window)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "Defensive Stance (race chains)",
+          "start_quest": "A Warrior's Training (Human/Dwarf/Gnome); Elanaria (Night Elf); Veteran Uzzek (Orc/Troll/Tauren); Speak with Dillinger (Undead); The Skybreaker Bulwark (Skyborne)",
+          "level": 10,
+          "faction": "Both",
+          "unlocks": "Defensive Stance, Taunt, Sunder Armor",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-class-quests/"
+        },
+        {
+          "quest_or_chain": "Berserker Stance (The Islander, The Affray on Fray Island)",
+          "start_quest": "The Islander",
+          "level": 30,
+          "faction": "Both",
+          "unlocks": "Berserker Stance (10-minute arena event ending with Big Will)",
+          "source": "https://www.wowhead.com/forever/quest=1719"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Quel'Serrar (warrior and paladin)",
+          "start_quest": "The Forging of Quel'Serrar (needs Foror's Compendium of Dragon Slaying, a Dire Maul drop; item name per Classic, unverified for Forever)",
+          "reward": "Quel'Serrar, main-hand sword with a defensive proc",
+          "difficulty": "raid",
+          "in_forever": true,
+          "source": "https://www.wowhead.com/forever/quest=7508"
+        },
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "Codex of Defense",
+          "reward": "Royal Seal of Eldre'Thalas (warrior version) + 200 Shen'dralar",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.magicgameworld.com/?p=149624"
+        },
+        {
+          "chain": "Zandalar Tribe Paragons of Power (Zul'Gurub)",
+          "start_quest": "unverified",
+          "reward": "Zandalar class set pieces",
+          "difficulty": "raid",
+          "in_forever": "unverified - no Forever source mentions Zul'Gurub; announced raids are Barrow Deeps, Hyjal Summit and Onyxia's Lair",
+          "source": "https://warcraft.wiki.gg/wiki/Paragons_of_Power"
+        }
+      ]
+    },
+    "Paladin": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Undead paladin Bandarion Keep chain",
+          "start_quest": "Murlocs at the Gates",
+          "level": 11,
+          "faction": "Horde",
+          "races": "Undead",
+          "reward": "Choose Skullthumper or Driftwood Smasher (stats unverified)",
+          "why": "Free early weapon from Breton Samuels at Bandarion Keep (Tirisfal); start the area with A Second Home",
+          "solo": "solo",
+          "forever": "new in Forever",
+          "source": "https://warcraft.wiki.gg/wiki/Murlocs_at_the_Gates"
+        },
+        {
+          "quest_or_chain": "Undead paladin Bandarion Keep chain",
+          "start_quest": "Making Repairs",
+          "level": 11,
+          "faction": "Horde",
+          "races": "Undead",
+          "reward": "Salvaged Wooden Tower Shield (stats unverified)",
+          "why": "Free shield from Jorin Croge; lumber is in the Shadowvale root cellar, pair it with The Tarnished",
+          "solo": "solo",
+          "forever": "new in Forever",
+          "source": "https://warcraft.wiki.gg/wiki/Making_Repairs_(Forever)"
+        },
+        {
+          "quest_or_chain": "The Tome of Valor (Alliance pre-chain to Verigan's Fist)",
+          "start_quest": "The Tome of Valor",
+          "level": 20,
+          "faction": "Alliance",
+          "races": "Human, Dwarf",
+          "reward": "Bastion of Stormwind (shield) plus Sense Undead",
+          "why": "Free shield on the way to Verigan's Fist; defend Daphne Stilwell in Westfall (fails if either of you dies)",
+          "solo": "solo",
+          "forever": "classic chain (reward per Conquest Capped beta guide; no change reported)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-weapon-quest/"
+        },
+        {
+          "quest_or_chain": "Verigan's Fist (The Tome of Valor, The Test of Righteousness, Bailor's Ore Shipment, Seeking the Kor Gem)",
+          "start_quest": "The Tome of Valor",
+          "level": 20,
+          "faction": "Alliance",
+          "races": "Human, Dwarf",
+          "reward": "Verigan's Fist: two-hand mace, ilvl 31, 25.6 DPS, +5 Sta, +6 Int, +10 Spi, Holy Forgefire proc (tripled vs fire and earth elementals)",
+          "why": "Best leveling two-hander for 20-30; parts from Deadmines (Whitestone Oak Lumber), Shadowfang Keep (Jordan's Smithing Hammer), Mo'grosh ogres in Loch Modan and naga outside BFD",
+          "solo": "group",
+          "forever": "changed in Forever: Holy Forgefire proc added, Stamina and Spirit lowered",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-weapon-quest/"
+        },
+        {
+          "quest_or_chain": "Wolfsbane (Diplomatic Incident, A Curious Pair, A Grim Fate, Into Fenris Keep, Lumina Windsinger, The Windshaper's Wrath, The Debt, A Moon-Kissed Blade, Seeking the Kor Gem, An Underrated Talent, Ott's Masterwork, The Moonsilver Blade, Old Fire-Eye)",
+          "start_quest": "Diplomatic Incident",
+          "level": 18,
+          "faction": "Horde",
+          "races": "Undead",
+          "reward": "Moonsilver Blade (ilvl 31 two-hander, intermediate step) then Wolfsbane: two-hand sword, ilvl 31, 25.6 DPS, +9 Sta, +10 Int, Blazewind Blast Holy proc (tripled vs wolves and worgen)",
+          "why": "Horde paladin answer to Verigan's Fist; parts from Deadmines (Whitestone Oak Lumber), Shadowfang Keep (Enchanted Silver Ingot) and naga outside BFD; Old Fire-Eye is a level 25 elite (do at 22-24, soloed at 20 by some)",
+          "solo": "group",
+          "forever": "new in Forever",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-weapon-quest/"
+        },
+        {
+          "quest_or_chain": "Sunken Temple paladin quest",
+          "start_quest": "Chillwind Point",
+          "level": 52,
+          "faction": "Alliance",
+          "races": "Human, Dwarf (no Horde paladin version reported)",
+          "reward": "Forging the Mightstone: Lightforged Blade (two-hand sword), Sanctified Orb (paladin trinket), Chivalrous Signet (ring), plus Holy Mightstone",
+          "why": "Rare weapon/trinket/ring; Wowhead Forever lists all three under 'You will also receive' as well as the choice",
+          "solo": "group",
+          "forever": "changed in Forever: 12,400 XP; Icy Veins and Wowhead data say all three items are granted, Conquest Capped says pick one (unverified). Horde (Undead) paladins have no level 50 class quest per Conquest Capped and forum reports",
+          "source": "https://www.wowhead.com/forever/quest=8418"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "Undead paladin starter (A Difficult Path, Rediscovering the Light, Coming to Terms)",
+          "start_quest": "A Difficult Path",
+          "level": 1,
+          "faction": "Horde",
+          "unlocks": "Holy Light (Rediscovering the Light, Aramis Hammerhand in Deathknell)",
+          "source": "https://warcraft.wiki.gg/wiki/Rediscovering_the_Light"
+        },
+        {
+          "quest_or_chain": "Redemption",
+          "start_quest": "The Tome of Divinity (Human/Dwarf); A Lesson in Divinity (Undead, 7 parts, Danitha Morr at Bandarion Keep)",
+          "level": 12,
+          "faction": "Both",
+          "unlocks": "Redemption (resurrection); do it before dungeons",
+          "source": "https://warcraft.wiki.gg/wiki/A_Lesson_in_Divinity_(7)"
+        },
+        {
+          "quest_or_chain": "Level 40 mount",
+          "start_quest": "The Tome of Nobility (Alliance, Duthorian Rall, Stormwind); A Paladin's Steed (Undead, Danitha Morr)",
+          "level": 40,
+          "faction": "Both",
+          "unlocks": "Summon Warhorse; paladins skip the 100 gold riding cost this way (Icy Veins news)",
+          "source": "https://warcraft.wiki.gg/wiki/A_Paladin%27s_Steed"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Epic mount: Summon Charger (Ancient Equine Spirit, Blessed Arcanite Barding, The Divination Scryer, Judgment and Redemption)",
+          "start_quest": "Lord Grayson Shadowbreaker (Stormwind) starts the chain; first quest name unverified",
+          "reward": "Summon Charger",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.wowhead.com/forever/quest=7647"
+        },
+        {
+          "chain": "Undead epic mount: Summon Forsaken Charger",
+          "start_quest": "unverified",
+          "reward": "Summon Forsaken Charger",
+          "difficulty": "unverified",
+          "in_forever": "spell exists (new); quest steps not confirmed",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-class-quests/"
+        },
+        {
+          "chain": "Quel'Serrar (warrior and paladin)",
+          "start_quest": "The Forging of Quel'Serrar",
+          "reward": "Quel'Serrar, main-hand sword with a defensive proc",
+          "difficulty": "raid",
+          "in_forever": true,
+          "source": "https://www.wowhead.com/forever/quest=7508"
+        },
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "The Light and How To Swing It",
+          "reward": "Royal Seal of Eldre'Thalas (paladin version) + 200 Shen'dralar",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.wowhead.com/forever/quest=7501"
+        }
+      ]
+    },
+    "Hunter": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Sunken Temple hunter quest",
+          "start_quest": "The Hunter's Charm",
+          "level": 52,
+          "faction": "Both",
+          "races": "",
+          "reward": "The Green Drake: Hunting Spear (polearm), Devilsaur Eye (hunter trinket), Devilsaur Tooth (hunter trinket)",
+          "why": "The only hunter item quest before 60; needs the Tooth of Morphaz",
+          "solo": "group",
+          "forever": "changed in Forever: Devilsaur Eye reworked into a beast root, Devilsaur Tooth gives a free Revive Pet; 12,400 XP; all-three-items vs pick-one is unverified",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "Taming the Beast (three parts, tame three local beasts with the Taming Rod)",
+          "start_quest": "Taming the Beast",
+          "level": 10,
+          "faction": "Both",
+          "unlocks": "Tame Beast, Call/Dismiss Pet and your first pet; Skyborne version from Quel'ana Quickgale tames a Vuldren Alpha (new fox family)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-hunter-pets/"
+        },
+        {
+          "quest_or_chain": "Training the Beast",
+          "start_quest": "Training the Beast",
+          "level": 10,
+          "faction": "Both",
+          "unlocks": "Beast Training (teach pet abilities); Alliance giver Isaac Chan in Goldshire",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-class-quests/"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Rhok'delar, Longbow of the Ancient Keepers",
+          "start_quest": "An Introduction",
+          "reward": "Rhok'delar, Longbow of the Ancient Keepers",
+          "difficulty": "raid",
+          "in_forever": "quest exists in the Forever database, but it starts from a Molten Core drop and Molten Core is not in the December 9 raid wave (no date yet)",
+          "source": "https://www.wowhead.com/forever/quest=7633"
+        },
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "The Greatest Race of Hunters",
+          "reward": "Royal Seal of Eldre'Thalas (hunter version) + Shen'dralar rep",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.magicgameworld.com/?p=149624"
+        }
+      ]
+    },
+    "Rogue": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Level 10 rogue race quest",
+          "start_quest": "Road to Salvation (Dwarf/Gnome); The Apple Falls (Night Elf); Mennet Carkad (Undead); other races have their own",
+          "level": 10,
+          "faction": "Both",
+          "races": "every race (quest differs per start zone)",
+          "reward": "Blade of Cunning",
+          "why": "Early dagger upgrade every rogue gets at 10",
+          "solo": "solo",
+          "forever": "present in Forever per Icy Veins (Classic vs Forever difference unverified)",
+          "source": "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+        },
+        {
+          "quest_or_chain": "Poisons chain (Alliance: Mathias and the Defias, Klaven's Tower; Horde: The Shattered Salute, Deep Cover, Mission: Possible But Not Probable, Hinott's Assistance)",
+          "start_quest": "Mathias and the Defias (Alliance); The Shattered Salute (Horde)",
+          "level": 20,
+          "faction": "Both",
+          "races": "",
+          "reward": "Recipe: Thistle Tea (instant 100 Energy, 5 min cooldown) plus Poisons",
+          "why": "Thistle Tea recipe is the item reward; required anyway for poisons",
+          "solo": "solo",
+          "forever": "classic unchanged (no change reported)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-class-quests/"
+        },
+        {
+          "quest_or_chain": "C's dead drop jobs, part 1 (letter 'An Offer', Pyrewood Village dead drop)",
+          "start_quest": "The Horn of Xelthos",
+          "level": 20,
+          "faction": "Both",
+          "races": "",
+          "reward": "Pyrewood Signet Ring (+4 Agility, +4 Stamina, small hit bonus)",
+          "why": "Free ring and the required step to unlock the Eye of Bhossca; horn is in Shadowfang Keep, solo only",
+          "solo": "solo",
+          "forever": "new in Forever (reworked from a Season of Discovery chain)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-rogue-weapon-quest/"
+        },
+        {
+          "quest_or_chain": "C's dead drop jobs, part 2 (letter 'Return Customer'), Scarlet Monastery stealth infiltration in a Scarlet Initiate's Uniform",
+          "start_quest": "The Eye of Bhossca",
+          "level": 25,
+          "faction": "Both",
+          "races": "",
+          "reward": "Ruby-Adorned Blade: rare one-hand sword, ilvl 36, 2.30 speed, 23.9 DPS, +3 Agi, +8 Sta, plus 75 silver",
+          "why": "Strong main-hand for its level; database says 25 but many beta rogues got the letter at 30, so plan for 30",
+          "solo": "solo",
+          "forever": "new in Forever (sword reward added, level moved to 25 from 30 in SoD; the old Rune of Shadowstep still shows in the database but was not given)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-rogue-weapon-quest/"
+        },
+        {
+          "quest_or_chain": "Sunken Temple rogue quest (A Simple Request, The Azure Key, Destroy Morphaz)",
+          "start_quest": "A Simple Request",
+          "level": 52,
+          "faction": "Both",
+          "races": "",
+          "reward": "Ebon Mask (leather head), Whisperwalk Boots (leather feet), Duskbat Drape (cloak)",
+          "why": "Rare leather/cloak; pickpocket the Sealed Azure Bag in Azshara, kill Morphaz in the temple",
+          "solo": "group",
+          "forever": "changed in Forever: 12,400 XP; all-three-items vs pick-one is unverified",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "Poisons",
+          "start_quest": "Mathias and the Defias (Alliance); The Shattered Salute (Horde)",
+          "level": 20,
+          "faction": "Both",
+          "unlocks": "Poisons skill and Thistle Tea; the only required rogue class quest (fine to delay to 22-23)",
+          "source": "https://www.icy-veins.com/wow-forever/rogue-class-quests"
+        },
+        {
+          "quest_or_chain": "Ravenholdt intro (The Manor, Ravenholdt, then Syndicate Emblems; Syndicate Sabotage kills Lord Tomas in Durnholde Keep)",
+          "start_quest": "The Manor, Ravenholdt",
+          "level": 24,
+          "faction": "Both",
+          "unlocks": "Ravenholdt reputation (Syndicate Sabotage gives 100 Ravenholdt rep, no item); not an ability",
+          "source": "https://www.wowhead.com/forever/quest=96779"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "Garona: A Study on Stealth and Treachery",
+          "reward": "Royal Seal of Eldre'Thalas (rogue version) + Shen'dralar rep",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.magicgameworld.com/?p=149624"
+        }
+      ]
+    },
+    "Priest": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Starting-zone robe quest",
+          "start_quest": "Garments of the Light (Human/Dwarf/Gnome); In Favor of Darkness then Garments of Darkness (Undead, Dark Cleric Beryl in Brill); Garments of Spirituality (Troll); Night Elf quest name unverified",
+          "level": 4,
+          "faction": "Both",
+          "races": "per race",
+          "reward": "Friar's Robes of the Light (Human/Dwarf/Gnome), Acolyte's Sacrificial Robes (Undead), Moon Robes of Elune (Night Elf), Juju Hex Robes (Troll)",
+          "why": "Free chest piece in the first minutes of play",
+          "solo": "solo",
+          "forever": "classic unchanged (level 4 in Forever per Icy Veins; no reward change reported)",
+          "source": "https://www.wowhead.com/forever/quest=5650"
+        },
+        {
+          "quest_or_chain": "Sunken Temple priest quest (Cenarion Aid ... Blood of Morphaz)",
+          "start_quest": "Cenarion Aid",
+          "level": 52,
+          "faction": "Both",
+          "races": "",
+          "reward": "Blessed Prayer Beads (priest trinket, big heal usable while silenced), Woestave (wand), Circle of Hope (ring)",
+          "why": "The only priest weapon/trinket quest before 60; needs Blood of Morphaz, turn in to Greta Mosshoof in Felwood",
+          "solo": "group",
+          "forever": "changed in Forever: 12,400 XP; all-three-items vs pick-one is unverified",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "Level 10 racial spell quest (start at any priest trainer, ends in your capital)",
+          "start_quest": "Divine Grace (Human, new); Desperate Prayer (Dwarf); Confounding Flash (Gnome, new); Stars of Elune (Night Elf); Hex of Weakness (Troll); Touch of Weakness (Undead)",
+          "level": 10,
+          "faction": "Both",
+          "unlocks": "Divine Grace / Desperate Prayer / Confounding Flash / Starshards / Hex of Weakness / Touch of Weakness",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-class-quests/"
+        },
+        {
+          "quest_or_chain": "Level 20 racial spell quest",
+          "start_quest": "Arcane Feedback (Human); Chastise (Dwarf); Contingency Plan (Gnome, new); Elune's Grace (Night Elf); Shadowguard (Troll); Dark Sacrifice (Undead)",
+          "level": 20,
+          "faction": "Both",
+          "unlocks": "Feedback / Chastise / Contingency Plan / Elune's Grace / Shadowguard / Dark Sacrifice",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-class-quests/"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Benediction / Anathema",
+          "start_quest": "The Eye of Divinity (Classic name, Molten Core drop; unverified for Forever)",
+          "reward": "Benediction / Anathema staff",
+          "difficulty": "raid",
+          "in_forever": "unverified - needs Molten Core, which is not in the December 9 raid wave",
+          "source": "https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-class-weapon-quests/"
+        },
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "Holy Bologna: What the Light Won't Tell You",
+          "reward": "Royal Seal of Eldre'Thalas (priest version) + Shen'dralar rep",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.magicgameworld.com/?p=149624"
+        }
+      ]
+    },
+    "Shaman": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Call of Fire (fire totem chain)",
+          "start_quest": "Call of Fire",
+          "level": 10,
+          "faction": "Both",
+          "races": "Orc/Tauren/Troll (Kranal Fiss, The Barrens); Dwarf (Eldrun Stormbreaker or Ingrid Dunwald, harder, bring a friend); Skyborne (Sessaria Skystride or Aarnor Galestrike, timed ritual)",
+          "reward": "Fire Totem + Totem of Charged Flames (relic: -5 mana on Flame Shock and Lightning Bolt) + Searing Totem",
+          "why": "Gives your first relic-slot totem on top of the Fire Totem",
+          "solo": "solo",
+          "forever": "changed in Forever: Totem of Charged Flames relic added; Dwarf and Skyborne versions are new",
+          "source": "https://www.wowhead.com/forever/quest=1527"
+        },
+        {
+          "quest_or_chain": "The Tempest's Weapons (Call of Air, Elemental Aid, Eyes on the Sky (Horde only), Storm, Earth, and Fire, Heed My Call, The Tempest's Weapons)",
+          "start_quest": "Elemental Aid",
+          "level": 30,
+          "faction": "Both",
+          "races": "",
+          "reward": "Choose Rage of the Storm (two-hand mace, +10% Stormstrike damage), Lightning's Grasp (main-hand fist, +46 spell power, +1% Lightning Bolt crit) or Tidebringer's Claw (main-hand fist, +86 healing, +2% Healing Wave crit); Alliance also gets Elementalist's Guard (shield), Horde got Rune of the Storm in beta",
+          "why": "Spec-specific item level 40 weapon; kill Charlga Razorflank in Razorfen Kraul, farm 20 Twisted Totems in four zones, then the Thousand Needles event",
+          "solo": "elite",
+          "forever": "new in Forever (Heed My Call event has elite waves and the elite Ravaging Tempest; group of 3-5 advised; Rage of the Storm stats changed several times in beta, check tooltip)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-shaman-weapon-quest/"
+        },
+        {
+          "quest_or_chain": "Sunken Temple shaman quest",
+          "start_quest": "Elemental Mastery",
+          "level": 52,
+          "faction": "Horde",
+          "races": "Orc, Tauren, Troll, Windshaper Skyborne (Alliance shamans have no temple quest per Conquest Capped)",
+          "reward": "Da Voodoo: Azurite Fists (mail hands), Enamored Water Spirit (shaman trinket), Wildstaff (staff)",
+          "why": "Rare gloves, trinket or caster staff; needs two of each Voodoo Feather",
+          "solo": "group",
+          "forever": "changed in Forever: 12,400 XP; all-three-items vs pick-one is unverified",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "Skyborne shaman starter",
+          "start_quest": "Embracing the Elements",
+          "level": 2,
+          "faction": "Horde",
+          "unlocks": "Leads to Call of Earth (Zephras Isle) with Windshaper Boro",
+          "source": "https://warcraft.wiki.gg/wiki/Embracing_the_Elements"
+        },
+        {
+          "quest_or_chain": "Call of Earth",
+          "start_quest": "Call of Earth",
+          "level": 4,
+          "faction": "Both",
+          "unlocks": "Earth Totem + Stoneskin Totem (Orc/Troll: Canaga Earthcaller; Tauren: Seer Ravenfeather; Dwarf: Teo Hammerstorm; Skyborne: Windshaper Boro, opens at 3)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-shaman-totem-quests/"
+        },
+        {
+          "quest_or_chain": "Call of Fire",
+          "start_quest": "Call of Fire",
+          "level": 10,
+          "faction": "Both",
+          "unlocks": "Fire Totem + Searing Totem",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-shaman-totem-quests/"
+        },
+        {
+          "quest_or_chain": "Call of Water",
+          "start_quest": "Call of Water",
+          "level": 20,
+          "faction": "Both",
+          "unlocks": "Water Totem + Healing Stream Totem (Horde: Islen Waterseer, 3 waterskins; Dwarf: nine-quest chain via Norric Lochthane across five zones; no Skyborne version in beta data). Takes 1-2 hours of travel",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-shaman-totem-quests/"
+        },
+        {
+          "quest_or_chain": "Call of Air",
+          "start_quest": "Call of Air",
+          "level": 30,
+          "faction": "Both",
+          "unlocks": "Air Totem (no spell) and opens The Tempest's Weapons; Horde: Searn Firewarder / Xanis Flameweaver to Prate Cloudseer; Dwarf: Eldrun Stormbreaker to Veyric Thunderhame",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-shaman-totem-quests/"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "Frost Shock and You",
+          "reward": "Royal Seal of Eldre'Thalas (shaman version) + 200 Shen'dralar",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.wowhead.com/forever/quest=7505"
+        }
+      ]
+    },
+    "Mage": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Level 10 mage quest",
+          "start_quest": "Speak with Jennea then Mirror Lake (Human); Ju-Ju Heaps (Orc/Troll); other races have their own version (names unverified)",
+          "level": 10,
+          "faction": "Both",
+          "races": "all non-Skyborne mages",
+          "reward": "Choose Ley Orb (off-hand, use: restore mana) or Ley Staff",
+          "why": "Free off-hand or staff at 10",
+          "solo": "solo",
+          "forever": "classic unchanged (Mirror Lake is a Classic quest kept in Forever)",
+          "source": "https://warcraft.wiki.gg/wiki/Mirror_Lake_(quest)"
+        },
+        {
+          "quest_or_chain": "Skyborne mage level 10 quest",
+          "start_quest": "Boughs in the Wind",
+          "level": 10,
+          "faction": "Alliance",
+          "races": "Skyborne (High Order; Skyborne mages are Alliance only)",
+          "reward": "Windbough Wand and Elixir of Minor Spirit",
+          "why": "Free wand for Skyborne mages instead of Ley Orb/Ley Staff",
+          "solo": "solo",
+          "forever": "new in Forever (from Icy Veins search excerpt only; page not directly readable, so unverified)",
+          "source": "https://www.icy-veins.com/wow-forever/mage-class-quests"
+        },
+        {
+          "quest_or_chain": "Level 15 robe",
+          "start_quest": "Manaweave Robe (Alliance, Wynne Larson, Stormwind); Spellfire Robes (Horde, Josef Gregorian, Undercity Magic Quarter)",
+          "level": 15,
+          "faction": "Both",
+          "races": "",
+          "reward": "Manaweave Robe (Alliance) or Lesser Spellfire Robes (Horde)",
+          "why": "Free chest upgrade at 15",
+          "solo": "solo",
+          "forever": "classic unchanged (no change reported)",
+          "source": "https://www.wowhead.com/forever/quest=1941"
+        },
+        {
+          "quest_or_chain": "Level 26 robe",
+          "start_quest": "Astral Knot Garment (Alliance, includes the Tower of Ilgalar); Nether-lace Garment (Horde, across Ashenvale)",
+          "level": 26,
+          "faction": "Both",
+          "races": "",
+          "reward": "Astral Knot Robe or Astral Knot Blouse (Alliance); Nether-lace Robe or Nether-lace Tunic (Horde)",
+          "why": "Chest upgrade at 26; Tower of Ilgalar is dangerous at level",
+          "solo": "solo",
+          "forever": "classic unchanged (no change reported)",
+          "source": "https://www.icy-veins.com/wow-forever/mage-class-quests"
+        },
+        {
+          "quest_or_chain": "Mage's Wand (Journey to the Marsh, Items of Power, Rituals of Power, Mage's Wand)",
+          "start_quest": "Journey to the Marsh",
+          "level": 30,
+          "faction": "Both",
+          "races": "",
+          "reward": "Choose Icefury Wand, Ragefire Wand or Nether Force Wand (ilvl 40, +3 Int, +9 school damage, about 37 DPS)",
+          "why": "Wand that lasts into the 40s; Tabetha in Dustwallow Marsh, Scarlet Monastery Library step, Magus Tirth (Thousand Needles), Witherbark trolls (Arathi)",
+          "solo": "group",
+          "forever": "classic unchanged",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-class-weapon-quests/"
+        },
+        {
+          "quest_or_chain": "Sunken Temple mage quest (Magecraft ... Destroy Morphaz)",
+          "start_quest": "Magecraft",
+          "level": 52,
+          "faction": "Both",
+          "races": "",
+          "reward": "Glacial Spike (main-hand dagger, +60 spell power), Arcane Crystal Pendant (neck), Fire Ruby (mage trinket)",
+          "why": "Glacial Spike is a big caster dagger at 52; needs the Arcane Shard from Morphaz",
+          "solo": "group",
+          "forever": "changed in Forever: 12,400 XP; all-three-items vs pick-one is unverified",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "None - no mage leveling spell is locked behind a class quest",
+          "start_quest": "",
+          "level": 0,
+          "faction": "Both",
+          "unlocks": "Comprehend Scroll is trained at 6 (not a quest); Coldflame Saber comes from Scroll of the Saber + Blade of Silverlaine (SFK drop), not a quest",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-mage-scrolls/"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "The Arcanist's Cookbook",
+          "reward": "Royal Seal of Eldre'Thalas (mage version) + 200 Shen'dralar",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.wowhead.com/forever/quest=7500"
+        }
+      ]
+    },
+    "Warlock": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Succubus/Incubus chain (Devourer of Souls ... The Binding)",
+          "start_quest": "Devourer of Souls (Love Hurts for the Orgrimmar Incubus)",
+          "level": 20,
+          "faction": "Both",
+          "races": "",
+          "reward": "Small Soul Pouch (14 slots) plus Succubus or Incubus",
+          "why": "Free shard bag; grimoires do not carry over between the two demons",
+          "solo": "solo",
+          "forever": "changed in Forever: Incubus option added; Wish You Were Here now level 27",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "quest_or_chain": "The Orb of Soran'ruk (Doan Karhan, The Barrens)",
+          "start_quest": "The Orb of Soran'ruk",
+          "level": 20,
+          "faction": "Both",
+          "races": "",
+          "reward": "Choose Staff of Soran'ruk (rare, +14 Sta, +34 Fire and Shadow damage) or Orb of Soran'ruk (off-hand, spell damage + self-heal use)",
+          "why": "Big caster weapon for 20-30; needs 3 Soran'ruk Fragments (BFD Twilight mobs) + 1 Large Soran'ruk Fragment (SFK Shadowfang Darksouls); take the Orb if you use a one-hander",
+          "solo": "group",
+          "forever": "changed in Forever: staff now rare with +14 Sta and +34 Fire/Shadow (Classic: uncommon, +9)",
+          "source": "https://www.wowhead.com/forever/quest=1740"
+        },
+        {
+          "quest_or_chain": "Felhunter chain (Seeking Strahad, Tome of the Cabal x3, The Binding)",
+          "start_quest": "Seeking Strahad",
+          "level": 30,
+          "faction": "Both",
+          "races": "",
+          "reward": "Box of Souls (16 slots) plus Felhunter",
+          "why": "Bigger shard bag and the Felhunter",
+          "solo": "solo",
+          "forever": "classic unchanged",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "quest_or_chain": "Orb of Orahil chain (Knowledge of the Orb of Orahil, Fragments of the Orb of Orahil, Shard of an Infernal / Shard of a Felhound, Cleansing of the Orb of Orahil, Returning the Cleansed Orb, The Completed Orb of Dar'Orahil / Noh'Orahil)",
+          "start_quest": "Knowledge of the Orb of Orahil",
+          "level": 35,
+          "faction": "Both",
+          "races": "city suffix: Ironforge/Stormwind (Alliance), Orgrimmar/Undercity (Horde)",
+          "reward": "Dar'Orahil version: choose Staff of Dar'Orahil (ilvl 40, +13 Int, +9 Sta, Classic stats) or Orb of Dar'Orahil (off-hand); Horde gets the Noh'Orahil equivalent (Horde item names unverified)",
+          "why": "Free caster staff/off-hand at 40; Cleansing step is marked as a group quest",
+          "solo": "group",
+          "forever": "classic unchanged (removed from retail in 4.0.3a, still in Classic and Forever; final quest exists on Wowhead Forever)",
+          "source": "https://warcraft.wiki.gg/wiki/The_Completed_Orb_of_Dar%27Orahil"
+        },
+        {
+          "quest_or_chain": "Inferno (What Niby Commands, Flawless Fel Essence, Kroshius' Infernal Core)",
+          "start_quest": "What Niby Commands",
+          "level": 50,
+          "faction": "Both",
+          "races": "",
+          "reward": "Shard of the Green Flame (trinket) plus Inferno",
+          "why": "Trinket and a core spell; Kroshius is a level 55 elite",
+          "solo": "elite",
+          "forever": "classic unchanged",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "quest_or_chain": "Sunken Temple warlock quest (An Imp's Request ... Trolls of a Feather)",
+          "start_quest": "An Imp's Request",
+          "level": 52,
+          "faction": "Both",
+          "races": "",
+          "reward": "Soul Harvester (staff, +73 Shadow), Abyss Shard (warlock trinket), Robes of Servitude (cloth chest)",
+          "why": "Soul Harvester is a strong shadow staff at 52; needs two of each Voodoo Feather",
+          "solo": "group",
+          "forever": "changed in Forever: 12,400 XP; Icy Veins says all three items are granted, Conquest Capped says pick one (unverified)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "Imp",
+          "start_quest": "Tainted Letter / Tainted Memorandum / Tainted Parchment / Tainted Tablet (Troll, new) / Tainted Scroll (by race)",
+          "level": 1,
+          "faction": "Both",
+          "unlocks": "Summon Imp (now a level 1-4 quest, not known at level 1)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "quest_or_chain": "Voidwalker",
+          "start_quest": "Gakin's Summons (Alliance); Halgar's Summons (Undercity); Gan'rul's Summons (Orgrimmar)",
+          "level": 10,
+          "faction": "Both",
+          "unlocks": "Summon Voidwalker (Orgrimmar Skull Rock version easier with a friend)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "quest_or_chain": "Succubus or Incubus",
+          "start_quest": "Devourer of Souls",
+          "level": 20,
+          "faction": "Both",
+          "unlocks": "Summon Succubus or Summon Incubus",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "quest_or_chain": "Felhunter",
+          "start_quest": "Seeking Strahad",
+          "level": 30,
+          "faction": "Both",
+          "unlocks": "Summon Felhunter",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "quest_or_chain": "Felsteed",
+          "start_quest": "Summon Felsteed",
+          "level": 40,
+          "faction": "Both",
+          "unlocks": "Summon Felsteed, free; warlocks skip the 100 gold riding cost (Icy Veins news)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "quest_or_chain": "Inferno",
+          "start_quest": "What Niby Commands",
+          "level": 50,
+          "faction": "Both",
+          "unlocks": "Inferno",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Ritual of Doom (The Prison's Bindings, The Prison's Casing, Suppression)",
+          "start_quest": "The Prison's Bindings",
+          "reward": "Ritual of Doom + Tome of Sacrifice",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/"
+        },
+        {
+          "chain": "Epic mount: Summon Dreadsteed (Mor'zul Bloodbringer, Burning Steppes; Scholomance; Gorzeeki materials; Dire Maul West ritual)",
+          "start_quest": "Chain starts with Mor'zul Bloodbringer at the Altar of Storms; first listed step Rage of Blood (order unverified)",
+          "reward": "Summon Dreadsteed",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.wowhead.com/forever/quest=7631"
+        },
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "Harnessing Shadows",
+          "reward": "Royal Seal of Eldre'Thalas (warlock version) + Shen'dralar rep",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.magicgameworld.com/?p=149624"
+        }
+      ]
+    },
+    "Druid": {
+      "item_quests": [
+        {
+          "quest_or_chain": "Aquatic Form (A Lesson to Learn, Trial of the Lake, Trial of the Sea Lion, Aquatic Form)",
+          "start_quest": "A Lesson to Learn",
+          "level": 16,
+          "faction": "Both",
+          "races": "",
+          "reward": "Choose Idol of Shifting Tides (idol: -40 mana on every shapeshift) or Aquarius Belt",
+          "why": "Your first idol, and you need Aquatic Form anyway",
+          "solo": "solo",
+          "forever": "changed in Forever: Idol of Shifting Tides added as a reward option",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-druid-forms/"
+        },
+        {
+          "quest_or_chain": "Sunken Temple druid quest (Torwa Pathfinder ... A Better Ingredient)",
+          "start_quest": "Torwa Pathfinder (from any druid trainer; first quest name unverified)",
+          "level": 52,
+          "faction": "Both",
+          "races": "",
+          "reward": "Grizzled Pelt (leather chest, feral), Forest's Embrace (leather chest, healing), Moonshadow Stave (staff, +60 spell power)",
+          "why": "Rare chest or staff for each spec; needs the Putrid Vine from Atal'alarion",
+          "solo": "group",
+          "forever": "changed in Forever: 12,400 XP; Icy Veins says all three are granted, Conquest Capped says pick one (unverified)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/"
+        }
+      ],
+      "ability_quests": [
+        {
+          "quest_or_chain": "Bear Form",
+          "start_quest": "Heeding the Call (Night Elf / Tauren); The Great Ursera Spirit (Skyborne, ends with Strength and Mercy)",
+          "level": 10,
+          "faction": "Both",
+          "unlocks": "Bear Form (defeat Lunaclaw at the Moonkin Stone; Skyborne kill Ur'endra in Shen'dar Highlands)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-druid-forms/"
+        },
+        {
+          "quest_or_chain": "Cure Poison (Lessons Anew, The Principal Source, Gathering the Cure, Curing the Sick, Power over Poison)",
+          "start_quest": "Lessons Anew",
+          "level": 14,
+          "faction": "Both",
+          "unlocks": "Cure Poison (no item reward); optional, Abolish Poison at 26 is better in Classic",
+          "source": "https://www.wowhead.com/forever/quest=6125"
+        },
+        {
+          "quest_or_chain": "Aquatic Form",
+          "start_quest": "A Lesson to Learn",
+          "level": 16,
+          "faction": "Both",
+          "unlocks": "Aquatic Form",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-druid-forms/"
+        },
+        {
+          "quest_or_chain": "Cat Form (Moonglade, three relics from the Stormrage Barrow Dens)",
+          "start_quest": "The Great Cat Spirit (Night Elf / Tauren); The Great Windborne Cat Spirit (Skyborne)",
+          "level": 20,
+          "faction": "Both",
+          "unlocks": "Cat Form, Prowl, Claw, Shred, Rip (Cat Form was a trainer spell in Classic)",
+          "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-druid-forms/"
+        }
+      ],
+      "level60": [
+        {
+          "chain": "Dire Maul class book",
+          "start_quest": "The Emerald Dream",
+          "reward": "Royal Seal of Eldre'Thalas (druid version) + Shen'dralar rep",
+          "difficulty": "dungeon",
+          "in_forever": true,
+          "source": "https://www.magicgameworld.com/?p=149624"
+        }
+      ]
+    }
+  },
+  "notes": [
+    "Forever adds whole new class questlines for new race/class pairs: Undead paladins (Bandarion Keep, Tirisfal: Holy Light, Redemption, weapons, shield, Wolfsbane, level 40 mount), Dwarf shamans (four totem chains through Dun Morogh, Loch Modan, Wetlands, Westfall), Skyborne classes on Zephras Isle (warrior, druid, hunter, mage, rogue, shaman), Troll warlocks (Tainted Tablet), and new Human/Gnome priest racial spells.",
+    "Cat Form is now a level 20 class quest chain in Moonglade (trainer spell in Classic). Summon Imp now comes from a level 1-4 quest.",
+    "New reward items on old quests: Totem of Charged Flames relic on Call of Fire (relic slot exists), Idol of Shifting Tides on Aquatic Form, Holy Forgefire proc on Verigan's Fist, Whirlwind weapons +1 Str/+1 Sta and all three transmogs unlocked, Staff of Soran'ruk upgraded to rare +34 spell damage, rogue Ruby-Adorned Blade chain (reworked from Season of Discovery).",
+    "New weapon chains: Wolfsbane (Undead paladin, 18-20) and The Tempest's Weapons (shaman, 30). Both need dungeons or an elite group event.",
+    "Sunken Temple class quests (level 52, start at 50) give 12,400 XP. Sources disagree on rewards: Icy Veins and Wowhead Forever data ('You will also receive' lists all three) say all three items are granted; Conquest Capped says pick one. Treat as unverified. Horde (Undead) paladins and Alliance (Dwarf) shamans have no temple quest per Conquest Capped and forum reports.",
+    "Paladins (Summon Warhorse) and warlocks (Summon Felsteed) skip the 100 gold riding cost through their level 40 class mount (Icy Veins news).",
+    "Quest items use progressive loot and party loot gives each member a copy (warlock quests, Conquest Capped); Eye of the Tempest was made multi-drop in beta.",
+    "Raid timing: Barrow Deeps (10), Hyjal Summit (20) and Onyxia's Lair (40) unlock December 9, 2026; Molten Core has no date. So Quel'Serrar (Onyxia) becomes possible December 9, but Rhok'delar and Benediction (Molten Core starters) are not yet obtainable. No Forever source mentions Zul'Gurub / Zandalar Paragons of Power.",
+    "Dire Maul, Scholomance and Stratholme are in Forever; Dire Maul class books (Royal Seal of Eldre'Thalas, 200 Shen'dralar) are on Wowhead Forever for mage, paladin and shaman; the others are listed by a Forever guide. Paladin and shaman book availability for the new factions is unverified.",
+    "Some quest names in the brief are Season of Discovery quests per warcraft.wiki.gg, not confirmed in Forever: Legacy of Valor (warrior), Brought to Heel (hunter), A Lesson in Literacy (mage), Biding Our Time (rogue, SoD reward Filcher's Cowl). The Talisman of Kazdor is listed by the wiki as SoD and Forever, level 50 rogue, solo in Zul'Farrak, rewarding only XP and 75 silver. Master of Disguise was not found as a quest. Syndicate Sabotage gives Ravenholdt rep only, no item.",
+    "Hunters, priests and druids have no class weapon quest before level 52 (Conquest Capped).",
+    "Icy Veins pages return HTTP 403 to direct fetch; Icy Veins facts here come from search excerpts only (marked). Most beta-era guides warn stats can still change; check tooltips."
+  ],
+  "sources": [
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-class-quests/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-class-weapon-quests/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-warrior-weapon-quest/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-shaman-weapon-quest/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-paladin-weapon-quest/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-rogue-weapon-quest/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-warlock-quests/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-druid-forms/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-shaman-totem-quests/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-hunter-pets/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-mage-scrolls/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-sunken-temple-class-quests/",
+    "https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-class-weapon-quests/",
+    "https://expcarry.com/wow-forever-class-weapon-quests",
+    "https://lfcarry.com/guides/wow-forever-ravenholdt",
+    "https://www.magicgameworld.com/?p=149624",
+    "https://www.icy-veins.com/wow-forever/warrior-class-quests",
+    "https://www.icy-veins.com/wow-forever/paladin-class-quests",
+    "https://www.icy-veins.com/wow-forever/priest-class-quests",
+    "https://www.icy-veins.com/wow-forever/rogue-class-quests",
+    "https://www.icy-veins.com/wow-forever/mage-class-quests",
+    "https://www.icy-veins.com/wow-forever/hunter-class-quests",
+    "https://www.icy-veins.com/wow-forever/druid-class-quests",
+    "https://www.icy-veins.com/wow-forever/warlock-class-quests",
+    "https://www.icy-veins.com/wow-forever/sunken-temple-class-quest-guide",
+    "https://www.icy-veins.com/wow-forever/news/two-wow-forever-classes-can-skip-the-100-gold-riding-cost/",
+    "https://worldofwarcraft.blizzard.com/news/24303009",
+    "https://mobalytics.gg/wow-forever/guides/dungeon-raid-map",
+    "https://www.wowhead.com/forever/quest=94003",
+    "https://www.wowhead.com/forever/quest=98601",
+    "https://www.wowhead.com/forever/quest=1527",
+    "https://www.wowhead.com/forever/quest=1719",
+    "https://www.wowhead.com/forever/quest=1740",
+    "https://www.wowhead.com/forever/quest=1941",
+    "https://www.wowhead.com/forever/quest=4964",
+    "https://www.wowhead.com/forever/quest=5650",
+    "https://www.wowhead.com/forever/quest=6125",
+    "https://www.wowhead.com/forever/quest=7500",
+    "https://www.wowhead.com/forever/quest=7501",
+    "https://www.wowhead.com/forever/quest=7505",
+    "https://www.wowhead.com/forever/quest=7508",
+    "https://www.wowhead.com/forever/quest=7631",
+    "https://www.wowhead.com/forever/quest=7633",
+    "https://www.wowhead.com/forever/quest=7647",
+    "https://www.wowhead.com/forever/quest=8418",
+    "https://www.wowhead.com/forever/quest=94773",
+    "https://www.wowhead.com/forever/quest=96779",
+    "https://warcraft.wiki.gg/wiki/A_Difficult_Path_(Forever)",
+    "https://warcraft.wiki.gg/wiki/Rediscovering_the_Light",
+    "https://warcraft.wiki.gg/wiki/Murlocs_at_the_Gates",
+    "https://warcraft.wiki.gg/wiki/Making_Repairs_(Forever)",
+    "https://warcraft.wiki.gg/wiki/A_Lesson_in_Divinity_(7)",
+    "https://warcraft.wiki.gg/wiki/A_Paladin%27s_Steed",
+    "https://warcraft.wiki.gg/wiki/Weapons_of_Elunite",
+    "https://warcraft.wiki.gg/wiki/Forged_Steel",
+    "https://warcraft.wiki.gg/wiki/Mirror_Lake_(quest)",
+    "https://warcraft.wiki.gg/wiki/The_Completed_Orb_of_Dar%27Orahil",
+    "https://warcraft.wiki.gg/wiki/Staff_of_Dar%27Orahil",
+    "https://warcraft.wiki.gg/wiki/Embracing_the_Elements",
+    "https://warcraft.wiki.gg/wiki/A_Student_of_Nature",
+    "https://warcraft.wiki.gg/wiki/The_Talisman_of_Kazdor",
+    "https://warcraft.wiki.gg/wiki/Legacy_of_Valor",
+    "https://warcraft.wiki.gg/wiki/Brought_to_Heel",
+    "https://warcraft.wiki.gg/wiki/A_Lesson_in_Literacy",
+    "https://warcraft.wiki.gg/wiki/Biding_Our_Time",
+    "https://warcraft.wiki.gg/wiki/Paragons_of_Power"
+  ]
+}

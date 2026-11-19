@@ -1,0 +1,405 @@
+{
+  "_meta": {
+    "compiled": "2026-11-19",
+    "notes": [
+      "Facts only from the sources listed. Where sources disagree, the conflict is written into the field.",
+      "Abbreviations: WT = warcrafttavern.com, WSP = wowsod.pro, FC = foreverchanges.pro, WIKI = warcraft.wiki.gg, LFC = lfcarry.com, EXP = expcarry.com, WOWGG = wow.gg, GF = gfinityesports.com.",
+      "Warcraft Tavern level ranges are the in-game Looking For Group tool brackets (WT says so). They run 2 levels wider than the Blizzard blog ranges for most new dungeons. The Blizzard blog ranges are listed first.",
+      "min_level is the 'required level' to accept the quest. Most sources give it, but they sometimes disagree by 1. XP numbers differ a lot between sources (base vs scaled), so they are left out on purpose.",
+      "Wowhead /forever/ guide pages render client-side and came back empty through WebFetch. Only Wowhead quest pages and the Blizzard post mirror were readable."
+    ]
+  },
+  "new_dungeons": [
+    {
+      "name": "The Hall of Thanes",
+      "levels": "13-18 (Blizzard blog, WSP, FC, WIKI). 13-20 per WT (LFG tool). Quests from level 9-10.",
+      "entrance": {
+        "zone": "Ironforge (Dun Morogh), beneath the High Seat",
+        "coords": "43.5,52.0 (WT, Ironforge map); WIKI gives 44.0,51.8",
+        "how": "From the Great Forge go into the High Seat (King Magni's hall). Turn left (by Deliana, per WIKI) into a spiderweb-covered passage and go downstairs to the instance portal. WT warns that falling there kills you. Alliance can take the Deeprun Tram from Stormwind. Horde has to go overland (WIKI route: Undercity, Silverpine, Hillsbrad, Arathi, Wetlands, Loch Modan, Dun Morogh), and WIKI suggests taking gear off before reaching the Ironforge guards."
+      },
+      "attunement": [
+        {"quest": "None to enter", "giver": "", "where": "", "note": "No key or attunement (WT, LFC, WIKI)."},
+        {"quest": "A Visitor to Dun Morogh", "giver": "not named", "where": "Dun Morogh", "note": "Optional breadcrumb [13] (WIKI). Starts the outdoor chain that leads to Old Ironforge Incursion."},
+        {"quest": "Farsen's Watch", "giver": "not named (chain centers on Earthseer Farsen)", "where": "Dun Morogh", "note": "[13] (WIKI). WIKI says the main line starts in Kharanos."},
+        {"quest": "Nip 'Em in the Bud", "giver": "Earthseer Farsen (implied)", "where": "Gol'Bolar Quarry, Dun Morogh", "note": "Kill 10 Dark Iron Spies around 76.7,60.7. One spy drops the Dark Iron Map, which starts a breadcrumb back to Farsen (WT)."},
+        {"quest": "Underground Map", "giver": "Dark Iron Map (item)", "where": "Dun Morogh", "note": "[15]. Part 1 of the series; Old Ironforge Incursion is part 2 (Wowhead quest 96393)."}
+      ],
+      "quests": [
+        {"name": "Important Heirlooms", "giver": "Thom Filch", "where": "Ironforge, just outside the dungeon by the bridge (WSP gives 32.4,44.8)", "min_level": 10, "faction": "Alliance", "objective": "Collect 8 Dwarven Heirlooms inside the dungeon, return to Thom Filch.", "reward": "Choice: Dwarven Tome or Tomb Robber's Gloves; 7s; +100 Gadgetzan rep (WSP). Faction conflict: WT and WIKI say Alliance, FC and EXP say Both."},
+        {"name": "The Restless Dead", "giver": "Afadra Dunwall", "where": "Ironforge (WSP 33.2,47.4); WT says up the stairs from the dungeon entrance", "min_level": 10, "faction": "Alliance", "objective": "Kill 15 Enraged Apparitions and 10 Tormented Souls inside.", "reward": "Choice: Dusty Belt or Cryptwalker Bracers; 7s; +100 Ironforge rep."},
+        {"name": "Old Ironforge Incursion", "giver": "Earthseer Farsen", "where": "Gol'Bolar Quarry, Dun Morogh (64.8,58.5)", "min_level": 9, "faction": "Alliance", "objective": "Loot the Head of Durgen Dirgehammer (final boss), deliver it to King Magni Bronzebeard in Ironforge. Needs the Nip 'Em in the Bud / Underground Map chain first.", "reward": "Choice: Calibrated Blunderbuss, Ironforge Greathammer or Deepblaze; 8s; +100 Ironforge, +100 Gnomeregan Exiles (Wowhead, WSP)."},
+        {"name": "An Ancient Grudge", "giver": "Ghostly Attendant", "where": "Inside the dungeon, second room (Anvilmar's Rest)", "min_level": 10, "faction": "Both", "objective": "Kill Faldrim Anvilmar (first boss). Turn in to the Ghostly Attendant on the way out.", "reward": "Choice: Catacomb Cloak or Deepgrave Trousers. FC, WIKI and EXP say Both/neutral; WT lists it Alliance-only."},
+        {"name": "The Treaty of Understanding", "giver": "Treaty of Understanding (tablet object)", "where": "Behind a vault door in the final boss room (Reliquary of Kings)", "min_level": 9, "faction": "Alliance", "objective": "Deliver the Treaty of Understanding to King Magni Bronzebeard in Ironforge. Not shareable.", "reward": "16s (FC); no item listed."}
+      ],
+      "bosses": ["Faldrim Anvilmar", "Magmatus (arrives with a Dark Iron Summoner; beta client named it Infurnus per LFC)", "Plunder", "Durgen Dirgehammer (final)"],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/hall-of-thanes/",
+        "https://www.warcrafttavern.com/forever/guides/hall-of-thanes-quests/",
+        "https://wowsod.pro/wow-forever/dungeon-quests/hall-of-thanes",
+        "https://foreverchanges.pro/dungeons/hall-of-thanes",
+        "https://warcraft.wiki.gg/wiki/The_Hall_of_Thanes",
+        "https://www.wowhead.com/forever/quest=96393/old-ironforge-incursion",
+        "https://expcarry.com/wow-forever-dungeon-quests",
+        "https://www.wowhead.com/forever/blue-tracker/news/us/explore-the-new-dungeons-of-world-of-warcraft-forever-world-of-warcraft-blizzard-24301455"
+      ]
+    },
+    {
+      "name": "Ruins of Lordaeron",
+      "levels": "15-20 (Blizzard blog, WSP, LFC). 15-22 per WT (LFG tool) and the WIKI infobox. Every quest needs level 15 (WSP); WT gives 16 for some. EXP: Blizzard dev notes set the quest entry levels to 15.",
+      "entrance": {
+        "zone": "Tirisfal Glades (uninstanced Ruins of Lordaeron, above the Undercity)",
+        "coords": "72.4,11.6 (WT); WIKI gives 70.4,11.4",
+        "how": "Go to the ruined city over the Undercity. Before entering the keep, look left and climb the stairs (WT). WIKI puts the instance line near the city entrance from Brill. Horde: zeppelin Orgrimmar to Brill. Alliance: boat to Menethil, then Southshore, north through Hillsbrad and Silverpine (or swim Lordamere Lake) into Tirisfal. Entering the Undercity area flags Alliance for PvP."
+      },
+      "attunement": [
+        {"quest": "None to enter", "giver": "", "where": "", "note": "No key or attunement listed."},
+        {"quest": "A Recipe For Death (3-part chain)", "giver": "Apothecary Renferrel", "where": "The Sepulcher, Silverpine Forest (42.8,40.9)", "note": "Prerequisite for The New Plague (WT, WSP, WIKI)."},
+        {"quest": "Rear Guard Patrol (2 parts)", "giver": "Deathguard Linnea", "where": "Tirisfal Glades, next to Deathguard Kristof", "note": "Prerequisite for The Wrath of Rath'mael (WT, WIKI)."}
+      ],
+      "quests": [
+        {"name": "Light's Justice", "giver": "Morbin Lightbane", "where": "Royal Quarter, Undercity (57.8,89.7)", "min_level": 15, "faction": "Horde", "objective": "Collect 25 Intact Limbs from undead inside.", "reward": "Choice: The Stitcher or Spare Part Bindings; +150 Undercity."},
+        {"name": "The New Plague", "giver": "Theodore Griffs", "where": "The Apothecarium, Undercity (46.7,71.9)", "min_level": 15, "faction": "Horde", "objective": "Loot a Highly Toxic Strain from Witherfang. Needs the A Recipe For Death chain first.", "reward": "Choice: Plaguefang or Blight Gloves. WT gives min level 16."},
+        {"name": "The Wrath of Rath'mael", "giver": "Deathguard Kristof", "where": "Between Brill and Undercity, Tirisfal Glades (65.2,60.1)", "min_level": 15, "faction": "Horde", "objective": "Kill Rath'mael (final boss). Needs Rear Guard Patrol first.", "reward": "Choice: Forsaken Greataxe or Gnarled Necromancer's Staff; +150 Undercity."},
+        {"name": "A Frightened Request", "giver": "Tabetha Heartweaver (spelled Tabitha on WSP and WIKI)", "where": "The Sepulcher, Silverpine Forest (44.6,42.9)", "min_level": 15, "faction": "Horde", "objective": "Find the body of Edward Heartweaver inside.", "reward": "Choice: Edward's Knife or Tabitha's Cuffs; +150 Undercity."},
+        {"name": "Unending Torment", "giver": "Abominable Head (dropped by The Baron)", "where": "Inside the dungeon", "min_level": 15, "faction": "Horde", "objective": "Multi-part chain (5 parts per WIKI): bring the head to Master Apothecary Faranell in the Apothecarium, use Faranell's Hissing Serum on the Unfinished Abomination, then gather Blisterweed, Toxic Skullcap (Tawny Grisette) and Essence of Agony (Ezekiel Graves) for Faranell.", "reward": "Not confirmed. WIKI lists Grave Shroud / Monstrous Cleaver / Slain Baron's Signet, the same items as the Alliance Abominable Creatures, so treat as unverified. Not shareable."},
+        {"name": "Crest of Lordaeron", "giver": "Crest of Lordaeron (object, one of five random spots inside)", "where": "Inside the dungeon", "min_level": 15, "faction": "Horde", "objective": "Deliver the Crest to Oran Snakewrithe, Magic Quarter, Undercity (73.3,32.6).", "reward": "Small Sack of Gems."},
+        {"name": "Abominable Creatures", "giver": "Captain Truman", "where": "Inside the dungeon, on the left at the entrance", "min_level": 15, "faction": "Alliance", "objective": "Loot the Head of The Baron, return it to Captain Truman.", "reward": "Choice: Monstrous Cleaver, Grave Shroud or Slain Baron's Signet."},
+        {"name": "Bloodied Insignia", "giver": "Bloodied Insignia (drops from undead inside)", "where": "Inside the dungeon", "min_level": 15, "faction": "Alliance", "objective": "Collect 10 Bloodied Insignias, turn in to General Marcus Jonathan in Stormwind (WT body text: Valley of Heroes 69.0,82.8).", "reward": "Choice: Duty Bound Leggings or Remembrance Armor."},
+        {"name": "Remember That I Love You", "giver": "Crumpled Paper beside Edward Heartweaver's body", "where": "Inside, in the graveyard where Rath'mael is", "min_level": 15, "faction": "Alliance", "objective": "Deliver the Blood-Stained Letter to Orphan Matron Nightingale, Cathedral Square, Stormwind (56.2,54.0). It has a follow-up of the same name.", "reward": "Tarnished Locket (from part 2, WIKI); +150 Undercity listed by WSP."},
+        {"name": "Crest of Lordaeron", "giver": "Crest of Lordaeron (object, one of five random spots inside)", "where": "Inside the dungeon", "min_level": 15, "faction": "Alliance", "objective": "Deliver the Crest to Lady Dena Kennedy, Royal Gallery, Stormwind Keep (69.2,27.7).", "reward": "Small Sack of Gems."}
+      ],
+      "bosses": ["Witherfang", "The Baron", "Viktor the Vile (secret gauntlet, started at a fireplace)", "The Abandoned (secret gauntlet, started at a statue)", "Bjork", "Rath'mael (final)", "Lordaeron Captain (rare, west side; hostile to Horde, Alliance cannot kill him)"],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron/",
+        "https://www.warcrafttavern.com/forever/guides/the-ruins-of-lordaeron-quests/",
+        "https://wowsod.pro/wow-forever/dungeon-quests/ruins-of-lordaeron",
+        "https://warcraft.wiki.gg/wiki/Ruins_of_Lordaeron_(instance)",
+        "https://expcarry.com/wow-forever-dungeon-quests",
+        "https://www.wowhead.com/forever/blue-tracker/news/us/explore-the-new-dungeons-of-world-of-warcraft-forever-world-of-warcraft-blizzard-24301455"
+      ]
+    },
+    {
+      "name": "Excavation Site: Wetlands",
+      "levels": "Sources disagree. 24-29: Blizzard blog, WSP, EXP. 26-31: the October 1 beta revision (classicwow.gg, FC, rpgstash). 26-33: WT (LFG tool) and method.gg. 26-32: WIKI. 24-32: mobalytics. Quests from 24; Relic Guardian is level 31.",
+      "entrance": {
+        "zone": "Wetlands (above Whelgar's Excavation, near Thelgen Rock and Dun Algaz)",
+        "coords": "48.1,56.5 (WT, dungeon entrance; the path starts about 53.9,65.4, left of Thelgen Rock). WIKI puts the summoning stone and instance line at 53.4,65.3.",
+        "how": "Take the winding path up, past non-elite spiders. Alliance: road from Menethil Harbor, or run in from Loch Modan. Horde: Silverpine, then Hillsbrad (get the Tarren Mill flight path), then Arathi (Hammerfall flight path), then south over the Thandol Span into the Wetlands to the meeting stone."
+      },
+      "attunement": [
+        {"quest": "None to enter", "giver": "", "where": "", "note": "No key or attunement."},
+        {"quest": "Dragonmaw Rumors", "giver": "Zaruk", "where": "Hammerfall, Arathi Highlands (74.4,35.6)", "note": "Horde prerequisite for Open the Maw. Sends you to the Deathstalker Agent."},
+        {"quest": "Daily Delivery -> Young Crocolisk Skins", "giver": "Einar Stonegrip (Daily Delivery)", "where": "Wetlands (49.9,39.4)", "note": "Alliance prerequisite for Highland Hides (WSP, WIKI)."},
+        {"quest": "Tramping Paws, Fire Taboo, Blisters on the Land", "giver": "Rethiel the Greenwarden", "where": "Wetlands (56.3,40.3)", "note": "Alliance prerequisites for Horrors in the Highland (WT)."},
+        {"quest": "Seeking Caitlin", "giver": "Llana (reagent vendor)", "where": "Astranaar, Ashenvale (35.0,48.5)", "note": "Optional Alliance breadcrumb to Caitlin Grassman."}
+      ],
+      "quests": [
+        {"name": "Songblade Search", "giver": "Dorin Songblade (armorer)", "where": "Lakeshire, Redridge Mountains (WT 25.6,46.6; WSP 30.8,46.6)", "min_level": 24, "faction": "Alliance", "objective": "Find Daewyn's body in a tent in the Dragonmaw area after Shadetooth. The body gives the follow-up Fallen in the Fen, turned in to Dorin.", "reward": "Fallen in the Fen: Daewyn's Girdle or Songblade Stabilizer."},
+        {"name": "Lost in the Thicket Things", "giver": "Caitlin Grassman", "where": "Menethil Harbor, Wetlands (11.9,58.8)", "min_level": 24, "faction": "Alliance", "objective": "Find Ardin Grassman on a wooden structure near the Site of the Guardian. He gives the follow-up Heartwoven, which goes back to Caitlin.", "reward": "Heartwoven: Greater Healing Potion or Mana Potion, plus Swiftness Potion / Satchel of Potions."},
+        {"name": "Highland Hides", "giver": "James Halloran", "where": "Menethil Harbor, Wetlands (8.6,55.7)", "min_level": 24, "faction": "Alliance", "objective": "Collect 4 Thicket Raptor Hides in Stalker's Thicket near Shadetooth. Needs Young Crocolisk Skins first.", "reward": "12s and small XP. WT says it is not a true dungeon quest and was bugged in beta."},
+        {"name": "Horrors in the Highland", "giver": "Rethiel the Greenwarden", "where": "Greenwarden's Grove, Wetlands (56.3,40.3)", "min_level": 24, "faction": "Alliance", "objective": "Kill the optional boss Highland Horror and loot the Horrible Rootcore.", "reward": "Choice: Ironwood Destroyer, Curl of Life or Hornbeam Heft."},
+        {"name": "Lost Relic Carry", "giver": "Titan Relic (dropped by Relic Guardian)", "where": "Inside the dungeon", "min_level": 24, "faction": "Alliance", "objective": "Bring the relic to Prospector Whelgar (38.8,52.3). The follow-up Prehistoric Prism goes to High Explorer Magellas, Hall of Explorers, Ironforge (69.4,19.1).", "reward": "Prehistoric Prism: Explorer's League Dustcover, Healer's Staff or Heavehammer; 60s."},
+        {"name": "Changing Tastes", "giver": "Borstan (meat vendor)", "where": "The Drag, Orgrimmar (57.3,53.3), 2nd floor, same hut as the cooking trainer", "min_level": 24, "faction": "Horde", "objective": "Collect 4 Thicket Raptor Meat from Thicket raptors after the first boss.", "reward": "Choice: Satchel of Potions or Serrated Raptor Claw, plus the Twice-Spiced Raptor Slice recipe."},
+        {"name": "Open the Maw", "giver": "Deathstalker Agent", "where": "Wetlands, hills above the Dragonmaw camp (51.4,59.2)", "min_level": 24, "faction": "Horde", "objective": "Kill 2 Dragonmaw Saboteurs and 4 Dragonmaw Warders and loot a Dragonmaw Dispatch (from a Dragonmaw Thaumaturgist). Needs Dragonmaw Rumors first.", "reward": "Choice: Knife-Polishing Rag or Dirt-Heavy Bracers, plus a soulbound Bloody Map (use unclear per WT)."},
+        {"name": "Elder Knowledge", "giver": "Titan Relic (dropped by Relic Guardian)", "where": "Inside the dungeon", "min_level": 24, "faction": "Horde", "objective": "Bring the relic to Bashana Runetotem, Elder Rise, Thunder Bluff (70.8,33.7). The follow-up Earthen Echo goes to Muln Earthfury on the plateau in NW Mulgore (33.4,22.5).", "reward": "Earthen Echo: Heavehammer, Healer's Staff or Furs of the Earthen Ring; 60s."}
+      ],
+      "bosses": ["Saltspine", "Shadetooth", "Highland Horror (optional; only needed for Horrors in the Highland)", "Relic Guardian (final; start it at the Archival Panel beside a column right of the boss)"],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands/",
+        "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands-quests/",
+        "https://wowsod.pro/wow-forever/dungeon-quests/excavation-site-wetlands",
+        "https://foreverchanges.pro/dungeons/excavation-site",
+        "https://warcraft.wiki.gg/wiki/Excavation_Site:_Wetlands",
+        "https://classicwow.gg/forever/dungeons",
+        "https://expcarry.com/wow-forever-dungeon-quests"
+      ]
+    },
+    {
+      "name": "City of Dalaran",
+      "levels": "28-33 (Blizzard blog, WSP, FC, LFC). 28-35 per WT (LFG tool). Quests from 24 (WSP); EXP and the An Alarming Request quest data put the Alliance attunement quests at level 30.",
+      "entrance": {
+        "zone": "Alterac Mountains (Dalaran). The sewer entrance is on the Silverpine Forest side of Lordamere Lake.",
+        "coords": "69.3,45.6 on the Silverpine Forest map (WT). The Image of Archmage Modera stands outside at 68.5,45.1.",
+        "how": "Groups enter through the sewers. At least one party member must hold the Dalaran Sewer Key, and one keyholder can open it for the group. Alliance: from Southshore. Horde: from Tarren Mill, or from the Sepulcher once access is granted. Since the October 15 build, Horde are attacked on sight inside the open-world city, and the Horde key no longer gives open-world city access (LFC)."
+      },
+      "attunement": [
+        {"quest": "An Alarming Request", "giver": "Emissary Jaques (also spelled Jacques)", "where": "Southshore town hall, Hillsbrad Foothills (48.3,60.1)", "note": "Alliance start. Requires level 30, quest level 33. Sends you to the Image of Archmage Modera outside the sewers."},
+        {"quest": "Heart of Disruption (Alliance)", "giver": "Image of Archmage Modera", "where": "Silverpine Forest (68.5,45.1)", "note": "Most guides say accepting it grants the Dalaran Sewer Key; one guide says An Alarming Request gives the key. Afterwards Modera gives Friend of the Kirin Tor: deliver the Arcane Mote to Archmage Celindra in the Violet Citadel (14.2,60.1)."},
+        {"quest": "Prison Break In", "giver": "Magus Wordeen Voidglare", "where": "Tarren Mill, Hillsbrad Foothills (61.5,20.9)", "note": "Horde step 1, level 30. Collect 4 Bloodstone pieces (Wedge, Marble, Shard, Oval) from neutral mobs in the Lordamere Internment Camp. Blizzard's post spells it Prison Break-In."},
+        {"quest": "Key to the City", "giver": "Magus Wordeen Voidglare", "where": "Tarren Mill (61.5,20.9)", "note": "Horde step 2. Take the Grimy Key from the Warden's Footlocker in Kegan Darkmar's house (guarded by Warden Belamoore). The Grimy Key is not the Sewer Key."},
+        {"quest": "Dalaran Patrols", "giver": "Magus Wordeen Voidglare", "where": "Old Dalaran Ruins (26.0,61.8)", "note": "Horde step 3. Kill 6 Dalaran Summoners and 8 Elemental Slaves."},
+        {"quest": "Blood in the Streets", "giver": "Magus Wordeen Voidglare", "where": "Ends at the Image of Archmage Modera, Silverpine Forest (68.5,45.1)", "note": "Horde step 4. Talk to the Image to complete it."},
+        {"quest": "Heart of Disruption (Horde)", "giver": "Image of Archmage Modera", "where": "Silverpine Forest (68.5,45.1)", "note": "Horde step 5. Grants the Dalaran Sewer Key. Turn in to Magus Wordeen Voidglare. Follow-up Shrewd Negotiations: deliver the Arcane Mote to Archmage Modera."},
+        {"quest": "Stone Tokens / Bracers of Binding", "giver": "Keeper Bel'varil", "where": "Tarren Mill, same house as Wordeen", "note": "Optional Horde side quests, not needed for the key (WT)."}
+      ],
+      "quests": [
+        {"name": "Power Overwhelming", "giver": "High Sorcerer Andromath", "where": "Wizard's Sanctum, Mage Quarter, Stormwind (48.9,87.7)", "min_level": 24, "faction": "Alliance", "objective": "Kill the Arcanic Enigma (mana elemental patrolling NE Dalaran near the Path of Renewal).", "reward": "Choice: Violet Sash or Runebound Gloves; 1g."},
+        {"name": "A Green Sample", "giver": "Shylamiir (herbalism trainer)", "where": "The Park, Stormwind (31.4,63.0)", "min_level": 24, "faction": "Alliance", "objective": "Collect a Fel Infused Blossom in Runeweaver Square. Magus Fansy Goodbringer drops the shield; the Fel Ancient patrols the square.", "reward": "Choice: Vine Pruner's Cloak or Thorn Protecting Girdle."},
+        {"name": "Starving Arcane", "giver": "Image of Archmage Modera", "where": "Silverpine Forest (68.5,45.1)", "min_level": 24, "faction": "Alliance", "objective": "Kill 8 Seeking Remnants, 8 Saturated Remnants and 8 Mana Echoes. Needs An Alarming Request. EXP gives min level 30.", "reward": "Choice: Fallen Guard's Pendant or Arcane Infused Rod; +100 Kirin Tor."},
+        {"name": "Heart of Disruption", "giver": "Image of Archmage Modera", "where": "Silverpine Forest (68.5,45.1)", "min_level": 24, "faction": "Alliance", "objective": "Loot the Arcane Mote from the Shade of the Archmage (final boss). Needs An Alarming Request. EXP gives min level 30.", "reward": "Choice: Spellguard Pauldrons, Renewing Footpads or Defender of Dalaran; +100 Kirin Tor. Leads to Friend of the Kirin Tor."},
+        {"name": "Source of Power", "giver": "Doctor Martin Felben", "where": "The Apothecarium, Undercity (46.4,74.3)", "min_level": 24, "faction": "Horde", "objective": "Collect 6 Cracked Sentry Cores from Fragmented Sentry golems (FC: six per player).", "reward": "Choice: Unstable Power Core or Construct Cloak."},
+        {"name": "The Grave Knight", "giver": "Melisara", "where": "Tarren Mill, Hillsbrad Foothills (62.6,20.6)", "min_level": 24, "faction": "Horde", "objective": "Kill Atrexis the Grave Knight (first boss).", "reward": "Choice: Gravewalker Boots or Undead Knight's Bracers; 1g."},
+        {"name": "Opportunistic Education", "giver": "Rexxie Copperclutch", "where": "Inside the dungeon, just right of the entrance", "min_level": 24, "faction": "Horde", "objective": "Bring back the tome The Founding of Dalaran (clear the Angry Tomes in the Atrium of Fortune; take the book sticking out of the shelves).", "reward": "Choice: Solid Gold Band or Larcenist's Belt."},
+        {"name": "Heart of Disruption", "giver": "Image of Archmage Modera", "where": "Silverpine Forest (68.5,45.1)", "min_level": 24, "faction": "Horde", "objective": "Loot the Arcane Mote from the Shade of the Archmage; turn in to Magus Wordeen Voidglare. Needs Blood in the Streets. Different quest ID from the Alliance one.", "reward": "Choice: Battle Spaulders, Enchanted Sandals or Striking Staff. Leads to Shrewd Negotiations."}
+      ],
+      "bosses": ["Atrexis the Grave Knight", "Lyn the Ignored (secret; summoned with a Tome of Dalaran in the square chamber near the sewer exit)", "Mana Devourer", "Arcane Anomaly", "Fel Ancient", "Arcanic Enigma", "Unstable Sentry (LFC calls it Unstable Sentinel)", "Shade of the Archmage (final)"],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/city-of-dalaran/",
+        "https://www.warcrafttavern.com/forever/guides/city-of-dalaran-quests/",
+        "https://wowsod.pro/wow-forever/dungeon-quests/city-of-dalaran",
+        "https://lfcarry.com/guides/wow-forever-dungeons",
+        "https://expcarry.com/wow-forever-dungeon-quests",
+        "https://www.wowhead.com/forever/blue-tracker/news/us/explore-the-new-dungeons-of-world-of-warcraft-forever-world-of-warcraft-blizzard-24301455"
+      ]
+    },
+    {
+      "name": "The Drowned City",
+      "levels": "35-40 (Blizzard blog, WSP, LFC). 35-42 per WT (LFG tool) and the WIKI infobox. Quests from 30; final boss level 40.",
+      "entrance": {
+        "zone": "Stranglethorn Vale (underwater, off the west coast)",
+        "coords": "21.4,27.9 (WT); LFC 21.4,27.8; WIKI 21,28",
+        "how": "Underwater cavern in the Sunken Hollow, past The Vile Reef near the island with the water elementals, with a large stone tablet beside it. WIKI: south of the Haunted Isle, due west of Grom'gol. Swim west from Grom'gol or north from Booty Bay. Bring water breathing. Nearest flight paths: Booty Bay (neutral) and Grom'gol (Horde)."
+      },
+      "attunement": [
+        {"quest": "None to enter", "giver": "", "where": "", "note": "No key or attunement."},
+        {"quest": "The Second Rebellion & Bad Medicine -> Troll Witchery", "giver": "not named (Rebel Camp per WIKI)", "where": "Stranglethorn Vale, Rebel Camp", "note": "Alliance chain leading to Take Two With Water (WIKI). EXP ties Magics of the Drowned City to the same chain."},
+        {"quest": "The Vile Reef", "giver": "not named", "where": "Grom'gol Base Camp", "note": "Horde prerequisite for The Drowned City (EXP, LFC)."},
+        {"quest": "Enemies in the Water", "giver": "not named", "where": "Grom'gol Base Camp", "note": "Horde prerequisite for The Only Good Brinescale... (WIKI chain: The Drowned City -> Enemies in the Water -> The Only Good Brinescale...)."}
+      ],
+      "quests": [
+        {"name": "Magics of the Drowned City", "giver": "Loremaster Dibbs", "where": "Southshore, Hillsbrad Foothills (50.4,57.0)", "min_level": 30, "faction": "Alliance", "objective": "Collect 5 I'lalai Fetish.", "reward": "No item listed; +100 Stormwind."},
+        {"name": "Take Two With Water", "giver": "Loremaster Dibbs", "where": "Southshore (50.4,57.0)", "min_level": 30, "faction": "Alliance", "objective": "Collect the First, Second, Third and Fourth Tablets of I'lalai.", "reward": "1g 50s; +100 Stormwind."},
+        {"name": "Ancient Gurubashi Secrets", "giver": "Archmage Timear", "where": "Dalaran, Alterac Mountains (15.4,73.8)", "min_level": 34, "faction": "Alliance", "objective": "Bring the Ancient Gurubashi Idol (drops from Deathless Marrow).", "reward": "50s; +300 Kirin Tor, +150 Stormwind."},
+        {"name": "The Drowned City", "giver": "Kin'weelay", "where": "Grom'gol Base Camp, Stranglethorn Vale (32.2,27.8)", "min_level": 30, "faction": "Horde", "objective": "Collect (rub) the four Tablets of I'lalai. LFC: continues to A Tale Spun, finished in Sen'jin.", "reward": "A Tale Spun (LFC): Ceremonial Mallet, Sacrificial Sword or I'lalai Flayer. +100 Darkspear, +100 Orgrimmar."},
+        {"name": "The Only Good Brinescale...", "giver": "Commander Aggro'gosh", "where": "Grom'gol Base Camp (32.2,28.8)", "min_level": 30, "faction": "Horde", "objective": "Kill Var'Taka (WSP). LFC instead says collect 10 Brinescale Tridents from Brinescale Skirmishers. Unverified which is current.", "reward": "Choice: Tidesoaked Leggings or Naga Priestess's Mantle; 1g 30s."},
+        {"name": "Ancient Gurubashi Idol", "giver": "Mazu'kon", "where": "Skywatcher Plateau, Mulgore (32.6,20.6)", "min_level": 30, "faction": "Horde", "objective": "Recover the Ancient Gurubashi Idol from Deathless Marrow. LFC gives min level 28.", "reward": "1g; +300 Earthen Ring, +150 Darkspear."},
+        {"name": "Shady Saltseers", "giver": "Krazek", "where": "Booty Bay, Stranglethorn Vale (27.0,77.2)", "min_level": 34, "faction": "Both", "objective": "Collect 10 Voodoo-Infused Artifacts.", "reward": "Choice: Rusted Troll War Belt or Saltseer's Helm; 1g; Booty Bay and other Steamwheedle rep."},
+        {"name": "The Saltseer Captain", "giver": "Krazek", "where": "Booty Bay (27.0,77.2)", "min_level": 34, "faction": "Both", "objective": "Kill Captain Dreadrise and 3 Saltseer Coroners.", "reward": "Choice: Mutinous Cuffs or South Seas Shroud."}
+      ],
+      "bosses": ["Zul'Alai", "Var'Taka (with two Brinescale Priestess adds)", "Captain Dreadrise", "Deathless Marrow (drops the Ancient Gurubashi Idol)", "Primeval Elemental (optional, summoned)", "Min'loth the Serpent (final; the storm sanctum)", "Rares (not always up): Umbra, Gill, \"Pyromancer\" Braxton", "Order conflict: WT lists the order above; LFC runs Zul'Alai, Captain Dreadrise, Primeval Elemental, Var'Taka, Deathless Marrow, Min'loth; WIKI runs Zul'Alai, Var'Taka, Primeval Elemental, Captain Dreadrise, Deathless Marrow, Min'loth. Zin'aka (level 45 elite shark) is not a boss (LFC)."],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/the-drowned-city/",
+        "https://wowsod.pro/wow-forever/dungeon-quests/drowned-city",
+        "https://lfcarry.com/guides/wow-forever-drowned-city",
+        "https://warcraft.wiki.gg/wiki/The_Drowned_City",
+        "https://expcarry.com/wow-forever-dungeon-quests"
+      ]
+    },
+    {
+      "name": "Krol'dok Stronghold",
+      "levels": "40-45 (Blizzard corrected it from an initially posted 40-55; WSP, WIKI, WOWGG, FC). 40-47 per WT (LFG tool). Quests from 37.",
+      "entrance": {
+        "zone": "Riverglades (new Forever zone; reached from Redridge Mountains or the Badlands)",
+        "coords": "39.0,39.0 (WOWGG, WIKI); WT gives 37.5,37.5",
+        "how": "On a hill over Sunnyglade on the north side of the zone, next to the closed main gates. WT says the cave is west of the gates; WOWGG says the portal is slightly east of the city entrance. Alliance: fly to Farholde Keep and head north to Sunnyglade, or walk in from Redridge. Horde: fly to the Horde town (spelled Rog'mar by WOWGG, Rom'gar by WT, Rogm'ar by WIKI; exact spelling unverified), or walk in from the Badlands."
+      },
+      "attunement": [
+        {"quest": "None to enter", "giver": "", "where": "", "note": "No entry key listed. Key Ingredients rewards a Krol'dok Compound Key, and Mugg drops a Krol'dok Ogre Key, but no source says what either opens."},
+        {"quest": "Clugfist's Decree, then the chain starting with The Wayward Warrior", "giver": "not named", "where": "Riverglades", "note": "Horde prerequisites for the Horde dungeon quests (WT; WSP lists The Wayward Warrior as prereq for A Token of Vengeance and Tome of Twilight)."},
+        {"quest": "Scraps of Knowledge, Curious Trinkets, Saving Sunnyglade", "giver": "not named", "where": "Farholde Keep, Riverglades", "note": "Alliance prerequisites (WT, WSP). WOWGG adds A Small Favor before Tome of Twilight."},
+        {"quest": "Krol'dok Moulding -> Key Ingredients", "giver": "Alphonse Dumas (Alliance) / Kreza Darkthorn (Horde)", "where": "Farholde Keep (64.4,82.0) / Horde town (59.8,46.0)", "note": "Key Ingredients: bring 4 Thick Leather and 12 Iron Bar for the Krol'dok Compound Key."}
+      ],
+      "quests": [
+        {"name": "Vengeance of the Highborne", "giver": "Ranath Nightstride", "where": "Dalaran inn, Alterac Mountains (17.8,66.0)", "min_level": 37, "faction": "Alliance", "objective": "Kill Zalfan Moonshadow, a Twilight Warlock inside.", "reward": "65s; +250 Kirin Tor, +150 Brotherhood of the Horse."},
+        {"name": "Twilight Mementos", "giver": "Sergeant Riftan", "where": "Twilight's Shroud, Riverglades (30.6,49.0)", "min_level": 38, "faction": "Alliance", "objective": "Collect 8 Twilight Bangles from cultists. Follow-ups: Lingering Essence (deliver the Satchel of Cursed Mementos to Ashe Amberhall) and Curios of Curiosity (deliver to Melanie Sable, 66.2,83.2).", "reward": "+150 Brotherhood of the Horse. Curios of Curiosity gives the Curio-Adorned Necklace."},
+        {"name": "Tome of Twilight", "giver": "Ashe Amberhall", "where": "Farholde Keep, Riverglades (66.6,81.0)", "min_level": 39, "faction": "Alliance", "objective": "Take the Tome of Twilight from Nar'gurk.", "reward": "Choice: Twilight Initiate's Belt or Torn Cultist Cloak; +150 Brotherhood of the Horse."},
+        {"name": "Eye of Mugg", "giver": "Demar Brant", "where": "Farholde Keep, Riverglades (66.6,81.0)", "min_level": 40, "faction": "Alliance", "objective": "Bring the Eye of Mugg from Overlord Mugg (final boss).", "reward": "Choice: Rock on Stick, Stick No Rock or Bigger Rock on Bigger Stick; 1g 30s; +150 Brotherhood of the Horse."},
+        {"name": "Krol'dok Moulding", "giver": "Item dropped by Tunk (the Blacksmith)", "where": "Inside the dungeon", "min_level": 38, "faction": "Alliance", "objective": "Take it to Alphonse Dumas, Farholde Keep (64.4,82.0). Leads to Key Ingredients.", "reward": "55s."},
+        {"name": "Krol'dok No More!", "giver": "not recorded", "where": "not recorded", "min_level": 40, "faction": "Alliance", "objective": "not recorded", "reward": "Choice of two items (names not recorded). Listed only by WSP; unverified."},
+        {"name": "A Token of Vengeance", "giver": "Da'grosh", "where": "Outside the stronghold, Riverglades (33.4,38.0)", "min_level": 38, "faction": "Horde", "objective": "Collect 15 Cultist Ears inside.", "reward": "Semblance of Twilight (neck). WSP names the giver Commander Aggro'gosh at the same coordinates, which looks like a data error."},
+        {"name": "Tome of Twilight", "giver": "Tran'gul", "where": "Horde town, Riverglades (59.4,44.0)", "min_level": 39, "faction": "Horde", "objective": "Take the Tome of Twilight from Nar'gurk.", "reward": "Choice: Indoctrinated Choker or Convert's Bindings."},
+        {"name": "Eye of Mugg", "giver": "Krom'rosh", "where": "Horde town, Riverglades (59.4,45.6)", "min_level": 40, "faction": "Horde", "objective": "Bring the Eye of Mugg from Overlord Mugg.", "reward": "Choice: Rock on Stick, Stick No Rock or Bigger Rock on Bigger Stick; 1g 30s."},
+        {"name": "Krol'dok Moulding", "giver": "Item dropped by Tunk", "where": "Inside the dungeon", "min_level": 38, "faction": "Horde", "objective": "Take it to Kreza Darkthorn in the Horde town (59.8,46.0). Leads to Key Ingredients.", "reward": "55s."}
+      ],
+      "bosses": ["Slavecrusher Grox", "Twilight Commander Zarmok", "War Handler Ashka (kill her two pets first)", "Nar'gurk", "Bossman Toof", "Overlord Mugg (final; kill his two centurions first)", "Note: FC and LFC count 5 bosses; WT, WOWGG and WIKI list these 6."],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/kroldok-stronghold/",
+        "https://wow.gg/guides/kroldok-stronghold",
+        "https://wowsod.pro/wow-forever/dungeon-quests/kroldok-stronghold",
+        "https://warcraft.wiki.gg/wiki/Krol'dok_Stronghold",
+        "https://foreverchanges.pro/dungeons",
+        "https://expcarry.com/wow-forever-dungeon-quests"
+      ]
+    },
+    {
+      "name": "Alcaz Prison",
+      "levels": "48-53 (Blizzard blog, WSP, LFC, WIKI). 48-55 per WT (LFG tool; WT calls it Alcaz Island Prison). Quests from 46-48, all quest level 53; final boss level 51.",
+      "entrance": {
+        "zone": "Dustwallow Marsh (Alcaz Island, off the northeast coast)",
+        "coords": "75,15",
+        "how": "The portal is in the stone basement of the large central keep on the island; from the dock take the path up the hill to the left. Alliance: swim northeast from Theramore Isle. Horde: ride east from Brackenwall Village along the coast. Elite naga patrol the climb (LFC)."
+      },
+      "attunement": [
+        {"quest": "None to enter", "giver": "", "where": "", "note": "No attunement. WT: most quests need outdoor prerequisite chains."},
+        {"quest": "Our Man in Theramore", "giver": "Mathias Shaw", "where": "Stormwind City", "note": "Alliance chain start (WT). WIKI chain: Our Man in Theramore -> Watch Yer Back -> The Return of the King? -> The Secret Prison."},
+        {"quest": "The Missing Kor'kron", "giver": "Eitrigg", "where": "Orgrimmar", "note": "Horde chain start (WT). WIKI chain: The Missing Kor'kron -> The Elite of the Elite -> Right Place, Wrong Time -> No Orc Left Behind."}
+      ],
+      "quests": [
+        {"name": "A Little Payback", "giver": "Sergeant Ulka", "where": "Alcaz Island, outside the prison (70.3,19.0)", "min_level": 48, "faction": "Horde", "objective": "Kill Strashaz naga (EXP: 15 Strashaz Soldiers, 8 Enchantresses) and Tidemistress Ca'zass; loot Ca'zass's head.", "reward": "Choice: Kor'kron Battle Gauntlets, Marshdweller's Pants or Naga Scale Spaulders; 80s."},
+        {"name": "Blood Red Bandanas", "giver": "Sergeant Ulka", "where": "Alcaz Island (70.3,19.0)", "min_level": 48, "faction": "Horde", "objective": "Kill Defias inmates and collect bandanas.", "reward": "Choice: Bloodsplattered Bandana or Makeshift Belt."},
+        {"name": "No Orc Left Behind", "giver": "Sergeant Ulka", "where": "Alcaz Island (70.3,19.0)", "min_level": 48, "faction": "Horde", "objective": "Rescue the Kor'kron prisoners. Last step of The Missing Kor'kron chain.", "reward": "+150 Orgrimmar (WSP). LFC credits it with the Thrall Needs to Know rewards."},
+        {"name": "The Honor of the Kor'kron", "giver": "Commander Folkar", "where": "Inside the prison, after Katerina the Cleaner", "min_level": 48, "faction": "Horde", "objective": "Completed through the note found after Zarla. LFC says it needs Bad News for Folkar, Blood Red Bandanas and A Little Payback.", "reward": "+100 Orgrimmar."},
+        {"name": "Bad News for Folkar", "giver": "Perfumed Note", "where": "Inside, behind Blazeroar", "min_level": 48, "faction": "Horde", "objective": "Bring the note to Commander Folkar. It leads to Thrall Needs to Know (report to Thrall, Orgrimmar). WIKI spells it Bad News for Fokar.", "reward": "Thrall Needs to Know: Fatebound Buckler, Courier's Clasp or Dustwallow Dirk."},
+        {"name": "A Bit of Wet Work", "giver": "Sully McCleary", "where": "Theramore, Dustwallow Marsh (63.4,42.6)", "min_level": 48, "faction": "Alliance", "objective": "Kill Strashaz naga and loot Ca'zass's head.", "reward": "Choice: Theramore Defender's Gauntlets, Marshdweller's Pants or Naga Scale Spaulders; 80s."},
+        {"name": "The Dragon's Journal", "giver": "Archmage Lan'dalock", "where": "Dalaran, Alterac Mountains (15.5,73.4)", "min_level": 46, "faction": "Alliance", "objective": "Loot Zarla's Journal from Zarla Ober / Blazeroar. No prerequisite.", "reward": "80s; +300 Kirin Tor, +150 Stormwind."},
+        {"name": "The Secret Prison", "giver": "Sully McCleary", "where": "Theramore, Dustwallow Marsh (63.4,42.4)", "min_level": 48, "faction": "Alliance", "objective": "Explore Alcaz Prison and learn what became of Varian Wrynn; completed through the note in Zarla's room. Last step of the Our Man in Theramore chain. Not shareable.", "reward": "+150 Stormwind."},
+        {"name": "Somber News", "giver": "not recorded", "where": "not recorded", "min_level": 48, "faction": "Alliance", "objective": "not recorded", "reward": "+75 Stormwind. Listed only by WSP; unverified."},
+        {"name": "Shaw Needs to Know", "giver": "not recorded", "where": "not recorded", "min_level": null, "faction": "Alliance", "objective": "not recorded", "reward": "Courier's Clasp, Dustwallow Dirk or Fatebound Buckler (WIKI). Faction is a guess from the name (WIKI shows no faction marker): looks like the Alliance mirror of Thrall Needs to Know. Unverified."},
+        {"name": "The Man in the Iron Chains", "giver": "Mason Connery (prisoner)", "where": "Inside, Zarla's room / end of the dungeon", "min_level": 48, "faction": "Both", "objective": "Kill The Questioner and bring the Ornate Shackle Key to Mason. LFC gives two different step orders; check in game.", "reward": "Leads to More Valuable Than Gold (Mason's Note)."},
+        {"name": "More Valuable Than Gold", "giver": "Mason Connery", "where": "Inside the dungeon", "min_level": 48, "faction": "Both", "objective": "Find Mason's treasure in Westfall: the Document Box under a loose floorboard on the 2nd floor of the Moonbrook Inn (43.4,67.8).", "reward": "Leads to State Secrets."},
+        {"name": "State Secrets", "giver": "Document Box (from Connery's Trunk)", "where": "Moonbrook Inn, Westfall (43.4,67.8)", "min_level": 48, "faction": "Both", "objective": "Deliver the documents to Renzik \"The Shiv\" in Stormwind (Alliance), Nazgrel in Orgrimmar (Horde), or Rix Xizzix in Booty Bay (neutral version).", "reward": "1 Fractured Insignia; 1g 60s. Six Fractured Insignias combine into the Alcaz Operative Insignia, a 10-minute Defias disguise toy with a 30-minute cooldown."}
+      ],
+      "bosses": ["Tidemistress Ca'zass", "Overseer Wrex", "Katerina the Cleaner", "Zarla Ober / Blazeroar (turns into a red dragon; drops loot since the Nov 9-10 hotfix)", "The Questioner (WT calls him the real final boss)", "Order conflict: WT order above. LFC: Overseer Wrex, The Questioner, Tidemistress Ca'zass, Katerina the Cleaner, Zarla/Blazeroar. WIKI: The Questioner, Tidemistress Ca'zass, Overseer Wrex, Katerina the Cleaner, Blazeroar."],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/alcaz-island-prison/",
+        "https://lfcarry.com/guides/wow-forever-alcaz-prison",
+        "https://wowsod.pro/wow-forever/dungeon-quests/alcaz-prison",
+        "https://warcraft.wiki.gg/wiki/Alcaz_Prison",
+        "https://warcraft.wiki.gg/wiki/State_Secrets",
+        "https://expcarry.com/wow-forever-dungeon-quests",
+        "https://mein-mmo.de/en/wow-forever-hotfixes-from-november-10-2026-patch-notes-with-adjustments-for-classes-and-dungeons,1595768/"
+      ]
+    },
+    {
+      "name": "Blackmaw Hold",
+      "levels": "55-60 (all sources). Quests from 45; final boss level 57 (WIKI).",
+      "entrance": {
+        "zone": "Azshara (northern mountains, behind the furbolg gate that was the sealed Timbermaw Hold door in Classic)",
+        "coords": "38.7,33.4 (outer furbolg tunnel, WT and LFC). Portal deeper in at 35.0,23.4 (LFC), which shows as 66.6,84.4 on the Winterspring map (WT, LFC).",
+        "how": "Enter the furbolg tunnel (carved bear-head entrance) and follow the cavern to the portal."
+      },
+      "attunement": [
+        {"quest": "None to enter", "giver": "", "where": "", "note": "No key or rep requirement to enter (LFC)."},
+        {"quest": "Beneath Nordrassil", "giver": "Commander Truesong (Alliance) / Jediga (Horde)", "where": "Azshara / Valormok, Azshara", "note": "Breadcrumb required before Get to the Roots of It. Alliance turns it in to Mathrengyl Bearwalker, Horde to Nara Wildmane (GF)."},
+        {"quest": "Return to Rageroar -> Timbermaw Reinforcements -> Chieftain Bloodmaw -> Blackmaw Counter-Offensive", "giver": "Gatekeeper Rageroar (chain)", "where": "Azshara", "note": "Outdoor chain before Blackmaw Reclamation (WSP). GF instead says a 5-part chain starting with Legashi Threat / Master Feardred, and Neutral with Timbermaw Hold. Unverified which is right."}
+      ],
+      "quests": [
+        {"name": "Get to the Roots of It", "giver": "Mathrengyl Bearwalker", "where": "Cenarion Enclave, Darnassus (35.2,8.2)", "min_level": 45, "faction": "Alliance", "objective": "Collect 10 Nordrassil Root Caps inside. Needs Beneath Nordrassil.", "reward": "+150 Darnassus; XP and gold."},
+        {"name": "Get to the Roots of It", "giver": "Nara Wildmane", "where": "Elder Rise, Thunder Bluff (75.8,31.2)", "min_level": 45, "faction": "Horde", "objective": "Collect 10 Nordrassil Root Caps inside. Needs Beneath Nordrassil.", "reward": "+150 Thunder Bluff."},
+        {"name": "Blackmaw Magic", "giver": "Archmage Timear", "where": "Dalaran, Alterac Mountains (15.4,74.0)", "min_level": 52, "faction": "Alliance", "objective": "Kill Elder Shaman Bloodmane and recover the Blackmaw Ritual Totem.", "reward": "90s; +300 Kirin Tor, +150 Darnassus."},
+        {"name": "Blackmaw Magic", "giver": "Muln Earthfury", "where": "Plateau in NW Mulgore (33.4,22.5); WT says Sunwatcher Plateau, GF says Skywatcher Plateau", "min_level": 52, "faction": "Horde", "objective": "Kill Elder Shaman Bloodmane and recover the Blackmaw Ritual Totem.", "reward": "90s; +300 Earthen Ring, +150 Thunder Bluff."},
+        {"name": "Claws That Rend, Tusks That Gore", "giver": "Ogtinc (WT spells it Ogtink)", "where": "Central Azshara (42.4,42.7)", "min_level": 45, "faction": "Both", "objective": "Collect the Claws of the Great Bear (Withermaw) and the Tusks of the Unbroken (Bonesnout the Unbroken).", "reward": "Choice: Great Bear Claw, Staff of Wild Beasts or Wild Malleus; +150 Timbermaw Hold."},
+        {"name": "The Twin Bears", "giver": "Lorekeeper Nok", "where": "Ursolan, northern Azshara", "min_level": 47, "faction": "Both", "objective": "Find the Totem of Ursoc and the Totem of Ursol inside. GF: needs Neutral with Timbermaw Hold.", "reward": "Choice: Guidance of Ursoc (Strength cloak) or Wisdom of Ursol (caster cloak); +150 Timbermaw Hold."},
+        {"name": "A Lost Memento", "giver": "Feathered Charm Necklace (drops from satyrs inside)", "where": "Inside the dungeon", "min_level": 47, "faction": "Both", "objective": "Bring the necklace to Unele (GF spells it Un'ell), Azshara (43,18.2). Not shareable.", "reward": "Nama's Cherished Necklace; +100 Timbermaw Hold."},
+        {"name": "Blackmaw Pouches", "giver": "Ekkal", "where": "Ruins of Eldarath, Azshara (42.0,38.9)", "min_level": 55, "faction": "Both", "objective": "Loot 5 pouches from Blackmaw mobs inside or outside the dungeon.", "reward": "90s; +150 Timbermaw Hold. Unlocks a repeatable version (100 rep per turn-in)."},
+        {"name": "Blackmaw Reclamation", "giver": "Gatekeeper Rageroar", "where": "Ursolan, Azshara (42.3,20.3)", "min_level": 47, "faction": "Both", "objective": "Kill the final boss Varrox Bleakhoof and bring back his head. Needs the outdoor chain first.", "reward": "Choice of blue ring: Ouroboros Ring, Eagle's Head Signet, Malefactor's End or Engraved Band; +150 Timbermaw Hold."},
+        {"name": "Feeding Time!", "giver": "Flesh-Eating Lasher (inside the dungeon, per WT); GF says it is picked up at the Ruins of Eldarath", "where": "Inside the dungeon (WT)", "min_level": 45, "faction": "Both", "objective": "Collect Fel-Tainted Flesh (from Legashi satyrs). Repeatable. Not shareable.", "reward": "Regurgitated Seed Pod (WSP) with random herbs (WT), and a chance at the Wilted Lashling pet."}
+      ],
+      "bosses": ["Withermaw", "Bonesnout the Unbroken", "Impaan the Imprisoner", "Unbound Spirit", "Elder Shaman Bloodmane", "Blackmaw Behemoth and Clawbert", "Varrox Bleakhoof (final)", "Rares: Moontouched Wanderer, Gortek the Apprentice, Tunnelweb Matriarch", "Order note: WT order above. LFC lists Withermaw, Impaan, Bloodmane, Bonesnout, Blackmaw Behemoth, Varrox, Unbound Spirit. The dungeon has several routes (Blizzard), so the order is not fixed."],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/blackmaw-hold/",
+        "https://wowsod.pro/wow-forever/dungeon-quests/blackmaw-hold",
+        "https://www.gfinityesports.com/article/world-of-warcraft-forever-all-blackmaw-hold-quests-requirements-rewards",
+        "https://lfcarry.com/guides/wow-forever-blackmaw-hold",
+        "https://warcraft.wiki.gg/wiki/Blackmaw_Hold_(instance)"
+      ]
+    },
+    {
+      "name": "Shaper's Terrace",
+      "levels": "58-60 (Blizzard blog, WT, WSP, LFC, FC). The WIKI infobox says 55-60. Quests from 55.",
+      "entrance": {
+        "zone": "Un'Goro Crater (northern hills, overlooking Marshal's Refuge)",
+        "coords": "48.1,6.1 (WT, LFC); WIKI puts the instance line by the northern pylon at 56,12",
+        "how": "Go up the hill north of Marshal's Refuge. No key. LFC says ground mounts work inside."
+      },
+      "attunement": [
+        {"quest": "None to enter", "giver": "", "where": "", "note": "No key or attunement."},
+        {"quest": "Power Crystal consoles (mechanic, not a quest)", "giver": "", "where": "Inside", "note": "Four Archival Panels (Red at the West Ridge, Blue in the cave behind the NW waterfall, Green in the North Cave, Yellow on the South Rim) each need 15 Power Crystals of their color, all in one player's bags. Crystals can be gathered inside. Feeding a panel summons its boss (feeding Green counts even if you skip Vitrix). After all four, clear the 2 Stone Guardians at the Pillar of Assimilation and click the Titan Panel to wake Nanaya (WT, LFC)."}
+      ],
+      "quests": [
+        {"name": "Mapping the Way Forward", "giver": "Curator Thorius", "where": "Hall of Explorers, Ironforge (72.6,14.8)", "min_level": 55, "faction": "Alliance", "objective": "Sketch terrace landmarks with the Cartographer's Kit, then return to the Hall of Explorers.", "reward": "Not listed."},
+        {"name": "Panic at the Digsite", "giver": "Curator Thorius", "where": "Hall of Explorers, Ironforge (72.6,14.8)", "min_level": 55, "faction": "Alliance", "objective": "Kill Venomridge.", "reward": "Choice: Diemetradon Scale Spaulders (mail) or Ravasaur Hide Footpads (leather)."},
+        {"name": "Digestible Research", "giver": "Partially Digested Journal", "where": "Inside, at the entrance pond camp", "min_level": 55, "faction": "Alliance", "objective": "Bring the journal to Curator Thorius in Ironforge. The only quest that starts inside the dungeon.", "reward": "Not listed."},
+        {"name": "Crystalline Elements", "giver": "Mayena Earthseeker", "where": "Plateau in NW Mulgore (34.8,22.1)", "min_level": 55, "faction": "Horde", "objective": "Collect Moist, Charged, Noxious and Fiery Crystals.", "reward": "Choice: Crystalline Pauldrons or Potent Treads."},
+        {"name": "Essence of Seeping Slimes", "giver": "Chemist Fuely", "where": "The Apothecarium, Undercity (47.8,72.3)", "min_level": 55, "faction": "Horde", "objective": "Loot 8 Seeping Slime Essences at the tar pits.", "reward": "Choice: Slime-Resistant Shroud or Reinforced Muck Protectors."},
+        {"name": "The Dark Crystal", "giver": "Master Apothecary Faranell", "where": "The Apothecarium, Undercity (48.4,68.0)", "min_level": 55, "faction": "Horde", "objective": "Loot Drained Crystal Fragments at the Achromatic Crystal.", "reward": "Choice: Crystal-Infused Cleaver, Beastslayer's Trident or Faintly Glowing Orb."}
+      ],
+      "bosses": ["Cinder (Red panel)", "Titanosaur (patrols the central road)", "Snowtalon (Blue panel)", "Tor'Rel and Izha'Rel", "Vitrix (Green panel; optional)", "Direhorn Matriarch", "Thunderhoof", "Venomridge", "Bolt (Yellow panel)", "Nanaya (final; Titan Panel at the Pillar of Assimilation)", "No fixed order; this is the clockwise route from WT/LFC. WIKI marks Cinder, Snowtalon, Bolt, Vitrix and Nanaya required and the rest optional. FC counts 11 bosses."],
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/shapers-terrace/",
+        "https://lfcarry.com/guides/wow-forever-shapers-terrace",
+        "https://warcraft.wiki.gg/wiki/Shaper's_Terrace_(instance)",
+        "https://expcarry.com/wow-forever-dungeon-quests",
+        "https://mein-mmo.de/en/wow-forever-hotfixes-from-november-10-2026-patch-notes-with-adjustments-for-classes-and-dungeons,1595768/"
+      ]
+    }
+  ],
+  "classic_dungeon_levels": {
+    "Ragefire Chasm": "13-18",
+    "Wailing Caverns": "15-24",
+    "The Deadmines": "17-26",
+    "Shadowfang Keep": "20-30",
+    "Blackfathom Deeps": "24-32",
+    "The Stockade": "24-32",
+    "Gnomeregan": "29-38",
+    "Razorfen Kraul": "29-38",
+    "Scarlet Monastery: Graveyard": "30-38",
+    "Scarlet Monastery: Library": "33-41",
+    "Scarlet Monastery: Armory": "36-44",
+    "Scarlet Monastery: Cathedral": "38-46",
+    "Razorfen Downs": "37-46",
+    "Uldaman": "41-51",
+    "Zul'Farrak": "44-54",
+    "Maraudon": "46-55",
+    "Sunken Temple (Temple of Atal'Hakkar)": "50-60",
+    "Blackrock Depths": "52-60",
+    "Dire Maul: East": "54-60",
+    "Lower Blackrock Spire": "55-60",
+    "Dire Maul: West": "56-60",
+    "Dire Maul: North": "56-60",
+    "Scholomance": "58-60",
+    "Stratholme: Main Gate": "58-60",
+    "Stratholme: Service Gate": "58-60",
+    "Upper Blackrock Spire": "59-60",
+    "_note": "Values above are Warcraft Tavern's, which says they match the in-game Looking For Group tool. They equal the Classic Era group-finder ranges except Wailing Caverns (Classic Era 17-24) and Shadowfang Keep (Classic Era 22-30). See classic_dungeon_levels_by_source."
+  },
+  "classic_dungeon_levels_by_source": {
+    "warcrafttavern_lfg_tool": "RFC 13-18, WC 15-24 (min entry 10), DM 17-26, SFK 20-30, BFD 24-32, Stockade 24-32, RFK 29-38, Gnomer 29-38, SM GY 30-38, SM Lib 33-41, SM Arm 36-44, SM Cath 38-46, RFD 37-46, Uld 41-51, ZF 44-54, Mara 46-55, ST 50-60, BRD 52-60, DM East 54-60, LBRS 55-60, DM West 56-60, DM North 56-60, Strat (both) 58-60, Scholo 58-60, UBRS 59-60",
+    "foreverchanges_classic_era_group_finder": "Same as Warcraft Tavern except WC 17-24 and SFK 22-30. FC says these are Classic Era Group Finder values and NOT confirmed for Forever.",
+    "wowsod_pro": "RFC 13-18, WC 15-25, Deadmines 18-23, SFK 22-30, Stockade 22-30, BFD 24-32, Gnomer 29-38, SM 28-45 (one entry), RFK 30-40, RFD 40-50, Uld 42-52, ZF 44-54, Mara 45-57, ST 50-60, BRD 52-60, Blackrock Spire 55-60, Dire Maul 58-60, Scholo 58-60, Strat 58-60. Source of these numbers not stated.",
+    "zockify_recommended_min": "Recommended / minimum level: RFC 13/10, Deadmines 16/10, WC 17/10, SFK 18/14, BFD 22/15, Stockade 23/15, Gnomer 25/19, RFK 24/20, SM (all wings) 30/20, RFD 34/28, Uld 35/30, ZF 42/35, Mara 42/35, ST 45/35, BRD 48/40, LBRS 53/44, DM 54/52, Strat 55/45, Scholo 57/45, UBRS 58/48. Source not stated.",
+    "other_minimums": "FC: Razorfen Downs open in beta at 25+, Uldaman at 30+, with quests aimed at 37+; SM Graveyard opens at 30 with quests for 33-40."
+  },
+  "classic_dungeon_changes": [
+    "Level ranges: no source shows an official Blizzard change to a classic dungeon's range. The only differences from Classic Era are Warcraft Tavern's LFG brackets for Wailing Caverns (15-24 vs 17-24) and Shadowfang Keep (20-30 vs 22-30). FC says classic ranges are still unconfirmed for Forever. Treat as unverified.",
+    "Quests (WSP): 65 classic dungeon quests had their rewards changed, and 104 quests are new (count covers new and classic dungeons).",
+    "New quests in classic dungeons (WSP): Deadmines: Destruction in Deadmines (Alliance, Alba Fairmoon, Westfall 52.4,53, req 9) and A Moon-Kissed Blade (Paladin class quest, Lumina Windsinger, Silverpine 43,40, req 20). Scarlet Monastery: Past Due (Alliance, Magus Olvek). Razorfen Downs: The Coldbringer's Eye (Alliance and Horde versions; Horde from Sutara Plainstalker, Mulgore) and Agamaggan's Blood (Both). Zul'Farrak: The Witch Doctor's Head (Alliance, 39) and Zum'rah's Head (Horde, 42). Maraudon: Rot and Regret (Both, 35) and An'she's Radiance (Horde, 43). Blackrock Depths: Fragment of the Firelands (Horde, 46). Blackrock Spire: Blood and Thunder (Horde, 55). Dire Maul: The Broken Glaive (52). Most givers are not recorded yet.",
+    "Changed-reward classic quests (WSP): Deadmines: Red Silk Bandanas, Collecting Memories, Oh Brother... (also renamed), Underground Assault. Razorfen Kraul: nearly all (Blueleaf Tubers, Willix the Importer, Mortality Wanes, A Vengeful Fate, The Crone of the Kraul). Blackfathom Deeps: separate Alliance and Horde quest lists, nearly all rewards changed. Razorfen Downs: An Unholy Alliance, Bring the End, Bring the Light. Zul'Farrak: Tiara of the Deep, Divino-matic Rod. BRD: Abandoned Hope, The Last Element, The Royal Rescue, The Princess Saved?, The Love Potion, Hurley Blackbreath, Lost Thunderbrew Recipe, Operation: Death to Angerforge. Blackrock Spire: The Demon Forge.",
+    "Dungeon XP: Oct 1 beta build halved the extra XP dungeon quests give beyond a normal quest (FC: now about 2.1x Classic, was 3.1x). Oct 8: dungeon kill XP +20%, and party kill XP uses each player's own level. Nov 10 hotfix: dungeon kill XP +50% more. Blizzard says kill XP is still below Classic Era, and most dungeon XP now comes from one-time quests (WT, LFC, mein-mmo).",
+    "Loot: every dungeon drop was re-examined and hundreds of new drops were added (classicwow.gg). Unique boss items are blue, bosses drop Blueprint (campsite) recipes, and uncommon/rare drops unlock the appearance for every eligible looter (LFC, WT). WT notes loot changes in Wailing Caverns (a Druid set bonus giving a serpent Cat Form look) and Shadowfang Keep.",
+    "Systems: no Dungeon Finder; a manual Looking For Group listing that does not teleport, and Meeting Stones cannot summon. One difficulty only (no heroic/mythic). Instance resets up to 5 per hour. Tarnished Undermine Real is a dungeon currency. Clearing each dungeon once on the Novice, Experienced or Master Spelunker challenge gives 1 Legacy Point each (WT).",
+    "Scarlet Monastery and Dire Maul are handled as one dungeon group with separate wings (EXP); WT and FC list the wings separately.",
+    "Unverified (LFC only): a Nov 17 hotfix restored Upper Blackrock Spire enemy health and damage to raid-level tuning, and Agamaggan's Blood is no longer a dungeon quest (LFC ties it to Shen'dralar; WSP lists it under Razorfen Downs). Not found in the official hotfix pages that were checked.",
+    "Classic dungeon fixes in the Nov 9-16 hotfixes: Blackfathom Deeps release-after-death bug; BRD throne room doors after a Thaurissan wipe; Heart of the Mountain lootable more than once; BRD door after Ever After teleports correctly; Stratholme mounting disabled; Sunken Temple Atal'alarion statues stay usable if activated out of order; Zul'Farrak Talisman of Kazdor no longer sends rogues to the wrong version.",
+    "Datamined, unconfirmed extra dungeons listed by zockify: Half-Pint Tavern (Arathi Highlands, recommended 32) and Manor Mistmantle (Duskwood). Unverified."
+  ],
+  "sources": [
+    "https://www.wowhead.com/forever/blue-tracker/news/us/explore-the-new-dungeons-of-world-of-warcraft-forever-world-of-warcraft-blizzard-24301455",
+    "https://www.warcrafttavern.com/forever/guides/dungeons/",
+    "https://wowsod.pro/wow-forever/dungeon-quests",
+    "https://expcarry.com/wow-forever-dungeon-quests",
+    "https://lfcarry.com/guides/wow-forever-dungeons",
+    "https://classicwow.gg/forever/dungeons",
+    "https://foreverchanges.pro/dungeons",
+    "https://foreverchanges.pro/dungeon-quests",
+    "https://www.zockify.com/forever/dungeons/",
+    "https://wow.gg/guides/kroldok-stronghold",
+    "https://www.gfinityesports.com/article/world-of-warcraft-forever-all-blackmaw-hold-quests-requirements-rewards",
+    "https://warcraft.wiki.gg/wiki/Alcaz_Prison",
+    "https://warcraft.wiki.gg/wiki/State_Secrets",
+    "https://mein-mmo.de/en/wow-forever-hotfixes-from-november-10-2026-patch-notes-with-adjustments-for-classes-and-dungeons,1595768/",
+    "https://www.warcrafttavern.com/forever/news/fishing-rack-adjustments-wow-forever-hotfixes-for-november-16/",
+    "https://wowsod.pro/wow-forever/dungeon-quests/deadmines",
+    "https://wowsod.pro/wow-forever/dungeon-quests/razorfen-downs",
+    "https://wowsod.pro/wow-forever/dungeon-quests/zulfarrak",
+    "https://wowsod.pro/wow-forever/dungeon-quests/maraudon",
+    "https://wowsod.pro/wow-forever/dungeon-quests/blackrock-depths",
+    "https://wowsod.pro/wow-forever/dungeon-quests/blackrock-spire",
+    "https://wowsod.pro/wow-forever/dungeon-quests/dire-maul",
+    "https://wowsod.pro/wow-forever/dungeon-quests/scarlet-monastery",
+    "https://wowsod.pro/wow-forever/dungeon-quests/razorfen-kraul",
+    "https://www.warcrafttavern.com/forever/guides/wailing-caverns/",
+    "https://www.warcrafttavern.com/forever/guides/shadowfang-keep/"
+  ]
+}

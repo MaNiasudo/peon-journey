@@ -1,0 +1,176 @@
+  A DUNGEON Wailing Caverns               21.0 ->  21.7
+  A F Ashenvale                                 21.7 ->  22.6 (target 23)  quests 9
+  A F Wetlands                                  22.6 ->  23.6 (target 25)  quests 18
+  A F Redridge Mountains                        23.6 ->  25.0 (target 26)  quests 13
+  A F Duskwood                                  25.0 ->  26.8 (target 28)  quests 38
+  A DUNGEON Blackfathom Deeps             26.8 ->  27.7
+  A DUNGEON The Stockade                  27.7 ->  28.4
+  A F Wetlands                                  28.4 ->  30.5 (target 29)  quests 29
+  A DUNGEON Excavation Site: Wetlands     30.5 ->  31.3
+  A DUNGEON City of Dalaran               31.3 ->  32.4
+  A F skip Hillsbrad/Alterac (already 32.4)
+  A DUNGEON Gnomeregan                    32.4 ->  33.8
+  A DUNGEON Razorfen Kraul                33.8 ->  34.3
+  A F skip Ashenvale/Stonetalon (already 34.3)
+  A DUNGEON Scarlet Monastery             34.3 ->  34.8
+  A F skip Duskwood (already 34.8)
+  A F skip Arathi Highlands (already 34.8)
+  A F Thousand Needles                          34.8 ->  35.5 (target 35)  quests 15
+  A F Desolace                                  35.5 ->  37.2 (target 37)  quests 33
+  A DUNGEON The Drowned City              37.2 ->  37.7
+  A F Stranglethorn Vale                        37.7 ->  39.2 (target 38)  quests 35
+  A DUNGEON Razorfen Downs                39.2 ->  40.0
+  A F skip Dustwallow Marsh (already 40.0)
+  A F Riverglades                               40.0 ->  43.2 (target 42)  quests 82
+  A DUNGEON Krol'dok Stronghold           43.2 ->  43.7
+  A DUNGEON Uldaman                       43.7 ->  45.3
+  A F Shen'dralas/Desolace                      45.3 ->  46.0 (target 43)  quests 22
+  A DUNGEON Zul'Farrak                    46.0 ->  47.1
+  A DUNGEON Maraudon                      47.1 ->  48.1
+  A F Riverglades                               48.1 ->  48.4 (target 45)  quests 8
+  A F skip Stranglethorn Vale (already 48.4)
+  A F skip Swamp of Sorrows/Badlands (already 48.4)
+  A F skip Tanaris (already 48.4)
+  A F skip Feralas (already 48.4)
+  A F The Hinterlands                           48.4 ->  48.8 (target 49)  quests 7
+  A F Azshara                                   48.8 ->  49.3 (target 51)  quests 13
+  A DUNGEON Alcaz Prison                  49.3 ->  50.0
+  A F Un'Goro Crater                            50.0 ->  51.3 (target 53)  quests 28
+  A DUNGEON The Temple of Atal'Hakkar     51.3 ->  52.0
+  A F Searing Gorge/Blasted Lands/Burning Steppes  52.0 ->  53.3 (target 54)  quests 28
+  A DUNGEON Blackrock Depths              53.3 ->  55.6
+  A DUNGEON Dire Maul                     55.6 ->  57.2
+  A F skip Felwood (already 57.2)
+  A DUNGEON Blackrock Spire               57.2 ->  59.3
+  A DUNGEON Blackmaw Hold                 59.3 ->  59.6
+  A F skip Winterspring (already 59.6)
+  A DUNGEON Shaper's Terrace              59.6 ->  59.9
+  A DUNGEON Scholomance                   59.9 ->  60.0
+  A F Mount Hyjal                               60.0 ->  60.0 (target 58)  quests 51
+  A F skip Western/Eastern Plaguelands (already 60.0)
+  A F Mount Hyjal/Silithus                      60.0 ->  60.0 (target 60)  quests 36
+  A Q Ashenvale                                 21.0 ->  21.9 (target 23)  quests 9
+  A Q Duskwood                                  21.9 ->  23.5 (target 23)  quests 29
+  A Q Wetlands                                  23.5 ->  25.2 (target 25)  quests 26
+  A Q Redridge Mountains                        25.2 ->  26.4 (target 26)  quests 13
+  A Q Duskwood                                  26.4 ->  27.4 (target 28)  quests 17
+  A Q Wetlands                                  27.4 ->  29.3 (target 29)  quests 23
+  A Q Hillsbrad/Alterac                         29.3 ->  30.0 (target 31)  quests 11
+  A Q Desolace                                  30.0 ->  30.8 (target 32)  quests 9
+  A Q Ashenvale/Stonetalon                      30.8 ->  32.2 (target 32)  quests 24
+  A Q Duskwood                                  32.2 ->  32.4 (target 33)  quests 7
+  A Q skip Arathi Highlands (only 3 quests left)
+  A Q Desolace                                  32.4 ->  33.3 (target 34)  quests 14
+  A Q Thousand Needles                          33.3 ->  34.1 (target 35)  quests 16
+  A Q Stranglethorn Vale                        34.1 ->  35.8 (target 36)  quests 35
+  A Q Desolace                                  35.8 ->  36.4 (target 37)  quests 11
+  A Q Stranglethorn Vale                        36.4 ->  36.9 (target 38)  quests 10
+  A Q Riverglades                               36.9 ->  39.3 (target 38)  quests 58
+  A Q Dustwallow Marsh                          39.3 ->  40.0 (target 39)  quests 22
+  A Q Riverglades                               40.0 ->  41.6 (target 42)  quests 31
+  A Q Shen'dralas/Desolace                      41.6 ->  42.5 (target 43)  quests 23
+  A Q Riverglades                               42.5 ->  42.8 (target 45)  quests 5
+  A Q Feralas                                   42.8 ->  43.7 (target 44)  quests 21
+  A Q Stranglethorn Vale                        43.7 ->  44.5 (target 46)  quests 16
+  A Q Tanaris                                   44.5 ->  45.6 (target 46)  quests 22
+  A Q Swamp of Sorrows/Badlands                 45.6 ->  45.8 (target 46)  quests 5
+  A Q Tanaris                                   45.8 ->  46.0 (target 47)  quests 7
+  A Q Searing Gorge                             46.0 ->  47.1 (target 48)  quests 22
+  A Q Feralas                                   47.1 ->  48.0 (target 48)  quests 21
+  A Q The Hinterlands                           48.0 ->  48.4 (target 49)  quests 8
+  A Q Azshara                                   48.4 ->  49.0 (target 51)  quests 13
+  A Q Stranglethorn Vale                        49.0 ->  49.2 (target 50)  quests 4
+  A Q Un'Goro Crater                            49.2 ->  50.5 (target 53)  quests 28
+  A Q Azshara                                   50.5 ->  51.1 (target 52)  quests 14
+  A Q Searing Gorge/Blasted Lands/Burning Steppes  51.1 ->  52.1 (target 54)  quests 20
+  A Q Un'Goro Crater                            52.1 ->  52.8 (target 54)  quests 13
+  A Q Felwood                                   52.8 ->  53.7 (target 55)  quests 21
+  A Q Mount Hyjal                               53.7 ->  54.6 (target 55)  quests 25
+  A Q Winterspring                              54.6 ->  55.3 (target 56)  quests 18
+  A Q Mount Hyjal                               55.3 ->  56.2 (target 58)  quests 21
+  A Q Silithus                                  56.2 ->  57.2 (target 58)  quests 19
+  A Q Western/Eastern Plaguelands               57.2 ->  59.5 (target 59)  quests 58
+  A Q Mount Hyjal/Silithus                      59.5 ->  60.0 (target 60)  quests 22
+  H DUNGEON Shadowfang Keep               22.0 ->  22.6
+  H F Stonetalon/Barrens                        22.6 ->  25.3 (target 24)  quests 29
+  H DUNGEON Blackfathom Deeps             25.3 ->  26.2
+  H F skip Hillsbrad Foothills (already 26.2)
+  H F Ashenvale                                 26.2 ->  27.6 (target 27)  quests 15
+  H DUNGEON Excavation Site: Wetlands     27.6 ->  28.2
+  H F Thousand Needles                          28.2 ->  29.8 (target 29)  quests 21
+  H DUNGEON City of Dalaran               29.8 ->  30.2
+  H DUNGEON Gnomeregan                    30.2 ->  31.2
+  H F skip Hillsbrad/Alterac (already 31.2)
+  H DUNGEON Razorfen Kraul                31.2 ->  31.7
+  H DUNGEON Scarlet Monastery             31.7 ->  32.6
+  H F Arathi Highlands                          32.6 ->  33.1 (target 33)  quests 9
+  H F Stonetalon/Ashenvale                      33.1 ->  33.3 (target 34)  quests 5
+  H F Desolace                                  33.3 ->  34.8 (target 36)  quests 26
+  H F Stranglethorn Vale                        34.8 ->  35.8 (target 38)  quests 21
+  H F Dustwallow Marsh/Swamp of Sorrows         35.8 ->  37.2 (target 39)  quests 25
+  H DUNGEON The Drowned City              37.2 ->  37.6
+  H F Riverglades                               37.6 ->  40.2 (target 42)  quests 52
+  H DUNGEON Razorfen Downs                40.2 ->  41.1
+  H DUNGEON Krol'dok Stronghold           41.1 ->  41.7
+  H F Shen'dralas/Desolace                      41.7 ->  43.5 (target 43)  quests 46
+  H DUNGEON Uldaman                       43.5 ->  44.7
+  H F Riverglades                               44.7 ->  45.0 (target 45)  quests 7
+  H F Stranglethorn Vale/Badlands               45.0 ->  46.4 (target 46)  quests 36
+  H DUNGEON Zul'Farrak                    46.4 ->  47.4
+  H DUNGEON Maraudon                      47.4 ->  48.4
+  H F skip Tanaris (already 48.4)
+  H F skip Feralas (already 48.4)
+  H F The Hinterlands                           48.4 ->  49.6 (target 49)  quests 22
+  H DUNGEON Alcaz Prison                  49.6 ->  50.5
+  H F Azshara                                   50.5 ->  51.9 (target 51)  quests 32
+  H DUNGEON The Temple of Atal'Hakkar     51.9 ->  52.7
+  H F Un'Goro Crater                            52.7 ->  54.3 (target 53)  quests 38
+  H DUNGEON Blackrock Depths              54.3 ->  56.5
+  H DUNGEON Dire Maul                     56.5 ->  58.1
+  H F skip Searing Gorge/Burning Steppes/Blasted Lands (already 58.1)
+  H DUNGEON Blackrock Spire               58.1 ->  60.0
+  H F skip Felwood (already 60.0)
+  H F skip Winterspring (already 60.0)
+  H F Mount Hyjal                               60.0 ->  60.0 (target 58)  quests 48
+  H F skip Western/Eastern Plaguelands (already 60.0)
+  H F Mount Hyjal/Silithus                      60.0 ->  60.0 (target 60)  quests 36
+  H Q Stonetalon/Barrens                        22.0 ->  24.8 (target 24)  quests 29
+  H Q Hillsbrad Foothills                       24.8 ->  25.5 (target 26)  quests 8
+  H Q Ashenvale                                 25.5 ->  26.6 (target 27)  quests 12
+  H Q Thousand Needles                          26.6 ->  28.4 (target 29)  quests 21
+  H Q skip Hillsbrad/Alterac (only 2 quests left)
+  H Q skip Stonetalon Mountains (only 5 quests left)
+  H Q Arathi Highlands                          28.4 ->  28.8 (target 33)  quests 6
+  H Q Stonetalon/Ashenvale                      28.8 ->  29.5 (target 34)  quests 9
+  H Q Hillsbrad Foothills                       29.5 ->  30.3 (target 31)  quests 7
+  H Q Desolace                                  30.3 ->  32.1 (target 36)  quests 26
+  H Q Thousand Needles                          32.1 ->  32.8 (target 34)  quests 13
+  H Q Stranglethorn Vale                        32.8 ->  34.0 (target 38)  quests 22
+  H Q Arathi Highlands                          34.0 ->  34.7 (target 36)  quests 13
+  H Q Dustwallow Marsh/Swamp of Sorrows         34.7 ->  36.2 (target 39)  quests 26
+  H Q Desolace                                  36.2 ->  37.1 (target 38)  quests 17
+  H Q Riverglades                               37.1 ->  40.0 (target 42)  quests 61
+  H Q Stranglethorn Vale                        40.0 ->  41.1 (target 42)  quests 22
+  H Q Shen'dralas/Desolace                      41.1 ->  42.3 (target 43)  quests 26
+  H Q Riverglades                               42.3 ->  42.8 (target 45)  quests 9
+  H Q Feralas                                   42.8 ->  43.7 (target 44)  quests 19
+  H Q Stranglethorn Vale/Badlands               43.7 ->  44.5 (target 46)  quests 16
+  H Q The Hinterlands                           44.5 ->  45.4 (target 46)  quests 16
+  H Q Tanaris                                   45.4 ->  46.7 (target 47)  quests 28
+  H Q Feralas                                   46.7 ->  47.5 (target 48)  quests 15
+  H Q The Hinterlands                           47.5 ->  48.1 (target 49)  quests 10
+  H Q Searing Gorge                             48.1 ->  49.0 (target 50)  quests 19
+  H Q Azshara                                   49.0 ->  49.7 (target 51)  quests 16
+  H Q Azshara                                   49.7 ->  50.3 (target 51)  quests 14
+  H Q Un'Goro Crater                            50.3 ->  51.4 (target 53)  quests 26
+  H Q Felwood                                   51.4 ->  52.3 (target 53)  quests 18
+  H Q Searing Gorge/Burning Steppes/Blasted Lands  52.3 ->  52.9 (target 54)  quests 14
+  H Q Un'Goro Crater                            52.9 ->  53.5 (target 54)  quests 13
+  H Q skip Felwood (only 3 quests left)
+  H Q Mount Hyjal                               53.5 ->  54.4 (target 55)  quests 21
+  H Q Winterspring                              54.4 ->  55.1 (target 56)  quests 18
+  H Q Eastern Plaguelands                       55.1 ->  55.9 (target 57)  quests 21
+  H Q Mount Hyjal                               55.9 ->  56.7 (target 58)  quests 20
+  H Q Silithus                                  56.7 ->  57.7 (target 58)  quests 19
+  H Q Western/Eastern Plaguelands               57.7 ->  59.4 (target 59)  quests 41
+  H Q Mount Hyjal/Silithus                      59.4 ->  60.0 (target 60)  quests 24

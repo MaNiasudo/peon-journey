@@ -1,0 +1,613 @@
+{
+ "dungeons": [
+  {
+   "name": "Ragefire Chasm",
+   "areas": [
+    2437
+   ],
+   "levels": [
+    13,
+    18
+   ],
+   "entrance": [
+    1454,
+    52.6,
+    49.0
+   ],
+   "bracket": "Early (13-26)"
+  },
+  {
+   "name": "The Hall of Thanes",
+   "areas": [
+    16919
+   ],
+   "levels": [
+    13,
+    18
+   ],
+   "entrance": [
+    1455,
+    43.5,
+    52.0
+   ],
+   "bracket": "Early (13-26)",
+   "quest_names": [
+    "An Ancient Grudge",
+    "Important Heirlooms",
+    "Old Ironforge Incursion",
+    "The Restless Dead",
+    "The Treaty of Understanding"
+   ],
+   "note": "New Forever dungeon under Ironforge. From the Great Forge go into the High Seat, take the web-covered passage on the left and go down the stairs to the portal. Careful: falling there kills you.",
+   "faction": "Alliance"
+  },
+  {
+   "name": "Wailing Caverns",
+   "areas": [
+    718
+   ],
+   "levels": [
+    15,
+    24
+   ],
+   "entrance": [
+    1413,
+    46.0,
+    36.5
+   ],
+   "bracket": "Early (13-26)"
+  },
+  {
+   "name": "Ruins of Lordaeron",
+   "areas": [
+    16611,
+    16612,
+    16614,
+    16615,
+    16617
+   ],
+   "levels": [
+    15,
+    20
+   ],
+   "entrance": [
+    1420,
+    72.4,
+    11.6
+   ],
+   "bracket": "Early (13-26)",
+   "quest_names": [
+    "A Frightened Request",
+    "Abominable Creatures",
+    "Bloodied Insignia",
+    "Crest of Lordaeron",
+    "Light's Justice",
+    "Remember That I Love You",
+    "The New Plague",
+    "The Wrath of Rath'mael",
+    "Unending Torment"
+   ],
+   "note": "New Forever dungeon in the ruined city above the Undercity. Before the keep, look left and climb the stairs. Alliance: entering the Undercity area flags you for PvP."
+  },
+  {
+   "name": "The Deadmines",
+   "areas": [
+    1581,
+    10029
+   ],
+   "levels": [
+    17,
+    26
+   ],
+   "entrance": [
+    1436,
+    42.5,
+    71.7
+   ],
+   "bracket": "Early (13-26)"
+  },
+  {
+   "name": "Shadowfang Keep",
+   "areas": [
+    209,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019
+   ],
+   "levels": [
+    20,
+    30
+   ],
+   "entrance": [
+    1421,
+    44.8,
+    67.8
+   ],
+   "bracket": "Mid (20-38)"
+  },
+  {
+   "name": "Blackfathom Deeps",
+   "areas": [
+    719,
+    10020,
+    10021
+   ],
+   "levels": [
+    24,
+    32
+   ],
+   "entrance": [
+    1440,
+    14.5,
+    14.2
+   ],
+   "bracket": "Mid (20-38)"
+  },
+  {
+   "name": "The Stockade",
+   "areas": [
+    717
+   ],
+   "levels": [
+    24,
+    32
+   ],
+   "entrance": [
+    1453,
+    52.41,
+    70.01
+   ],
+   "bracket": "Mid (20-38)"
+  },
+  {
+   "name": "Excavation Site: Wetlands",
+   "areas": [
+    16732,
+    16877,
+    16878,
+    16879,
+    16880,
+    17732
+   ],
+   "levels": [
+    26,
+    31
+   ],
+   "entrance": [
+    1437,
+    48.1,
+    56.5
+   ],
+   "bracket": "Mid (20-38)",
+   "quest_names": [
+    "Changing Tastes",
+    "Elder Knowledge",
+    "Highland Hides",
+    "Horrors in the Highland",
+    "Lost Relic Carry",
+    "Lost in the Thicket Things",
+    "Open the Maw",
+    "Songblade Search"
+   ],
+   "note": "New Forever dungeon above Whelgar's Excavation. Take the winding path up left of Thelgen Rock to the meeting stone."
+  },
+  {
+   "name": "City of Dalaran",
+   "areas": [
+    16544,
+    16558,
+    16559,
+    16560,
+    16562
+   ],
+   "levels": [
+    28,
+    33
+   ],
+   "entrance": [
+    1421,
+    69.3,
+    45.6
+   ],
+   "bracket": "Mid (20-38)",
+   "quest_names": [
+    "A Green Sample",
+    "Heart of Disruption",
+    "Opportunistic Education",
+    "Power Overwhelming",
+    "Source of Power",
+    "Starving Arcane",
+    "The Grave Knight",
+    "An Alarming Request",
+    "Heart of Disruption (Alliance)",
+    "Prison Break In",
+    "Key to the City",
+    "Dalaran Patrols",
+    "Blood in the Streets",
+    "Heart of Disruption (Horde)",
+    "Stone Tokens / Bracers of Binding"
+   ],
+   "note": "New Forever dungeon. KEY NEEDED: one player with the Dalaran Sewer Key opens it for the group; the key chain is in this guide. Enter through the sewers on the Silverpine side of Lordamere Lake."
+  },
+  {
+   "name": "Gnomeregan",
+   "areas": [
+    721,
+    133,
+    10030,
+    10031,
+    10032
+   ],
+   "levels": [
+    29,
+    38
+   ],
+   "entrance": [
+    1426,
+    24.3,
+    39.8
+   ],
+   "bracket": "Mid (20-38)"
+  },
+  {
+   "name": "Razorfen Kraul",
+   "areas": [
+    491,
+    1717
+   ],
+   "levels": [
+    29,
+    38
+   ],
+   "entrance": [
+    1413,
+    42.9,
+    90.2
+   ],
+   "bracket": "Mid (20-38)"
+  },
+  {
+   "name": "Scarlet Monastery",
+   "areas": [
+    796,
+    6109,
+    6386,
+    10008,
+    10009,
+    10010
+   ],
+   "levels": [
+    30,
+    46
+   ],
+   "entrance": [
+    1420,
+    82.6,
+    33.8
+   ],
+   "bracket": "Mid (20-38)",
+   "note": "Four wings: Graveyard 30-38, Library 33-41, Armory 36-44, Cathedral 38-46."
+  },
+  {
+   "name": "The Drowned City",
+   "areas": [],
+   "levels": [
+    35,
+    40
+   ],
+   "entrance": [
+    1434,
+    21.4,
+    27.9
+   ],
+   "bracket": "Late (35-50)",
+   "quest_names": [
+    "Ancient Gurubashi Idol",
+    "Ancient Gurubashi Secrets",
+    "Magics of the Drowned City",
+    "Shady Saltseers",
+    "Take Two With Water",
+    "The Drowned City",
+    "The Only Good Brinescale...",
+    "The Saltseer Captain"
+   ],
+   "note": "New Forever dungeon, underwater off the west coast of Stranglethorn, west of Grom'gol. Bring water breathing. Nearest flights: Booty Bay, Grom'gol."
+  },
+  {
+   "name": "Razorfen Downs",
+   "areas": [
+    722
+   ],
+   "levels": [
+    37,
+    46
+   ],
+   "entrance": [
+    1413,
+    49.0,
+    93.9
+   ],
+   "bracket": "Late (35-50)"
+  },
+  {
+   "name": "Krol'dok Stronghold",
+   "areas": [
+    17780
+   ],
+   "levels": [
+    40,
+    45
+   ],
+   "entrance": [
+    2548,
+    39.0,
+    39.0
+   ],
+   "bracket": "Late (35-50)",
+   "quest_names": [
+    "A Token of Vengeance",
+    "Eye of Mugg",
+    "Krol'dok Moulding",
+    "Krol'dok No More!",
+    "Tome of Twilight",
+    "Twilight Mementos",
+    "Vengeance of the Highborne"
+   ],
+   "note": "New Forever dungeon in the Riverglades, on the hill over Sunnyglade next to the closed main gates."
+  },
+  {
+   "name": "Uldaman",
+   "areas": [
+    1337,
+    1517,
+    10033
+   ],
+   "levels": [
+    41,
+    51
+   ],
+   "entrance": [
+    1418,
+    44.6,
+    12.1
+   ],
+   "bracket": "Late (35-50)",
+   "note": "Forever: Annora inside Uldaman is the Artisan Enchanting trainer."
+  },
+  {
+   "name": "Zul'Farrak",
+   "areas": [
+    1176,
+    978
+   ],
+   "levels": [
+    44,
+    54
+   ],
+   "entrance": [
+    1446,
+    38.7,
+    20.1
+   ],
+   "bracket": "Late (35-50)"
+  },
+  {
+   "name": "Maraudon",
+   "areas": [
+    2100,
+    10000
+   ],
+   "levels": [
+    46,
+    55
+   ],
+   "entrance": [
+    1443,
+    29.1,
+    62.5
+   ],
+   "bracket": "Late (35-50)"
+  },
+  {
+   "name": "Alcaz Prison",
+   "areas": [],
+   "levels": [
+    48,
+    53
+   ],
+   "entrance": [
+    1445,
+    75.0,
+    15.0
+   ],
+   "bracket": "Late (35-50)",
+   "quest_names": [
+    "A Bit of Wet Work",
+    "A Little Payback",
+    "Bad News for Folkar",
+    "Blood Red Bandanas",
+    "More Valuable Than Gold",
+    "No Orc Left Behind",
+    "Shaw Needs to Know",
+    "Somber News",
+    "State Secrets",
+    "The Dragon's Journal",
+    "The Honor of the Kor'kron",
+    "The Man in the Iron Chains",
+    "The Secret Prison",
+    "Our Man in Theramore",
+    "The Missing Kor'kron"
+   ],
+   "note": "New Forever dungeon on Alcaz Island off Dustwallow Marsh. The portal is in the basement of the big central keep. Elite naga patrol the climb up."
+  },
+  {
+   "name": "The Temple of Atal'Hakkar",
+   "areas": [
+    1477,
+    1417
+   ],
+   "levels": [
+    50,
+    60
+   ],
+   "entrance": [
+    1435,
+    69.9,
+    53.5
+   ],
+   "bracket": "Endgame (50-60)"
+  },
+  {
+   "name": "Blackrock Depths",
+   "areas": [
+    1584,
+    1585
+   ],
+   "levels": [
+    52,
+    60
+   ],
+   "entrance": [
+    1427,
+    34.8,
+    85.3
+   ],
+   "bracket": "Endgame (50-60)"
+  },
+  {
+   "name": "Dire Maul",
+   "areas": [
+    2557,
+    10022,
+    10023,
+    10024,
+    10025,
+    10026,
+    10027
+   ],
+   "levels": [
+    54,
+    60
+   ],
+   "entrance": [
+    1444,
+    59.2,
+    45.1
+   ],
+   "bracket": "Endgame (50-60)",
+   "note": "East 54-60, West 56-60, North 56-60."
+  },
+  {
+   "name": "Blackrock Spire",
+   "areas": [
+    1583,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007
+   ],
+   "levels": [
+    55,
+    60
+   ],
+   "entrance": [
+    1427,
+    34.8,
+    85.3
+   ],
+   "bracket": "Endgame (50-60)",
+   "note": "Lower Blackrock Spire 55-60, Upper Blackrock Spire 59-60."
+  },
+  {
+   "name": "Blackmaw Hold",
+   "areas": [
+    1216
+   ],
+   "levels": [
+    55,
+    60
+   ],
+   "entrance": [
+    1447,
+    38.7,
+    33.4
+   ],
+   "bracket": "Endgame (50-60)",
+   "quest_names": [
+    "A Lost Memento",
+    "Blackmaw Magic",
+    "Blackmaw Pouches",
+    "Blackmaw Reclamation",
+    "Claws That Rend, Tusks That Gore",
+    "Feeding Time!",
+    "Get to the Roots of It",
+    "The Twin Bears"
+   ],
+   "note": "New Forever dungeon in north Azshara, through the furbolg tunnel (bear-head entrance). The portal is deep inside."
+  },
+  {
+   "name": "Shaper's Terrace",
+   "areas": [
+    16985
+   ],
+   "levels": [
+    58,
+    60
+   ],
+   "entrance": [
+    1449,
+    48.1,
+    6.1
+   ],
+   "bracket": "Endgame (50-60)",
+   "quest_names": [
+    "Crystalline Elements",
+    "Digestible Research",
+    "Essence of Seeping Slimes",
+    "Mapping the Way Forward",
+    "Panic at the Digsite",
+    "The Dark Crystal"
+   ],
+   "note": "New Forever dungeon on the hill north of Marshal's Refuge in Un'Goro. Power-crystal consoles inside open the way. No key needed."
+  },
+  {
+   "name": "Scholomance",
+   "areas": [
+    2057,
+    10011,
+    10012,
+    10013
+   ],
+   "levels": [
+    58,
+    60
+   ],
+   "entrance": [
+    1422,
+    69.7,
+    73.2
+   ],
+   "bracket": "Endgame (50-60)"
+  },
+  {
+   "name": "Stratholme",
+   "areas": [
+    2017
+   ],
+   "levels": [
+    58,
+    60
+   ],
+   "entrance": [
+    1423,
+    26.52,
+    10.36
+   ],
+   "bracket": "Endgame (50-60)"
+  }
+ ]
+}

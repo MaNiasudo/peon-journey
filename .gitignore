@@ -1,0 +1,8 @@
+qdb/
+rxp_free/
+data_forever.json
+out_guides/
+out_route/
+venv/
+__pycache__/
+*.zip

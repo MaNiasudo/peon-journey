@@ -1,0 +1,1369 @@
+{
+  "items": {
+    "6898": {
+      "name": "Orb of Soran'ruk",
+      "quality": "Rare",
+      "type": "Held In Off-hand",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [],
+      "effects": [
+        "Equip: Increases damage done by Fire spells and effects by up to 9.",
+        "Equip: Increases damage done by Shadow spells and effects by up to 9.",
+        "Use: Restores 48 health every 3 sec for 30 sec. (10 Min Cooldown)"
+      ],
+      "req_level": 20,
+      "ilvl": 25,
+      "classes": "Warlock",
+      "verdict": "good",
+      "verdict_note": "+9 fire/shadow at 20 is strong; but the Staff of Soran'ruk (+34/+34) is far better if you use a 2H",
+      "source": "https://www.wowhead.com/forever/item=6898",
+      "fallback": false
+    },
+    "6953": {
+      "name": "Verigan's Fist",
+      "quality": "Rare",
+      "type": "Two-Hand Mace",
+      "armor": null,
+      "damage": "65 - 99",
+      "speed": "3.20",
+      "dps": "25.63",
+      "stats": [
+        "+5 Stamina",
+        "+6 Intellect",
+        "+10 Spirit"
+      ],
+      "effects": [
+        "Chance on hit: Ignite the target in the flames of the Great Forge, dealing 39 to 59 Holyfire damage. Deals 3 times as much damage to Fire Elementals and Earth Elementals."
+      ],
+      "req_level": 20,
+      "ilvl": 31,
+      "classes": "Paladin",
+      "verdict": "good",
+      "verdict_note": "rare ilvl 31 2H with a proc at req 20; big leveling upgrade (Wolfsbane has slightly better stats)",
+      "source": "https://www.wowhead.com/forever/item=6953",
+      "fallback": false
+    },
+    "7298": {
+      "name": "Blade of Cunning",
+      "quality": "Uncommon",
+      "type": "One-Hand Dagger",
+      "armor": null,
+      "damage": "9 - 18",
+      "speed": "2.00",
+      "dps": "6.75",
+      "stats": [
+        "+2 Agility"
+      ],
+      "effects": [],
+      "req_level": 10,
+      "ilvl": 13,
+      "classes": "Rogue",
+      "verdict": "ok",
+      "verdict_note": "usable Backstab dagger at 10, low item level",
+      "source": "https://www.wowhead.com/forever/item=7298",
+      "fallback": false
+    },
+    "7326": {
+      "name": "Thun'grim's Axe",
+      "quality": "Uncommon",
+      "type": "Main Hand Axe",
+      "armor": null,
+      "damage": "14 - 28",
+      "speed": "2.70",
+      "dps": "7.78",
+      "stats": [
+        "+1 Stamina"
+      ],
+      "effects": [],
+      "req_level": 10,
+      "ilvl": 15,
+      "classes": "Warrior",
+      "verdict": "ok",
+      "verdict_note": "slowest and highest DPS of the four; good early main hand",
+      "source": "https://www.wowhead.com/forever/item=7326",
+      "fallback": false
+    },
+    "7327": {
+      "name": "Thun'grim's Dagger",
+      "quality": "Uncommon",
+      "type": "One-Hand Dagger",
+      "armor": null,
+      "damage": "9 - 17",
+      "speed": "1.70",
+      "dps": "7.65",
+      "stats": [
+        "+1 Stamina"
+      ],
+      "effects": [],
+      "req_level": 10,
+      "ilvl": 15,
+      "classes": "Warrior",
+      "verdict": "skip",
+      "verdict_note": "fast dagger is the worst warrior pick; take the axe, mace or sword",
+      "source": "https://www.wowhead.com/forever/item=7327",
+      "fallback": false
+    },
+    "7328": {
+      "name": "Thun'grim's Mace",
+      "quality": "Uncommon",
+      "type": "Main Hand Mace",
+      "armor": null,
+      "damage": "12 - 23",
+      "speed": "2.30",
+      "dps": "7.61",
+      "stats": [
+        "+1 Stamina"
+      ],
+      "effects": [],
+      "req_level": 10,
+      "ilvl": 15,
+      "classes": "Warrior",
+      "verdict": "ok",
+      "verdict_note": "fine early main hand; the axe hits harder",
+      "source": "https://www.wowhead.com/forever/item=7328",
+      "fallback": false
+    },
+    "7329": {
+      "name": "Thun'grim's Sword",
+      "quality": "Uncommon",
+      "type": "Main Hand Sword",
+      "armor": null,
+      "damage": "11 - 21",
+      "speed": "2.10",
+      "dps": "7.62",
+      "stats": [
+        "+1 Stamina"
+      ],
+      "effects": [],
+      "req_level": 10,
+      "ilvl": 15,
+      "classes": "Warrior",
+      "verdict": "ok",
+      "verdict_note": "fine early main hand; the axe hits harder",
+      "source": "https://www.wowhead.com/forever/item=7329",
+      "fallback": false
+    },
+    "7508": {
+      "name": "Ley Orb",
+      "quality": "Uncommon",
+      "type": "Held In Off-hand",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+1 Spirit"
+      ],
+      "effects": [
+        "Use: Restores 80 to 240 mana. (30 Min Cooldown)"
+      ],
+      "req_level": 10,
+      "ilvl": 10,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "free mana potion every 30 min; only if you use a 1H",
+      "source": "https://www.wowhead.com/forever/item=7508",
+      "fallback": false
+    },
+    "7509": {
+      "name": "Manaweave Robe",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 34,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+6 Intellect"
+      ],
+      "effects": [],
+      "req_level": 15,
+      "ilvl": 20,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "standard green chest for 15",
+      "source": "https://www.wowhead.com/forever/item=7509",
+      "fallback": false
+    },
+    "7510": {
+      "name": "Lesser Spellfire Robes",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 34,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+6 Intellect"
+      ],
+      "effects": [],
+      "req_level": 15,
+      "ilvl": 20,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "standard green chest for 15 (same stats as Manaweave Robe)",
+      "source": "https://www.wowhead.com/forever/item=7510",
+      "fallback": false
+    },
+    "7511": {
+      "name": "Astral Knot Robe",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 44,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+6 Stamina",
+        "+6 Intellect",
+        "+6 Spirit"
+      ],
+      "effects": [],
+      "req_level": 26,
+      "ilvl": 31,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "solid green chest for 26",
+      "source": "https://www.wowhead.com/forever/item=7511",
+      "fallback": false
+    },
+    "7512": {
+      "name": "Nether-lace Robe",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 44,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+6 Stamina",
+        "+6 Intellect",
+        "+6 Spirit"
+      ],
+      "effects": [],
+      "req_level": 26,
+      "ilvl": 31,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "solid green chest for 26 (same stats as Astral Knot Robe)",
+      "source": "https://www.wowhead.com/forever/item=7512",
+      "fallback": false
+    },
+    "9513": {
+      "name": "Ley Staff",
+      "quality": "Uncommon",
+      "type": "Two-Hand Staff",
+      "armor": null,
+      "damage": "12 - 19",
+      "speed": "2.90",
+      "dps": "5.34",
+      "stats": [
+        "+1 Intellect",
+        "+1 Spirit"
+      ],
+      "effects": [
+        "Equip: Increases damage and healing done by magical spells and effects by up to 2."
+      ],
+      "req_level": 10,
+      "ilvl": 10,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "small stats but a real upgrade over a starter staff",
+      "source": "https://www.wowhead.com/forever/item=9513",
+      "fallback": false
+    },
+    "9515": {
+      "name": "Nether-lace Tunic",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 44,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+6 Stamina",
+        "+9 Intellect"
+      ],
+      "effects": [],
+      "req_level": 26,
+      "ilvl": 31,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "solid green chest for 26; more Int than the robes",
+      "source": "https://www.wowhead.com/forever/item=9515",
+      "fallback": false
+    },
+    "9516": {
+      "name": "Astral Knot Blouse",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 44,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+6 Stamina",
+        "+9 Intellect"
+      ],
+      "effects": [],
+      "req_level": 26,
+      "ilvl": 31,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "solid green chest for 26 (same stats as Nether-lace Tunic)",
+      "source": "https://www.wowhead.com/forever/item=9516",
+      "fallback": false
+    },
+    "9607": {
+      "name": "Bastion of Stormwind",
+      "quality": "Uncommon",
+      "type": "Off Hand Shield",
+      "armor": 495,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "9 Block"
+      ],
+      "effects": [
+        "Equip: Increased Defense +3."
+      ],
+      "req_level": 20,
+      "ilvl": 25,
+      "classes": "Paladin",
+      "verdict": "ok",
+      "verdict_note": "no primary stats; fine for a 1H+shield paladin, skip if you level with a 2H",
+      "source": "https://www.wowhead.com/forever/item=9607",
+      "fallback": false
+    },
+    "15109": {
+      "name": "Staff of Soran'ruk",
+      "quality": "Rare",
+      "type": "Two-Hand Staff",
+      "armor": null,
+      "damage": "36 - 55",
+      "speed": "2.90",
+      "dps": "15.69",
+      "stats": [
+        "+14 Stamina"
+      ],
+      "effects": [
+        "Equip: Increases damage done by Fire spells and effects by up to 34.",
+        "Equip: Increases damage done by Shadow spells and effects by up to 34."
+      ],
+      "req_level": 20,
+      "ilvl": 25,
+      "classes": "Warlock",
+      "verdict": "good",
+      "verdict_note": "+34 fire/shadow at req 20 is far above anything else at that level",
+      "source": "https://www.wowhead.com/forever/item=15109",
+      "fallback": false
+    },
+    "16605": {
+      "name": "Friar's Robes of the Light",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 10,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+1 Spirit"
+      ],
+      "effects": [],
+      "req_level": 5,
+      "ilvl": 5,
+      "classes": "Priest",
+      "verdict": "ok",
+      "verdict_note": "tiny but free chest upgrade at 5",
+      "source": "https://www.wowhead.com/forever/item=16605",
+      "fallback": false
+    },
+    "16606": {
+      "name": "Juju Hex Robes",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 10,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+1 Spirit"
+      ],
+      "effects": [],
+      "req_level": 5,
+      "ilvl": 5,
+      "classes": "Priest",
+      "verdict": "ok",
+      "verdict_note": "tiny but free chest upgrade at 5",
+      "source": "https://www.wowhead.com/forever/item=16606",
+      "fallback": false
+    },
+    "16607": {
+      "name": "Acolyte's Sacrificial Robes",
+      "quality": "Uncommon",
+      "type": "Chest Cloth",
+      "armor": 10,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+1 Spirit"
+      ],
+      "effects": [],
+      "req_level": 5,
+      "ilvl": 5,
+      "classes": "Priest",
+      "verdict": "ok",
+      "verdict_note": "tiny but free chest upgrade at 5",
+      "source": "https://www.wowhead.com/forever/item=16607",
+      "fallback": false
+    },
+    "16608": {
+      "name": "Aquarius Belt",
+      "quality": "Uncommon",
+      "type": "Waist Leather",
+      "armor": 40,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+2 Stamina",
+        "+2 Intellect"
+      ],
+      "effects": [],
+      "req_level": 16,
+      "ilvl": 16,
+      "classes": "Druid",
+      "verdict": "ok",
+      "verdict_note": "ordinary green belt for 16",
+      "source": "https://www.wowhead.com/forever/item=16608",
+      "fallback": false
+    },
+    "18465": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+15 Nature Resistance"
+      ],
+      "effects": [
+        "Equip: Improves your chance to hit by 1.0%.",
+        "Equip: +45 Attack Power against Humanoids."
+      ],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Rogue",
+      "verdict": "ok",
+      "verdict_note": "1% hit always useful; the AP only works on humanoids",
+      "source": "https://www.wowhead.com/forever/item=18465",
+      "fallback": false
+    },
+    "18466": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+30 Block Value",
+        "+15 Nature Resistance"
+      ],
+      "effects": [],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Warrior",
+      "verdict": "ok",
+      "verdict_note": "tank-only; does nothing for a DPS warrior",
+      "source": "https://www.wowhead.com/forever/item=18466",
+      "fallback": false
+    },
+    "18467": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+15 Nature Resistance"
+      ],
+      "effects": [
+        "Equip: Increases spell damage and healing by up to 18. Grants an additional 18 spell damage against Demons."
+      ],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Warlock",
+      "verdict": "good",
+      "verdict_note": "+18 spell power always on, more vs demons",
+      "source": "https://www.wowhead.com/forever/item=18467",
+      "fallback": false
+    },
+    "18468": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "Restores +4 mana per 5 sec.",
+        "+15 Nature Resistance"
+      ],
+      "effects": [
+        "Equip: Increases damage done by Arcane spells and effects by up to 21."
+      ],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Mage",
+      "verdict": "ok",
+      "verdict_note": "arcane damage only; fire/frost mages get just the mp5",
+      "source": "https://www.wowhead.com/forever/item=18468",
+      "fallback": false
+    },
+    "18469": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+15 Nature Resistance"
+      ],
+      "effects": [
+        "Equip: Increases healing done by up to 22 and damage done by up to 7 for all magical spells and effects.",
+        "Equip: Increases Spirit by 16 in Cavernous or Underground areas."
+      ],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Priest",
+      "verdict": "ok",
+      "verdict_note": "modest healing trinket; Spirit bonus is zone-limited",
+      "source": "https://www.wowhead.com/forever/item=18469",
+      "fallback": false
+    },
+    "18470": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+15 Nature Resistance"
+      ],
+      "effects": [
+        "Equip: Increases healing done by up to 22 and damage done by up to 7 for all magical spells and effects.",
+        "Equip: Increases Spirit by 16 in Forest and Grassland areas."
+      ],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Druid",
+      "verdict": "ok",
+      "verdict_note": "modest healing trinket; Spirit bonus is zone-limited",
+      "source": "https://www.wowhead.com/forever/item=18470",
+      "fallback": false
+    },
+    "18471": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+15 Nature Resistance"
+      ],
+      "effects": [
+        "Equip: Increases spell damage and healing by up to 18. Grants an additional 18 spell damage against Demons."
+      ],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Shaman",
+      "verdict": "good",
+      "verdict_note": "+18 spell power always on, more vs demons",
+      "source": "https://www.wowhead.com/forever/item=18471",
+      "fallback": false
+    },
+    "18472": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+15 Nature Resistance"
+      ],
+      "effects": [
+        "Equip: Increases healing done by up to 22 and damage done by up to 7 for all magical spells and effects.",
+        "Equip: Restores 9 Mana per 5 sec in Haunted areas."
+      ],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Paladin",
+      "verdict": "ok",
+      "verdict_note": "modest healing trinket; mp5 only in Haunted areas",
+      "source": "https://www.wowhead.com/forever/item=18472",
+      "fallback": false
+    },
+    "18473": {
+      "name": "Royal Seal of Eldre'Thalas",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+10 Agility",
+        "+15 Nature Resistance"
+      ],
+      "effects": [
+        "Equip: +45 Attack Power against Demons."
+      ],
+      "req_level": 54,
+      "ilvl": 62,
+      "classes": "Hunter",
+      "verdict": "ok",
+      "verdict_note": "+10 Agi always on; the AP only vs demons",
+      "source": "https://www.wowhead.com/forever/item=18473",
+      "fallback": false
+    },
+    "18762": {
+      "name": "Shard of the Green Flame",
+      "quality": "Rare",
+      "type": "Held In Off-hand",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+12 Stamina"
+      ],
+      "effects": [
+        "Equip: Increases damage done by Fire spells and effects by up to 16."
+      ],
+      "req_level": 50,
+      "ilvl": 54,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "strong off-hand for a fire mage or fire warlock at 50",
+      "source": "https://www.wowhead.com/forever/item=18762",
+      "fallback": false
+    },
+    "19982": {
+      "name": "Duskbat Drape",
+      "quality": "Rare",
+      "type": "Back (Cloak)",
+      "armor": 37,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+14 Agility"
+      ],
+      "effects": [
+        "Equip: Reduces damage from falling."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "+14 Agi cloak is very good for a rogue at 50",
+      "source": "https://www.wowhead.com/forever/item=19982",
+      "fallback": false
+    },
+    "19984": {
+      "name": "Ebon Mask",
+      "quality": "Rare",
+      "type": "Head Leather",
+      "armor": 122,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+14 Stamina"
+      ],
+      "effects": [
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: +36 Attack Power."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "1% crit + 36 AP head; great for a rogue at 50",
+      "source": "https://www.wowhead.com/forever/item=19984",
+      "fallback": false
+    },
+    "19990": {
+      "name": "Blessed Prayer Beads",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+7 Shadow Resistance"
+      ],
+      "effects": [
+        "Equip: Increases healing done by up to 11 and damage done by up to 4 for all magical spells and effects.",
+        "Use: Heal your target for 583 to 713. Usable while Silenced. (5 Min Cooldown)"
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "Priest",
+      "verdict": "ok",
+      "verdict_note": "small passive bonus plus an emergency heal; weaker than the Classic +190 healing on-use",
+      "source": "https://www.wowhead.com/forever/item=19990",
+      "fallback": false
+    },
+    "19991": {
+      "name": "Devilsaur Eye",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [],
+      "effects": [
+        "Equip: +16 Attack Power.",
+        "Use: Your next melee or ranged attack within 10 sec will Root the target for 2.5 sec. The duration of this effect is doubled if the target was moving. Only works against Beasts. (5 Min Cooldown)"
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "Hunter",
+      "verdict": "ok",
+      "verdict_note": "+16 AP is modest; the Classic +150 AP on-use is gone",
+      "source": "https://www.wowhead.com/forever/item=19991",
+      "fallback": false
+    },
+    "19992": {
+      "name": "Devilsaur Tooth",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+7 Agility"
+      ],
+      "effects": [
+        "Use: Reduces the Mana cost of your next Revive Pet cast within 30 sec by 100%. (10 Min Cooldown)"
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "Hunter",
+      "verdict": "ok",
+      "verdict_note": "+7 Agi filler trinket; Eye or Spear are the better picks",
+      "source": "https://www.wowhead.com/forever/item=19992",
+      "fallback": false
+    },
+    "20006": {
+      "name": "Circle of Hope",
+      "quality": "Rare",
+      "type": "Finger",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+6 Shadow Resistance"
+      ],
+      "effects": [
+        "Equip: Increases damage done by Holy spells and effects by up to 21."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "ok",
+      "verdict_note": "only helps Holy damage (Smite/Holy Fire); no healing",
+      "source": "https://www.wowhead.com/forever/item=20006",
+      "fallback": false
+    },
+    "20082": {
+      "name": "Woestave",
+      "quality": "Rare",
+      "type": "Ranged Wand",
+      "armor": null,
+      "damage": "68 - 127 Shadow",
+      "speed": "1.90",
+      "dps": "51.32",
+      "stats": [
+        "+3 Stamina"
+      ],
+      "effects": [
+        "Equip: Increases damage done by Shadow spells and effects by up to 11."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "51 DPS wand plus shadow damage; great for a priest at 50",
+      "source": "https://www.wowhead.com/forever/item=20082",
+      "fallback": false
+    },
+    "20083": {
+      "name": "Hunting Spear",
+      "quality": "Rare",
+      "type": "Two-Hand Polearm",
+      "armor": null,
+      "damage": "111 - 168",
+      "speed": "3.10",
+      "dps": "45.00",
+      "stats": [
+        "+17 Stamina",
+        "Restores +6 mana per 5 sec."
+      ],
+      "effects": [
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "hunter stat stick: crit, Stamina, mp5",
+      "source": "https://www.wowhead.com/forever/item=20083",
+      "fallback": false
+    },
+    "20130": {
+      "name": "Diamond Flask",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [],
+      "effects": [
+        "Use: Restores 1120 Health over 5 sec. This healing is strongest at first. If finished, gain 20 Strength for 1 min. (6 Min Cooldown)"
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "Warrior",
+      "verdict": "ok",
+      "verdict_note": "decent emergency heal; Str buff much smaller than Classic (+75)",
+      "source": "https://www.wowhead.com/forever/item=20130",
+      "fallback": false
+    },
+    "20255": {
+      "name": "Whisperwalk Boots",
+      "quality": "Rare",
+      "type": "Feet Leather",
+      "armor": 104,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+17 Agility",
+        "+4 Stamina"
+      ],
+      "effects": [
+        "Equip: Increases your effective stealth level by 1."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "+17 Agi boots; very good for a rogue at 50",
+      "source": "https://www.wowhead.com/forever/item=20255",
+      "fallback": false
+    },
+    "20517": {
+      "name": "Razorsteel Shoulders",
+      "quality": "Rare",
+      "type": "Shoulder Plate",
+      "armor": 410,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+10 Strength",
+        "+10 Stamina"
+      ],
+      "effects": [
+        "Equip: Improves your chance to hit by 1.0%.",
+        "Equip: When struck in combat, inflicts 3 Physical damage to the attacker."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "Str, Sta and 1% hit; strong warrior shoulders at 50",
+      "source": "https://www.wowhead.com/forever/item=20517",
+      "fallback": false
+    },
+    "20521": {
+      "name": "Fury Visor",
+      "quality": "Rare",
+      "type": "Head Plate",
+      "armor": 445,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+18 Strength",
+        "+9 Spirit"
+      ],
+      "effects": [
+        "Equip: Improves your chance to hit by 1.0%.",
+        "Equip: Improves your chance to get a critical strike by 1.0%."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "+18 Str with hit and crit; best DPS pick of the warrior rewards",
+      "source": "https://www.wowhead.com/forever/item=20521",
+      "fallback": false
+    },
+    "20530": {
+      "name": "Robes of Servitude",
+      "quality": "Rare",
+      "type": "Chest Cloth",
+      "armor": 75,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+15 Stamina",
+        "+10 Intellect"
+      ],
+      "effects": [
+        "Equip: Increases damage done by Fire spells and effects by up to 23.",
+        "Equip: Increases damage done by Shadow spells and effects by up to 23."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "+23 fire/shadow chest; great for a warlock at 50",
+      "source": "https://www.wowhead.com/forever/item=20530",
+      "fallback": false
+    },
+    "20534": {
+      "name": "Abyss Shard",
+      "quality": "Rare",
+      "type": "Trinket",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+10 Shadow Resistance"
+      ],
+      "effects": [
+        "Equip: Increases damage and healing done by magical spells and effects by up to 12.",
+        "Use: Casts your Summon Voidwalker spell with no mana or Soul Shard requirements. (15 Min Cooldown)"
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "Warlock",
+      "verdict": "good",
+      "verdict_note": "+12 spell power plus a free Voidwalker; good leveling trinket",
+      "source": "https://www.wowhead.com/forever/item=20534",
+      "fallback": false
+    },
+    "20536": {
+      "name": "Soul Harvester",
+      "quality": "Rare",
+      "type": "Two-Hand Staff",
+      "armor": null,
+      "damage": "88 - 133",
+      "speed": "3.30",
+      "dps": "33.48",
+      "stats": [
+        "+19 Stamina",
+        "+16 Intellect"
+      ],
+      "effects": [
+        "Equip: Improves your chance to hit by 1.0%.",
+        "Equip: Increases damage done by Shadow spells and effects by up to 73."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "+73 shadow damage at 50 is far above normal; best pick for a shadow warlock",
+      "source": "https://www.wowhead.com/forever/item=20536",
+      "fallback": false
+    },
+    "22272": {
+      "name": "Forest's Embrace",
+      "quality": "Rare",
+      "type": "Chest Leather",
+      "armor": 151,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+9 Intellect",
+        "+8 Spirit",
+        "Restores +6 mana per 5 sec."
+      ],
+      "effects": [
+        "Equip: Increases healing done by up to 44 and damage done by up to 15 for all magical spells and effects."
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "strong healer chest at 50 (resto druid)",
+      "source": "https://www.wowhead.com/forever/item=22272",
+      "fallback": false
+    },
+    "22274": {
+      "name": "Grizzled Pelt",
+      "quality": "Rare",
+      "type": "Chest Leather",
+      "armor": 151,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+17 Strength",
+        "+16 Agility",
+        "+13 Stamina"
+      ],
+      "effects": [],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "strong feral chest at 50",
+      "source": "https://www.wowhead.com/forever/item=22274",
+      "fallback": false
+    },
+    "22458": {
+      "name": "Moonshadow Stave",
+      "quality": "Rare",
+      "type": "Two-Hand Staff",
+      "armor": null,
+      "damage": "99 - 149",
+      "speed": "3.70",
+      "dps": "33.51",
+      "stats": [
+        "Restores +8 mana per 5 sec."
+      ],
+      "effects": [
+        "Equip: Improves your chance to get a critical strike by 1.0%.",
+        "Equip: Increases damage and healing done by magical spells and effects by up to 60.",
+        "Equip: Harmful spell casts have a chance to deal 91 Arcane or Shadow damage. (10ms cooldown)"
+      ],
+      "req_level": 50,
+      "ilvl": 52,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "+60 spell power staff at 50; excellent for a caster druid",
+      "source": "https://www.wowhead.com/forever/item=22458",
+      "fallback": false
+    },
+    "246164": {
+      "name": "Skullthumper",
+      "quality": "Uncommon",
+      "type": "Main Hand Mace",
+      "armor": null,
+      "damage": "12 - 23",
+      "speed": "2.50",
+      "dps": "7.00",
+      "stats": [],
+      "effects": [],
+      "req_level": 7,
+      "ilvl": 13,
+      "classes": "",
+      "verdict": "ok",
+      "verdict_note": "no stats, but 7 DPS at req 7 beats starter gear",
+      "source": "https://www.wowhead.com/forever/item=246164",
+      "fallback": false
+    },
+    "246165": {
+      "name": "Driftwood Smasher",
+      "quality": "Uncommon",
+      "type": "Two-Hand Mace",
+      "armor": null,
+      "damage": "23 - 36",
+      "speed": "3.30",
+      "dps": "8.94",
+      "stats": [
+        "+2 Stamina"
+      ],
+      "effects": [],
+      "req_level": 7,
+      "ilvl": 13,
+      "classes": "",
+      "verdict": "ok",
+      "verdict_note": "slow 2H with good DPS for 7; pick if you level with a 2H",
+      "source": "https://www.wowhead.com/forever/item=246165",
+      "fallback": false
+    },
+    "246265": {
+      "name": "Salvaged Wooden Tower Shield",
+      "quality": "Uncommon",
+      "type": "Off Hand Shield",
+      "armor": 311,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "5 Block",
+        "+2 Stamina"
+      ],
+      "effects": [],
+      "req_level": 8,
+      "ilvl": 14,
+      "classes": "",
+      "verdict": "ok",
+      "verdict_note": "early shield upgrade for a 1H+shield setup",
+      "source": "https://www.wowhead.com/forever/item=246265",
+      "fallback": false
+    },
+    "263411": {
+      "name": "Idol of Shifting Tides",
+      "quality": "Uncommon",
+      "type": "Relic Idol",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [],
+      "effects": [
+        "Equip: Reduces the mana cost of shapeshifting spells by 40."
+      ],
+      "req_level": 16,
+      "ilvl": 16,
+      "classes": "Druid",
+      "verdict": "ok",
+      "verdict_note": "fills an otherwise empty relic slot; helps form-shifting while leveling",
+      "source": "https://www.wowhead.com/forever/item=263411",
+      "fallback": false
+    },
+    "263412": {
+      "name": "Totem of Charged Flames",
+      "quality": "Uncommon",
+      "type": "Relic Totem",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [],
+      "effects": [
+        "Equip: Reduces the mana cost of Flame Shock and Lightning Bolt by 5 Mana."
+      ],
+      "req_level": 10,
+      "ilvl": 10,
+      "classes": "Shaman",
+      "verdict": "ok",
+      "verdict_note": "fills an otherwise empty relic slot; small mana saving",
+      "source": "https://www.wowhead.com/forever/item=263412",
+      "fallback": false
+    },
+    "263430": {
+      "name": "Windbough Wand",
+      "quality": "Uncommon",
+      "type": "Ranged Wand",
+      "armor": null,
+      "damage": "8 - 15 Arcane",
+      "speed": "1.60",
+      "dps": "7.19",
+      "stats": [
+        "+1 Intellect"
+      ],
+      "effects": [],
+      "req_level": 10,
+      "ilvl": 10,
+      "classes": "",
+      "verdict": "ok",
+      "verdict_note": "useful first wand at 10; crafted Lesser Magic Wand hits harder",
+      "source": "https://www.wowhead.com/forever/item=263430",
+      "fallback": false
+    },
+    "267369": {
+      "name": "Wolfsbane",
+      "quality": "Rare",
+      "type": "Two-Hand Sword",
+      "armor": null,
+      "damage": "69 - 105",
+      "speed": "3.40",
+      "dps": "25.59",
+      "stats": [
+        "+9 Stamina",
+        "+10 Intellect"
+      ],
+      "effects": [
+        "Chance on hit: Sear the target with a vortex of blazing wind, dealing 39 to 59 Holystorm damage. Deals 3 times as much damage to Wolves and Worgen."
+      ],
+      "req_level": 20,
+      "ilvl": 31,
+      "classes": "Paladin",
+      "verdict": "good",
+      "verdict_note": "rare ilvl 31 2H with a proc at req 20; slightly better stats than Verigan's Fist",
+      "source": "https://www.wowhead.com/forever/item=267369",
+      "fallback": false
+    },
+    "268484": {
+      "name": "Moonsilver Blade",
+      "quality": "Uncommon",
+      "type": "Two-Hand Sword",
+      "armor": null,
+      "damage": "57 - 86",
+      "speed": "3.40",
+      "dps": "21.03",
+      "stats": [
+        "+7 Stamina",
+        "+7 Intellect"
+      ],
+      "effects": [
+        "Chance on hit: Sear certain enchanted targets with blazing light causing them to take additional damage from Holy attacks and spells."
+      ],
+      "req_level": 20,
+      "ilvl": 31,
+      "classes": "Paladin",
+      "verdict": "ok",
+      "verdict_note": "green with lower DPS than Verigan's Fist/Wolfsbane; proc is situational",
+      "source": "https://www.wowhead.com/forever/item=268484",
+      "fallback": false
+    },
+    "275290": {
+      "name": "Stormforged Protector",
+      "quality": "Uncommon",
+      "type": "Off Hand Shield",
+      "armor": 311,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "5 Block",
+        "+1 Strength",
+        "+1 Stamina"
+      ],
+      "effects": [],
+      "req_level": 10,
+      "ilvl": 14,
+      "classes": "",
+      "verdict": "ok",
+      "verdict_note": "early shield upgrade for a 1H+shield setup",
+      "source": "https://www.wowhead.com/forever/item=275290",
+      "fallback": false
+    },
+    "277210": {
+      "name": "Pyrewood Signet Ring",
+      "quality": "Rare",
+      "type": "Finger",
+      "armor": null,
+      "damage": null,
+      "speed": null,
+      "dps": null,
+      "stats": [
+        "+4 Agility",
+        "+4 Stamina"
+      ],
+      "effects": [
+        "Equip: Improves your chance to hit by 0.4%."
+      ],
+      "req_level": 1,
+      "ilvl": 25,
+      "classes": "Rogue",
+      "verdict": "good",
+      "verdict_note": "rare ring with Agi and hit; ring slots are usually empty at this stage. req_level 1 is from the item json (tooltip shows none)",
+      "source": "https://www.wowhead.com/forever/item=277210",
+      "fallback": false
+    },
+    "277246": {
+      "name": "Ruby-Adorned Blade",
+      "quality": "Rare",
+      "type": "One-Hand Sword",
+      "armor": null,
+      "damage": "38 - 72",
+      "speed": "2.30",
+      "dps": "23.91",
+      "stats": [
+        "+3 Agility",
+        "+8 Stamina"
+      ],
+      "effects": [],
+      "req_level": 25,
+      "ilvl": 36,
+      "classes": "Rogue",
+      "verdict": "good",
+      "verdict_note": "rare ilvl 36 sword at req 25; strong main hand for a sword rogue",
+      "source": "https://www.wowhead.com/forever/item=277246",
+      "fallback": false
+    },
+    "280604": {
+      "name": "Rage of the Storm",
+      "quality": "Rare",
+      "type": "Two-Hand Mace",
+      "armor": null,
+      "damage": "102 - 154",
+      "speed": "3.60",
+      "dps": "35.56",
+      "stats": [
+        "+16 Strength",
+        "+15 Stamina"
+      ],
+      "effects": [
+        "Equip: Increases the damage dealt by your Stormstrike ability by 10%."
+      ],
+      "req_level": 30,
+      "ilvl": 40,
+      "classes": "",
+      "verdict": "good",
+      "verdict_note": "rare ilvl 40 2H at req 30 for enhancement shaman; Stormstrike bonus needs the level 40 talent. json reqlevel 30 (jsonEquip says 1)",
+      "source": "https://www.wowhead.com/forever/item=280604",
+      "fallback": false
+    }
+  },
+  "missing": [],
+  "forever_changes": {
+    "6898": "Classic: Uncommon, +4 Fire/+4 Shadow, Use 25 health every 3 sec (30 Min Cooldown). Forever: Rare, +9/+9, 48 health, 10 Min Cooldown.",
+    "6953": "Classic: +7 Stamina +6 Intellect +12 Spirit, no proc. Forever: +5 Sta +6 Int +10 Spi plus a Holyfire chance-on-hit.",
+    "9513": "Classic: 16 - 25 (7.07 DPS), no spell power. Forever: 12 - 19 (5.34 DPS) plus +2 spell damage and healing.",
+    "15109": "Classic: Uncommon, 39 - 59 (16.90 DPS), +9 Shadow/+9 Fire, no stats. Forever: Rare, 36 - 55 (15.69 DPS), +14 Stamina, +34 Fire/+34 Shadow.",
+    "18465": "Classic: +10 Fire Resistance, 2% hit. Forever: +15 Nature Resistance, 1% hit, +45 AP vs Humanoids.",
+    "18466": "Classic: +10 Fire Resistance, +200 Armor. Forever: +15 Nature Resistance, +30 Block Value.",
+    "18467": "Classic: +10 Fire Resistance, +23 spell damage/healing. Forever: +15 Nature Resistance, +18 (+18 more vs Demons).",
+    "18468": "Classic: +10 Fire Resistance, 8 mp5. Forever: +15 Nature Resistance, 4 mp5, +21 Arcane damage.",
+    "18469": "Classic: +10 Fire Resistance, +33 healing, 4 mp5. Forever: +15 Nature Resistance, +22 healing/+7 damage, +16 Spirit underground.",
+    "18470": "Classic: +10 Fire Resistance, +44 healing. Forever: +15 Nature Resistance, +22 healing/+7 damage, +16 Spirit in Forest/Grassland.",
+    "18471": "Classic: +10 Fire Resistance, +23 spell damage/healing. Forever: +15 Nature Resistance, +18 (+18 more vs Demons).",
+    "18472": "Classic: +10 Fire Resistance, +150 Armor, +22 healing. Forever: +15 Nature Resistance, +22 healing/+7 damage, 9 mp5 in Haunted areas.",
+    "18473": "Classic: +10 Fire Resistance, +48 ranged AP. Forever: +15 Nature Resistance, +10 Agility, +45 AP vs Demons.",
+    "19984": "Classic +11 Stamina, Forever +14 Stamina.",
+    "19990": "Classic: Use +190 healing for 20 sec (2 Min Cooldown), no class line. Forever: Priest only, +7 Shadow Resistance, +11 healing/+4 damage, Use heal 583 to 713 (5 Min Cooldown).",
+    "19991": "Classic: Use +150 AP and +2% hit for 20 sec (2 Min Cooldown). Forever: Hunter only, Equip +16 AP, Use root on Beasts (5 Min Cooldown).",
+    "19992": "Classic: Use pet's next attack crits (2 Min Cooldown). Forever: Hunter only, +7 Agility, Use free Revive Pet (10 Min Cooldown).",
+    "20006": "Classic: +1% Holy spell crit. Forever: +21 Holy spell damage.",
+    "20083": "Classic 5 mp5, Forever 6 mp5.",
+    "20130": "Classic: Use 9 health every 5 sec and +75 Strength for 1 min. Forever: Warrior only, 1120 health over 5 sec then +20 Strength for 1 min.",
+    "20255": "Classic +18 Agility, Forever +17 Agility.",
+    "20517": "Classic: +10 Str +10 Agi +9 Sta, 1% hit. Forever: +10 Str +10 Sta, 1% hit, 3 damage thorns (Agility removed).",
+    "20521": "Forever adds +9 Spirit; otherwise same.",
+    "20534": "Classic: Use only, 30 Min Cooldown. Forever: Warlock only, +10 Shadow Resistance, +12 spell damage/healing, 15 Min Cooldown.",
+    "20536": "Classic: 118 - 178 (44.85 DPS), +16 Sta, 1% spell hit, +24 Shadow. Forever: 88 - 133 (33.48 DPS), +19 Sta, +16 Int, 1% hit, +73 Shadow.",
+    "22272": "Classic: +8 Int +7 Spi, +55 healing. Forever: +9 Int +8 Spi, 6 mp5, +44 healing/+15 damage.",
+    "22274": "Classic +11 Stamina, Forever +13 Stamina.",
+    "22458": "Classic: 133 - 200 (45.00 DPS), +18 spell power, 7 mp5, 1% spell crit. Forever: 99 - 149 (33.51 DPS), +60 spell power, 8 mp5, 1% crit, 91 Arcane/Shadow proc.",
+    "new_in_forever": "246164, 246165, 246265, 263411, 263412, 263430, 267369, 268484, 275290, 277210, 277246, 280604 have no Classic Era page (checked 246164 and 267369 directly; the rest share the new Forever ID range).",
+    "unchanged": "7298, 7326-7329, 7508-7512, 9515, 9516, 9607, 16605-16608, 18762, 19982, 20082, 20530 match Classic Era stats (sell price aside)."
+  }
+}

@@ -1,0 +1,244 @@
+[
+  {
+    "profession": "Cooking",
+    "skill_key": "cooking",
+    "kind": "secondary",
+    "forever_changes": [
+      "Camping system: the Basic Campfire becomes a shared campsite where nearby players add up to three profession-crafted Camp Features; resting or crafting there for 1+ minute grants their buffs (Blizzard launch post).",
+      "Campfire kits: Basic Campfire Kit (skill 1, 3 camp objects), Journeyman Campfire Kit (5 objects; wow.gg lists skill 140, ConquestCapped/Wowhead DB list a drop at 90 from Lord Serpentis, Wailing Caverns), Expert Campfire Kit (10 objects, skill 200 or 220 depending on wow.gg table).",
+      "Iron Oven (Cooking 300): needed for the most advanced Cooking recipes. ConquestCapped says Mightfish Steak, Lobster Stew, Poached Sunscale Salmon and Baked Salmon need it; Wowhead's Mightfish Steak spell page shows no tool requirement.",
+      "About 44 new Cooking recipes (ConquestCapped), 35 of them give +5% experience from kills while Well Fed.",
+      "Six Smoothies (Cooking 25-250) bought with Merchant's Favor from Kalsey Sanden (Three Corners, Redridge Mountains, Alliance) or Aza'bek (Crossroads, The Barrens, Horde).",
+      "New recipes include Plain Ol' Paletusk (185, vendor Martha Wellsworth, Riverglades), Sweetpaw Jam (275, Hyjal Berries; Dala Fairmaw, Mount Hyjal per ConquestCapped, trainer per wow.gg), Goldthorn Tea (175, +15 Herbalism), Sage's Tea (250), Plated Armorfish (225), Flank au Poivre and Swiftstrike Steak (275), Savory Whimsyfin Delight (85, drop), Peace Tea (25, drop Frostmane Seer, Dun Morogh), Cookie's Feast (140, Cookie in The Deadmines).",
+      "Fishing vendors sell raw fish in stacks of five (ConquestCapped), so the fish-based route can be bought instead of fished.",
+      "New Cooking trainers: Katherine Lee and Paige (Kirin Tor camp, Alterac Mountains, Alliance), Gorg (Riverglades), Hnaz Blunderflame (Mount Hyjal, Alliance), Ortak Lomgok (Mount Hyjal, Horde), Nyalah Brightfire and Zerril Softbreeze (Zephras Isle, both factions).",
+      "Perks: Master Chef (extra result chance), Gourmand (longer food buffs), Working Overtime, Dedicated Study."
+    ],
+    "rank_caps": {"Apprentice": 75, "Journeyman": 150, "Expert": 225, "Artisan": 300},
+    "rank_requirements": {
+      "Apprentice": "Any Cooking trainer, no requirement.",
+      "Journeyman": "Cooking 50 and character level 10, any Cooking trainer.",
+      "Expert": "The Expert Cookbook, usable at Cooking 125 (about 1g, tradeable): Shandrina, Silverwind Refuge, Ashenvale (Alliance) or Wulan, Shadowprey Village, Desolace (Horde).",
+      "Artisan": "Quest Clamlette Surprise from Dirge Quikcleave, Gadgetzan inn, Tanaris; needs Cooking 225 and level 35. Asks for 12 Giant Egg, 10 Zesty Clam Meat, 20 Alterac Swiss (ConquestCapped); lead-in from Daryl Riknussun (Ironforge, Alliance) or Zamja (Orgrimmar, Horde)."
+    },
+    "artisan_trainer_notes": "No trainer teaches Artisan. Expert comes from The Expert Cookbook (Shandrina, Ashenvale, Alliance / Wulan, Desolace, Horde); Artisan from the quest Clamlette Surprise (Dirge Quikcleave, Gadgetzan, Tanaris, both factions). Regular trainers (Stormwind, Ironforge, Darnassus, Orgrimmar, Thunder Bluff, Undercity, starting towns, plus the new Zephras Isle, Riverglades and Mount Hyjal trainers) teach Apprentice/Journeyman and recipes.",
+    "steps": [
+      {"from": 1, "to": 50, "recipe": "Brilliant Smallfish", "crafts": 49, "mats_per_craft": [["Raw Brilliant Smallfish", 1]], "recipe_source": "known from the start (Wowhead)", "note": "wow.gg lists the recipe as sold by fishing vendors (Catherine Leland, Stormwind; Sewa Mistrunner, Thunder Bluff; Gretta Ganter, Dun Morogh) if not known."},
+      {"from": 50, "to": 100, "recipe": "Longjaw Mud Snapper", "crafts": 51, "mats_per_craft": [["Raw Longjaw Mud Snapper", 1]], "recipe_source": "vendor: Tharynn Bouden, Elwynn Forest (Alliance); Naal Mistrunner, Thunder Bluff (Horde)", "note": "Train Journeyman (Cooking 50, level 10) before 75."},
+      {"from": 100, "to": 175, "recipe": "Bristle Whisker Catfish", "crafts": 120, "mats_per_craft": [["Raw Bristle Whisker Catfish", 1]], "recipe_source": "vendor: Kilxx, The Barrens (Ratchet) (both)", "note": "Use The Expert Cookbook at 125 to pass 150."},
+      {"from": 175, "to": 225, "recipe": "Mithril Headed Trout", "crafts": 51, "mats_per_craft": [["Raw Mithril Head Trout", 1]], "recipe_source": "vendor: Kelsey Yance, Stranglethorn Vale (Booty Bay) (both); item Recipe: Mithril Head Trout", "note": "Start Clamlette Surprise once at 225 and level 35."},
+      {"from": 225, "to": 275, "recipe": "Spotted Yellowtail", "crafts": 51, "mats_per_craft": [["Raw Spotted Yellowtail", 1]], "recipe_source": "vendor: Gikkix, Tanaris (Steamwheedle Port) (both)", "note": "Needs Artisan (Clamlette Surprise) to pass 225."},
+      {"from": 275, "to": 300, "recipe": "Mightfish Steak", "crafts": 25, "mats_per_craft": [["Large Raw Mightfish", 1], ["Hot Spices", 1], ["Soothing Spices", 1]], "recipe_source": "vendor: Vivianna, Feralas (Alliance); Sheendra Tallgrass, Feralas (Horde)", "note": "Conflict: ConquestCapped says Mightfish Steak needs an Iron Oven (Cooking 300), which would block this step; Wowhead lists the step with no tool. Wowhead preferred. ConquestCapped's own route instead runs 1-58 Herb Baked Egg, 58-100 Boiled Clams, 100-160 Bristle Whisker Catfish, 160-175 Goblin Deviled Clams, 175-210 Rockscale Cod, 210-225 Mithril Head Trout, 225-300 Spotted Yellowtail."}
+    ],
+    "sources": [
+      "https://www.wowhead.com/forever/profession-leveling-guides/cooking",
+      "https://www.wowhead.com/forever/spell=18246/mightfish-steak",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-cooking/",
+      "https://wow.gg/professions/forever/cooking",
+      "https://www.wowhead.com/forever/blue-tracker/news/us/world-of-warcraft-forever-now-live-world-of-warcraft-blizzard-news-24315820"
+    ]
+  },
+  {
+    "profession": "First Aid",
+    "skill_key": "first_aid",
+    "kind": "secondary",
+    "forever_changes": [
+      "Healing Potions moved from Alchemy to First Aid: Minor (55), Lesser (85), Healing Potion (135) from the trainer; Greater (manual from Syndicate Mercenary, Arathi Highlands), Superior (manual, source unknown), Major (manual from Pexmit, Mount Hyjal, 8g). Each uses one herb, one spice, one vial.",
+      "New recipe families: Poultices (Simple 90 trainer, Clever 140, Superior 210, Powerful 280), Tourniquets (Woolen 120 trainer, Leather 200, Surgical 265), Anti-Venoms (Anti-Venom 80, Strong 130, Potent 215, Powerful 300). ConquestCapped says First Aid gained 17 recipes.",
+      "Skill levels for the manual recipes differ by source: Wowhead DB lists Greater Healing Potion 175, Superior 230, Major 290, Clever Poultice 160, Superior Poultice 225, Powerful Poultice 295, Leather Tourniquet 220, Surgical Tourniquet 280; wow.gg lists 155/215/275/140/210/280/200/265.",
+      "Camp objects: First Aid Kit (skill 20, Stamina buff like Power Word: Fortitude), Toxin Study (140, manual from Commander Springvale, Shadowfang Keep), Plague Doctor's Laboratory (300).",
+      "New both-faction trainers on Zephras Isle: Melasa Fairmend and Naleeia Tattermend.",
+      "Perk Field Medicine reduces Recently Bandaged by 5/10 sec outside instances.",
+      "Wowhead notes the 240-300 trainer details match Classic but are unconfirmed until checked on a live realm."
+    ],
+    "rank_caps": {"Apprentice": 75, "Journeyman": 150, "Expert": 225, "Artisan": 300},
+    "rank_requirements": {
+      "Apprentice": "Any First Aid trainer.",
+      "Journeyman": "First Aid 50, any First Aid trainer.",
+      "Expert": "Book Expert First Aid - Under Wraps (First Aid 125, about 1g): Deneb Walker, Stromgarde Keep, Arathi Highlands (Alliance) or Balai Lok'Wein, Brackenwall Village, Dustwallow Marsh (Horde).",
+      "Artisan": "Quest Triage, First Aid 225 and level 35: Doctor Gustaf VanHowzen, Theramore Isle, Dustwallow Marsh (Alliance, quest 6624) or Doctor Gregory Victor, Hammerfall, Arathi Highlands (Horde, quest 6622; breadcrumb Horde Trauma from Arnok, Orgrimmar). Save 15 patients before 6 die using the provided Triage Bandages."
+    },
+    "artisan_trainer_notes": "Doctor Gustaf VanHowzen (Theramore Isle, Dustwallow Marsh, Alliance) and Doctor Gregory Victor (Hammerfall, Arathi Highlands, Horde) give Triage and then train Heavy Mageweave Bandage (240), Runecloth Bandage (260) and Heavy Runecloth Bandage (290). Expert book and the Heavy Silk / Mageweave manuals: Deneb Walker (Stromgarde Keep, Arathi Highlands, Alliance) and Balai Lok'Wein (Brackenwall Village, Dustwallow Marsh, Horde). Regular trainers only go to 150.",
+    "steps": [
+      {"from": 1, "to": 40, "recipe": "Linen Bandage", "crafts": 41, "mats_per_craft": [["Linen Cloth", 1]], "recipe_source": "trainer (known from the start)", "note": ""},
+      {"from": 40, "to": 80, "recipe": "Heavy Linen Bandage", "crafts": 55, "mats_per_craft": [["Linen Cloth", 2]], "recipe_source": "trainer", "note": "Train Journeyman at 50 before 75."},
+      {"from": 80, "to": 115, "recipe": "Wool Bandage", "crafts": 48, "mats_per_craft": [["Wool Cloth", 1]], "recipe_source": "trainer", "note": ""},
+      {"from": 115, "to": 150, "recipe": "Heavy Wool Bandage", "crafts": 48, "mats_per_craft": [["Wool Cloth", 2]], "recipe_source": "trainer", "note": "Buy Expert First Aid - Under Wraps at 125."},
+      {"from": 150, "to": 180, "recipe": "Silk Bandage", "crafts": 41, "mats_per_craft": [["Silk Cloth", 1]], "recipe_source": "trainer", "note": ""},
+      {"from": 180, "to": 210, "recipe": "Heavy Silk Bandage", "crafts": 41, "mats_per_craft": [["Silk Cloth", 2]], "recipe_source": "vendor: Manual: Heavy Silk Bandage from Deneb Walker, Arathi Highlands (Alliance); Balai Lok'Wein, Dustwallow Marsh (Horde)", "note": ""},
+      {"from": 210, "to": 240, "recipe": "Mageweave Bandage", "crafts": 41, "mats_per_craft": [["Mageweave Cloth", 1]], "recipe_source": "vendor: Manual: Mageweave Bandage from Deneb Walker, Arathi Highlands (Alliance); Balai Lok'Wein, Dustwallow Marsh (Horde)", "note": "Do Triage at 225 (level 35) to pass 225."},
+      {"from": 240, "to": 260, "recipe": "Heavy Mageweave Bandage", "crafts": 24, "mats_per_craft": [["Mageweave Cloth", 2]], "recipe_source": "trainer: Doctor Gustaf VanHowzen, Theramore Isle, Dustwallow Marsh (Alliance); Doctor Gregory Victor, Hammerfall, Arathi Highlands (Horde)", "note": "Wowhead: unconfirmed on a live realm."},
+      {"from": 260, "to": 290, "recipe": "Runecloth Bandage", "crafts": 40, "mats_per_craft": [["Runecloth", 1]], "recipe_source": "trainer: Doctor Gustaf VanHowzen (Alliance); Doctor Gregory Victor (Horde)", "note": ""},
+      {"from": 290, "to": 300, "recipe": "Heavy Runecloth Bandage", "crafts": 11, "mats_per_craft": [["Runecloth", 2]], "recipe_source": "trainer: Doctor Gustaf VanHowzen (Alliance); Doctor Gregory Victor (Horde)", "note": "ConquestCapped totals about 422 bandages with a 1-40/40-80/... split close to Wowhead's."}
+    ],
+    "sources": [
+      "https://www.wowhead.com/forever/profession-leveling-guides/first-aid",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-first-aid/",
+      "https://wow.gg/professions/forever/first-aid"
+    ]
+  },
+  {
+    "profession": "Fishing",
+    "skill_key": "fishing",
+    "kind": "secondary",
+    "forever_changes": [
+      "Camp objects (Bait and Tackle): Fish Bowl (skill 20, +8% stats to seated players; Raw Brilliant Smallfish + Empty Vial), Fishing Rack (140; Simple Wood x2, Crystal Vial, Raw Mithril Head Trout x2), Fishing Hut (300; Simple Wood x5, Bolt of Runecloth x2, Seasonal Fish Steaks).",
+      "Find Fish shows nearby fishing spots on the minimap; how it is learned is unconfirmed (RankedBoost only).",
+      "New both-faction trainers: Baelann Swiftcurrent (Valanaar) and Fenn Fairweather (Shen'dar Village) on Zephras Isle; Krix (Powderfuse Port, Riverglades).",
+      "Perk Luremaster: 25%/50% chance of an extra fish while a lure is active.",
+      "Chef's Knife: usable at Fishing 275 and level 35, prepares unique fish (RankedBoost).",
+      "Fishing vendors sell raw fish in stacks of five (ConquestCapped).",
+      "Lure set: Shiny Bauble +25, Nightcrawlers +50 (skill 50), Aquadynamic Fish Lens +50, Bright Baubles +75 (skill 100), Flesh Eating Worm +75, Aquadynamic Fish Attractor +100; Wide-Brimmed Fishing Hat attaches a +25 lure.",
+      "Zone water skill tiers (wow.gg): 25 starting zones; 75 capitals/Barrens/Westfall/Darkshore/Loch Modan/Silverpine; 150 Ashenvale/Duskwood/Hillsbrad/Redridge/Stonetalon/Wetlands; 225 Alterac/Arathi/Desolace/Dustwallow/STV/Swamp of Sorrows/Thousand Needles; 300 Azshara/Felwood/Feralas/Tanaris/Hinterlands/Un'Goro/WPL; 425 Burning Steppes/EPL/Silithus/Winterspring/Jademir Lake/Bay of Storms. No source gives a water skill for Riverglades, Shen'dralas or Mount Hyjal."
+    ],
+    "rank_caps": {"Apprentice": 75, "Journeyman": 150, "Expert": 225, "Artisan": 300},
+    "rank_requirements": {
+      "Apprentice": "Any Fishing trainer, no level requirement.",
+      "Journeyman": "Fishing 50 and character level 10, any Fishing trainer.",
+      "Expert": "Book Expert Fishing - The Bass and You (item 16083), Fishing 125 and level 20, sold by Old Man Heming, Booty Bay, Stranglethorn Vale (also on the Auction House).",
+      "Artisan": "Quest Nat Pagle, Angler Extreme (quest 6607) from Nat Pagle, Tidefury Cove, Dustwallow Marsh; Fishing 225 and level 35. Catch Feralas Ahi (Feralas), Misty Reed Mahi Mahi (Swamp of Sorrows), Sar'theris Striker (Desolace), Savage Coast Blue Sailfin (Stranglethorn Vale)."
+    },
+    "artisan_trainer_notes": "Trainers only teach up to 150. Expert: book from Old Man Heming (Booty Bay, both factions). Artisan: Nat Pagle quest in Dustwallow Marsh (both factions). Trainers include Lee Brown (Elwynn Forest), Arnold Leland (Stormwind), Grimnur Stonebrand (Ironforge), Astaia (Darnassus), Lumak (Orgrimmar), Kah Mistrunner (Thunder Bluff), Armand Cromwell (Undercity), Uthan Stillwater (Mulgore), plus Baelann Swiftcurrent / Fenn Fairweather (Zephras Isle) and Krix (Riverglades).",
+    "steps": [
+      {"from": 1, "to": 75, "node_or_target": "Starting-zone waters (Raw Brilliant Smallfish, Raw Longjaw Mud Snapper)", "zones_alliance": ["Elwynn Forest", "Dun Morogh", "Teldrassil"], "zones_horde": ["Durotar", "Mulgore", "Tirisfal Glades"], "zones_neutral": ["Zephras Isle"], "note": "Lake east of Goldshire / Crystal Lake (Elwynn), Stonebull Lake (Mulgore). Use Shiny Bauble. Train Journeyman at 50 (level 10)."},
+      {"from": 75, "to": 150, "node_or_target": "Capital and 10-20 zone waters (Raw Bristle Whisker Catfish)", "zones_alliance": ["Stormwind City", "Ironforge", "Darnassus", "Westfall", "Loch Modan", "Darkshore"], "zones_horde": ["Orgrimmar", "Undercity", "Thunder Bluff", "The Barrens", "Silverpine Forest"], "zones_neutral": [], "note": "Stormwind canals or the pond by the Thunder Bluff Auction House (ConquestCapped 75-130). With Nightcrawlers (+50) from ~125 you can move to the 150 zones. Buy Expert Fishing - The Bass and You at 125."},
+      {"from": 150, "to": 225, "node_or_target": "Open water and inland lakes (Raw Mithril Head Trout from ~205)", "zones_alliance": ["Ashenvale"], "zones_horde": ["Stonetalon Mountains"], "zones_neutral": ["Dustwallow Marsh", "Stranglethorn Vale", "Arathi Highlands", "Desolace", "Swamp of Sorrows", "Thousand Needles", "Alterac Mountains"], "note": "ConquestCapped: 130-205 Mystral Lake (Ashenvale, via Astranaar) for Alliance or Stonetalon Mountains (via Sun Rock Retreat) for Horde, then 205-225 Dustwallow Marsh inland water (Theramore Isle / Brackenwall Village). Use Bright Baubles. Do Nat Pagle, Angler Extreme at 225 (level 35)."},
+      {"from": 225, "to": 300, "node_or_target": "Inland water in 300-skill zones (Redgill, Nightfin Snapper, Sunscale Salmon)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Feralas", "Tanaris", "The Hinterlands", "Un'Goro Crater", "Felwood", "Western Plaguelands", "Azshara", "Dustwallow Marsh"], "note": "ConquestCapped: 225-255 Dustwallow Marsh inland, 255-300 Feralas inland from Feathermoon Stronghold (Alliance) or Camp Mojache (Horde); skip Jademir Lake (425). Avoid Winterspring, Silithus, Eastern Plaguelands until 425."}
+    ],
+    "sources": [
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-fishing/",
+      "https://wow.gg/professions/forever/fishing",
+      "https://www.wow-professions.com/forever/fishing-leveling-guide",
+      "https://rankedboost.com/world-of-warcraft/forever/professions/fishing-leveling/"
+    ]
+  },
+  {
+    "profession": "Mining",
+    "skill_key": "mining",
+    "kind": "gathering",
+    "forever_changes": [
+      "Ores stack to 20 (was 10).",
+      "Every starting zone has a Junior Mining Trainer (Apprentice only, no smelting): Kelsey Fargo (Elwynn), Sally Swiftwrench (Dun Morogh), Fanorran Stilloak (Teldrassil), Norzsh (Durotar), Vartha Rockmane (Mulgore), Walter Mason (Tirisfal).",
+      "New nodes: Poor Copper Vein in starting areas (Mulgore, Durotar, Elwynn Forest; skill-ups only to 20) and Chunk of Amber in Teldrassil; Heavy Thorium Vein (skill 300), a rare Mount Hyjal spawn that looks like a Rich Thorium Vein with green fel smoke.",
+      "Scarce minerals drop from normal veins. Pyrite: Copper/Tin/Iron veins (wow-professions) or Copper/Tin/Silver/Iron veins and Large Chunks of Amber (ConquestCapped). Bauxite: Mithril (wow-professions) or Gold and Mithril (ConquestCapped). Pitchblende: Thorium veins (wow-professions); Wowhead item page also says Pitchblende can be bought in Riverglades.",
+      "New smelts (any Mining trainer): Smelt Azerothium at 275 (2 Pitchblende + 1 Coal, Forge) -> Azerothium Bar; Smelt Heavy Thorium at 300 (Heavy Thorium Ore, needs a Molten Foundry) -> Heavy Thorium Bar. Alchemists can transmute Heavy Thorium Bar into Legionite Bar.",
+      "Smelt Elementium (Elementium Bar) is listed at 295-310 with no known ore source.",
+      "Camp objects: Lodestone (20, melee AP buff), Rock Garden (140, spawns a common node; Blueprint from Relic Guardian, Excavation Site: Wetlands, 7.66%), Molten Foundry (300, needed for Heavy Thorium).",
+      "Dynamic node respawn: more players nearby means faster respawns (Warcraft Tavern).",
+      "Mining for Dummies manual (early starting-zone quest) teaches Mining if you know fewer than two professions; Rockslicer (Deadmines axe) lets anyone mine Copper/Tin/Silver/Iron for 30 charges.",
+      "New neutral full trainers: Grungle (Riverglades), Messana Crestwind and Halavuul Cragwind (Zephras Isle). Twilight Mine Light (+4 Mining) is a reward from A Miner Problem (Riverglades, Alliance).",
+      "Find Minerals cannot run alongside Find Herbs and turns off on death."
+    ],
+    "rank_caps": {"Apprentice": 75, "Journeyman": 150, "Expert": 225, "Artisan": 300},
+    "rank_requirements": {
+      "Apprentice": "Any time, 10c. Mining Pick in bags for every rank.",
+      "Journeyman": "Mining 50, 5s.",
+      "Expert": "Mining 125, 50s.",
+      "Artisan": "Mining 200, 5g."
+    },
+    "artisan_trainer_notes": "Full trainers teach all ranks. Alliance: Gelman Stonehand (Stormwind), Geofram Bouldertoe (Ironforge), Yarr Hammerstone and Dank Drizzlecut (Dun Morogh), Brock Stoneseeker (Loch Modan), Kurdram Stonehammer (Darkshore), Matt Johnson (Duskwood). Horde: Makaru (Orgrimmar), Brek Stonehoof (Thunder Bluff), Brom Killian (Undercity), Krunn (Durotar), Johan Focht (Silverpine Forest). Neutral: Pikkle (Tanaris), Grungle (Riverglades), Messana Crestwind and Halavuul Cragwind (Zephras Isle). Junior trainers stop at 75 (wow.gg lists Matt Johnson as both-faction).",
+    "steps": [
+      {"from": 1, "to": 65, "node_or_target": "Copper Vein (also Poor Copper Vein, Chunk of Amber)", "zones_alliance": ["Elwynn Forest", "Dun Morogh", "Teldrassil"], "zones_horde": ["Durotar", "Mulgore", "Tirisfal Glades"], "zones_neutral": ["Zephras Isle", "The Barrens"], "note": "Poor Copper Vein gives skill only to 20. Zephras Isle: start in Thendal Village, smelt at Shen'dar Village. Optional: buy ~140 Copper Ore and smelt Copper Bar 1-65, keeping 70 bars for Bronze."},
+      {"from": 65, "to": 125, "node_or_target": "Tin Vein (65), Silver Vein (75)", "zones_alliance": ["Redridge Mountains", "Wetlands"], "zones_horde": ["Silverpine Forest"], "zones_neutral": ["The Barrens", "Ashenvale", "Stonetalon Mountains", "Thousand Needles", "Hillsbrad Foothills"], "note": "Train Journeyman at 50. Wetlands cave (Alliance), Silverpine cave or Hillsbrad (Horde). Optional smelting: Tin Bar 65-75, Bronze Bar 75-105 (70 smelts), Silver Bar 105-120 (35-45). Train Expert at 125."},
+      {"from": 125, "to": 175, "node_or_target": "Iron Deposit (125), Gold Vein (155)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Arathi Highlands", "Stranglethorn Vale", "Desolace", "Thousand Needles", "Badlands"], "note": "Smelt Iron from 125 (grey 140, ~20 Iron Ore to 135); Smelt Gold from 155 (grey 185, ~22 Gold Ore for 155-175). Riverglades (Wowhead: level 36-44) has trainer Grungle but no source maps its veins."},
+      {"from": 175, "to": 230, "node_or_target": "Mithril Deposit (175), Gold Vein (155)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["The Hinterlands", "Tanaris", "Azshara", "Badlands", "Searing Gorge"], "note": "Train Artisan at 200 (needed past 225). Hinterlands route has level 62 elites; skip the 4 Tanaris caves under 60. ConquestCapped: from 185 only veins give skill, no smelt."},
+      {"from": 230, "to": 275, "node_or_target": "Truesilver Deposit (230), Dark Iron Deposit (230), Small Thorium Vein (245)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Searing Gorge", "Burning Steppes", "Un'Goro Crater", "Felwood", "Blasted Lands", "Silithus", "Winterspring"], "note": "Dark Iron Deposit is in Searing Gorge / Burning Steppes. Small Thorium: Un'Goro (2 caves), Blasted Lands (Alliance cannot mine inside the Garrison Armory), Felwood (Jaedenar cave). Smelt Thorium from 250."},
+      {"from": 275, "to": 300, "node_or_target": "Rich Thorium Vein (275)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Winterspring", "Eastern Plaguelands", "Un'Goro Crater", "Silithus", "Azshara", "Burning Steppes"], "note": "Smelt Azerothium (275, 2 Pitchblende + 1 Coal) for skill-ups (Warcraft Tavern; conflicts with ConquestCapped's 'only veins from 185'). At 300: Heavy Thorium Vein in Mount Hyjal (level 60 zone), smelt at a Molten Foundry."}
+    ],
+    "sources": [
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-mining/",
+      "https://www.wow-professions.com/forever/mining-leveling-guide",
+      "https://www.wow-professions.com/forever/mining-changes",
+      "https://wow.gg/professions/forever/mining",
+      "https://warcraft.wiki.gg/wiki/Forever_mining_techniques",
+      "https://www.warcrafttavern.com/forever/guides/mining/",
+      "https://www.wowhead.com/forever/item=249426/pitchblende",
+      "https://www.wowhead.com/forever/objects/mineral-veins (via search index: Poor Copper Vein and Heavy Thorium Vein marked New)",
+      "https://www.wowhead.com/forever/guide/professions/mining/overview-leveling (body did not render)"
+    ]
+  },
+  {
+    "profession": "Herbalism",
+    "skill_key": "herbalism",
+    "kind": "gathering",
+    "forever_changes": [
+      "New level-60 herbs Marefoil, Demonsage and Death Lotus (item level 60). No source gives a skill requirement or a confirmed node. Death Lotus: Enchant Gloves - Lotus Claw gives a small chance of it from any herb in Mount Hyjal.",
+      "Scarce materials drop as bonuses: Frilled Lichen (ilvl 25; Earthroot, Mageroyal, Briarthorn, Bruiseweed/Stranglekelp, Kingsblood), Rosecap (ilvl 45; Kingsblood, Fadeleaf, Goldthorn), Stranglevine (ilvl 60, source unknown).",
+      "New herb nodes (Wowhead): Wilted Peacebloom and Stunted Silverleaf in starting areas, Tomb Weed (Tirisfal Glades), Hyjal Silphium (quest item, no location).",
+      "Herb Seeds: Commonplace (Peacebloom, Silverleaf), Uncommon (Briarthorn), Unusual, Scarce. Plant in a Greenhouse; combine tiers at a Seed Hybridizer.",
+      "Camp objects: Incense Candle (20, Intellect buff, Peacebloom + Silverleaf), Greenhouse (140, Blueprint from Shadetooth, Excavation Site: Wetlands, 6.85%), Seed Hybridizer (300; Mountain Silversage x4, Crystal Vial, Runecloth x2).",
+      "Junior Herbalism Trainers (Apprentice only) in every starting zone; Zephras Isle has two full trainers instead (Halassa Fernbreeze, Syriel Nightrain).",
+      "Wild Harvest manual (early quest) teaches Herbalism and adds 2 skill up to 15; Goldthorn Tea (Cooking 175) gives +15 Herbalism; Graverobber's Shovel gathers Grave Moss without the profession.",
+      "Bags: Cenarion Herb Bag 26 slots (was 20), Satchel of Cenarius 32 (was 24), new Apprentice's Herb Pouch (4 slots).",
+      "Tauren Cultivation duplicates a herb; Find Herbs cannot run alongside Find Minerals and must be reapplied after death."
+    ],
+    "rank_caps": {"Apprentice": 75, "Journeyman": 150, "Expert": 225, "Artisan": 300},
+    "rank_requirements": {
+      "Apprentice": "Any time, 10c.",
+      "Journeyman": "Herbalism 50, 5s.",
+      "Expert": "Herbalism 125, 50s.",
+      "Artisan": "Herbalism 200, 5g."
+    },
+    "artisan_trainer_notes": "25 full trainers teach all ranks, e.g. Alliance: Herbalist Pomeroy (Elwynn), Shylamiir / Tel'Athir / Tannysa (Stormwind), Reyna Stonebranch (Ironforge), Firodren Mooncaller (Darnassus), Kali Healtouch (Loch Modan), Alma Jainrose (Redridge), Telurinon Moonshadow (Wetlands), Brant Jasperbloom (Dustwallow), Edward Egan (Alterac), Cylania Rootstalker (Ashenvale). Horde: Jandi (Orgrimmar), Komin Winterhoof (Thunder Bluff), Martha Alliestar (Undercity), Mishiki (Durotar), Faruza (Tirisfal), Aranae Venomblood (Hillsbrad), Ruw (Feralas), Angrun (STV). Both: Malvor (Moonglade), Flora Silverwind (STV), Halassa Fernbreeze and Syriel Nightrain (Zephras Isle). Faction tags for some differ between ConquestCapped and wow.gg.",
+    "steps": [
+      {"from": 1, "to": 50, "node_or_target": "Peacebloom (1), Silverleaf (1), Earthroot (15)", "zones_alliance": ["Elwynn Forest", "Dun Morogh", "Teldrassil"], "zones_horde": ["Durotar", "Mulgore", "Tirisfal Glades"], "zones_neutral": ["Zephras Isle"], "note": "Zephras Isle has more Peacebloom spawns than any other zone. Wilted Peacebloom / Stunted Silverleaf in starting areas. Train Journeyman at 50."},
+      {"from": 50, "to": 100, "node_or_target": "Mageroyal (50), Briarthorn (70), Stranglekelp (85)", "zones_alliance": ["Darkshore", "Loch Modan", "Westfall", "Wetlands"], "zones_horde": ["Silverpine Forest"], "zones_neutral": ["The Barrens", "Ashenvale"], "note": "Stranglekelp grows only underwater. RankedBoost: Mageroyal in The Barrens (Horde) / Ashenvale (Alliance)."},
+      {"from": 100, "to": 150, "node_or_target": "Bruiseweed (100), Wild Steelbloom (115), Grave Moss (120), Kingsblood (125)", "zones_alliance": ["Wetlands", "Duskwood"], "zones_horde": [], "zones_neutral": ["Stonetalon Mountains", "Hillsbrad Foothills", "Stranglethorn Vale", "Ashenvale"], "note": "Train Expert at 125."},
+      {"from": 150, "to": 205, "node_or_target": "Liferoot (150), Fadeleaf (160), Goldthorn (170), Khadgar's Whisker (185), Wintersbite (195)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Stranglethorn Vale", "Arathi Highlands", "Dustwallow Marsh", "Swamp of Sorrows", "Alterac Mountains"], "note": "Wintersbite only in Alterac Mountains. Train Artisan at 200 (no trainers in Tanaris or Searing Gorge)."},
+      {"from": 205, "to": 250, "node_or_target": "Firebloom (205), Purple Lotus (210), Arthas' Tears (220), Sungrass (230), Blindweed (235), Ghost Mushroom (245)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Tanaris", "Searing Gorge", "The Hinterlands", "Feralas", "Azshara", "Swamp of Sorrows", "Un'Goro Crater"], "note": "wow-professions: 205-230 Tanaris/Searing Gorge, 230-270 The Hinterlands (cave Ghost Mushroom at 245)."},
+      {"from": 250, "to": 300, "node_or_target": "Gromsblood (250), Golden Sansam (260), Dreamfoil (270), Mountain Silversage (280), Plaguebloom (285), Icecap (290), Black Lotus (300)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Felwood", "Un'Goro Crater", "Eastern Plaguelands", "Winterspring", "Azshara", "Burning Steppes"], "note": "Icecap only in Winterspring. wow-professions finishes 270-300 in Felwood. Endgame: Mount Hyjal (level 60) herbs can yield Death Lotus with the Lotus Claw glove enchant."}
+    ],
+    "sources": [
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-herbalism/",
+      "https://wow.gg/professions/forever/herbalism",
+      "https://rankedboost.com/world-of-warcraft/forever/professions/herbalism-leveling/",
+      "https://www.wow-professions.com/forever/herbalism-leveling-guide",
+      "https://www.wow-professions.com/forever/herbalism-changes",
+      "https://www.warcrafttavern.com/forever/guides/herbalism/",
+      "https://warcraft.wiki.gg/wiki/Marefoil",
+      "https://www.wowhead.com/forever/objects/herbs (via search index)",
+      "https://www.wowhead.com/forever/items/trade-goods/herbs (via search index)",
+      "https://www.wowhead.com/forever/guide/professions/herbalism/overview-leveling (body did not render)"
+    ]
+  },
+  {
+    "profession": "Skinning",
+    "skill_key": "skinning",
+    "kind": "gathering",
+    "forever_changes": [
+      "Scarce skins: Scarce Pristine Leather (ilvl 25, drop or skinned; Loch Modan, The Barrens), Scarce Pristine Hide (ilvl 45; Maddened Rotclaws, Wetlands), Pristine Scale (ilvl 60).",
+      "New level-60 Fel reagents Fel Hide and Fel Leather (sources unconfirmed).",
+      "Cured hides are a new step; cured Rugged Hide is made only at a Tanning Rack.",
+      "Tanning camp skill: Camp Chair (20, 2% crit buff; 3 Light Leather + 2 Simple Wood), Field Guide (140, Track Beasts; Blueprint 0.25% from Lady Anacondra, Wailing Caverns), Trapper's Workbench (300, holds a trap; Blueprint 0.01% from Houndmaster Loksey, Scarlet Monastery).",
+      "Junior Skinning Trainers (Apprentice only) in starting zones: Riley Peltskinner, Brighid Stormflayer, Terunne Bearshaper, Kagil, Nawka Wildsong, Margaret Weaver; they sell the 4-slot Apprentice's Skinning Satchel. Zephras Isle has full trainers Mendalass Tattermend and Ishlee Breezewhisper.",
+      "Pelt Collecting for Beginners manual (early quest) teaches Skinning and adds 2 skill up to 15.",
+      "Keen Skinning Knife (+3 Skinning) from the Horde quest Unwelcome Guests (The Barrens); Enchant Gloves - Advanced Skinning (+10, Enchanting 250) is new.",
+      "Zephras Isle has about 20 skinnable beast types (mostly Ruined Leather Scraps and Light Leather).",
+      "Perk Bountiful Harvest raises Scarce material chance from Mining, Herbalism and Skinning by 20-100%."
+    ],
+    "rank_caps": {"Apprentice": 75, "Journeyman": 150, "Expert": 225, "Artisan": 300},
+    "rank_requirements": {
+      "Apprentice": "Any time, 10c. Skinning Knife in bags.",
+      "Journeyman": "Skinning 50, 5s.",
+      "Expert": "Skinning 125, 50s.",
+      "Artisan": "Skinning 200, 5g."
+    },
+    "artisan_trainer_notes": "Full trainers teach all ranks. Alliance: Maris Granger (Stormwind), Balthus Stoneflayer (Ironforge), Eladriel (Darnassus), Helene Peltskinner (Elwynn), Radnaal Maneweaver (Teldrassil), Wilma Ranthal (Redridge), Jayla (Ashenvale). Horde: Thuwd (Orgrimmar), Mooranta (Thunder Bluff), Killian Hagey (Undercity), Rand Rhobart (Tirisfal; wow.gg lists both factions), Yonn Deepcut (Mulgore), Dranh (The Barrens), Malux (Desolace), Kulleg Stonehorn (Feralas). Both: Mendalass Tattermend (Shen'dar Village) and Ishlee Breezewhisper (Valanaar), Zephras Isle.",
+    "steps": [
+      {"from": 1, "to": 50, "node_or_target": "Beasts level 1-14 (Light Leather, Ruined Leather Scraps)", "zones_alliance": ["Elwynn Forest", "Dun Morogh", "Darkshore"], "zones_horde": ["Durotar"], "zones_neutral": ["The Barrens", "Zephras Isle"], "note": "Skill needed: 1 for levels 1-10, (level-10)x10 for 11-20, level x5 above 20. Mottled Boars (Valley of Trials), Young/Timber Wolves (Northshire). Train Journeyman at 50."},
+      {"from": 50, "to": 100, "node_or_target": "Beasts level 15-19 (Light/Medium Leather)", "zones_alliance": ["Loch Modan", "Westfall", "Redridge Mountains", "Darkshore"], "zones_horde": [], "zones_neutral": ["The Barrens"], "note": "Barrens raptor camp west of Northwatch Hold (Sunscale Scytheclaw, Zhevra Charger, Ornery Plainstrider); Loch Modan boars, bears, crocolisks."},
+      {"from": 100, "to": 150, "node_or_target": "Beasts level 20-29 (Medium/Heavy Leather)", "zones_alliance": ["Wetlands", "Duskwood"], "zones_horde": [], "zones_neutral": ["Hillsbrad Foothills", "Thousand Needles", "Ashenvale", "The Barrens"], "note": "Whelgar's Excavation Site raptors (Wetlands); RankedBoost Horde pick: The Barrens (Thunderhead, Stormhide). Train Expert at 125."},
+      {"from": 150, "to": 200, "node_or_target": "Beasts level 30-39 (Heavy Leather, Thick Leather, Turtle Scale)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Stranglethorn Vale", "Hillsbrad Foothills", "Thousand Needles", "Alterac Mountains", "Arathi Highlands", "Badlands", "Dustwallow Marsh", "Desolace"], "note": "Foothill Caverns yetis (Hillsbrad). Train Artisan at 200. Riverglades (Wowhead: 36-44) fits this band by the level x5 rule, but no reliable source lists its beasts."},
+      {"from": 200, "to": 250, "node_or_target": "Beasts level 40-49 (Thick, Rugged Leather)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Feralas", "Stranglethorn Vale", "Tanaris", "The Hinterlands"], "note": "Feral Scar Vale yetis, Feralas (wow-professions takes them to 280)."},
+      {"from": 250, "to": 300, "node_or_target": "Beasts level 50-60 (Rugged Leather, Heavy Scorpid Scale, Rugged Hide)", "zones_alliance": [], "zones_horde": [], "zones_neutral": ["Un'Goro Crater", "Winterspring", "Silithus", "Eastern Plaguelands", "Azshara"], "note": "Western Un'Goro Diemetradon / Pterrordax from Marshal's Refuge. Level 61 (Core Leather) needs 305."}
+    ],
+    "sources": [
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-skinning/",
+      "https://www.wow-professions.com/forever/skinning-leveling-guide",
+      "https://rankedboost.com/world-of-warcraft/forever/professions/skinning-leveling/",
+      "https://wow.gg/professions/forever/skinning",
+      "https://www.wowhead.com/forever/items/trade-goods/name:leather (via search index)",
+      "https://www.wowhead.com/forever/guide/professions/skinning/overview-leveling (body did not render)"
+    ]
+  }
+]
