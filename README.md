@@ -28,12 +28,6 @@ class, profession and gold guides, the planner and the look are Peon Journey's o
 - It detects your race and class. A Tauren starts in Mulgore, an Orc in Durotar, a Skyborne on Zephras Isle, and you only see your own class quests.
 - `/pj` opens the planner: what fits your level right now, per tab, with a "Load guide" button on every row.
 
-<p align="center">
-<img src="docs/images/planner_full.png" alt="Planner" width="560">
-<img src="docs/images/guide_window.png" alt="Guide window" width="260">
-</p>
-<p align="center"><sub>Preview renders made from the addon's own textures and guide data.</sub></p>
-
 ## Install
 
 1. Download **[PeonJourney.zip](https://github.com/MaNiasudo/peon-journey/releases/latest/download/PeonJourney.zip)**.
