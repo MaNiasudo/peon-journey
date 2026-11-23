@@ -32,7 +32,7 @@ for f in ("shared.lua", "questDB.lua", "forever.xml"):
     shutil.copy2(RXP / "DB" / f, OUT / "DB" / f)
 shutil.copytree(RXP / "DB" / "forever", OUT / "DB" / "forever")
 
-VERSION = "2.1.0"
+VERSION = "2.1.1"
 G_SD = "Peon Journey - 1-60 Speed (with Dungeons)"
 G_SQ = "Peon Journey - 1-60 Speed (no Dungeons)"
 G_FJ = "Peon Journey - 1-60 Full Journey"

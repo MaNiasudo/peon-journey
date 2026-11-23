@@ -87,7 +87,8 @@ class Router:
                     item_start=bool(db.grp(db.g(q, 2), 3)) and not db.grp(db.g(q, 2), 1) and not db.grp(db.g(q, 2), 2))
 
     # ------------------------------------------------------------ routing
-    def route(self, qids, prefer_ui, start_level, end_level, external_done=(), start_pos=None):
+    def route(self, qids, prefer_ui, start_level, end_level, external_done=(), start_pos=None, early=()):
+        """early: quests done before anything else (lead-ins whose giver is outside the zone)"""
         db = self.db
         info = {q: self.quest_info(q, prefer_ui) for q in qids}
         info = {q: i for q, i in info.items() if i["start"] is not None}
@@ -145,6 +146,8 @@ class Router:
                 lvlpen = 0
                 if a[0] == "obj":
                     lvlpen = max(0, info[a[1]]["level"] - lvl - 1) * 6
+                if a[1] in early:
+                    return d + bias - 1000.0
                 return d + bias + lvlpen
 
             act = min(actions, key=cost)

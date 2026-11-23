@@ -2564,7 +2564,7 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - 1-60 Speed (no Dungeons)
 #subgroup Levels 01-20
 --#groupid RXP-SRGCE-H1
-#next Peon Journey - 1-60 Speed (no Dungeons)\22-25 Stonetalon/Barrens
+#next Peon Journey - 1-60 Speed (no Dungeons)\22-24 Stonetalon/Barrens
 
 
 step

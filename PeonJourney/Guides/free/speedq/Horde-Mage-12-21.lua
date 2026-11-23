@@ -715,7 +715,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde Mage AoE
 
 #defaultfor none Horde Mage
-#next Peon Journey - 1-60 Speed (no Dungeons)\22-25 Stonetalon/Barrens
+#next Peon Journey - 1-60 Speed (no Dungeons)\22-24 Stonetalon/Barrens
 
 step
     .goto 1442/1,-695.02,12.09,50,0

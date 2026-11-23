@@ -807,7 +807,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance Mage
 
 #defaultfor none Alliance Mage
-#next Peon Journey - 1-60 Speed (no Dungeons)\21-23 Ashenvale/Stonetalon
+#next Peon Journey - 1-60 Speed (no Dungeons)\21-24 Ashenvale/Stonetalon
 
 step
     #sticky

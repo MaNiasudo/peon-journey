@@ -119,6 +119,26 @@ UI = {"ASHENVALE": 1440, "WETLANDS": 1437, "REDRIDGE_MOUNTAINS": 1433, "DUSKWOOD
       "FELWOOD": 1448, "WINTERSPRING": 1452, "MOUNT_HYJAL": 2482, "WESTERN_PLAGUELANDS": 1422,
       "EASTERN_PLAGUELANDS": 1423, "SILITHUS": 1451, "THE_BARRENS": 1413}
 _POOL = {}
+_UNTAGGED = {}
+
+
+def giver_ui(q):
+    """the map most of a quest's start givers stand on"""
+    uis = [s[0][0] for _, _, s in db.giver_locs(q, 2) if s]
+    return Counter(uis).most_common(1)[0][0] if uis else None
+
+
+def untagged(faction):
+    """QuestieDB has no zone for many new Forever quests (about 50 in Mount Hyjal): file them under their giver's map"""
+    if faction not in _UNTAGGED:
+        out = {}
+        for q, r in db.Q.items():
+            if db.g(r, 17) in (None, 0) and leveling_quest(db, q, faction):
+                ui = giver_ui(q)
+                if ui:
+                    out.setdefault(ui, set()).add(q)
+        _UNTAGGED[faction] = out
+    return _UNTAGGED[faction]
 
 
 def zone_pool(keys, faction):
@@ -127,6 +147,7 @@ def zone_pool(keys, faction):
         if (k, faction) not in _POOL:
             z = db.Z[k]
             p = {q for q, r in db.Q.items() if db.g(r, 17) == z and leveling_quest(db, q, faction)}
+            p |= untagged(faction).get(UI[k], set())
             names = Counter(db.qname(q) for q in p)
             _POOL[(k, faction)] = {q for q in p if names[db.qname(q)] < 4 and not dungeon_quest(q)
                                    and not elite_quest(q) and q not in ALL_CORE[faction]}
@@ -224,6 +245,67 @@ def speed_filter(cands, pool, done, faction, level, thr):
         if ch <= cands and xp / max(1.0, mins) >= bar:
             keep |= ch
     return keep
+
+
+def lead_ins(cands, done, faction, cap, leg_uis, bar=None, level=None):
+    """prerequisites from other zones or capitals that open quests in cands (up to 3 deep). bar: Speed only keeps a
+    lead-in chain whose XP per minute (with the quest it opens) still clears the bar."""
+    have = set(cands)
+    home = T.continent(next(iter(leg_uis)))
+
+    def ok(p):
+        r = db.Q.get(p)
+        return (r is not None and p not in done and leveling_quest(db, p, faction) and not elite_quest(p)
+                and p not in ALL_CORE[faction] and not dungeon_quest(p)
+                and (db.g(r, 5, 0) or 0) <= cap + 1 and (db.g(r, 4, 0) or 0) <= cap - 1)
+
+    def nearest(opts):
+        def key(p):
+            ui = giver_ui(p)
+            return (0 if ui in leg_uis else 1 if ui and T.continent(ui) == home else 2, db.g(db.Q[p], 5, 0) or 0, p)
+        return min(opts, key=key)
+
+    def chain(q, depth, seen):
+        if depth > 3:
+            return None
+        g, s = db.prereqs(q)
+        need = set()
+        for p in g:
+            if p in done or p in have or p in seen or not (p in db.Q and db.available_for(p, faction)):
+                continue
+            if not ok(p):
+                return None
+            sub = chain(p, depth + 1, seen | need | {p})
+            if sub is None:
+                return None
+            need |= {p} | sub
+        opts = [p for p in s if p in db.Q and db.available_for(p, faction)]
+        if opts and not any(p in done or p in have or p in seen or p in need for p in opts):
+            good = [p for p in opts if ok(p)]
+            if not good:
+                return None
+            p = nearest(good)
+            sub = chain(p, depth + 1, seen | need | {p})
+            if sub is None:
+                return None
+            need |= {p} | sub
+        return need
+
+    add = set()
+    for q in sorted(cands):
+        ch = chain(q, 0, set())
+        if not ch:
+            continue
+        if bar is not None:   # Speed: the chain, plus the trip there and back, has to pay
+            xp = quest_xp(q, level) + sum(quest_xp(p, level) for p in ch)
+            mins = quest_min(q, faction, level) + sum(quest_min(p, faction, level) for p in ch)
+            for ui in {giver_ui(p) for p in ch} - set(leg_uis) - {None}:
+                mins += 2 * (T.CONTINENT_HOP_MIN if T.continent(ui) != home else T.ZONE_HOP_MIN)
+            if xp / max(1.0, mins) < bar:
+                continue
+        add |= ch
+        have |= ch
+    return add
 
 
 # ---------------------------------------------------------------- plans
@@ -357,6 +439,12 @@ TRAVEL = {
     },
 }
 HUBS = {}
+ZNAME = {1453: "Stormwind", 1454: "Orgrimmar", 1455: "Ironforge", 1456: "Thunder Bluff", 1457: "Darnassus",
+         1458: "Undercity", 1450: "Moonglade", 1429: "Elwynn Forest", 1426: "Dun Morogh", 1411: "Durotar",
+         1412: "Mulgore", 1420: "Tirisfal Glades", 1421: "Silverpine Forest", 1432: "Loch Modan", 1436: "Westfall",
+         1439: "Darkshore", 1438: "Teldrassil", 1430: "Deadwind Pass"}
+ZNAME.update({ui: k.replace("_", " ").title().replace(" Of ", " of ").replace("Un Goro", "Un'Goro")
+              .replace("Shen Dralas", "Shen'dralas") for k, ui in UI.items()})
 
 
 def flight_master(ui, faction):
@@ -408,26 +496,30 @@ def plan_leg(zones, faction, player, done, cap, low, thr, min_quests=0):
              if (db.g(db.Q[q], 5, 0) or 0) <= cap + 1 and (db.g(db.Q[q], 4, 0) or 0) <= cap - 1
              and (db.g(db.Q[q], 5, 0) or 0) >= low}
     cands = speed_filter(cands, pool, done, faction, lvl, thr)
-    cands = available_closure(cands, done, faction)
+    uis = {UI[z] for z in zones}
+    extra = lead_ins(cands, done, faction, cap, uis, None if thr is None else thr * base_rate(lvl), lvl)
+    cands = available_closure(cands | extra, done, faction)
     cands = set(drop_exclusive(db, sorted(cands)))
     if len(cands) < max(1, min_quests):
         return None
     ui = UI.get(zones[0])
     fm = flight_master(ui, faction)
     r = Router(db, faction, fixes=FIX)
-    steps, info, left = r.route(sorted(cands), ui, lvl, cap, external_done=done, start_pos=fm[2] if fm else None)
+    early = {q for q in extra & cands if giver_ui(q) not in uis}
+    steps, info, left = r.route(sorted(cands), ui, lvl, cap, external_done=done, start_pos=fm[2] if fm else None,
+                                early=early)
     placed = {q for q in info if q not in left}
     sim = Player(player.level, player.xp)
     for st in steps:
         if st["type"] == "turnin":
             for q in st["quests"]:
                 sim.add(quest_xp(q, sim.level) * KILL_FACTOR)
-    return dict(steps=steps, info=info, placed=placed, ui=ui, fm=fm, end=sim.f,
+    return dict(steps=steps, info=info, placed=placed, ui=ui, fm=fm, end=sim.f, uis=uis,
                 minutes=T.steps_minutes(steps, lvl, start=fm[2] if fm else None),
                 xp=sum(quest_xp(q, lvl) * KILL_FACTOR for q in placed))
 
 
-def commit_leg(leg, label, faction, player, done, fp_known, lo_lbl, hi_lbl, prev_cont, tagline=None):
+def commit_leg(leg, label, faction, player, done, fp_known, lo_lbl, hi_lbl, prev_cont, tagline=None, title=None):
     for st in leg["steps"]:
         if st["type"] == "turnin":
             for q in st["quests"]:
@@ -435,9 +527,18 @@ def commit_leg(leg, label, faction, player, done, fp_known, lo_lbl, hi_lbl, prev
     done |= leg["placed"]
     ui, fm = leg["ui"], leg["fm"]
     travel = TRAVEL[faction].get(label) or "Fly to the nearest flight path."
+    steps = leg["steps"]
+    k = 0   # lead-in quests outside the zone: on the way, before you travel in
+    while k < len(steps) and steps[k].get("loc") and steps[k]["loc"][0] not in leg["uis"]:
+        k += 1
     body = []
     if tagline:
         body += ["step", f"    +|cRXP_WARN_{lua_safe(tagline)}|r"]
+    if k:
+        where = ", ".join(dict.fromkeys(ZNAME.get(st["loc"][0], "another zone") for st in steps[:k]))
+        body += ["step", "    #completewith next", f"    +|cRXP_WARN_On the way: lead-in quests in {lua_safe(where)} "
+                 f"that open quests in {lua_safe(label.split('/')[0])}|r"]
+        body += EM.render(steps[:k], leg["info"])
     body += ["step", f"    .zone {ui} >>Travel to {lua_safe(label.split('/')[0])}",
              f"    *How: {lua_safe(travel)}",
              f"    *Level for this part: {lo_lbl}-{hi_lbl}. {len(leg['placed'])} quests, roughly {T.fmt_min(leg['minutes'])}."]
@@ -448,10 +549,10 @@ def commit_leg(leg, label, faction, player, done, fp_known, lo_lbl, hi_lbl, prev
                  f"    .goto {fm[2][0]},{fmt(round(fm[2][1], 2))},{fmt(round(fm[2][2], 2))},15,0",
                  f"    >>Talk to |cRXP_FRIENDLY_{lua_safe(fm[1])}|r if you don't have this flight path yet",
                  f"    .fp {lua_safe(fm[1])} >>Get the flight path", f"    .target {lua_safe(fm[1])}"]
-    body += EM.render(leg["steps"], leg["info"])
+    body += EM.render(steps[k:], leg["info"])
     cont = T.continent(ui)
     hop = 0.0 if prev_cont is None else (T.CONTINENT_HOP_MIN if cont != prev_cont else T.ZONE_HOP_MIN)
-    return dict(kind="zone", lo=lo_lbl, hi=hi_lbl, name=label, body=body, quests=len(leg["placed"]),
+    return dict(kind="zone", lo=lo_lbl, hi=hi_lbl, name=title or label, body=body, quests=len(leg["placed"]),
                 minutes=leg["minutes"] + hop, cont=cont, xp=leg["xp"])
 
 
@@ -503,6 +604,32 @@ def build_full(faction, report):
     units = [u for u in UNITS if u["base"] not in FREE_DUNGEONS[faction] and (not u.get("faction") or u["faction"] == faction)]
     nominal = START[faction]
     prev_cont = None
+    visits = Counter()
+    ORD = {1: "", 2: " (2nd visit)", 3: " (3rd visit)"}
+
+    def revisit(cont, min_q, max_visits, just):
+        """come back to a zone once its leftover quests are in level: same continent after a leg, anywhere at the end"""
+        nonlocal prev_cont
+        for lb, zs, _ in FULL_PLAN[faction]:
+            if not visits[lb] or visits[lb] >= max_visits or lb == just:
+                continue
+            if cont and T.continent(UI[zs[0]]) != cont:
+                continue
+            leg = plan_leg(zs, faction, player, done, max(nominal, player.level) + 3, min(player.level, nominal) - 12,
+                           None, min_quests=min_q)
+            if not leg or len(leg["placed"]) < min_q:
+                continue
+            lv = sorted(db.g(db.Q[q], 5, 0) or nominal for q in leg["placed"])
+            lo, hi = lv[len(lv) // 10], min(60, lv[-1])
+            visits[lb] += 1
+            before = player.f
+            item = commit_leg(leg, lb, faction, player, done, fp_known, lo, hi, prev_cont, title=lb + ORD[visits[lb]],
+                              tagline=f"Back to {lb.split('/')[0]}: its quests that were too high last time")
+            prev_cont = item["cont"]
+            seq.append(item)
+            report.append(f"  {faction[0]} J {lb + ORD[visits[lb]]:<30} quests {lo}-{hi}  sim {before:5.1f} -> {player.f:5.1f}  "
+                          f"quests {item['quests']:3}  ~{item['minutes'] / 60:.1f} h")
+
     for label, zones, to in FULL_PLAN[faction]:
         # every dungeon / wing the content level has reached; the ones on the continent you are on go first,
         # then the ones on the next leg's continent, so a gap costs at most one boat
@@ -527,14 +654,17 @@ def build_full(faction, report):
         item = commit_leg(leg, label, faction, player, done, fp_known, nominal, to, prev_cont)
         prev_cont = item["cont"]
         seq.append(item)
+        visits[label] += 1
         report.append(f"  {faction[0]} J {label:<30} made for {nominal}-{to}  sim {before:5.1f} -> {player.f:5.1f}  "
                       f"quests {item['quests']:3}  ~{item['minutes'] / 60:.1f} h")
         nominal = to
+        revisit(prev_cont, 10, 2, label)
     for u in units:
         if u["name"] not in used:
             res = build_unit(u, faction, done, allow_empty=empty_ok(u, faction))
             if res:
                 take_dungeon(res, player, done, seq, report, faction, "J", lo=u["lo"], hi=u["hi"])
+    revisit(None, 6, 3, None)   # last pass: what is still left anywhere
     return seq, player
 
 
@@ -618,12 +748,12 @@ SPEED_UP, SPEED_DOWN = 4, 8   # quest level window around your level (green ques
 MIN_LEG = 12                  # fewer good quests than this: not worth the trip
 
 
-def wide_leg(zones, faction, player, done, thr, min_q):
+def wide_leg(zones, faction, player, done, thr, min_q, down=SPEED_DOWN):
     """one visit that finishes the zone: plan, then widen the level window to where the leg ends"""
     lvl = player.level
-    leg = plan_leg(zones, faction, player, done, lvl + SPEED_UP, lvl - SPEED_DOWN, thr, min_quests=min_q)
+    leg = plan_leg(zones, faction, player, done, lvl + SPEED_UP, lvl - down, thr, min_quests=min_q)
     if leg and leg["end"] >= lvl + 1:
-        wider = plan_leg(zones, faction, player, done, int(leg["end"]) + SPEED_UP - 1, lvl - SPEED_DOWN, thr,
+        wider = plan_leg(zones, faction, player, done, int(leg["end"]) + SPEED_UP - 1, lvl - down, thr,
                          min_quests=min_q)
         if wider and wider["xp"] / max(1.0, wider["minutes"]) >= 0.9 * leg["xp"] / max(1.0, leg["minutes"]):
             leg = wider
@@ -692,8 +822,10 @@ def build_speed(faction, with_dungeons, thr, report, dun_thr=0.8, write=True):
         total += mins
         log.append(f"  {faction[0]} {tag} GRIND {before:5.1f} -> {player.f:5.1f}  ~{mins / 60:.1f} h")
 
-    def best_leg(labels, min_q):
+    def best_leg(labels, min_q, q_thr=None, need_rate=True, down=SPEED_DOWN):
+        """the best leg among these zone groups; q_thr overrides the quest bar, need_rate=False takes any leg"""
         lvl = player.level
+        bar = thr if q_thr is None else q_thr
         best = None
         opts = []
         for label in labels:
@@ -702,17 +834,17 @@ def build_speed(faction, with_dungeons, thr, report, dun_thr=0.8, write=True):
                 continue
             pool = zone_pool(zones, faction) - done
             cands = {q for q in pool if (db.g(db.Q[q], 4, 0) or 0) <= lvl + SPEED_UP + 2
-                     and (db.g(db.Q[q], 5, 0) or 0) >= lvl - SPEED_DOWN}
+                     and (db.g(db.Q[q], 5, 0) or 0) >= lvl - down}
             if len(cands) >= min_q:
                 opts.append((sum(value(q, faction, lvl) for q in cands), label))
         for _, label in sorted(opts, reverse=True)[:4]:
             zones = ZONES_OF[faction][label]
-            leg = wide_leg(zones, faction, player, done, thr, min_q)
+            leg = wide_leg(zones, faction, player, done, bar, min_q, down)
             if not leg or len(leg["placed"]) < min_q:
                 continue
             hop = T.CONTINENT_HOP_MIN if T.continent(UI[zones[0]]) != prev_cont else T.ZONE_HOP_MIN
             score = leg["xp"] / (leg["minutes"] + hop)
-            if score >= grind_rate(lvl) and (best is None or score > best[0]):
+            if (score >= grind_rate(lvl) or not need_rate) and (best is None or score > best[0]):
                 best = (score, label, leg)
         return best
 
@@ -748,6 +880,11 @@ def build_speed(faction, with_dungeons, thr, report, dun_thr=0.8, write=True):
             free = [lb for lb in ZONES_OF[faction] if seen[lb] < 2 and lb not in later]
             best = best_leg([lb for lb in free if T.continent(UI[ZONES_OF[faction][lb][0]]) == prev_cont], 8) \
                 or best_leg(free, 8)
+            if not best:   # weaker and older leftover quests too; they still have to beat grinding (Taha 11-23:
+                anyz = [lb for lb in ZONES_OF[faction] if seen[lb] < 3]   # "if it's better to kill mobs keep it")
+                best = best_leg([lb for lb in anyz if T.continent(UI[ZONES_OF[faction][lb][0]]) == prev_cont], 4,
+                                q_thr=0.0) or best_leg(anyz, 4, q_thr=0.0) \
+                    or best_leg(list(ZONES_OF[faction]), 3, q_thr=0.0, down=15)
             if best:
                 choice = (best[0], best[1], best[2], "  [second visit]" if seen[best[1]] else "  [gap filler]")
         ref = choice[0] if choice else grind_rate(lvl)

@@ -6159,7 +6159,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Levels 01-20
 --#groupid RXP-SRGCE-A1
 #name 19-21 Darkshore/Ashenvale
-#next Peon Journey - 1-60 Speed (no Dungeons)\21-23 Ashenvale/Stonetalon
+#next Peon Journey - 1-60 Speed (no Dungeons)\21-24 Ashenvale/Stonetalon
 
 step
     #optional
@@ -6785,7 +6785,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Levels 01-20
 --#groupid RXP-SRGCE-A1
 #name 20-21 Darkshore/Ashenvale
-#next Peon Journey - 1-60 Speed (no Dungeons)\21-23 Ashenvale/Stonetalon
+#next Peon Journey - 1-60 Speed (no Dungeons)\21-24 Ashenvale/Stonetalon
 
 
 step << Druid

@@ -1,283 +1,298 @@
-  search no dungeons, quest bar 0.0 x median XP/min: reaches 60 True, ~109.2 h per faction
-  search no dungeons, quest bar 0.3 x median XP/min: reaches 60 True, ~103.5 h per faction
-  search no dungeons, quest bar 0.5 x median XP/min: reaches 60 True, ~110.5 h per faction
-  search no dungeons, quest bar 0.7 x median XP/min: reaches 60 True, ~115.8 h per faction
-  search no dungeons, quest bar 0.9 x median XP/min: reaches 60 True, ~134.0 h per faction
-  search with dungeons, quest bar 0.0 x median XP/min: reaches 60 True, ~102.3 h per faction
-  search with dungeons, quest bar 0.3 x median XP/min: reaches 60 True, ~96.9 h per faction
-  search with dungeons, quest bar 0.5 x median XP/min: reaches 60 True, ~87.6 h per faction
-  search with dungeons, quest bar 0.7 x median XP/min: reaches 60 True, ~83.0 h per faction
-  search with dungeons, quest bar 0.9 x median XP/min: reaches 60 True, ~105.1 h per faction
-  picked: no dungeons 0.3, with dungeons 0.7
+  search no dungeons, quest bar 0.0 x median XP/min: reaches 60 True, ~104.2 h per faction
+  search no dungeons, quest bar 0.3 x median XP/min: reaches 60 True, ~99.3 h per faction
+  search no dungeons, quest bar 0.5 x median XP/min: reaches 60 True, ~87.7 h per faction
+  search no dungeons, quest bar 0.7 x median XP/min: reaches 60 True, ~93.2 h per faction
+  search no dungeons, quest bar 0.9 x median XP/min: reaches 60 True, ~93.0 h per faction
+  search with dungeons, quest bar 0.0 x median XP/min: reaches 60 True, ~104.5 h per faction
+  search with dungeons, quest bar 0.3 x median XP/min: reaches 60 True, ~97.9 h per faction
+  search with dungeons, quest bar 0.5 x median XP/min: reaches 60 True, ~88.5 h per faction
+  search with dungeons, quest bar 0.7 x median XP/min: reaches 60 True, ~82.7 h per faction
+  search with dungeons, quest bar 0.9 x median XP/min: reaches 60 True, ~87.2 h per faction
+  picked: no dungeons 0.5, with dungeons 0.7
 == Alliance Speed (with Dungeons)
   A S DUNGEON Wailing Caverns                 21.0 ->  22.1  pre  1 quests  5  ~1.2 h
-  A S Ashenvale/Stonetalon            22.1 ->  23.9  quests  18  ~2.2 h  (396 xp/min)
-  A S Duskwood/Redridge               23.9 ->  26.9  quests  48  ~4.1 h  (443 xp/min)
-  A S skip dungeon Blackfathom Deeps (262 xp/min vs zones 598)
-  A S skip dungeon The Stockade (343 xp/min vs zones 598)
-  A S skip dungeon Excavation Site: Wetlands (135 xp/min vs zones 598)
-  A S Wetlands                        26.9 ->  29.6  quests  38  ~3.3 h  (598 xp/min)
+  A S Ashenvale/Stonetalon            22.1 ->  24.8  quests  30  ~4.2 h  (329 xp/min)
+  A S skip dungeon Blackfathom Deeps (248 xp/min vs zones 483)
+  A S skip dungeon The Stockade (335 xp/min vs zones 483)
+  A S Duskwood/Redridge               24.8 ->  27.1  quests  37  ~3.0 h  (483 xp/min)
+  A S skip dungeon Excavation Site: Wetlands (142 xp/min vs zones 581)
+  A S Wetlands                        27.1 ->  30.0  quests  41  ~3.6 h  (581 xp/min)
   A S skip dungeon City of Dalaran (228 xp/min vs zones 457)
-  A S DUNGEON Gnomeregan                      29.6 ->  31.9  pre  0 quests 21  ~4.2 h
-  A S Hillsbrad/Alterac               31.9 ->  32.7  quests  15  ~1.7 h  (476 xp/min)
-  A S Stranglethorn Vale              32.7 ->  34.5  quests  32  ~2.9 h  (614 xp/min)
-  A S Swamp of Sorrows/Badlands       34.5 ->  35.6  quests  18  ~2.3 h  (568 xp/min)
+  A S DUNGEON Gnomeregan                      30.0 ->  32.2  pre  0 quests 21  ~4.2 h
+  A S Hillsbrad/Alterac               32.2 ->  33.0  quests  15  ~1.7 h  (476 xp/min)
+  A S Stranglethorn Vale              33.0 ->  34.7  quests  32  ~2.9 h  (614 xp/min)
+  A S Swamp of Sorrows/Badlands       34.7 ->  35.9  quests  18  ~2.3 h  (568 xp/min)
   A S skip dungeon The Drowned City (207 xp/min vs zones 755)
-  A S Desolace                        35.6 ->  36.8  quests  20  ~1.8 h  (878 xp/min)  [gap filler]
-  A S Riverglades                     36.8 ->  40.8  quests  82  ~7.1 h  (797 xp/min)
-  A S skip Arathi Highlands (0 good quests left at 40)
-  A S skip dungeon Krol'dok Stronghold (361 xp/min vs zones 914)
-  A S Feralas                         40.8 ->  42.0  quests  26  ~2.4 h  (914 xp/min)
-  A S skip dungeon Uldaman (595 xp/min vs zones 936)
-  A S Tanaris                         42.0 ->  43.0  quests  17  ~1.8 h  (936 xp/min)
-  A S Dustwallow Marsh                43.0 ->  43.4  quests  17  ~0.9 h  (1039 xp/min)  [gap filler]
-  A S Stranglethorn Vale              43.4 ->  44.1  quests  13  ~1.6 h  (876 xp/min)  [second visit]
-  A S skip dungeon Zul'Farrak (643 xp/min vs zones 1081)
-  A S Searing Gorge                   44.1 ->  44.7  quests  11  ~1.2 h  (1203 xp/min)  [gap filler]
-  A S GRIND  44.7 ->  45.0  ~1.8 h
-  A S Un'Goro Crater                  45.0 ->  45.9  quests  15  ~1.9 h  (990 xp/min)
-  A S Feralas                         45.9 ->  46.4  quests  13  ~1.7 h  (701 xp/min)  [second visit]
-  A S DUNGEON Maraudon                        46.4 ->  47.8  pre  0 quests  8  ~3.3 h
-  A S Azshara                         47.8 ->  48.8  quests  19  ~1.8 h  (1219 xp/min)
-  A S DUNGEON Alcaz Prison                    48.8 ->  49.5  pre  2 quests  9  ~3.9 h
-  A S Western/Eastern Plaguelands     49.5 ->  50.6  quests  24  ~2.6 h  (1150 xp/min)
-  A S skip dungeon The Temple of Atal'Hakkar (771 xp/min vs zones 1798)
-  A S Felwood                         50.6 ->  51.3  quests  12  ~1.2 h  (1798 xp/min)
-  A S Un'Goro Crater                  51.3 ->  52.0  quests  15  ~1.7 h  (1224 xp/min)  [second visit]
-  A S DUNGEON Blackrock Depths                52.0 ->  55.6  pre 21 quests 23  ~11.2 h
-  A S DUNGEON Dire Maul East                  55.6 ->  56.6  pre  1 quests  5  ~2.3 h
-  A S DUNGEON Lower Blackrock Spire           56.6 ->  59.3  pre  8 quests 16  ~8.4 h
-  A S skip dungeon Blackmaw Hold (513 xp/min vs zones 1030)
-  A S DUNGEON Dire Maul West                  59.3 ->  60.0  pre  0 quests 10  ~2.4 h
+  A S Desolace                        35.9 ->  37.0  quests  20  ~1.8 h  (878 xp/min)  [gap filler]
+  A S skip Arathi Highlands (11 good quests left at 37)
+  A S Riverglades                     37.0 ->  41.3  quests  86  ~7.9 h  (779 xp/min)
+  A S skip dungeon Krol'dok Stronghold (377 xp/min vs zones 936)
+  A S skip dungeon Uldaman (587 xp/min vs zones 936)
+  A S Tanaris                         41.3 ->  42.3  quests  17  ~1.9 h  (936 xp/min)
+  A S Feralas                         42.3 ->  43.9  quests  37  ~3.2 h  (904 xp/min)
+  A S Dustwallow Marsh                43.9 ->  44.2  quests  13  ~0.8 h  (1068 xp/min)  [gap filler]
+  A S skip dungeon Zul'Farrak (643 xp/min vs zones 969)
+  A S Searing Gorge                   44.2 ->  44.9  quests  11  ~1.3 h  (1203 xp/min)  [gap filler]
+  A S Stranglethorn Vale              44.9 ->  45.6  quests  16  ~1.6 h  (946 xp/min)  [second visit]
+  A S Un'Goro Crater                  45.6 ->  46.5  quests  15  ~1.9 h  (990 xp/min)
+  A S DUNGEON Maraudon                        46.5 ->  47.9  pre  0 quests  8  ~3.3 h
+  A S Azshara                         47.9 ->  48.9  quests  20  ~1.9 h  (1270 xp/min)
+  A S skip dungeon Alcaz Prison (416 xp/min vs zones 1338)
+  A S Blasted Lands/Burning Steppes   48.9 ->  49.6  quests  12  ~1.5 h  (1338 xp/min)
+  A S Western/Eastern Plaguelands     49.6 ->  50.7  quests  24  ~2.5 h  (1150 xp/min)
+  A S skip dungeon The Temple of Atal'Hakkar (771 xp/min vs zones 1747)
+  A S Felwood                         50.7 ->  51.5  quests  14  ~1.3 h  (1747 xp/min)
+  A S Winterspring                    51.5 ->  52.1  quests  12  ~2.0 h  (769 xp/min)
+  A S skip dungeon Blackrock Depths (905 xp/min vs zones 1163)
+  A S Un'Goro Crater                  52.1 ->  52.7  quests  13  ~1.4 h  (1265 xp/min)  [second visit]
+  A S Azshara                         52.7 ->  53.2  quests  10  ~1.2 h  (1241 xp/min)  [second visit]
+  A S Western/Eastern Plaguelands     53.2 ->  53.8  quests  15  ~2.0 h  (987 xp/min)  [second visit]
+  A S Searing Gorge                   53.8 ->  54.1  quests   9  ~0.7 h  (1309 xp/min)  [second visit]
+  A S DUNGEON Dire Maul East                  54.1 ->  55.1  pre  1 quests  5  ~2.3 h
+  A S DUNGEON Lower Blackrock Spire           55.1 ->  57.8  pre  4 quests 15  ~7.3 h
+  A S skip dungeon Blackmaw Hold (478 xp/min vs zones 1486)
+  A S DUNGEON Dire Maul West                  57.8 ->  59.6  pre  3 quests 11  ~4.5 h
+  A S skip dungeon Dire Maul North (752 xp/min vs zones 1486)
+  A S skip dungeon Shaper's Terrace (854 xp/min vs zones 1486)
+  A S DUNGEON Scholomance                     59.6 ->  60.0  pre 10 quests 10  ~6.3 h
 == Alliance Speed (no Dungeons)
-  A Q Ashenvale/Stonetalon            21.0 ->  23.9  quests  31  ~5.3 h  (250 xp/min)
-  A Q Duskwood/Redridge               23.9 ->  27.5  quests  58  ~5.4 h  (409 xp/min)
-  A Q Wetlands                        27.5 ->  30.9  quests  52  ~6.2 h  (418 xp/min)
-  A Q Hillsbrad/Alterac               30.9 ->  31.8  quests  16  ~2.1 h  (401 xp/min)
-  A Q Stranglethorn Vale              31.8 ->  33.7  quests  32  ~3.1 h  (576 xp/min)
-  A Q Swamp of Sorrows/Badlands       33.7 ->  35.3  quests  23  ~4.6 h  (362 xp/min)
-  A Q Arathi Highlands                35.3 ->  36.2  quests  14  ~2.5 h  (431 xp/min)
-  A Q Riverglades                     36.2 ->  39.8  quests  78  ~6.6 h  (728 xp/min)
-  A Q Tanaris                         39.8 ->  40.6  quests  13  ~2.4 h  (549 xp/min)
-  A Q Feralas                         40.6 ->  41.9  quests  29  ~2.7 h  (831 xp/min)
-  A Q Desolace                        41.9 ->  42.8  quests  26  ~2.6 h  (579 xp/min)  [gap filler]
-  A Q Shen'dralas                     42.8 ->  43.0  quests   8  ~0.9 h  (606 xp/min)  [gap filler]
-  A Q Tanaris                         43.0 ->  43.5  quests   9  ~1.0 h  (857 xp/min)  [second visit]
-  A Q Dustwallow Marsh                43.5 ->  44.0  quests  22  ~1.8 h  (562 xp/min)  [gap filler]
-  A Q Feralas                         44.0 ->  44.4  quests   9  ~1.6 h  (563 xp/min)  [second visit]
-  A Q Riverglades                     44.4 ->  45.4  quests  18  ~1.7 h  (1211 xp/min)  [second visit]
-  A Q Un'Goro Crater                  45.4 ->  46.2  quests  15  ~1.9 h  (990 xp/min)
-  A Q Azshara                         46.2 ->  47.4  quests  24  ~2.7 h  (987 xp/min)
-  A Q Blasted Lands/Burning Steppes   47.4 ->  48.3  quests  16  ~3.2 h  (658 xp/min)
-  A Q Western/Eastern Plaguelands     48.3 ->  48.9  quests  13  ~1.2 h  (1063 xp/min)
-  A Q Felwood                         48.9 ->  49.9  quests  20  ~3.0 h  (897 xp/min)
-  A Q Winterspring                    49.9 ->  50.5  quests  14  ~2.8 h  (542 xp/min)
-  A Q Un'Goro Crater                  50.5 ->  51.7  quests  25  ~3.5 h  (892 xp/min)  [second visit]
-  A Q Azshara                         51.7 ->  52.2  quests   8  ~0.8 h  (1754 xp/min)  [second visit]
-  A Q Searing Gorge                   52.2 ->  53.0  quests  23  ~2.9 h  (876 xp/min)  [gap filler]
-  A Q Blasted Lands/Burning Steppes   53.0 ->  53.5  quests   9  ~1.6 h  (837 xp/min)  [second visit]
-  A Q The Hinterlands                 53.5 ->  53.8  quests   8  ~1.0 h  (861 xp/min)  [gap filler]
-  A Q Western/Eastern Plaguelands     53.8 ->  55.1  quests  29  ~5.1 h  (766 xp/min)  [second visit]
-  A Q Silithus                        55.1 ->  56.1  quests  18  ~2.4 h  (1472 xp/min)  [gap filler]
-  A Q Mount Hyjal                     56.1 ->  57.9  quests  50  ~5.0 h  (1154 xp/min)
-  A Q Silithus                        57.9 ->  58.7  quests  17  ~2.3 h  (1124 xp/min)  [second visit]
-  A Q Winterspring                    58.7 ->  59.1  quests  12  ~1.8 h  (990 xp/min)  [second visit]
-  A Q GRIND  59.1 ->  60.0  ~8.7 h
+  A Q Ashenvale/Stonetalon            21.0 ->  24.0  quests  33  ~5.7 h  (247 xp/min)
+  A Q Duskwood/Redridge               24.0 ->  27.3  quests  52  ~4.5 h  (440 xp/min)
+  A Q Wetlands                        27.3 ->  30.5  quests  47  ~4.6 h  (529 xp/min)
+  A Q Hillsbrad/Alterac               30.5 ->  31.3  quests  14  ~1.6 h  (446 xp/min)
+  A Q Stranglethorn Vale              31.3 ->  33.3  quests  32  ~3.1 h  (576 xp/min)
+  A Q Swamp of Sorrows/Badlands       33.3 ->  34.8  quests  22  ~3.7 h  (431 xp/min)
+  A Q Arathi Highlands                34.8 ->  35.8  quests  15  ~2.5 h  (435 xp/min)
+  A Q Desolace                        35.8 ->  37.1  quests  24  ~2.4 h  (730 xp/min)  [gap filler]
+  A Q Riverglades                     37.1 ->  41.5  quests  94  ~8.4 h  (760 xp/min)
+  A Q Tanaris                         41.5 ->  42.6  quests  21  ~2.8 h  (743 xp/min)
+  A Q Feralas                         42.6 ->  44.3  quests  38  ~3.5 h  (875 xp/min)
+  A Q Dustwallow Marsh                44.3 ->  44.6  quests  10  ~0.7 h  (982 xp/min)  [gap filler]
+  A Q Shen'dralas                     44.6 ->  45.0  quests  13  ~1.1 h  (738 xp/min)  [gap filler]
+  A Q Searing Gorge                   45.0 ->  45.7  quests  13  ~1.9 h  (909 xp/min)  [gap filler]
+  A Q Un'Goro Crater                  45.7 ->  46.6  quests  15  ~1.9 h  (990 xp/min)
+  A Q Azshara                         46.6 ->  47.9  quests  26  ~2.9 h  (994 xp/min)
+  A Q Blasted Lands/Burning Steppes   47.9 ->  48.7  quests  15  ~2.5 h  (833 xp/min)
+  A Q Western/Eastern Plaguelands     48.7 ->  49.3  quests  15  ~1.4 h  (1193 xp/min)
+  A Q Felwood                         49.3 ->  50.3  quests  18  ~2.4 h  (1044 xp/min)
+  A Q Winterspring                    50.3 ->  50.8  quests  12  ~1.6 h  (875 xp/min)
+  A Q Tanaris                         50.8 ->  51.2  quests   9  ~1.2 h  (1011 xp/min)  [second visit]
+  A Q Azshara                         51.2 ->  51.7  quests   8  ~0.8 h  (1754 xp/min)  [second visit]
+  A Q Un'Goro Crater                  51.7 ->  52.8  quests  24  ~3.4 h  (917 xp/min)  [second visit]
+  A Q Western/Eastern Plaguelands     52.8 ->  53.8  quests  23  ~3.0 h  (943 xp/min)  [second visit]
+  A Q Blasted Lands/Burning Steppes   53.8 ->  54.3  quests  12  ~1.6 h  (1031 xp/min)  [second visit]
+  A Q Searing Gorge                   54.3 ->  54.8  quests  13  ~1.8 h  (823 xp/min)  [second visit]
+  A Q Silithus                        54.8 ->  55.3  quests   8  ~1.3 h  (1252 xp/min)  [gap filler]
+  A Q Silithus                        55.3 ->  55.9  quests  10  ~1.3 h  (1580 xp/min)  [second visit]
+  A Q Winterspring                    55.9 ->  56.3  quests   8  ~1.5 h  (769 xp/min)  [second visit]
+  A Q Mount Hyjal                     56.3 ->  59.7  quests 100  ~8.2 h  (1394 xp/min)
+  A Q Silithus                        59.7 ->  60.0  quests  23  ~3.2 h  (1011 xp/min)  [second visit]
 == Alliance Full Journey
   A J DUNGEON Wailing Caverns                 21.0 ->  22.1  pre  1 quests  5  ~1.2 h
-  A J Ashenvale/Stonetalon           made for 21-24  sim  22.1 ->  25.2  quests  35  ~5.8 h
-  A J Duskwood/Redridge              made for 24-27  sim  25.2 ->  28.5  quests  62  ~5.8 h
-  A J DUNGEON The Stockade                    28.5 ->  29.6  pre  2 quests  6  ~2.3 h
-  A J DUNGEON Excavation Site: Wetlands       29.6 ->  30.3  pre  4 quests  9  ~3.6 h
-  A J DUNGEON Blackfathom Deeps               30.3 ->  31.2  pre  0 quests  6  ~2.7 h
-  A J Wetlands                       made for 27-30  sim  31.2 ->  33.5  quests  53  ~6.9 h
-  A J DUNGEON City of Dalaran                 33.5 ->  34.5  pre  4 quests  9  ~3.7 h
-  A J DUNGEON Gnomeregan                      34.5 ->  36.2  pre  0 quests 21  ~4.2 h
-  A J DUNGEON Razorfen Kraul                  36.2 ->  36.8  pre  1 quests  4  ~1.9 h
-  A J Hillsbrad/Alterac              made for 30-32  sim  36.8 ->  37.7  quests  24  ~3.1 h
-  A J DUNGEON Scarlet Monastery Graveyard     37.7 ->  37.9  pre  0 quests  0  ~0.7 h
-  A J Arathi Highlands               made for 32-34  sim  37.9 ->  38.6  quests  15  ~2.6 h
-  A J DUNGEON Scarlet Monastery Library       38.6 ->  38.9  pre  2 quests  2  ~1.6 h
-  A J Thousand Needles               made for 34-35  sim  38.9 ->  39.4  quests  19  ~4.1 h
-  A J Desolace                       made for 35-37  sim  39.4 ->  41.1  quests  43  ~7.8 h
-  A J DUNGEON The Drowned City                41.1 ->  41.5  pre  5 quests  5  ~2.7 h
-  A J DUNGEON Scarlet Monastery Armory        41.5 ->  41.7  pre  0 quests  0  ~0.8 h
-  A J Shen'dralas                    made for 37-39  sim  41.7 ->  42.0  quests  10  ~1.1 h
-  A J DUNGEON Razorfen Downs                  42.0 ->  42.9  pre  6 quests  6  ~4.7 h
-  A J DUNGEON Scarlet Monastery Cathedral     42.9 ->  43.2  pre  0 quests  1  ~0.9 h
-  A J Dustwallow Marsh               made for 39-40  sim  43.2 ->  43.8  quests  26  ~3.1 h
-  A J Stranglethorn Vale             made for 40-42  sim  43.8 ->  45.2  quests  56  ~6.9 h
-  A J DUNGEON Krol'dok Stronghold             45.2 ->  45.8  pre  7 quests  6  ~2.4 h
-  A J DUNGEON Uldaman                         45.8 ->  47.8  pre 10 quests 16  ~6.7 h
-  A J Riverglades                    made for 42-45  sim  47.8 ->  49.2  quests  90  ~7.6 h
-  A J DUNGEON Zul'Farrak                      49.2 ->  50.6  pre  4 quests 10  ~5.0 h
-  A J Swamp of Sorrows/Badlands      made for 45-46  sim  50.6 ->  51.0  quests  38  ~7.2 h
-  A J The Hinterlands                made for 46-47  sim  51.0 ->  51.4  quests   9  ~1.8 h
-  A J DUNGEON Maraudon                        51.4 ->  52.6  pre  0 quests  8  ~3.3 h
-  A J Searing Gorge                  made for 47-48  sim  52.6 ->  53.5  quests  24  ~4.0 h
-  A J Tanaris                        made for 48-49  sim  53.5 ->  54.4  quests  36  ~5.5 h
-  A J DUNGEON Alcaz Prison                    54.4 ->  55.1  pre  2 quests  9  ~3.9 h
-  A J Feralas                        made for 49-50  sim  55.1 ->  55.5  quests  42  ~3.8 h
-  A J Un'Goro Crater                 made for 50-52  sim  55.5 ->  57.1  quests  41  ~5.1 h
-  A J DUNGEON The Temple of Atal'Hakkar       57.1 ->  58.0  pre  7 quests  7  ~5.0 h
-  A J Azshara                        made for 52-53  sim  58.0 ->  59.0  quests  37  ~4.3 h
-  A J DUNGEON Blackrock Depths                59.0 ->  60.0  pre 15 quests 23  ~10.6 h
-  A J Felwood                        made for 53-54  sim  60.0 ->  60.0  quests  24  ~3.5 h
-  A J Winterspring                   made for 54-55  sim  60.0 ->  60.0  quests  24  ~3.6 h
+  A J Ashenvale/Stonetalon           made for 21-24  sim  22.1 ->  25.5  quests  43  ~7.3 h
+  A J Duskwood/Redridge              made for 24-27  sim  25.5 ->  28.7  quests  62  ~5.8 h
+  A J DUNGEON The Stockade                    28.7 ->  29.9  pre  2 quests  6  ~2.3 h
+  A J DUNGEON Excavation Site: Wetlands       29.9 ->  30.5  pre  4 quests  9  ~3.6 h
+  A J DUNGEON Blackfathom Deeps               30.5 ->  31.4  pre  0 quests  6  ~2.7 h
+  A J Wetlands                       made for 27-30  sim  31.4 ->  33.9  quests  59  ~7.1 h
+  A J DUNGEON City of Dalaran                 33.9 ->  34.8  pre  4 quests  9  ~3.7 h
+  A J DUNGEON Gnomeregan                      34.8 ->  36.5  pre  0 quests 21  ~4.2 h
+  A J DUNGEON Razorfen Kraul                  36.5 ->  37.1  pre  1 quests  4  ~1.9 h
+  A J Hillsbrad/Alterac              made for 30-32  sim  37.1 ->  38.0  quests  24  ~3.1 h
+  A J DUNGEON Scarlet Monastery Graveyard     38.0 ->  38.1  pre  0 quests  0  ~0.7 h
+  A J Arathi Highlands               made for 32-34  sim  38.1 ->  39.3  quests  25  ~4.2 h
+  A J DUNGEON Scarlet Monastery Library       39.3 ->  39.7  pre  2 quests  2  ~1.6 h
+  A J Thousand Needles               made for 34-35  sim  39.7 ->  40.2  quests  22  ~4.9 h
+  A J Ashenvale/Stonetalon (2nd visit) quests 30-40  sim  40.2 ->  40.4  quests  21  ~3.6 h
+  A J Desolace                       made for 35-37  sim  40.4 ->  42.0  quests  49  ~8.1 h
+  A J DUNGEON The Drowned City                42.0 ->  42.4  pre  5 quests  5  ~2.7 h
+  A J DUNGEON Scarlet Monastery Armory        42.4 ->  42.6  pre  0 quests  0  ~0.8 h
+  A J Shen'dralas                    made for 37-39  sim  42.6 ->  43.1  quests  18  ~1.8 h
+  A J DUNGEON Razorfen Downs                  43.1 ->  43.9  pre  2 quests  6  ~4.5 h
+  A J DUNGEON Scarlet Monastery Cathedral     43.9 ->  44.2  pre  0 quests  1  ~0.9 h
+  A J Dustwallow Marsh               made for 39-40  sim  44.2 ->  44.7  quests  26  ~3.1 h
+  A J Stranglethorn Vale             made for 40-42  sim  44.7 ->  46.0  quests  59  ~7.1 h
+  A J DUNGEON Krol'dok Stronghold             46.0 ->  46.6  pre  7 quests  6  ~2.4 h
+  A J DUNGEON Uldaman                         46.6 ->  48.5  pre 10 quests 16  ~6.7 h
+  A J Riverglades                    made for 42-45  sim  48.5 ->  49.8  quests 101  ~9.0 h
+  A J DUNGEON Zul'Farrak                      49.8 ->  51.2  pre  4 quests 10  ~5.0 h
+  A J Swamp of Sorrows/Badlands      made for 45-46  sim  51.2 ->  51.6  quests  38  ~6.8 h
+  A J The Hinterlands                made for 46-47  sim  51.6 ->  52.1  quests  17  ~3.3 h
+  A J DUNGEON Maraudon                        52.1 ->  53.3  pre  0 quests  8  ~3.3 h
+  A J Searing Gorge                  made for 47-48  sim  53.3 ->  54.3  quests  27  ~4.6 h
+  A J Tanaris                        made for 48-49  sim  54.3 ->  55.2  quests  42  ~6.7 h
+  A J DUNGEON Alcaz Prison                    55.2 ->  55.9  pre  2 quests  9  ~3.9 h
+  A J Feralas                        made for 49-50  sim  55.9 ->  56.2  quests  41  ~3.7 h
+  A J Un'Goro Crater                 made for 50-52  sim  56.2 ->  57.8  quests  42  ~5.2 h
+  A J DUNGEON The Temple of Atal'Hakkar       57.8 ->  58.6  pre  0 quests  7  ~2.6 h
+  A J Azshara                        made for 52-53  sim  58.6 ->  59.6  quests  43  ~5.1 h
+  A J Tanaris (2nd visit)            quests 60-60  sim  59.6 ->  60.0  quests  13  ~2.1 h
+  A J DUNGEON Blackrock Depths                60.0 ->  60.0  pre 15 quests 23  ~10.6 h
+  A J Felwood                        made for 53-54  sim  60.0 ->  60.0  quests  43  ~5.3 h
+  A J Winterspring                   made for 54-55  sim  60.0 ->  60.0  quests  43  ~7.9 h
   A J DUNGEON Dire Maul East                  60.0 ->  60.0  pre  1 quests  5  ~2.3 h
-  A J Blasted Lands/Burning Steppes  made for 55-56  sim  60.0 ->  60.0  quests  22  ~4.4 h
-  A J DUNGEON Lower Blackrock Spire           60.0 ->  60.0  pre  3 quests 16  ~7.3 h
+  A J Blasted Lands/Burning Steppes  made for 55-56  sim  60.0 ->  60.0  quests  24  ~4.3 h
+  A J Stranglethorn Vale (2nd visit) quests 50-60  sim  60.0 ->  60.0  quests  10  ~2.2 h
+  A J DUNGEON Lower Blackrock Spire           60.0 ->  60.0  pre  1 quests 16  ~6.7 h
   A J DUNGEON Blackmaw Hold                   60.0 ->  60.0  pre  0 quests  8  ~2.9 h
-  A J Western/Eastern Plaguelands    made for 56-58  sim  60.0 ->  60.0  quests  59  ~9.3 h
+  A J Western/Eastern Plaguelands    made for 56-58  sim  60.0 ->  60.0  quests  88  ~11.3 h
   A J DUNGEON Dire Maul West                  60.0 ->  60.0  pre  0 quests 10  ~2.4 h
   A J DUNGEON Dire Maul North                 60.0 ->  60.0  pre  0 quests  4  ~1.7 h
-  A J Silithus                       made for 58-59  sim  60.0 ->  60.0  quests  36  ~4.9 h
+  A J Silithus                       made for 58-59  sim  60.0 ->  60.0  quests  41  ~5.5 h
   A J DUNGEON Shaper's Terrace                60.0 ->  60.0  pre  0 quests  3  ~1.6 h
   A J DUNGEON Scholomance                     60.0 ->  60.0  pre  7 quests 10  ~5.9 h
   A J DUNGEON Stratholme Live                 60.0 ->  60.0  pre  0 quests  7  ~3.0 h
   A J DUNGEON Stratholme Undead               60.0 ->  60.0  pre  0 quests  5  ~2.8 h
-  A J Mount Hyjal                    made for 59-60  sim  60.0 ->  60.0  quests  51  ~5.8 h
+  A J Mount Hyjal                    made for 59-60  sim  60.0 ->  60.0  quests 112  ~9.6 h
   A J DUNGEON Upper Blackrock Spire           60.0 ->  60.0  pre  2 quests  8  ~2.7 h
+  A J Azshara (2nd visit)            quests 57-58  sim  60.0 ->  60.0  quests   7  ~0.9 h
+  A J Western/Eastern Plaguelands (2nd visit) quests 55-60  sim  60.0 ->  60.0  quests  16  ~3.5 h
 == Horde Speed (with Dungeons)
   H S Stonetalon/Barrens              22.0 ->  24.5  quests  27  ~4.0 h  (318 xp/min)
   H S skip dungeon Blackfathom Deeps (271 xp/min vs zones 630)
   H S Thousand Needles                24.5 ->  26.5  quests  20  ~1.9 h  (630 xp/min)
   H S skip dungeon Excavation Site: Wetlands (98 xp/min vs zones 739)
   H S Ashenvale                       26.5 ->  27.8  quests  14  ~1.2 h  (739 xp/min)
-  H S GRIND  27.8 ->  28.0  ~0.6 h
-  H S skip dungeon City of Dalaran (131 xp/min vs zones 185)
-  H S GRIND  28.0 ->  29.0  ~3.7 h
-  H S DUNGEON Gnomeregan                      29.0 ->  30.3  pre  0 quests 13  ~2.9 h
-  H S DUNGEON Razorfen Kraul                  30.3 ->  31.2  pre  0 quests  4  ~2.3 h
-  H S skip dungeon Scarlet Monastery Graveyard (268 xp/min vs zones 454)
-  H S Hillsbrad/Alterac               31.2 ->  32.1  quests  12  ~1.9 h  (454 xp/min)
-  H S Arathi Highlands                32.1 ->  32.8  quests  13  ~1.1 h  (692 xp/min)
-  H S Stranglethorn Vale              32.8 ->  34.0  quests  19  ~2.1 h  (577 xp/min)
+  H S Thousand Needles                27.8 ->  28.2  quests   4  ~1.1 h  (210 xp/min)  [second visit]
+  H S skip dungeon City of Dalaran (131 xp/min vs zones 254)
+  H S Arathi Highlands                28.2 ->  28.6  quests   4  ~1.2 h  (323 xp/min)  [gap filler]
+  H S Hillsbrad/Alterac               28.6 ->  29.9  quests  18  ~2.7 h  (375 xp/min)  [gap filler]
+  H S DUNGEON Gnomeregan                      29.9 ->  31.1  pre  0 quests 13  ~2.9 h
+  H S DUNGEON Razorfen Kraul                  31.1 ->  32.0  pre  0 quests  4  ~2.3 h
+  H S skip dungeon Scarlet Monastery Graveyard (268 xp/min vs zones 577)
+  H S Stranglethorn Vale              32.0 ->  33.2  quests  19  ~2.1 h  (577 xp/min)
   H S skip dungeon Scarlet Monastery Library (222 xp/min vs zones 703)
-  H S Desolace                        34.0 ->  35.3  quests  20  ~2.2 h  (703 xp/min)
-  H S skip dungeon The Drowned City (229 xp/min vs zones 577)
-  H S Dustwallow Marsh                35.3 ->  36.2  quests  15  ~1.8 h  (577 xp/min)
-  H S Thousand Needles                36.2 ->  36.5  quests   9  ~1.7 h  (247 xp/min)  [second visit]
-  H S Stranglethorn Vale              36.5 ->  37.1  quests   8  ~1.1 h  (774 xp/min)  [second visit]
-  H S skip dungeon Razorfen Downs (377 xp/min vs zones 618)
-  H S Swamp of Sorrows/Badlands       37.1 ->  38.0  quests  17  ~2.0 h  (656 xp/min)  [gap filler]
-  H S Riverglades                     38.0 ->  41.1  quests  62  ~5.9 h  (744 xp/min)
+  H S Desolace                        33.2 ->  34.6  quests  20  ~2.2 h  (703 xp/min)
+  H S Dustwallow Marsh                34.6 ->  35.5  quests  15  ~1.8 h  (577 xp/min)
+  H S skip dungeon The Drowned City (229 xp/min vs zones 561)
+  H S Swamp of Sorrows/Badlands       35.5 ->  36.4  quests  14  ~1.8 h  (653 xp/min)  [gap filler]
+  H S Stranglethorn Vale              36.4 ->  37.0  quests  10  ~1.1 h  (784 xp/min)  [second visit]
+  H S skip dungeon Razorfen Downs (377 xp/min vs zones 549)
+  H S Arathi Highlands                37.0 ->  37.9  quests  18  ~1.9 h  (584 xp/min)  [second visit]
+  H S Arathi Highlands                37.9 ->  38.5  quests  15  ~2.3 h  (383 xp/min)  [second visit]
+  H S Riverglades                     38.5 ->  41.7  quests  68  ~6.5 h  (730 xp/min)
   H S skip dungeon Krol'dok Stronghold (437 xp/min vs zones 873)
   H S skip dungeon Uldaman (475 xp/min vs zones 873)
-  H S Tanaris                         41.1 ->  42.1  quests  17  ~2.1 h  (873 xp/min)
-  H S Feralas                         42.1 ->  43.5  quests  26  ~2.5 h  (1035 xp/min)
-  H S Shen'dralas                     43.5 ->  43.9  quests   9  ~0.3 h  (3313 xp/min)  [gap filler]
-  H S Dustwallow Marsh                43.9 ->  44.4  quests  10  ~1.0 h  (963 xp/min)  [second visit]
-  H S skip dungeon Zul'Farrak (608 xp/min vs zones 1040)
-  H S The Hinterlands                 44.4 ->  45.2  quests  14  ~1.5 h  (1244 xp/min)  [gap filler]
-  H S Un'Goro Crater                  45.2 ->  45.9  quests  12  ~1.5 h  (1056 xp/min)
-  H S Azshara                         45.9 ->  46.7  quests  14  ~1.9 h  (906 xp/min)
-  H S DUNGEON Maraudon                        46.7 ->  48.1  pre  0 quests  9  ~3.5 h
-  H S skip dungeon Alcaz Prison (496 xp/min vs zones 1050)
-  H S Azshara                         48.1 ->  48.7  quests  10  ~1.1 h  (1171 xp/min)  [second visit]
-  H S The Hinterlands                 48.7 ->  49.3  quests  10  ~1.3 h  (1291 xp/min)  [second visit]
-  H S Western/Eastern Plaguelands     49.3 ->  50.3  quests  24  ~3.2 h  (836 xp/min)
-  H S skip dungeon The Temple of Atal'Hakkar (684 xp/min vs zones 1794)
-  H S Felwood                         50.3 ->  51.0  quests  12  ~1.2 h  (1794 xp/min)
-  H S Un'Goro Crater                  51.0 ->  51.7  quests  14  ~1.6 h  (1217 xp/min)  [second visit]
-  H S Searing Gorge                   51.7 ->  52.3  quests  14  ~1.4 h  (1287 xp/min)  [gap filler]
-  H S DUNGEON Blackrock Depths                52.3 ->  55.2  pre  9 quests 25  ~9.0 h
-  H S DUNGEON Dire Maul East                  55.2 ->  56.1  pre  1 quests  5  ~2.1 h
-  H S DUNGEON Lower Blackrock Spire           56.1 ->  58.9  pre  8 quests 16  ~8.4 h
-  H S skip dungeon Blackmaw Hold (582 xp/min vs zones 953)
-  H S DUNGEON Dire Maul West                  58.9 ->  60.0  pre  0 quests 10  ~2.4 h
+  H S Tanaris                         41.7 ->  42.6  quests  17  ~2.1 h  (873 xp/min)
+  H S Feralas                         42.6 ->  44.1  quests  26  ~2.5 h  (1035 xp/min)
+  H S skip dungeon Zul'Farrak (608 xp/min vs zones 2126)
+  H S Shen'dralas                     44.1 ->  44.4  quests   9  ~0.3 h  (3313 xp/min)  [gap filler]
+  H S Dustwallow Marsh                44.4 ->  44.9  quests  10  ~1.0 h  (963 xp/min)  [second visit]
+  H S The Hinterlands                 44.9 ->  45.9  quests  17  ~2.0 h  (1066 xp/min)  [gap filler]
+  H S Un'Goro Crater                  45.9 ->  46.5  quests  12  ~1.5 h  (1056 xp/min)
+  H S DUNGEON Maraudon                        46.5 ->  48.0  pre  0 quests  9  ~3.5 h
+  H S Azshara                         48.0 ->  49.0  quests  19  ~1.9 h  (1259 xp/min)
+  H S skip dungeon Alcaz Prison (496 xp/min vs zones 635)
+  H S Western/Eastern Plaguelands     49.0 ->  49.6  quests  16  ~2.5 h  (635 xp/min)
+  H S Felwood                         49.6 ->  50.2  quests  12  ~1.2 h  (1581 xp/min)
+  H S skip dungeon The Temple of Atal'Hakkar (730 xp/min vs zones 1071)
+  H S Un'Goro Crater                  50.2 ->  50.9  quests  13  ~1.5 h  (1161 xp/min)  [second visit]
+  H S The Hinterlands                 50.9 ->  51.4  quests  10  ~1.3 h  (1291 xp/min)  [second visit]
+  H S Searing Gorge                   51.4 ->  52.0  quests  14  ~1.3 h  (1287 xp/min)  [gap filler]
+  H S Western/Eastern Plaguelands     52.0 ->  52.6  quests  14  ~1.5 h  (1140 xp/min)  [second visit]
+  H S DUNGEON Blackrock Depths                52.6 ->  55.4  pre  9 quests 25  ~9.0 h
+  H S DUNGEON Dire Maul East                  55.4 ->  56.4  pre  1 quests  5  ~2.1 h
+  H S DUNGEON Lower Blackrock Spire           56.4 ->  59.2  pre  8 quests 16  ~8.4 h
+  H S skip dungeon Blackmaw Hold (602 xp/min vs zones 953)
+  H S DUNGEON Dire Maul West                  59.2 ->  60.0  pre  0 quests 10  ~2.4 h
 == Horde Speed (no Dungeons)
-  H Q Stonetalon/Barrens              22.0 ->  25.4  quests  37  ~6.9 h  (258 xp/min)
-  H Q Ashenvale                       25.4 ->  26.8  quests  14  ~1.2 h  (739 xp/min)
-  H Q Thousand Needles                26.8 ->  28.9  quests  24  ~3.0 h  (465 xp/min)
-  H Q Hillsbrad/Alterac               28.9 ->  30.0  quests  15  ~2.4 h  (392 xp/min)
-  H Q Desolace                        30.0 ->  31.5  quests  21  ~4.0 h  (317 xp/min)
-  H Q Stranglethorn Vale              31.5 ->  32.8  quests  20  ~2.4 h  (551 xp/min)
-  H Q Arathi Highlands                32.8 ->  33.7  quests  16  ~1.6 h  (560 xp/min)
-  H Q Dustwallow Marsh                33.7 ->  34.6  quests  15  ~2.0 h  (577 xp/min)
-  H Q Desolace                        34.6 ->  35.4  quests  12  ~2.6 h  (335 xp/min)  [second visit]
-  H Q Arathi Highlands                35.4 ->  36.1  quests  11  ~2.2 h  (418 xp/min)  [second visit]
-  H Q Stranglethorn Vale              36.1 ->  36.8  quests  10  ~1.6 h  (571 xp/min)  [second visit]
-  H Q Swamp of Sorrows/Badlands       36.8 ->  38.2  quests  25  ~4.9 h  (368 xp/min)  [gap filler]
-  H Q Riverglades                     38.2 ->  41.3  quests  66  ~6.5 h  (703 xp/min)
-  H Q Tanaris                         41.3 ->  42.6  quests  22  ~3.1 h  (715 xp/min)
-  H Q Feralas                         42.6 ->  44.1  quests  28  ~2.9 h  (939 xp/min)
-  H Q Shen'dralas                     44.1 ->  44.7  quests  17  ~1.1 h  (1248 xp/min)  [gap filler]
-  H Q Dustwallow Marsh                44.7 ->  45.4  quests  13  ~1.9 h  (649 xp/min)  [second visit]
-  H Q Un'Goro Crater                  45.4 ->  46.1  quests  14  ~1.8 h  (909 xp/min)
-  H Q Azshara                         46.1 ->  47.6  quests  28  ~3.2 h  (969 xp/min)
-  H Q Blasted Lands/Burning Steppes   47.6 ->  48.1  quests  12  ~2.9 h  (457 xp/min)
-  H Q Western/Eastern Plaguelands     48.1 ->  48.6  quests  13  ~1.7 h  (657 xp/min)
-  H Q Felwood                         48.6 ->  49.5  quests  18  ~2.4 h  (1000 xp/min)
-  H Q Winterspring                    49.5 ->  50.1  quests  12  ~2.4 h  (556 xp/min)
-  H Q Un'Goro Crater                  50.1 ->  51.3  quests  24  ~3.4 h  (888 xp/min)  [second visit]
-  H Q Tanaris                         51.3 ->  51.7  quests  11  ~1.9 h  (674 xp/min)  [second visit]
-  H Q The Hinterlands                 51.7 ->  52.8  quests  25  ~3.1 h  (1038 xp/min)  [gap filler]
-  H Q Searing Gorge                   52.8 ->  53.5  quests  18  ~2.0 h  (948 xp/min)  [gap filler]
-  H Q Western/Eastern Plaguelands     53.5 ->  54.9  quests  31  ~4.8 h  (851 xp/min)  [second visit]
-  H Q Silithus                        54.9 ->  55.3  quests   8  ~1.3 h  (1252 xp/min)  [gap filler]
-  H Q Silithus                        55.3 ->  56.0  quests   9  ~1.3 h  (1600 xp/min)  [second visit]
-  H Q Winterspring                    56.0 ->  56.6  quests  14  ~2.1 h  (1011 xp/min)  [second visit]
-  H Q Mount Hyjal                     56.6 ->  58.4  quests  48  ~5.4 h  (1076 xp/min)
-  H Q GRIND  58.4 ->  59.0  ~6.0 h
-  H Q GRIND  59.0 ->  60.0  ~10.1 h
+  H Q Stonetalon/Barrens              22.0 ->  24.8  quests  30  ~4.8 h  (295 xp/min)
+  H Q Thousand Needles                24.8 ->  26.9  quests  21  ~2.1 h  (596 xp/min)
+  H Q Ashenvale                       26.9 ->  28.2  quests  14  ~1.2 h  (739 xp/min)
+  H Q Hillsbrad/Alterac               28.2 ->  29.4  quests  15  ~2.3 h  (444 xp/min)
+  H Q Arathi Highlands                29.4 ->  29.9  quests   7  ~0.8 h  (504 xp/min)  [gap filler]
+  H Q Stranglethorn Vale              29.9 ->  30.0  quests   4  ~0.5 h  (277 xp/min)  [gap filler]
+  H Q Dustwallow Marsh                30.0 ->  31.1  quests  13  ~1.5 h  (673 xp/min)
+  H Q Desolace                        31.1 ->  32.3  quests  16  ~2.3 h  (486 xp/min)
+  H Q Thousand Needles                32.3 ->  32.9  quests  11  ~2.1 h  (266 xp/min)  [second visit]
+  H Q Stranglethorn Vale              32.9 ->  33.7  quests  13  ~1.7 h  (582 xp/min)  [second visit]
+  H Q Arathi Highlands                33.7 ->  34.4  quests  11  ~1.5 h  (500 xp/min)  [second visit]
+  H Q Swamp of Sorrows/Badlands       34.4 ->  35.3  quests  15  ~3.2 h  (337 xp/min)  [gap filler]
+  H Q Desolace                        35.3 ->  36.1  quests  15  ~2.1 h  (480 xp/min)  [second visit]
+  H Q Stranglethorn Vale              36.1 ->  37.2  quests  21  ~3.6 h  (392 xp/min)  [second visit]
+  H Q Swamp of Sorrows/Badlands       37.2 ->  37.8  quests  10  ~1.7 h  (486 xp/min)  [second visit]
+  H Q Arathi Highlands                37.8 ->  38.7  quests  17  ~2.3 h  (515 xp/min)  [second visit]
+  H Q Riverglades                     38.7 ->  41.9  quests  72  ~7.1 h  (692 xp/min)
+  H Q Tanaris                         41.9 ->  43.0  quests  21  ~2.8 h  (752 xp/min)
+  H Q Feralas                         43.0 ->  44.8  quests  31  ~3.2 h  (1027 xp/min)
+  H Q Shen'dralas                     44.8 ->  45.5  quests  21  ~1.2 h  (1216 xp/min)  [gap filler]
+  H Q Un'Goro Crater                  45.5 ->  46.2  quests  14  ~1.8 h  (909 xp/min)
+  H Q Azshara                         46.2 ->  47.8  quests  30  ~3.4 h  (976 xp/min)
+  H Q Dustwallow Marsh                47.8 ->  48.2  quests   9  ~0.9 h  (1058 xp/min)  [second visit]
+  H Q Blasted Lands/Burning Steppes   48.2 ->  48.9  quests  16  ~2.3 h  (887 xp/min)
+  H Q Western/Eastern Plaguelands     48.9 ->  49.9  quests  23  ~3.1 h  (728 xp/min)
+  H Q Felwood                         49.9 ->  50.9  quests  19  ~2.8 h  (943 xp/min)
+  H Q Un'Goro Crater                  50.9 ->  52.1  quests  25  ~3.5 h  (919 xp/min)  [second visit]
+  H Q Winterspring                    52.1 ->  53.0  quests  18  ~2.6 h  (973 xp/min)
+  H Q Tanaris                         53.0 ->  53.3  quests   8  ~1.1 h  (990 xp/min)  [second visit]
+  H Q The Hinterlands                 53.3 ->  54.3  quests  22  ~2.4 h  (1275 xp/min)  [gap filler]
+  H Q Searing Gorge                   54.3 ->  54.8  quests  16  ~1.4 h  (1130 xp/min)  [gap filler]
+  H Q Western/Eastern Plaguelands     54.8 ->  57.4  quests  58  ~8.1 h  (1021 xp/min)  [second visit]
+  H Q Mount Hyjal                     57.4 ->  60.0  quests  91  ~7.6 h  (1457 xp/min)
 == Horde Full Journey
   H J DUNGEON Shadowfang Keep                 22.0 ->  22.9  pre  0 quests  3  ~1.4 h
   H J Stonetalon/Barrens             made for 22-24  sim  22.9 ->  25.8  quests  35  ~6.0 h
-  H J Ashenvale                      made for 24-27  sim  25.8 ->  27.3  quests  15  ~2.1 h
+  H J Ashenvale                      made for 24-27  sim  25.8 ->  27.3  quests  18  ~2.4 h
   H J DUNGEON Blackfathom Deeps               27.3 ->  28.3  pre  0 quests  6  ~2.2 h
   H J DUNGEON Excavation Site: Wetlands       28.3 ->  28.8  pre  0 quests  5  ~3.1 h
   H J Thousand Needles               made for 27-30  sim  28.8 ->  30.6  quests  25  ~3.4 h
   H J DUNGEON Razorfen Kraul                  30.6 ->  31.5  pre  0 quests  4  ~2.3 h
   H J DUNGEON City of Dalaran                 31.5 ->  32.1  pre  0 quests  8  ~3.3 h
   H J DUNGEON Gnomeregan                      32.1 ->  33.2  pre  0 quests 13  ~2.9 h
-  H J Hillsbrad/Alterac              made for 30-32  sim  33.2 ->  34.1  quests  20  ~2.9 h
-  H J DUNGEON Scarlet Monastery Graveyard     34.1 ->  34.4  pre  0 quests  2  ~1.1 h
-  H J Arathi Highlands               made for 32-34  sim  34.4 ->  35.3  quests  18  ~2.1 h
-  H J DUNGEON Scarlet Monastery Library       35.3 ->  35.7  pre  4 quests  2  ~2.1 h
-  H J Stranglethorn Vale             made for 34-37  sim  35.7 ->  37.5  quests  36  ~5.1 h
-  H J DUNGEON The Drowned City                37.5 ->  37.8  pre  0 quests  5  ~1.9 h
-  H J DUNGEON Scarlet Monastery Armory        37.8 ->  37.9  pre  0 quests  0  ~0.8 h
-  H J Desolace                       made for 37-38  sim  37.9 ->  39.9  quests  44  ~8.0 h
-  H J DUNGEON Razorfen Downs                  39.9 ->  41.1  pre  8 quests  8  ~5.3 h
-  H J Shen'dralas                    made for 38-40  sim  41.1 ->  42.0  quests  24  ~1.7 h
-  H J DUNGEON Scarlet Monastery Cathedral     42.0 ->  42.4  pre  0 quests  1  ~0.9 h
-  H J Dustwallow Marsh               made for 40-41  sim  42.4 ->  43.5  quests  28  ~3.5 h
-  H J DUNGEON Krol'dok Stronghold             43.5 ->  44.1  pre 11 quests  5  ~2.4 h
-  H J Riverglades                    made for 41-44  sim  44.1 ->  46.1  quests  59  ~6.0 h
-  H J DUNGEON Uldaman                         46.1 ->  47.5  pre  1 quests 10  ~5.6 h
-  H J Swamp of Sorrows/Badlands      made for 44-45  sim  47.5 ->  48.3  quests  37  ~5.9 h
-  H J DUNGEON Zul'Farrak                      48.3 ->  49.7  pre  4 quests 10  ~5.2 h
-  H J The Hinterlands                made for 45-47  sim  49.7 ->  51.0  quests  25  ~3.4 h
-  H J DUNGEON Maraudon                        51.0 ->  52.2  pre  0 quests  9  ~3.5 h
-  H J Searing Gorge                  made for 47-48  sim  52.2 ->  53.0  quests  19  ~3.2 h
-  H J Tanaris                        made for 48-49  sim  53.0 ->  53.9  quests  35  ~5.2 h
-  H J DUNGEON Alcaz Prison                    53.9 ->  54.9  pre  2 quests 10  ~4.9 h
-  H J Feralas                        made for 49-50  sim  54.9 ->  55.4  quests  35  ~4.3 h
-  H J Un'Goro Crater                 made for 50-52  sim  55.4 ->  56.9  quests  39  ~4.9 h
-  H J DUNGEON The Temple of Atal'Hakkar       56.9 ->  58.0  pre  1 quests  9  ~3.4 h
-  H J Azshara                        made for 52-53  sim  58.0 ->  59.0  quests  37  ~4.4 h
-  H J DUNGEON Blackrock Depths                59.0 ->  60.0  pre  8 quests 25  ~8.9 h
-  H J Felwood                        made for 53-54  sim  60.0 ->  60.0  quests  24  ~3.8 h
-  H J Winterspring                   made for 54-55  sim  60.0 ->  60.0  quests  27  ~4.0 h
+  H J Hillsbrad/Alterac              made for 30-32  sim  33.2 ->  34.2  quests  25  ~3.7 h
+  H J DUNGEON Scarlet Monastery Graveyard     34.2 ->  34.5  pre  0 quests  2  ~1.1 h
+  H J Arathi Highlands               made for 32-34  sim  34.5 ->  35.4  quests  20  ~2.4 h
+  H J DUNGEON Scarlet Monastery Library       35.4 ->  35.9  pre  4 quests  2  ~2.1 h
+  H J Stranglethorn Vale             made for 34-37  sim  35.9 ->  37.7  quests  37  ~5.1 h
+  H J Arathi Highlands (2nd visit)   quests 40-41  sim  37.7 ->  38.3  quests  10  ~1.7 h
+  H J DUNGEON The Drowned City                38.3 ->  38.6  pre  0 quests  5  ~1.9 h
+  H J DUNGEON Scarlet Monastery Armory        38.6 ->  38.7  pre  0 quests  0  ~0.8 h
+  H J Desolace                       made for 37-38  sim  38.7 ->  40.7  quests  48  ~8.2 h
+  H J Thousand Needles (2nd visit)   quests 33-44  sim  40.7 ->  41.5  quests  26  ~5.9 h
+  H J DUNGEON Razorfen Downs                  41.5 ->  42.7  pre  8 quests  8  ~5.3 h
+  H J Shen'dralas                    made for 38-40  sim  42.7 ->  43.6  quests  24  ~1.7 h
+  H J DUNGEON Scarlet Monastery Cathedral     43.6 ->  43.9  pre  0 quests  1  ~0.9 h
+  H J Dustwallow Marsh               made for 40-41  sim  43.9 ->  44.8  quests  28  ~3.5 h
+  H J DUNGEON Krol'dok Stronghold             44.8 ->  45.4  pre 11 quests  5  ~2.4 h
+  H J Riverglades                    made for 41-44  sim  45.4 ->  47.2  quests  70  ~7.7 h
+  H J Stranglethorn Vale (2nd visit) quests 42-51  sim  47.2 ->  48.2  quests  22  ~3.3 h
+  H J DUNGEON Uldaman                         48.2 ->  49.6  pre  1 quests 10  ~5.6 h
+  H J Swamp of Sorrows/Badlands      made for 44-45  sim  49.6 ->  50.3  quests  45  ~6.8 h
+  H J DUNGEON Zul'Farrak                      50.3 ->  51.6  pre  4 quests 10  ~5.2 h
+  H J The Hinterlands                made for 45-47  sim  51.6 ->  53.0  quests  30  ~4.5 h
+  H J DUNGEON Maraudon                        53.0 ->  54.2  pre  0 quests  9  ~3.5 h
+  H J Searing Gorge                  made for 47-48  sim  54.2 ->  54.8  quests  19  ~3.2 h
+  H J Tanaris                        made for 48-49  sim  54.8 ->  55.5  quests  44  ~6.3 h
+  H J DUNGEON Alcaz Prison                    55.5 ->  56.5  pre  2 quests 10  ~4.9 h
+  H J Feralas                        made for 49-50  sim  56.5 ->  56.9  quests  35  ~4.3 h
+  H J Un'Goro Crater                 made for 50-52  sim  56.9 ->  58.3  quests  40  ~5.1 h
+  H J Tanaris (2nd visit)            quests 60-60  sim  58.3 ->  58.7  quests  13  ~2.1 h
+  H J DUNGEON The Temple of Atal'Hakkar       58.7 ->  59.6  pre  1 quests  9  ~3.4 h
+  H J Azshara                        made for 52-53  sim  59.6 ->  60.0  quests  49  ~6.0 h
+  H J DUNGEON Blackrock Depths                60.0 ->  60.0  pre  8 quests 25  ~8.9 h
+  H J Felwood                        made for 53-54  sim  60.0 ->  60.0  quests  43  ~5.6 h
+  H J Winterspring                   made for 54-55  sim  60.0 ->  60.0  quests  36  ~5.3 h
   H J DUNGEON Dire Maul East                  60.0 ->  60.0  pre  1 quests  5  ~2.1 h
-  H J Blasted Lands/Burning Steppes  made for 55-56  sim  60.0 ->  60.0  quests  13  ~2.8 h
-  H J DUNGEON Lower Blackrock Spire           60.0 ->  60.0  pre  3 quests 16  ~7.3 h
+  H J Blasted Lands/Burning Steppes  made for 55-56  sim  60.0 ->  60.0  quests  23  ~4.9 h
+  H J DUNGEON Lower Blackrock Spire           60.0 ->  60.0  pre  1 quests 16  ~6.7 h
   H J DUNGEON Blackmaw Hold                   60.0 ->  60.0  pre  0 quests  8  ~2.5 h
-  H J Western/Eastern Plaguelands    made for 56-58  sim  60.0 ->  60.0  quests  70  ~11.1 h
+  H J Western/Eastern Plaguelands    made for 56-58  sim  60.0 ->  60.0  quests  92  ~13.2 h
   H J DUNGEON Dire Maul West                  60.0 ->  60.0  pre  0 quests 10  ~2.4 h
   H J DUNGEON Dire Maul North                 60.0 ->  60.0  pre  0 quests  4  ~1.7 h
-  H J Silithus                       made for 58-59  sim  60.0 ->  60.0  quests  36  ~4.9 h
+  H J Silithus                       made for 58-59  sim  60.0 ->  60.0  quests  46  ~6.2 h
   H J DUNGEON Shaper's Terrace                60.0 ->  60.0  pre  0 quests  3  ~2.1 h
   H J DUNGEON Scholomance                     60.0 ->  60.0  pre  7 quests 10  ~6.1 h
   H J DUNGEON Stratholme Live                 60.0 ->  60.0  pre  0 quests  7  ~3.0 h
   H J DUNGEON Stratholme Undead               60.0 ->  60.0  pre  0 quests  6  ~2.9 h
-  H J Mount Hyjal                    made for 59-60  sim  60.0 ->  60.0  quests  48  ~5.6 h
+  H J Mount Hyjal                    made for 59-60  sim  60.0 ->  60.0  quests 104  ~9.1 h
   H J DUNGEON Upper Blackrock Spire           60.0 ->  60.0  pre 10 quests  9  ~7.7 h
+  H J Stranglethorn Vale (3rd visit) quests 55-60  sim  60.0 ->  60.0  quests   6  ~1.5 h
+  H J Azshara (2nd visit)            quests 52-58  sim  60.0 ->  60.0  quests   8  ~1.4 h
+  H J Western/Eastern Plaguelands (2nd visit) quests 55-60  sim  60.0 ->  60.0  quests  17  ~3.6 h
 == totals from 21 (Alliance) / 22 (Horde); hours are the tools/timing.py estimate, not measured
-  Alliance speed   guides  33  zones 19  dungeons  8  steps  1213  quests  583  ~ 83.1 h  ends at 60
-  Alliance speedq  guides  33  zones 32  dungeons  0  steps  1479  quests  739  ~100.4 h  ends at 60
-  Alliance full    guides  72  zones 24  dungeons 30  steps  2573  quests 1188  ~218.7 h  ends at 60
-  Horde    speed   guides  36  zones 25  dungeons  7  steps  1128  quests  522  ~ 82.8 h  ends at 60
-  Horde    speedq  guides  33  zones 32  dungeons  0  steps  1389  quests  651  ~106.6 h  ends at 60
-  Horde    full    guides  64  zones 23  dungeons 29  steps  2311  quests 1022  ~203.4 h  ends at 60
+  Alliance speed   guides  35  zones 23  dungeons  7  steps  1267  quests  611  ~ 81.9 h  ends at 60
+  Alliance speedq  guides  31  zones 31  dungeons  0  steps  1507  quests  767  ~ 86.6 h  ends at 60
+  Alliance full    guides  76  zones 29  dungeons 30  steps  3032  quests 1455  ~250.4 h  ends at 60
+  Horde    speed   guides  37  zones 27  dungeons  7  steps  1214  quests  555  ~ 83.4 h  ends at 60
+  Horde    speedq  guides  33  zones 33  dungeons  0  steps  1490  quests  727  ~ 88.9 h  ends at 60
+  Horde    full    guides  71  zones 30  dungeons 29  steps  2836  quests 1309  ~242.4 h  ends at 60

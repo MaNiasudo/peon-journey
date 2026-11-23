@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Levels 01-20
 --#groupid RXP-SRGCE-H1
 #defaultfor Tauren
-#next 6-12 Mulgore;Peon Journey - 1-60 Speed (no Dungeons)\22-25 Stonetalon/Barrens
+#next 6-12 Mulgore;Peon Journey - 1-60 Speed (no Dungeons)\22-24 Stonetalon/Barrens
 
 step << !Tauren
     #completewith next

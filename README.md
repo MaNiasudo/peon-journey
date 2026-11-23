@@ -17,16 +17,19 @@ class, profession and gold guides, the planner and the look are Peon Journey's o
 | Group in the guide menu | What it does |
 |---|---|
 | **1-60 Speed (with Dungeons)** | The fastest way to 60 in our model: the best-XP quests, one visit per zone, and only the dungeons worth the trip. Ends at 60 |
-| **1-60 Speed (no Dungeons)** | The fastest solo questing to 60: weak quests and zones are skipped, a short grind fills a gap when no quest is worth it |
-| **1-60 Full Journey** | Everything: every zone, every dungeon and wing with its pre-quests, in level order and continent blocks, Mount Hyjal last |
+| **1-60 Speed (no Dungeons)** | The fastest solo questing to 60: weak quests and zones are skipped |
+| **1-60 Full Journey** | Everything: every zone, every dungeon and wing with its pre-quests, in level order and continent blocks, a second visit when a zone's higher quests come into level, Mount Hyjal last |
 | **Dungeon Quests Only** | All 28 dungeons (19 classic + 9 new Forever ones); Scarlet Monastery, Dire Maul, Blackrock Spire and Stratholme split into their wings. Pick any, at any level |
 | **Class Quests** | Class quests worth doing: reward items with their Forever stats, must-do ability quests, level 60 chains |
 | **Attunements** | Onyxia (with Forever's new Horde quest Blood and Thunder), Molten Core and Blackwing Lair (not open yet), and the dungeon keys: UBRS, Scholomance, BRD, Dire Maul, Dalaran Sewer Key, Scepter of Celebras, Krol'dok, Mallet of Zul'Farrak, plus which keys drop where |
 | **Professions** | 1-300 for all 12 professions, with Forever's recipe changes, trainer waypoints and gathering loop routes |
 | **Gold** | The weekly "In Demand" quest, writs and crates, farm spots at 60 |
 
-Estimated play time from level 21 in our model (not measured in game): Speed (with Dungeons) about 83 hours,
-Speed (no Dungeons) about 95-105 hours, Full Journey about 200-220 hours. `data/route_report.txt` has the leg-by-leg numbers.
+Estimated play time from level 21 in our model (not measured in game): Speed (with Dungeons) about 82-84 hours,
+Speed (no Dungeons) about 87-89 hours, Full Journey about 240-250 hours. `data/route_report.txt` has the leg-by-leg numbers.
+
+- Quest chains that start in a capital or another zone are included: their lead-in quests are done on the way in.
+- Where no quest beats killing mobs at your level, the Speed routes say "grind to N" (rare; none at the moment).
 
 - Dungeon guides come in two parts: the **pre-quests** (solo, with how many and roughly how long) and the **run**
   (pick-ups, then the guide asks you to find a group at the entrance, one run, hand-ins).

@@ -2,7 +2,7 @@
 ## Title: |cffe8c478Peon Journey|r
 ## Notes: Free WoW Forever leveling guide 1-60 (Speed with/without dungeons, Full Journey), dungeons, attunements, class quests, professions 1-300, gold. Guide engine: RestedXP Guides free edition (CC BY-NC-SA 4.0).
 ## Author: Peon
-## Version: 2.1.0
+## Version: 2.1.1
 ## X-Website: https://github.com/MaNiasudo/peon-journey
 ## OptionalDeps: Questie
 ## SavedVariables: RXPData, RXPDB, RXPSettings, RXPString, PeonJourneyDB

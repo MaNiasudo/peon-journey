@@ -663,7 +663,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Levels 01-20
 --#groupid RXP-SRGCE-A1
 #name 5-11 Dun Morogh
-#next 11-12 Elwynn (Dwarf/Gnome);Peon Journey - 1-60 Speed (no Dungeons)\21-23 Ashenvale/Stonetalon;12-14 Loch Modan (Dwarf/Gnome);11-13 Loch Modan (Hunter)
+#next 11-12 Elwynn (Dwarf/Gnome);Peon Journey - 1-60 Speed (no Dungeons)\21-24 Ashenvale/Stonetalon;12-14 Loch Modan (Dwarf/Gnome);11-13 Loch Modan (Hunter)
 #defaultfor Dwarf/Gnome
 
 step
