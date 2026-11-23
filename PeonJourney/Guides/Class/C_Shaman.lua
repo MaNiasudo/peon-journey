@@ -202,7 +202,7 @@ step
     .accept 96135 >>Accept Heed My Call
     .target Veyric Thunderhame
 step
-    .goto 1441,36.76,39.62
+    .goto 1441,37.18,40.39
     >>Collect |cRXP_LOOT_[Eye of the Tempest]|r from |cRXP_ENEMY_Ravaging Tempest|r
     *Use the Twisted Totems to put an end to the quilboar ritual.
     .complete 96135,1 --Heed My Call
@@ -895,7 +895,7 @@ step
     .accept 79366 >>Accept Heed My Call
     .target Rau Cliffrunner
 step
-    .goto 1441,36.76,39.62
+    .goto 1441,37.18,40.39
     >>Collect |cRXP_LOOT_[Eye of the Tempest]|r from |cRXP_ENEMY_Ravaging Tempest|r
     *Use the Twisted Totems to put an end to the quilboar ritual.
     .complete 79366,1 --Heed My Call
@@ -1028,7 +1028,7 @@ step
     .accept 92461 >>Accept Harmony in Balance
     .target Rorian the Dayseeker
 step
-    .goto 2521,43.31,25.41
+    .goto 2521,43.23,25.16
     >>Kill |cRXP_ENEMY_Juvenile Vuldren|r
     *Slay 8 Vuldren Juveniles in Thendal Grove.
     .complete 92461,1 --Harmony in Balance
@@ -1122,7 +1122,7 @@ step
     .turnin 92468 >>Turn in Call of Earth
     .target Windshaper Boro
 step
-    .goto 2521,35.43,33.74
+    .goto 2521,35.42,33.74
     >>Collect |cRXP_LOOT_[Signet of Akir]|r from |cRXP_ENEMY_Al'Aketh Brute|r, |cRXP_ENEMY_Al'Aketh Convert|r, |cRXP_ENEMY_Al'Aketh Neophyte|r
     *Bring a Signet of Akir to Windshaper Boro.
     .complete 92466,1 --Call of Earth
@@ -1223,7 +1223,7 @@ step
     .turnin 92468 >>Turn in Call of Earth
     .target Windshaper Boro
 step
-    .goto 2521,35.43,33.74
+    .goto 2521,35.42,33.74
     >>Collect |cRXP_LOOT_[Signet of Akir]|r from |cRXP_ENEMY_Al'Aketh Brute|r, |cRXP_ENEMY_Al'Aketh Convert|r, |cRXP_ENEMY_Al'Aketh Neophyte|r
     *Bring a Signet of Akir to Windshaper Boro.
     .complete 92466,1 --Call of Earth
@@ -1462,7 +1462,7 @@ step
     .accept 79366 >>Accept Heed My Call
     .target Rau Cliffrunner
 step
-    .goto 1441,36.76,39.62
+    .goto 1441,37.18,40.39
     >>Collect |cRXP_LOOT_[Eye of the Tempest]|r from |cRXP_ENEMY_Ravaging Tempest|r
     *Use the Twisted Totems to put an end to the quilboar ritual.
     .complete 79366,1 --Heed My Call
@@ -1588,7 +1588,7 @@ step
     .accept 79366 >>Accept Heed My Call
     .target Rau Cliffrunner
 step
-    .goto 1441,36.76,39.62
+    .goto 1441,37.18,40.39
     >>Collect |cRXP_LOOT_[Eye of the Tempest]|r from |cRXP_ENEMY_Ravaging Tempest|r
     *Use the Twisted Totems to put an end to the quilboar ritual.
     .complete 79366,1 --Heed My Call

@@ -7,6 +7,7 @@ python3 -I tools/gen_professions.py data_forever.json out_guides/prof data/resea
 python3 -I tools/gen_gold.py data_forever.json out_guides/gold
 python3 -I tools/gen_route.py data_forever.json data/dungeons_config.json rxp_free/RXPGuides/Guides/forever out_route data/route_report.txt
 python3 -I tools/gen_class.py data_forever.json data/class_plan.json data/dungeons_config.json data/research/class_item_stats.json out_guides/class
+python3 -I tools/gen_attune.py data_forever.json data/dungeons_config.json data/research/attunements.json out_guides/attune
 python3 -I tools/build_standalone.py . rxp_free/RXPGuides PeonJourney
 # checks
 find PeonJourney/Guides -name "*.lua" ! -name Import.lua | sort > /tmp/pj_guides.txt

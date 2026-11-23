@@ -1,0 +1,352 @@
+{
+ "recommended": {
+  "Alliance": [
+   {
+    "zones": "Racial start zone: Elwynn Forest (Human), Dun Morogh (Dwarf/Gnome), Teldrassil (Night Elf), Zephras Isle (Skyborne only)",
+    "levels": "1-12",
+    "note": "Zephras Isle is 1-12 and Skyborne-only; Skyborne leave on the Valanaar skycutter to Dalaran, then a Skyborne-only portal to Stormwind (method.gg). RestedXP's Skyborne route runs the isle to 14 for Alliance (Kami Labs)."
+   },
+   {
+    "zones": "Westfall (Human), Loch Modan (Dwarf/Gnome), Darkshore (Night Elf)",
+    "levels": "12-18",
+    "note": "Hall of Thanes (13-18, under Ironforge) is the new Alliance low dungeon. Night Elves can take the new Stormwind Harbor - Auberdine ship and join the Stormwind route (playhub: join Duskwood ~20). Cozy Sleeping Bag chain starts at 14 (Alexston Farmstead, Westfall) and crosses both continents."
+   },
+   {
+    "zones": "Redridge Mountains (Lakeshire), finish Westfall",
+    "levels": "18-21",
+    "note": "Deadmines 18-22 here if running dungeons (ConquestCapped). Dwarves/Gnomes join via the Deeprun Tram around the late teens (playhub)."
+   },
+   {
+    "zones": "Wetlands (Menethil Harbor)",
+    "levels": "21-25",
+    "note": "ConquestCapped: Wetlands at 21-25 is where the Excavation Site quests start; Forever adds 25+ new Wetlands quests. playhub instead puts Duskwood at 20-25 and Wetlands at 30-35 (sources disagree)."
+   },
+   {
+    "zones": "Duskwood, Ashenvale",
+    "levels": "24-27",
+    "note": "Stockade 25-29 (ConquestCapped). Ashenvale is reached via Auberdine; Blackfathom Deeps 23-26."
+   },
+   {
+    "zones": "Wetlands (back), Hillsbrad Foothills (Southshore), Duskwood",
+    "levels": "27-30",
+    "note": "Excavation Site: Wetlands dungeon 27-30 (ConquestCapped; other sites list 24-29, 26-31, 26-33). New ship loop Menethil -> Southshore -> Auberdine -> Menethil links Wetlands, Hillsbrad and Darkshore."
+   },
+   {
+    "zones": "Arathi Highlands, Stranglethorn Vale (visit 1), Desolace, Alterac Mountains, Thousand Needles",
+    "levels": "30-36",
+    "note": "Shared 30-40 band (ConquestCapped). Desolace new Gelkis/Magram centaur quests need level 35. STV is done in 2-3 visits (games.gg: 30-34, 36-40, 41-45). City of Dalaran 28-35, Scarlet Monastery, Gnomeregan in this band."
+   },
+   {
+    "zones": "Riverglades (Farholde Keep) [new]",
+    "levels": "36-44",
+    "note": "Walk in from north Redridge (Lakeshire, north road, right fork into the Bristle Hills, south to Farholde Keep). Wowhead DB 36-44; wiki 35-45; wow.gg 38-44. Arrive timing differs: timesaver.gg ~35-36 after early STV, GameLeap ~40. The Drowned City (35-40) right before; Krol'dok Stronghold (40-45) once at ~42-44 after the zone story. Dustwallow, Badlands, Swamp of Sorrows are the alternatives in the same band."
+   },
+   {
+    "zones": "Shen'dralas [new, optional]",
+    "levels": "~38-45 (unconfirmed)",
+    "note": "Reached from southern Desolace through the Valley of Bones (Nijel's Point is the nearest Alliance flight path). wow.gg 38-45, pcgames 40-45, ConquestCapped 35-45; Blizzard has not published a range and no flight master was found in zone data. Some chains need centaur reputation and prerequisite quests."
+   },
+   {
+    "zones": "Tanaris, Feralas, The Hinterlands, Stranglethorn Vale (final visit), Searing Gorge",
+    "levels": "44-50",
+    "note": "Zul'Farrak, Maraudon, Alcaz Prison (48-53) in this band. playhub's shared 45-60 route: Tanaris/Gadgetzan 45-48, Tanaris/Feralas 48-51."
+   },
+   {
+    "zones": "Un'Goro Crater, Felwood, Azshara, Blasted Lands",
+    "levels": "48-55",
+    "note": "Azshara listed 45/46-55; Blackmaw Hold (55-60) is in Azshara. Sunken Temple and BRD fit here."
+   },
+   {
+    "zones": "Winterspring, Western Plaguelands, Eastern Plaguelands, Burning Steppes, Silithus",
+    "levels": "53-60",
+    "note": "playhub ends 57-60 Felwood/Timbermaw Hold/Winterspring/Everlook. LBRS, Blackmaw Hold, Shaper's Terrace (58-60)."
+   },
+   {
+    "zones": "Mount Hyjal [new]",
+    "levels": "60 (some sources 55/56-60)",
+    "note": "Entered from Winterspring via Everlook and Darkwhisper Gorge. wow.gg and Warcraft Tavern treat it as a level-60 zone (wow.gg: not a replacement for the 50-55 zones); ConquestCapped says its quests are mostly 56-60; PC Games lists 55-60; ExpCarry says quest data starts in the high 50s."
+   }
+  ],
+  "Horde": [
+   {
+    "zones": "Racial start zone: Durotar (Orc/Troll), Mulgore (Tauren), Tirisfal Glades (Undead), Zephras Isle (Skyborne only)",
+    "levels": "1-12",
+    "note": "Horde Skyborne take the skycutter to Skywatcher Plateau / NW Mulgore near Thunder Bluff (no portal to Orgrimmar), so they level alongside Tauren at first (method.gg)."
+   },
+   {
+    "zones": "The Barrens (Crossroads); Undead: Silverpine Forest",
+    "levels": "12-16",
+    "note": "Most Horde meet at the Crossroads around 12; Undead can stay in Silverpine longer (ConquestCapped). Ragefire Chasm 13-15."
+   },
+   {
+    "zones": "Northern Barrens",
+    "levels": "16-21",
+    "note": "New Ruins of Lordaeron dungeon 17-19 (Tirisfal). Undead route goes Tirisfal -> Silverpine -> Hillsbrad (wow.gg)."
+   },
+   {
+    "zones": "End of the Barrens, Stonetalon Mountains (~3 levels); Undead: Hillsbrad Foothills",
+    "levels": "21-25",
+    "note": "Wailing Caverns 19-24; Shadowfang Keep optional (ConquestCapped)."
+   },
+   {
+    "zones": "Ashenvale (Splintertree Post)",
+    "levels": "25-28",
+    "note": "Blackfathom Deeps."
+   },
+   {
+    "zones": "Thousand Needles (Freewind Post), southern Barrens",
+    "levels": "28-30",
+    "note": "Excavation Site: Wetlands, City of Dalaran (28+) and Razorfen Kraul (29+) fit here for dungeon players (ConquestCapped). Horde has no town or flight master in the Wetlands (games.gg)."
+   },
+   {
+    "zones": "Arathi Highlands, Stranglethorn Vale (Grom'gol), Desolace (Shadowprey Village), Alterac Mountains, Hillsbrad, Thousand Needles",
+    "levels": "30-36",
+    "note": "wow.gg main 30-35: Arathi + STV; alternatives Desolace, Alterac, Needles. Desolace 30-40 reached from Sun Rock Retreat or Camp Mojache; new centaur quests need 35."
+   },
+   {
+    "zones": "Desolace (second wave), Stranglethorn Vale (visit 2)",
+    "levels": "35-40",
+    "note": "wow.gg main 35-40; alternatives Dustwallow, Badlands, Swamp of Sorrows, Riverglades, Shen'dralas. The Drowned City (35-40) off STV."
+   },
+   {
+    "zones": "Riverglades (Rog'mar) [new]",
+    "levels": "38-44 (36-44 Wowhead DB)",
+    "note": "Horde path is a detour: Thousand Needles -> Shimmering Flats -> Tanaris -> Steamwheedle Port ship -> Powderfuse Port (no working flight master reported) -> ride to Rog'mar and take the flight path. Overland entry from the Badlands is hostile. wow.gg puts Riverglades as main zone at 40-45 with Tanaris. Krol'dok Stronghold 40-45 once at ~42-44."
+   },
+   {
+    "zones": "Shen'dralas [new, optional]",
+    "levels": "~38-45 (unconfirmed)",
+    "note": "From southern Desolace via the Valley of Bones (Shadowprey Village is the nearest Horde flight path). Listed by wow.gg as a 35-45 alternative, not a main zone."
+   },
+   {
+    "zones": "Tanaris, Feralas (Camp Mojache); alternatives The Hinterlands, Searing Gorge, Azshara, Blasted Lands",
+    "levels": "45-50",
+    "note": "wow.gg main 45-50. Zul'Farrak, Maraudon, Alcaz Prison (48-53)."
+   },
+   {
+    "zones": "Un'Goro Crater, Felwood; alternatives Searing Gorge, Burning Steppes, Western Plaguelands, Azshara",
+    "levels": "50-55",
+    "note": "wow.gg: unlock the Horde flight path in western Azshara first. Sunken Temple, BRD."
+   },
+   {
+    "zones": "Eastern Plaguelands, Winterspring; alternatives Western Plaguelands, Silithus, Burning Steppes",
+    "levels": "55-60",
+    "note": "wow.gg main 55-60. LBRS, Blackmaw Hold (55-60), Shaper's Terrace (58-60)."
+   },
+   {
+    "zones": "Mount Hyjal [new]",
+    "levels": "60 (some sources 55/56-60)",
+    "note": "Same as Alliance: Winterspring -> Everlook -> Darkwhisper Gorge; flight paths Everlook <-> Tainted Foothills <-> Summit of Eternity (both factions)."
+   }
+  ]
+ },
+ "per_source": [
+  {
+   "source": "https://wow.gg/guides/wow-forever-leveling-alliance",
+   "faction": "Alliance",
+   "route": "Human: Elwynn -> Westfall -> Redridge + Duskwood -> Stranglethorn Vale -> Riverglades -> Tanaris or Feralas -> Felwood + Un'Goro -> Winterspring or Plaguelands. Dwarf/Gnome: Dun Morogh -> Loch Modan -> Wetlands -> Arathi. Night Elf: Teldrassil -> Darkshore -> Ashenvale -> Desolace. Zone bands: Riverglades 38-44, Shen'dralas 38-45, Azshara 46-55, Hyjal after 60 (not a replacement for 50-55 zones). Fouren, updated 2026-11-17."
+  },
+  {
+   "source": "https://wow.gg/guides/wow-forever-leveling-horde",
+   "faction": "Horde",
+   "route": "1-12 start zone; 12-20 Barrens/Silverpine; 20-25 Barrens/Hillsbrad; 25-30 Thousand Needles/Hillsbrad; 30-35 Arathi/STV; 35-40 Desolace/STV; 40-45 Riverglades/Tanaris; 45-50 Tanaris/Feralas; 50-55 Un'Goro/Felwood; 55-60 EPL/Winterspring. Simple Kalimdor route: start -> Barrens -> Stonetalon or Ashenvale -> Thousand Needles -> Desolace -> Riverglades -> Tanaris or Feralas -> Felwood + Un'Goro -> Winterspring or Plaguelands. Undead: Tirisfal -> Silverpine -> Hillsbrad -> Arathi, then STV/Desolace/Riverglades."
+  },
+  {
+   "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-leveling/",
+   "faction": "Alliance",
+   "route": "1-12 start zone; 12-18 Westfall/Loch Modan/Darkshore (Hall of Thanes 14-17); 18-21 Redridge + end of Westfall (Deadmines 18-22); 21-25 Wetlands (Excavation quests start; BFD 23-26); 24-27 Duskwood/Ashenvale (Stockade 25-29); 27-30 Wetlands/Hillsbrad/Duskwood (Excavation Site 27-30). Kir, 2026-11-15."
+  },
+  {
+   "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-leveling/",
+   "faction": "Horde",
+   "route": "1-12 start zone; 12-16 Barrens (Crossroads) or Silverpine (RFC 13-15); 16-21 northern Barrens (Ruins of Lordaeron 17-19); 21-25 end of Barrens then Stonetalon ~3 levels (WC 19-24, SFK optional); 25-28 Ashenvale (BFD); 28-30 Thousand Needles (Excavation Site, Dalaran 28+, RFK 29+)."
+  },
+  {
+   "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-leveling/",
+   "faction": "Both (30-60)",
+   "route": "30-40 Arathi, Desolace (new centaur quests at 35), STV, Alterac, Needles; 36-45 Riverglades (36-44), Shen'dralas (35-45), Dustwallow, Badlands, Swamp; 40-50 Tanaris, Feralas, Hinterlands, Searing Gorge; 48-55 Un'Goro, Felwood, Azshara, Blasted Lands; 50-60 Burning Steppes, WPL, EPL, Winterspring, Silithus; 55-60 Mount Hyjal (quests mostly 56-60)."
+  },
+  {
+   "source": "https://playhub.com/blog/wow-forever/leveling-guide-631433",
+   "faction": "Alliance",
+   "route": "1-10 Elwynn; 10-16 Westfall; 16-20 Lakeshire/Redridge + Deadmines; 20-25 Duskwood; 25-30 Stormwind -> Tram -> Ironforge -> Loch Modan -> Menethil; 30-35 northern Wetlands/Thandol Span/Refuge Pointe (Arathi); 35-45 Lakeshire -> north Redridge -> Riverglades (Farholde Keep, Powderfuse Port); 45-48 Powderfuse Port -> Tanaris; 48-51 Tanaris/Shimmering Flats/Needles/Feralas; 51-54 Un'Goro; 54-57 Ashenvale -> southern Felwood; 57-60 northern Felwood/Timbermaw -> Winterspring. Slitherman, 2026-10-31."
+  },
+  {
+   "source": "https://playhub.com/blog/wow-forever/leveling-guide-631433",
+   "faction": "Horde",
+   "route": "1-10 Durotar/Mulgore; 10-18 Crossroads/Ratchet/Barrens; 18-22 Barrens/Stonetalon border (Sun Rock); 22-25 northern Barrens/Splintertree; 25-30 Camp Taurajo/southern Barrens/Freewind; 30-35 Freewind/Mirage Raceway/Shimmering Flats; 35-45 Shimmering Flats -> Tanaris -> Steamwheedle Port -> Powderfuse Port -> Rog'mar; then shared 45-60 as Alliance. Undead: Tirisfal + Silverpine then join Kalimdor late teens."
+  },
+  {
+   "source": "https://www.warcrafttavern.com/forever/guides/leveling/",
+   "faction": "Both",
+   "route": "Minimum levels only: 1 starts + Zephras; 10 Westfall/Loch/Darkshore/Barrens/Silverpine; 15 Redridge/Stonetalon; 18 Ashenvale; 20 Wetlands/Hillsbrad/Duskwood; 25 Needles; 30 Alterac/Arathi/Desolace/STV; 35 Badlands/Dustwallow/Feralas/Riverglades/Swamp; 40 Shen'dralas/Tanaris/Hinterlands; 43 Searing Gorge; 45 Azshara/Felwood/Blasted Lands; 48 Un'Goro; 50 Burning Steppes/WPL; 53 Winterspring/EPL; 55 Silithus/Deadwind; 60 Mount Hyjal."
+  },
+  {
+   "source": "https://www.scufgaming.com/ww/en/gaming/games/wow-forever/beginners-guide-best-leveling-route-1-60/",
+   "faction": "Both",
+   "route": "1-12 start zones; 13-20 Alliance Westfall then Redridge/Darkshore/Loch Modan, Horde Barrens/Silverpine; 20-35 Alliance Duskwood/Wetlands/Ashenvale, Horde Hillsbrad/Ashenvale/Stonetalon/Needles; 35-48 STV, Arathi, Desolace, Badlands, Dustwallow, Riverglades (~36-44); 48-55 Tanaris, Feralas, Hinterlands, Searing Gorge, Un'Goro, Felwood; 55-60 WPL, EPL, Burning Steppes, Winterspring; Hyjal level unconfirmed. Pre-launch, 2026-11-04."
+  },
+  {
+   "source": "https://rankedboost.com/world-of-warcraft/forever/leveling/",
+   "faction": "Both",
+   "route": "Alliance 11-20 Westfall/Loch/Darkshore/Redridge, 21-30 Duskwood/Wetlands/Ashenvale/Hillsbrad; Horde 11-20 Barrens/Silverpine/Stonetalon, 21-30 Ashenvale/Hillsbrad/Stonetalon/Needles/Barrens; both 31-40 STV/Needles/Desolace/Arathi/Alterac (+Riverglades), 41-50 Tanaris/Feralas/Hinterlands/STV/Searing (+Riverglades, Azshara 42-55), 51-60 Un'Goro/Felwood/Azshara/Blasted/Burning Steppes (+Winterspring, Plaguelands, Silithus). Hyjal treated as raid only."
+  },
+  {
+   "source": "https://kami-labs.fr/en/wow-forever/mise-a-jour-restedxp-wow-forever/",
+   "faction": "Both",
+   "route": "RestedXP Forever routes cover 1-35 only (Oct 9); 35-60 still uses the Classic Era routes until a post-launch phase. Skyborne: isle to 12 (Horde) / 14 (Alliance), then Westfall (A) or Silverpine/Barrens (H); Night Elves detour through Loch Modan 14-16."
+  },
+  {
+   "source": "https://kami-labs.fr/en/wow-forever/guide-donjons-restedxp-wow-forever/",
+   "faction": "Both",
+   "route": "RestedXP dungeon route 1-30: Horde RFC, Ruins of Lordaeron, WC, SFK, BFD (Deadmines optional); Alliance Hall of Thanes, Ruins of Lordaeron, Deadmines, Stockade, Excavation Site: Wetlands (WC, SFK, BFD optional)."
+  },
+  {
+   "source": "https://www.gameleap.com/articles/wow-forever-new-zones",
+   "faction": "Both",
+   "route": "Riverglades 36-44, arrive ~40 so later quests line up, clearing it gives ~4-5 levels; Krol'dok 40-45 after the zone campaign. Shen'dralas via Valley of Bones (no range). Hyjal endgame via Darkwhisper Gorge."
+  },
+  {
+   "source": "https://timesaver.gg/blog/wow-forever-riverglades-zone-guide",
+   "faction": "Both",
+   "route": "Arrive Riverglades ~35-36 after the first STV quests, leave ~44-45; Drowned City (35-40) right before or during the first visit; Krol'dok once at ~42-44."
+  },
+  {
+   "source": "https://games.gg/world-of-warcraft/guides/wow-forever-stranglethorn-vale-leveling-guide/",
+   "faction": "Both",
+   "route": "STV in three visits: 30-34 (then Dustwallow/Needles/Desolace), 36-40 + one Drowned City clear (then Arathi/Badlands/Riverglades), 41-45 (then Tanaris/Feralas/Hinterlands)."
+  },
+  {
+   "source": "https://games.gg/world-of-warcraft/guides/wow-forever-desolace-leveling-guide/",
+   "faction": "Both",
+   "route": "Desolace 30-40: arrive 30-32, leave 38-40 for Feralas/Maraudon; Alliance from Stonetalon or the Stormwind-Auberdine ship, leave for Feathermoon or Dustwallow; Horde from Sun Rock or Camp Mojache, leave for Feralas or STV. Shen'dralas is the zone after Desolace, not a replacement."
+  },
+  {
+   "source": "https://games.gg/world-of-warcraft/guides/wow-forever-wetlands-leveling-guide/",
+   "faction": "Alliance",
+   "route": "Wetlands 20-30: arrive 20-21, Excavation Site at 24-27, leave 28-30 to Duskwood, Hillsbrad (new boat), Ashenvale or Arathi. Horde has no town or flight master there."
+  },
+  {
+   "source": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/WoW-Forever-Level-Gebiete-Bereiche-1557397/",
+   "faction": "Both",
+   "route": "Zone table: Riverglades 35-45, Shen'dralas 40-45, Azshara 45-55, Mount Hyjal 55-60 (text says 60); Wetlands, Duskwood, Redridge, Westfall, Loch Modan, Darkshore Alliance-only; Silverpine Horde-only."
+  },
+  {
+   "source": "https://lfcarry.com/guides/wow-forever-leveling",
+   "faction": "Both",
+   "route": "1-20 start zones + Hall of Thanes / Ruins of Lordaeron; 20-40 Wetlands (Excavation 26-31), Dalaran (28-33), Riverglades from mid-30s, Drowned City 35-40; 40-60 Riverglades tail + Krol'dok, Alcaz, Classic 45-55 zones, Un'Goro + Shaper's Terrace, Hyjal as endgame. Clear each new dungeon once for quest XP."
+  }
+ ],
+ "forever_tips": [
+  "XP curve is unchanged from Classic: 4,084,700 total XP to 60; levels 1-30 are only ~12% of it and the halfway point is level 48 (ConquestCapped, Warcraft Tavern). Blizzard (Kris Zierhut): 'We did not change the experience curve'; new zones are a different path, not a faster one.",
+  "XP moved from kills to quests: open-world mobs below your level give 4-20% less XP per kill (same-level mobs unchanged), and AoE grinding is reduced. Do every quest at least once.",
+  "Dungeon XP: dungeon mob XP started far below Classic; Oct 1 beta halved the extra dungeon-quest bonus; Oct 8 raised dungeon kill XP ~20% and made party XP for low-level kills depend on each player's own level; Nov 8/9 hotfix raised dungeon kill XP another 50%. Dungeon quests still pay well above Classic (Defias Brotherhood final step 2,600 Classic vs 6,175 after the cut). Run each dungeon once with a full quest log; repeat runs pay less than questing.",
+  "Nov 13 hotfix (GameLeap): if a dungeon enemy is trivial (gray) to even one party member, the whole party gets 0 kill XP, so group near your own level. Boosting is penalised.",
+  "XP-to-gold conversion at level 60 is removed in Forever, so do not hoard quests for 60; turn them in as you go. Since the Nov 10 hotfix most quests of quest level 48+ award gold (some types excluded: valuable-item rewards, repeatables, trivial quests).",
+  "Rested XP doubles kill XP only (not quest turn-ins): 5% of a level per 8 h in an inn/capital, capped at 150% (1.5 levels). Well Fed +5% kill XP; Camp Tent tops up rested; Cozy Sleeping Bag (chain starts at 14, crosses both continents) gives up to +3% and counts as rested.",
+  "New transport: Stormwind Harbor <-> Auberdine ship (new); one-way loop Menethil -> Southshore -> Auberdine -> Menethil (new, skips the low-level Dun Algaz/Wetlands run); Steamwheedle Port (Tanaris) <-> Powderfuse Port (Riverglades) goblin ferry (new, both factions, ~2 min); Valanaar skycutters to Dalaran (Alliance Skyborne, then portal to Stormwind) and to NW Mulgore/Skywatcher Plateau (Horde Skyborne).",
+  "Riverglades access: Alliance walks in from north Redridge (fast, next to Alliance zones). Horde route is a considerable detour (Barrens -> Thousand Needles -> Shimmering Flats -> Gadgetzan -> Steamwheedle Port ship) or a hostile overland entry from the Badlands. Powderfuse Port reportedly has no working flight master: ride to Rog'mar (Horde FP Grakna) or Farholde Keep (Alliance FP Gretchen Mayberry). Farholde Keep is a full town (no need to return to Stormwind).",
+  "Riverglades: ~150-200 quests across both factions; most Krol'dok Stronghold quests unlock after the zone's main story, so run the dungeon once near 42-44. Horde prep list (GameLeap): 10 Chunk of Boar Meat, 10 Heavy Weightstone, 12 Iron Bar, 4 Thick Leather.",
+  "Mount Hyjal flight paths: Everlook <-> Tainted Foothills <-> Summit of Eternity (both factions). Taxi may need the intro Hyjal story first (ExpCarry).",
+  "No flying; Apprentice Riding 100 gold at 40, Journeyman 1,000 gold at 60. Pick up every flight path; set hearth at the hub you use most.",
+  "Dungeon quests cannot be shared; take the quest before inviting (joining a group can change your layer); max 5 instance entries per hour; Group Finder does not summon, only Warlock Ritual of Summoning.",
+  "Small XP wins: capital-city intro and delivery quests pay ~1,000-1,200 XP for a minute or two (ConquestCapped). Shatterspear Trolls no longer give XP (Nov 10). Respawns were sped up in starting zones (Nov 2 notes).",
+  "Skip advice is mostly about dungeons, not zones: ConquestCapped says Alliance should skip Ragefire Chasm, Shadowfang Keep, Razorfen Downs and Razorfen Kraul (only 2 quests) and that Scarlet Monastery is weak for Alliance; Horde should skip Hall of Thanes and SFK unless Undead, RFK optional. No source publishes a zone skip list; games.gg says to do Riverglades before Swamp of Sorrows if you arrive under 38, and wow.gg says Hyjal does not replace the 50-55 zones. Horde has no hub in the Wetlands.",
+  "Source conflict: gfinityesports (Nov 11) gives Riverglades 32-40 with hubs 'Riverwatch Outpost / Mudspire Enclave' bordering Ashenvale. That contradicts every other source and the wiki (35-45, Farholde Keep / Rog'mar, east coast of the Eastern Kingdoms), so it was disregarded.",
+  "Horde can also enter Riverglades on foot from Swamp of Sorrows through Redridge Pass (warcraft.wiki.gg, timesaver.gg). This is shorter than the Tanaris boat when already in the Eastern Kingdoms."
+ ],
+ "review_of_our_route": {
+  "Alliance": {
+   "good": [],
+   "problems": [
+    {
+     "issue": "NOT REVIEWED: route_report.txt was never written to the scratchpad (waited ~25 min), so these are the source-based checks to run against it, not findings.",
+     "suggested_fix": "Rerun this review once route_report.txt exists."
+    },
+    {
+     "issue": "Check: Riverglades (Farholde Keep) should be one long leg at about 36-44 (Wowhead DB 36-44, wow.gg 38-44), entered on foot from north Redridge, not by the Tanaris boat.",
+     "suggested_fix": "If missing or placed outside about 35-45, put it after the first STV/Arathi/Desolace band and before Tanaris/Feralas."
+    },
+    {
+     "issue": "Check: Wetlands is used around 21-30 (two visits per ConquestCapped: 21-25, then 27-30 with the Excavation Site), and the Menethil -> Southshore -> Auberdine ship is used for Hillsbrad and Darkshore hops instead of walking.",
+     "suggested_fix": "Fold Wetlands, Hillsbrad and Duskwood into the 21-30 band and route the hops by ship."
+    },
+    {
+     "issue": "Check: Mount Hyjal must be last, at 56-60 or 60 (wow.gg: it does not replace the 50-55 zones).",
+     "suggested_fix": "Do not route into Hyjal before about 56. End with Winterspring -> Hyjal."
+    },
+    {
+     "issue": "Check: no back-and-forth across continents for one short leg. Kalimdor legs (Desolace, Shen'dralas, Tanaris/Feralas, Un'Goro/Felwood/Azshara, Winterspring) should be grouped and use the Stormwind Harbor - Auberdine ship.",
+     "suggested_fix": "Batch the Kalimdor zones in a row and the Eastern Kingdoms zones in a row."
+    },
+    {
+     "issue": "Check, dungeon route: Hall of Thanes 13-18, Deadmines 18-22, Stockade 25-29, Excavation Site 27-30, Drowned City 35-40, Krol'dok 42-44 (after the zone story), Alcaz 48-53. ConquestCapped says Alliance should skip RFC, SFK, RFK and RFD, and that SM is weak for Alliance.",
+     "suggested_fix": "Each dungeon once, with its quests, at the listed level."
+    }
+   ]
+  },
+  "Horde": {
+   "good": [],
+   "problems": [
+    {
+     "issue": "NOT REVIEWED: route_report.txt was never written to the scratchpad (waited ~25 min), so these are the source-based checks to run against it, not findings.",
+     "suggested_fix": "Rerun this review once route_report.txt exists."
+    },
+    {
+     "issue": "Check: the main Horde Kalimdor route (Barrens -> Stonetalon -> Ashenvale -> Thousand Needles -> Desolace) and the Undead branch (Tirisfal -> Silverpine -> Hillsbrad -> Arathi) are both possible.",
+     "suggested_fix": "Match wow.gg, ConquestCapped and playhub for 1-30."
+    },
+    {
+     "issue": "Check: Riverglades (Rog'mar) at about 38-44, entered by the Steamwheedle Port -> Powderfuse Port ship from Tanaris, or overland from Swamp of Sorrows or the Badlands. Not via Redridge, which is Alliance territory.",
+     "suggested_fix": "Put the Tanaris boat right after Thousand Needles/Shimmering Flats (playhub), or enter from the Swamp of Sorrows when already in the Eastern Kingdoms. Ride to Rog'mar for the flight path, since Powderfuse Port reportedly has none."
+    },
+    {
+     "issue": "Check: no Wetlands questing leg for Horde (no Horde town or flight master there). Only the Excavation Site dungeon, at 28-30.",
+     "suggested_fix": "Remove any Horde Wetlands quest leg."
+    },
+    {
+     "issue": "Check: Mount Hyjal is last, at 56-60 or 60, and the western Azshara flight path is picked up early (wow.gg).",
+     "suggested_fix": "Same as Alliance."
+    },
+    {
+     "issue": "Check, dungeon route: RFC 13-15, Ruins of Lordaeron 17-19, WC 19-24, BFD 25-28, Excavation/Dalaran/RFK 28-30+, then the same shared dungeons as Alliance. Skip Hall of Thanes, and SFK unless Undead.",
+     "suggested_fix": "Each dungeon once, with its quests."
+    }
+   ]
+  }
+ },
+ "sources": [
+  "https://wow.gg/guides/wow-forever-leveling-alliance",
+  "https://wow.gg/guides/wow-forever-leveling-horde",
+  "https://conquestcapped.com/guides/wow-forever/wow-forever-leveling/",
+  "https://conquestcapped.com/guides/wow-forever/wow-forever-travel-routes/",
+  "https://www.warcrafttavern.com/forever/guides/leveling/",
+  "https://www.warcrafttavern.com/forever/guides/experience/",
+  "https://www.warcrafttavern.com/forever/guides/how-to-get-to-the-riverglades/",
+  "https://www.warcrafttavern.com/forever/guides/dungeons/",
+  "https://www.warcrafttavern.com/forever/news/all-new-zones-areas-in-wow-forever-revealed-at-blizzcon/",
+  "https://lfcarry.com/guides/wow-forever-leveling",
+  "https://lfcarry.com/guides/wow-forever-zones-by-level",
+  "https://playhub.com/blog/wow-forever/leveling-guide-631433",
+  "https://www.scufgaming.com/ww/en/gaming/games/wow-forever/beginners-guide-best-leveling-route-1-60/",
+  "https://rankedboost.com/world-of-warcraft/forever/leveling/",
+  "https://kami-labs.fr/en/wow-forever/mise-a-jour-restedxp-wow-forever/",
+  "https://kami-labs.fr/en/wow-forever/guide-donjons-restedxp-wow-forever/",
+  "https://www.gameleap.com/articles/wow-forever-leveling-guide",
+  "https://www.gameleap.com/articles/wow-forever-new-zones",
+  "https://timesaver.gg/blog/wow-forever-riverglades-zone-guide",
+  "https://games.gg/world-of-warcraft/guides/wow-forever-desolace-leveling-guide/",
+  "https://games.gg/world-of-warcraft/guides/wow-forever-wetlands-leveling-guide/",
+  "https://games.gg/world-of-warcraft/guides/wow-forever-stranglethorn-vale-leveling-guide/",
+  "https://www.method.gg/wow-forever/all-travel-routes-in-wow-forever-boats-zeppelins",
+  "https://expcarry.com/wow-forever-mount-hyjal-guide",
+  "https://exputer.com/news/games/wow-forever-leveling-zones/",
+  "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/WoW-Forever-Level-Gebiete-Bereiche-1557397/",
+  "https://warcraft.wiki.gg/wiki/Riverglades",
+  "https://www.gfinityesports.com/article/world-of-warcraft-forever-launch-leveling-changes-tips-guide",
+  "https://www.gfinityesports.com/article/world-of-warcraft-forever-riverglades-zone-leveling-guide",
+  "https://www.gfinityesports.com/article/blizzard-disables-max-level-xp-to-gold-conversion-in-world-of-warcraft-forever (search snippet only)",
+  "https://warcrafttavern.com/forever/news/more-gold-from-quests-above-level-48-in-wow-forever/ (search snippet only)",
+  "Blocked (403), not read: overgear.com, icy-veins.com, mobalytics.gg, epiccarry.com, dving.net, massivelyop.com, destructoid.com. No Wowhead Forever route guide or Reddit thread found."
+ ]
+}

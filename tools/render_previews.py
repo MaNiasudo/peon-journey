@@ -13,16 +13,16 @@ GOLD, PARCH, MUTED, EMBER = (232, 196, 120), (238, 224, 190), (170, 150, 118), (
 S = 2  # retina
 
 def planner(tab_idx, rows_key, faction, level, start_title, out, blurb):
-    W, H = 790, 540
+    W, H = 920, 540
     img = Image.new("RGBA", (W, H)); tile = tga(tex / "pj-panel.tga")
     for x in range(0, W, 256):
         for y in range(0, H, 256): img.alpha_composite(tile, (x, y))
     d = ImageDraw.Draw(img); d.rectangle([0, 0, W - 1, H - 1], outline=(128, 108, 66), width=2)
     img.alpha_composite(tga(tex / "pj-header.tga").resize((W - 4, 64)), (2, 2))
-    for i, t in enumerate(["Quest+Dungeon", "Quest Only", "Dungeons Only", "Class", "Professions", "Gold"]):
-        x = 12 + i * 110; sel = i == tab_idx
-        d.rectangle([x, 74, x + 104, 98], fill=(96, 50, 17) if sel else (51, 31, 15), outline=(139, 118, 72))
-        d.text((x + 52, 86), t, font=TAB, fill=GOLD if sel else PARCH, anchor="mm")
+    for i, t in enumerate(["Speed+Dungeons", "Speed Quests", "Full Journey", "Dungeons", "Class", "Attunements", "Professions", "Gold"]):
+        x = 12 + i * 112; sel = i == tab_idx
+        d.rectangle([x, 74, x + 108, 98], fill=(96, 50, 17) if sel else (51, 31, 15), outline=(139, 118, 72))
+        d.text((x + 54, 86), t, font=TAB, fill=GOLD if sel else PARCH, anchor="mm")
     d.multiline_text((16, 106), blurb, font=TXT, fill=PARCH, spacing=3)
     sec = data_lua[data_lua.index(rows_key + " = {"):]
     sec = sec[sec.index(faction + " = {"):]
@@ -32,7 +32,7 @@ def planner(tab_idx, rows_key, faction, level, start_title, out, blurb):
     rows = re.findall(r'lo = (\d+),\s*hi = (\d+),\s*kind = "(\w+)",\s*title = "([^"]+)",\s*sub = "([^"]*)"', sec)
     start = next(i for i, r in enumerate(rows) if (start_title.endswith("-") and int(r[0]) >= int(start_title[:-1])) or r[3].startswith(start_title))
     glow = tga(tex / "pj-row.tga"); y = 144
-    lab = {"zone": "QUESTING", "newzone": "NEW ZONE", "dungeon": "DUNGEON", "start": "RXP START", "prof": "PROFESSION", "gold": "GOLD"}
+    lab = {"zone": "QUESTING", "newzone": "NEW ZONE", "dungeon": "DUNGEON", "start": "RXP START", "prof": "PROFESSION", "gold": "GOLD", "grind": "GRIND"}
     for lo, hi, kind, title, sub in rows[start:start + 7]:
         lo, hi = int(lo), int(hi); inr = lo > 0 and lo - 1 <= level <= hi
         d.rectangle([12, y, W - 34, y + 46], fill=(23, 14, 8), outline=(64, 41, 20))
@@ -93,9 +93,9 @@ def guide_window(out, guide_name, n_steps=6, skip=2):
     d.rectangle([0, H - 22, W - 1, H - 1], fill=(44, 28, 14)); d.text((8, H - 11), "Peon Journey", font=SM, fill=MUTED, anchor="lm")
     img = img.resize((W * 2, H * 2), Image.LANCZOS); img.save(outdir / out)
 
-planner(0, "full", "Alliance", 41, "38-", "planner_full.png",
-        "1-60 Questing and Dungeons: every dungeon at its level, questing in between, new Forever\nzones included. Load the first row for your race; each guide hands you the next one.")
-planner(4, "professions", "Horde", 30, "1-300 Alchemy", "planner_prof.png",
+planner(0, "speed", "Alliance", 41, "36-", "planner_full.png",
+        "1-60 Speed (with Dungeons): best-XP quests, one visit per zone, only the dungeons worth the trip.\nEnds at 60. Load the first row for your race; each guide hands you the next one.")
+planner(6, "professions", "Horde", 30, "1-300 Alchemy", "planner_prof.png",
         "1-300 for every Forever profession, with Forever's recipe changes. Hover a row for the full\nroute and materials. Load the guide for trainer waypoints and auto-ticking skill steps.")
 m = re.search(r"#name (\d+-\d+ Riverglades)\n", guide_file.read_text())
 guide_window("guide_window.png", m.group(1), 6, 2)

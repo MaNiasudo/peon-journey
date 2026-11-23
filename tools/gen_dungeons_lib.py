@@ -1,8 +1,18 @@
-"""Generate Peon Journey dungeon guides: every dungeon at its level, with its pre-quests.
+"""Peon Journey dungeon guides: every dungeon, and every wing of the big ones, at its level.
 
-Usage: python -I gen_dungeons.py <data_forever.json> <dungeons_config.json> <out_dir>
+Each dungeon becomes up to two guides:
+  1. pre-quests (solo, no group needed), only when the dungeon quests have pre-quests;
+  2. the run: pick up the dungeon quests (solo), ONE run with a group, hand everything in.
+The "find a group" warning sits on the run step, not at the start.
+
+Scarlet Monastery, Dire Maul, Blackrock Spire and Stratholme are split into one run per wing
+(data/research/dungeon_wings.json). QuestieDB puts every mob of such a dungeon in one area, so the wing of an
+objective comes from the wing boss lists (objective mob, item dropper or object name) and, failing that, from the
+wing quest lists. A quest is picked up before the first wing it needs, each wing only does its own objectives,
+and the hand-in comes after the quest's last wing.
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -10,16 +20,114 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from qlib import DB, dist  # noqa: E402
 from router import Router, fmt  # noqa: E402
 from emit import Emitter, guide, lua_safe, goto  # noqa: E402
-from common import leveling_quest, objective_order_fixes, SKY  # noqa: E402
+from common import leveling_quest, ROOT  # noqa: E402
+import timing as T  # noqa: E402
 
 db = None
 FIX = None
-GROUP = "Peon Journey 3 - Dungeon Journey"
+WINGS_JSON = ROOT / "data" / "research" / "dungeon_wings.json"
+SPLIT = ("Scarlet Monastery", "Dire Maul", "Blackrock Spire", "Stratholme")
+LIVE = "Stratholme (Main Gate) / Live / Living"
+DEAD = "Stratholme (Service Gate) / Undead / Dead"
+
+# per wing (key = wing name in the research file): guide name, the door, run length in minutes and, where the wing
+# has its own door outside, the entrance point (Questie dungeons.lua per-wing entrances)
+WING_META = {
+    "Graveyard": dict(name="Scarlet Monastery Graveyard", run=25,
+                      door="Graveyard: the open portal farthest left. No key."),
+    "Library": dict(name="Scarlet Monastery Library", run=35,
+                    door="Library: the open portal farthest right inside the main building. No key. Doan's Strongbox "
+                         "(behind Arcanist Doan) drops The Scarlet Key for Armory and Cathedral."),
+    "Armory": dict(name="Scarlet Monastery Armory", run=30,
+                   door="Armory: the closed door on the right as you enter. Needs The Scarlet Key (Library)."),
+    "Cathedral": dict(name="Scarlet Monastery Cathedral", run=40,
+                      door="Cathedral: the closed door on the left as you enter. Needs The Scarlet Key (Library)."),
+    "Dire Maul (East)": dict(name="Dire Maul East", run=50, entrance=(1444, 64.8, 30.2),
+                             door="East wall of the central courtyard. No key. Chase Pusillin: he drops the "
+                                  "Crescent Key that opens West and North."),
+    "Dire Maul (West)": dict(name="Dire Maul West", run=60, entrance=(1444, 60.3, 30.2),
+                             door="West wall of the central courtyard. Needs the Crescent Key (Pusillin, Dire Maul East)."),
+    "Dire Maul (North)": dict(name="Dire Maul North", run=45, entrance=(1444, 62.5, 24.9),
+                              door="North wall of the central courtyard. Needs the Crescent Key."),
+    "Lower Blackrock Spire": dict(name="Lower Blackrock Spire", run=90,
+                                  door="Blackrock Spire door inside Blackrock Mountain. No key."),
+    "Upper Blackrock Spire": dict(name="Upper Blackrock Spire", run=80,
+                                  door="Same entrance, the upstairs door on the left. One player needs the Seal of Ascension."),
+    LIVE: dict(name="Stratholme Live", run=75, door="Main gate. No key."),
+    DEAD: dict(name="Stratholme Undead", run=75, entrance=(1423, 41.45, 17.74),
+               door="Service gate, east of the main gate. Needs the Key to the City (Magistrate Barthilas, Stratholme Live)."),
+}
+# names the research boss lists miss (QuestieDB still uses the Classic name for Ezra Grimm)
+EXTRA_BOSS = {"fras siabi": LIVE}
+# quests the research wing lists miss: where they are handed in or done
+EXTRA_QUEST_WING = {
+    "Foror's Compendium": "Dire Maul (West)", "The Forging of Quel'Serrar": "Dire Maul (West)",
+    "Anthion's Old Friend": "Dire Maul (West)", "Falrin's Vendetta": "Dire Maul (West)",
+    "The Instigator's Enchantment": "Dire Maul (West)",
+    "Finkle Einhorn, At Your Service!": "Upper Blackrock Spire", "Blackhand's Command": "Upper Blackrock Spire",
+    "Vivian Lagrave and the Darkstone Tablet": "Upper Blackrock Spire",
+    "The Great Fras Siabi": LIVE,
+}
+GROUP_LINE = ("Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: "
+              "everyone takes them before going in.")
 
 
 def init(db_, fix_):
     global db, FIX
     db, FIX = db_, fix_
+
+
+def norm(s):
+    return re.sub(r"\s*\(.*?\)", "", s or "").strip().lower()
+
+
+def load_wings():
+    if not WINGS_JSON.exists():
+        return {}
+    data = json.loads(WINGS_JSON.read_text())
+    out = {}
+    for dd in data.get("dungeons", []):
+        if dd["dungeon"] not in SPLIT:
+            continue
+        wings = []
+        for w in dd["wings"]:
+            meta = WING_META.get(w["wing"])
+            if not meta:
+                continue
+            lv = [int(x) for x in re.findall(r"\d+", w.get("levels", ""))[:2]] or [0, 0]
+            bosses = set()
+            for b in w.get("bosses", []):
+                for part in re.split(r"/| and ", re.sub(r"\(.*?\)", "", b)):
+                    if part.strip():
+                        bosses.add(part.strip().lower())
+            wings.append(dict(key=w["wing"], idx=len(wings), lo=lv[0], hi=lv[-1], bosses=bosses,
+                              quests=[q["name"] for q in w.get("quests", [])], **meta))
+        if len(wings) > 1:
+            out[dd["dungeon"]] = wings
+    return out
+
+
+def default_run(lo):
+    return 40 if lo < 20 else 50 if lo < 30 else 60 if lo < 40 else 70 if lo < 50 else 80
+
+
+def units(cfg):
+    """one unit per dungeon, or one per wing of the split dungeons, in level order"""
+    wings = load_wings()
+    out = []
+    for d in cfg:
+        ws = wings.get(d["name"])
+        if not ws:
+            out.append(dict(d, base=d["name"], wing=None, wings=None, lo=d["levels"][0], hi=d["levels"][1],
+                            run=default_run(d["levels"][0]), door=None))
+            continue
+        for w in ws:
+            u = dict(d, name=w["name"], base=d["name"], wing=w, wings=ws, lo=w["lo"], hi=w["hi"], run=w["run"],
+                     door=w["door"])
+            if w.get("entrance"):
+                u["entrance"] = list(w["entrance"])
+            out.append(u)
+    return sorted(out, key=lambda u: (u["lo"], u["hi"], u["wing"]["idx"] if u["wing"] else 0))
 
 
 def dungeon_ok(q, faction):
@@ -33,9 +141,10 @@ def collect(d, faction):
     for qid, r in db.Q.items():
         if db.g(r, 17) in areas and dungeon_ok(qid, faction):
             qs.add(qid)
-    for name in d.get("quest_names", []):
+    names = set(d.get("quest_names", []))
+    if names:
         for qid, r in db.Q.items():
-            if db.g(r, 1) == name and dungeon_ok(qid, faction):
+            if db.g(r, 1) in names and dungeon_ok(qid, faction):
                 qs.add(qid)
     for qid in d.get("quest_ids", []):
         if qid in db.Q and dungeon_ok(qid, faction):
@@ -69,9 +178,7 @@ def with_prereqs(qs, faction, max_depth=8):
 
 def entrance_loc(d):
     e = d.get("entrance")
-    if e:
-        return (e[0], e[1], e[2])
-    return None
+    return (e[0], e[1], e[2]) if e else None
 
 
 def akeys(sp):
@@ -80,6 +187,9 @@ def akeys(sp):
     if isinstance(sp, dict):
         return [int(k) for k, v in sp.items() if v]
     return []
+
+
+CORE = set()
 
 
 def mark_inside(info, d, ent):
@@ -127,19 +237,19 @@ class DungeonRouter(Router):
 
 
 class DungeonEmitter(Emitter):
-    def __init__(self, db, d):
+    def __init__(self, db, u):
         super().__init__(db)
-        self.d = d
+        self.u = u
 
     def giver_line(self, giver):
         kind, gid = giver
         if kind == "inside":
-            return [f"    >>Inside {lua_safe(self.d['name'])}: these quests start from a drop or an object in the dungeon"], []
+            return [f"    >>Inside {lua_safe(self.u['name'])}: these quests start from a drop or an object in the dungeon"], []
         if kind == "item":
             talk, extra = super().giver_line(giver)
             if not self.db.lst(self.db.g(self.db.I.get(gid), 2)):
                 n = lua_safe(self.db.item_name(gid))
-                talk = [f"    >>Inside {lua_safe(self.d['name'])}: loot |cRXP_LOOT_[{n}]|r and click it to start the quest"]
+                talk = [f"    >>Inside {lua_safe(self.u['name'])}: loot |cRXP_LOOT_[{n}]|r and click it to start the quest"]
             return talk, extra
         return super().giver_line(giver)
 
@@ -149,7 +259,7 @@ class DungeonEmitter(Emitter):
             return super().obj(st, info)
         out = ["step"]
         out += goto(st["loc"])
-        out.append(f"    >>Enter |cRXP_WARN_{lua_safe(self.d['name'])}|r and run it with a group. Quest goals inside:")
+        out.append(f"    >>Enter |cRXP_WARN_{lua_safe(self.u['name'])}|r with your group. Quest goals inside:")
         for q in dict.fromkeys(q for q, _ in st["items"]):
             t = info[q].get("otext")
             out.append("    *" + lua_safe(info[q]["name"]) + (": " + lua_safe(t) if t else ""))
@@ -181,45 +291,41 @@ def group_by_giver(qs, info, which):
             for k, v in groups.items()]
 
 
-def phased_route(r, core, qs, prefer_ui, lo, hi, ent):
-    """pre-quests, then pick-ups, then ONE run, then hand-ins; repeat if a chain needs another run"""
-    pre = set(qs) - set(core)
+LOG_ROOM = 16
+
+
+def phased_route(cinfo, core, info, completed, ent, start_pos=None, no_accept=frozenset(),
+                 no_handin=frozenset(), obj_keep=None):
+    """pick-ups, then ONE run, then hand-ins; repeat if a chain needs another run.
+    no_accept: picked up in an earlier wing. no_handin: handed in after a later wing.
+    obj_keep(q, o): the objective belongs to this run."""
     steps = []
-    info = {}
-    left = []
-    done = set()
-    pos = None
-    if pre:
-        s1, i1, l1 = r.route(sorted(pre), prefer_ui, max(1, lo - 6), hi + 2)
-        steps.append(("pre", s1))
-        info.update(i1)
-        left += l1
-        done |= set(i1)
-        if s1:
-            pos = s1[-1]["loc"]
-    cinfo = {q: r.quest_info(q, prefer_ui) for q in core}
-    cinfo = {q: i for q, i in cinfo.items() if i["start"] is not None}
-    left += sorted(set(core) - set(cinfo))
-    info.update(cinfo)
-    remaining = set(cinfo)
+    pos = start_pos
+    completed = set(completed)
+    remaining = set(q for q in core if q in cinfo)
+    keep = obj_keep or (lambda q, o: True)
     for run in range(4):
         def ok(q):
+            if q in no_accept:
+                return True
             group, single = db.prereqs(q)
             group = [p for p in group if p in info]
             single = [p for p in single if p in info]
-            return all(p in done for p in group) and (not single or any(p in done for p in single))
+            return all(p in completed for p in group) and (not single or any(p in completed for p in single))
         ready = sorted((q for q in remaining if ok(q)), key=lambda q: (cinfo[q]["level"], q))
         if not ready:
             break
         ready = sorted(ready[:LOG_ROOM])   # the quest log holds 20; keep room for zone quests
-        outdoor = [q for q in ready if not cinfo[q].get("inside_start")]
-        inside_start = [q for q in ready if cinfo[q].get("inside_start")]
+        new = [q for q in ready if q not in no_accept]
+        outdoor = [q for q in new if not cinfo[q].get("inside_start")]
+        inside_start = [q for q in new if cinfo[q].get("inside_start")]
         acc = group_by_giver(outdoor, cinfo, "start")
         acc, pos = nn_order(acc, lambda st: st["loc"], pos)
-        # outdoor objectives of these quests (rare) before the run
         objs_out, objs_in, objs_after = [], [], []
         for q in ready:
             for o in cinfo[q]["objs"]:
+                if not keep(q, o):
+                    continue
                 if o.get("inside") or not o.get("known"):
                     objs_in.append((q, o))
                 elif cinfo[q].get("inside_start"):
@@ -235,23 +341,22 @@ def phased_route(r, core, qs, prefer_ui, lo, hi, ent):
             run_steps.append(dict(type="obj", loc=ent, items=objs_in))
         after_steps = [dict(type="obj", loc=o["loc"], items=[(q, o)]) for q, o in objs_after]
         after_steps, _ = nn_order(after_steps, lambda st: st["loc"], ent)
-        hand = group_by_giver(ready, cinfo, "end")
+        hand = group_by_giver([q for q in ready if q not in no_handin], cinfo, "end")
         hand, pos = nn_order(hand, lambda st: st["loc"], ent)
         steps.append(("pickup", acc + out_steps))
         steps.append(("run", run_steps))
         if after_steps:
             steps.append(("after", after_steps))
         steps.append(("handin", hand))
-        done |= set(ready)
+        completed |= set(q for q in ready if q not in no_handin)
         remaining -= set(ready)
-    left += sorted(remaining)
-    return steps, info, left
+    return steps, sorted(remaining)
 
 
-PHASE_TITLE = {"pre": "Pre-quests", "pickup": "Pick up the dungeon quests", "run": "Run the dungeon",
+PHASE_TITLE = {"pickup": "Pick up the dungeon quests (solo, no group yet)",
+               "run": "Run the dungeon. " + GROUP_LINE,
                "after": "Outside: collect what the quests you got inside need",
                "handin": "Hand everything in (go back inside for quest givers in the dungeon)"}
-LOG_ROOM = 16
 
 
 def render_phases(em, phases, info):
@@ -263,55 +368,207 @@ def render_phases(em, phases, info):
         if kind == "run":
             runs += 1
         label = PHASE_TITLE[kind] + (f" (run {runs})" if kind == "run" and runs > 1 else "")
-        out += ["step", "    #completewith next", f"    +|cRXP_WARN_{label}|r"]
+        out += ["step", "    #completewith next", f"    +|cRXP_WARN_{lua_safe(label)}|r"]
         out += em.render(st, info)
     return out
 
 
-CORE = set()
+# ---------------------------------------------------------------------------- wings
+def wing_plan(u, cinfo):
+    """quest -> [first wing, last wing]; objective -> wing (by object id)"""
+    wings = u["wings"]
+    order = {w["key"]: w["idx"] for w in wings}
+    boss = {}
+    for w in wings:
+        for b in w["bosses"]:
+            boss.setdefault(b, w["idx"])
+    for n, k in EXTRA_BOSS.items():
+        if k in order:
+            boss.setdefault(n, order[k])
+    qwing = {}
+    for w in wings:
+        for qn in w["quests"]:
+            qwing.setdefault(qn, w["idx"])
+    for qn, k in EXTRA_QUEST_WING.items():
+        if k in order:
+            qwing.setdefault(qn, order[k])
+
+    def by_level(q):
+        lv = db.g(db.Q[q], 5, 0) or 0
+        fits = [w for w in wings if w["lo"] <= lv <= w["hi"]]
+        return (fits[0] if fits else min(wings, key=lambda w: abs(w["lo"] - lv)))["idx"]
+
+    objw, span = {}, {}
+    for q, i in cinfo.items():
+        fallback = qwing.get(db.qname(q))
+        if fallback is None:
+            fallback = by_level(q)
+        ws = []
+        for o in i["objs"]:
+            if not o.get("inside"):
+                continue
+            if o["kind"] == "item":
+                names = list(o.get("droppers") or []) + list(o.get("objects") or [])
+            else:
+                names = [o["name"]]
+            hits = [boss[norm(n)] for n in names if norm(n) in boss]
+            w = min(hits) if hits else fallback
+            objw[id(o)] = w
+            ws.append(w)
+        span[q] = [min(ws), max(ws)] if ws else [fallback, fallback]
+    # a follow-up can't start before the wing where its prerequisite is handed in
+    changed = True
+    while changed:
+        changed = False
+        for q in span:
+            g, s = db.prereqs(q)
+            for p in list(g) + list(s):
+                if p in span and span[p][1] > span[q][0]:
+                    span[q][0] = span[p][1]
+                    span[q][1] = max(span[q][1], span[q][0])
+                    changed = True
+    return span, objw
+
+
+# ---------------------------------------------------------------------------- one dungeon (or wing) for one faction
+def build_unit(u, faction, done=frozenset(), pre_ok=None, allow_empty=False, wings_done=None):
+    """dict(name, lo, hi, pre_body, run_body, pre_min, run_min, pre, handed, ...) or None.
+    done: quests already finished in this route. pre_ok(core_quest, pre_chain) -> keep that quest and its
+    pre-quests (Speed routes drop chains whose pre-quests cost more than they pay).
+    wings_done: wings of this dungeon the route already ran (None = every earlier wing)."""
+    if u.get("faction") and u["faction"] != faction:
+        return None
+    done = set(done)
+    core_all = collect(u, faction) - done
+    if pre_ok:
+        dropped = set()
+        for c in sorted(core_all):
+            chain = with_prereqs({c}, faction) - core_all - done
+            if chain and not pre_ok(c, chain):
+                dropped.add(c)
+        changed = True
+        while changed:   # follow-ups of a dropped quest go too
+            changed = False
+            for q in sorted(core_all - dropped):
+                g, _ = db.prereqs(q)
+                if any(p in dropped for p in g):
+                    dropped.add(q)
+                    changed = True
+        core_all -= dropped
+    pre_all = with_prereqs(core_all, faction) - core_all - done
+    ent = entrance_loc(u)
+    prefer_ui = ent[0] if ent else None
+    CORE.clear()
+    CORE.update(core_all)
+    r = DungeonRouter(db, faction, fixes=FIX, d=u, ent=ent)
+    cinfo = {q: r.quest_info(q, prefer_ui) for q in sorted(core_all)}
+    missing = sorted(q for q, i in cinfo.items() if i["start"] is None)
+    cinfo = {q: i for q, i in cinfo.items() if i["start"] is not None}
+
+    no_accept, no_handin, keep = set(), set(), None
+    completed = set(done)
+    if u.get("wing"):
+        idx = u["wing"]["idx"]
+        span, objw = wing_plan(u, cinfo)
+        if wings_done is not None:   # a quest that needed a wing the route skipped can't be finished: leave it out
+            ran = {w["idx"] for w in u["wings"] if w["name"] in wings_done}
+            cinfo = {q: i for q, i in cinfo.items() if span[q][0] >= idx or span[q][0] in ran}
+        core = {q for q in cinfo if span[q][0] <= idx <= span[q][1]}
+        no_accept = {q for q in core if span[q][0] < idx}
+        no_handin = {q for q in core if span[q][1] > idx}
+        earlier = {q for q in cinfo if span[q][0] < idx}
+        here = core - no_accept
+        pre = with_prereqs(here, faction) - core_all - done - with_prereqs(earlier, faction)
+        keep = (lambda q, o: max(objw.get(id(o), span[q][0]), span[q][0]) == idx)
+        completed |= {q for q in cinfo if span[q][1] < idx}   # handed in after an earlier wing
+        if idx != 0:
+            missing = []
+    else:
+        core = set(cinfo)
+        pre = pre_all
+    lo, hi = u["lo"], u["hi"]
+    info = dict(cinfo)
+    pre_steps, pre_left = [], []
+    if pre:
+        s1, i1, l1 = r.route(sorted(pre), prefer_ui, max(1, lo - 6), hi + 2, external_done=done)
+        pre_steps, pre_left = s1, l1
+        info.update(i1)
+        completed |= set(i1)
+    phases, left = phased_route(cinfo, core, info, completed, ent,
+                                start_pos=pre_steps[-1]["loc"] if pre_steps else None,
+                                no_accept=no_accept, no_handin=no_handin, obj_keep=keep)
+    left = sorted(set(left) | set(missing))
+    has_run = any(st for k, st in phases if k == "run")
+    if not has_run and not allow_empty:
+        return None
+    em = DungeonEmitter(db, u)
+    name = u["name"]
+    pre_placed = sorted(q for q in info if q in pre and q not in pre_left)
+    pre_min = T.steps_minutes(pre_steps, lo) if pre_steps else 0.0
+    runs = max(1, sum(1 for k, st in phases if k == "run" and st))
+    walk = sum(T.steps_minutes(st, lo) for k, st in phases if k != "run")
+    run_min = walk + u["run"] * runs + T.GROUP_WAIT_MIN
+    picked = sorted(q for q in core if q not in no_accept and q in cinfo and q not in left)
+    handed = sorted(q for q in core if q not in no_handin and q in cinfo and q not in left)
+
+    pre_body = []
+    if pre_steps:
+        names = [db.qname(q) for q in pre_placed]
+        pre_body = ["step", f"    +|cRXP_WARN_{lua_safe(name)}: pre-quests|r. {len(pre_placed)} quests, solo (no group "
+                    f"needed), roughly {T.fmt_min(pre_min)}. The run guide comes after this one. Click to start.",
+                    "    *Pre-quests: " + lua_safe(", ".join(dict.fromkeys(names[:14]))) + ("..." if len(names) > 14 else "")]
+        pre_body += em.render(pre_steps, info)
+        pre_body += ["step", f"    +|cRXP_WARN_Pre-quests done.|r Next: {lua_safe(name)} itself. That guide tells you "
+                     "when to find a group. Click to continue."]
+
+    if has_run:
+        head = (f"    +|cRXP_WARN_{lua_safe(name)}|r (levels {lo}-{hi}). Pick up {len(picked)} dungeon quests solo "
+                f"(roughly {T.fmt_min(walk)} with the hand-ins), then ONE run with a group (roughly "
+                f"{T.fmt_min(u['run'] * runs)}). No group needed until the run step. Click to start.")
+    else:
+        head = (f"    +|cRXP_WARN_{lua_safe(name)}|r (levels {lo}-{hi}). No quests here for your faction: run it once "
+                f"with a group for XP and loot (roughly {T.fmt_min(u['run'])}), or skip it. Click to start.")
+    run_body = ["step", head]
+    if u.get("door"):
+        run_body.append("    *Door: " + lua_safe(u["door"]))
+    if u.get("note"):
+        run_body.append("    *" + lua_safe(u["note"]))
+    if pre_placed:
+        run_body.append(f"    *Its {len(pre_placed)} pre-quests are in the guide before this one. Skipped them? "
+                        "Some quests below won't be offered: skip those steps.")
+    if no_accept:
+        run_body.append("    *Already picked up for an earlier wing: " +
+                        lua_safe(", ".join(dict.fromkeys(db.qname(q) for q in sorted(no_accept)))))
+    if no_handin:
+        run_body.append("    *Keep for a later wing (hand in after it): " +
+                        lua_safe(", ".join(dict.fromkeys(db.qname(q) for q in sorted(no_handin)))))
+    run_body += render_phases(em, phases, info)
+    if not has_run and ent:
+        run_body += ["step", f"    .goto {ent[0]},{fmt(ent[1])},{fmt(ent[2])}",
+                     f"    +Find a group, run {lua_safe(name)}, then click to finish."]
+    if left:
+        run_body += ["step", "    >>|cRXP_WARN_Also part of this dungeon (later follow-ups or missing data). "
+                     "Do them if they are offered:|r"]
+        for q in left[:10]:
+            run_body.append(f"    *{lua_safe(db.qname(q))}")
+        run_body.append("    +Done")
+    if ent and has_run:
+        run_body += ["step", f"    .goto {ent[0]},{fmt(ent[1])},{fmt(ent[2])}",
+                     f"    +Dungeon entrance: {lua_safe(name)}. Done with this dungeon? Click to finish."]
+    return dict(name=name, base=u["base"], wing=u["wing"]["key"] if u.get("wing") else None, lo=lo, hi=hi,
+                pre=pre_placed, picked=picked, handed=handed, core=sorted(core),
+                quests=sorted(set(pre_placed) | set(picked)), pre_body=pre_body, run_body=run_body,
+                pre_min=pre_min, run_min=run_min, runs=runs if has_run else 1, run_only=not has_run)
 
 
 def build_all(db_, dungeons, fix_):
-    """{(name, faction): dict(name, lo, hi, quests, runs, body)} for every dungeon with quests"""
+    """{(unit name, faction): build_unit result} for every dungeon / wing with quests (Dungeon Quests Only)"""
     init(db_, fix_)
     out = {}
-    for d in sorted(dungeons, key=lambda x: x["levels"][0]):
+    for u in units(dungeons):
         for faction in ("Alliance", "Horde"):
-            if d.get("faction") and d["faction"] != faction:
-                continue
-            core = collect(d, faction)
-            if not core:
-                continue
-            qs = with_prereqs(core, faction)
-            CORE.clear()
-            CORE.update(core)
-            ent = entrance_loc(d)
-            lo, hi = d["levels"]
-            prefer_ui = ent[0] if ent else None
-            r = DungeonRouter(db, faction, fixes=FIX, d=d, ent=ent)
-            steps, info, left = phased_route(r, core, qs, prefer_ui, lo, hi, ent)
-            if not any(st for _, st in steps):
-                continue
-            em = DungeonEmitter(db, d)
-            body = ["step", f"    +|cRXP_WARN_{lua_safe(d['name'])}|r (levels {lo}-{hi}). "
-                    f"Do the pick-ups below, then run the dungeon, then hand everything in. Click to start."]
-            if d.get("note"):
-                body.append("    *" + lua_safe(d["note"]))
-            pre = sorted(qs - core)
-            if pre:
-                body.append("    *Pre-quests in this guide: " + lua_safe(", ".join(db.qname(q) for q in pre[:12]))
-                            + ("..." if len(pre) > 12 else ""))
-            body += render_phases(em, steps, info)
-            if left:
-                body += ["step", "    >>|cRXP_WARN_Also part of this dungeon (later follow-ups or missing data). Do them if they are offered:|r"]
-                for q in left[:10]:
-                    body.append(f"    *{lua_safe(db.qname(q))}")
-                body.append("    +Done")
-            if ent:
-                body += ["step", f"    .goto {ent[0]},{fmt(ent[1])},{fmt(ent[2])}",
-                         f"    +Dungeon entrance: {lua_safe(d['name'])}. Done with this dungeon? Click to finish."]
-            placed = {q for q in info if q not in left}
-            out[(d["name"], faction)] = dict(name=d["name"], lo=lo, hi=hi, quests=sorted(placed), body=body,
-                                             runs=max(1, sum(1 for k, st in steps if k == "run" and st)),
-                                             core=sorted(core), pre=pre)
+            res = build_unit(u, faction)
+            if res:
+                res["unit"] = u
+                out[(u["name"], faction)] = res
     return out

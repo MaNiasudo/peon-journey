@@ -4,7 +4,7 @@ local ADDON = ...
 local PJ = _G.PeonJourney or {}
 _G.PeonJourney = PJ
 
-PJ.version = "2.0.0"
+PJ.version = "2.1.0"
 PJ.tex = "Interface/AddOns/" .. ADDON .. "/Textures/"
 
 PJ.colors = {

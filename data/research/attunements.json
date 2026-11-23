@@ -1,0 +1,873 @@
+{
+  "attunements": [
+    {
+      "name": "Onyxia's Lair attunement (Alliance) - Drakefire Amulet",
+      "unlocks": "Onyxia's Lair (40-player raid, Dustwallow Marsh). Drakefire Amulet must be in your bags (not bank) to enter; it need not be equipped.",
+      "type": "raid",
+      "faction": "Alliance",
+      "min_level": 48,
+      "chain": [
+        {
+          "quest": "Dragonkin Menace",
+          "giver": "Helendis Riverhorn",
+          "where": "Morgan's Vigil, Burning Steppes",
+          "note": "Kill 15 Black Broodlings, 10 Black Dragonspawn, 4 Black Wyrmkin, 1 Black Drake (elites). Shareable. Level: 48 required per ConquestCapped, LFCarry says 54+."
+        },
+        {
+          "quest": "The True Masters (6 parts, quest IDs 4183, 4184, 4185, 4186, 4223, 4224)",
+          "giver": "Helendis Riverhorn, then Magistrate Solomon, Highlord Bolvar Fordragon, Lady Katrana Prestor, Marshal Maxwell, Ragged John",
+          "where": "Lakeshire (Redridge), Stormwind Keep, Morgan's Vigil and northern Burning Steppes",
+          "note": "Courier/dialogue quests, solo. Ends with Marshal Maxwell at Morgan's Vigil. Some parts not shareable."
+        },
+        {
+          "quest": "Marshal Windsor",
+          "giver": "Marshal Maxwell",
+          "where": "Morgan's Vigil, Burning Steppes; target in Blackrock Depths Detention Block",
+          "note": "Dungeon: BRD. Cell needs the Prison Cell Key (drop from High Interrogator Gerstahn, about half the time) or a Rogue."
+        },
+        {
+          "quest": "Abandoned Hope",
+          "giver": "Marshal Windsor (in his cell)",
+          "where": "Blackrock Depths, Detention Block",
+          "note": "Return to Marshal Maxwell."
+        },
+        {
+          "quest": "A Crumpled Up Note",
+          "giver": "Item drop from Dark Iron dwarves in BRD",
+          "where": "Blackrock Depths",
+          "note": "Rare drop (ConquestCapped: under 1%), not shareable. Turn in to Marshal Windsor."
+        },
+        {
+          "quest": "A Shred of Hope",
+          "giver": "Marshal Windsor",
+          "where": "Blackrock Depths",
+          "note": "Kill General Angerforge and Golem Lord Argelmach; their gates need the Shadowforge Key or a Rogue."
+        },
+        {
+          "quest": "Jail Break!",
+          "giver": "Marshal Windsor",
+          "where": "Blackrock Depths",
+          "note": "Escort; fails if Windsor dies. Report to Marshal Maxwell."
+        },
+        {
+          "quest": "Stormwind Rendezvous",
+          "giver": "Marshal Maxwell",
+          "where": "Morgan's Vigil, then Squire Rowe at the Stormwind gates",
+          "note": ""
+        },
+        {
+          "quest": "The Great Masquerade",
+          "giver": "Squire Rowe / Reginald Windsor",
+          "where": "Stormwind City to Stormwind Keep",
+          "note": "Escort; Lady Prestor unmasked as Onyxia. Wowhead Forever shows this quest under two IDs (6403 and 99435); reason unverified."
+        },
+        {
+          "quest": "The Dragon's Eye",
+          "giver": "Highlord Bolvar Fordragon",
+          "where": "Stormwind Keep, turn in to Haleh at Mazthoril, Winterspring",
+          "note": "Elite-filled cave route to Haleh (54.5, 51.2)."
+        },
+        {
+          "quest": "Drakefire Amulet",
+          "giver": "Haleh",
+          "where": "Mazthoril, Winterspring; kill in Upper Blackrock Spire",
+          "note": "Kill General Drakkisath in UBRS for Blood of the Black Dragon Champion, return to Haleh for the Drakefire Amulet (item 16309)."
+        }
+      ],
+      "start_quest": "Dragonkin Menace",
+      "needs_group": "raid",
+      "forever": "unchanged: same 16-quest Classic chain; per character, not account-wide at launch; the SoD 'Chipped Drakefire Amulet' shortcut is not sold in Forever (per ConquestCapped). UBRS step is a 10-player group per most guides (Forever size unconfirmed).",
+      "open_now": false,
+      "source": "https://worldofwarcraft.blizzard.com/news/24303009"
+    },
+    {
+      "name": "Onyxia's Lair attunement (Horde) - Drakefire Amulet",
+      "unlocks": "Onyxia's Lair (40-player raid, Dustwallow Marsh). Drakefire Amulet must be in your bags to enter; it need not be equipped.",
+      "type": "raid",
+      "faction": "Horde",
+      "min_level": 55,
+      "chain": [
+        {
+          "quest": "Blood and Thunder",
+          "giver": "Warlord Goretooth",
+          "where": "Kargath, Badlands",
+          "note": "NEW in Forever (Wowhead Forever quest 98325, +10 Orgrimmar rep). Named first by Blizzard's raid overview. Leads to Warlord's Command."
+        },
+        {
+          "quest": "Warlord's Command",
+          "giver": "Warlord Goretooth (via the item Warlord Goretooth's Command)",
+          "where": "Kargath, Badlands; Lower Blackrock Spire",
+          "note": "Dungeon: LBRS. Kill Highlord Omokk, War Master Voone, Overlord Wyrmthalak and loot Important Blackrock Documents. Not shareable."
+        },
+        {
+          "quest": "Eitrigg's Wisdom",
+          "giver": "Eitrigg",
+          "where": "Orgrimmar (report to Eitrigg, then Thrall)",
+          "note": ""
+        },
+        {
+          "quest": "For The Horde!",
+          "giver": "Thrall",
+          "where": "Orgrimmar; Upper Blackrock Spire",
+          "note": "Kill Warchief Rend Blackhand in UBRS (a group member needs the Seal of Ascension). Head drops for everyone on the quest."
+        },
+        {
+          "quest": "What the Wind Carries",
+          "giver": "Thrall",
+          "where": "Orgrimmar",
+          "note": "Dialogue."
+        },
+        {
+          "quest": "The Champion of the Horde",
+          "giver": "Thrall",
+          "where": "Find Rexxar on the road through Desolace (Stonetalon to Feralas)",
+          "note": "Rexxar patrols; search for him."
+        },
+        {
+          "quest": "The Testament of Rexxar",
+          "giver": "Rexxar",
+          "where": "Desolace; turn in to Myranda the Hag, Sorrow Hill, Western Plaguelands",
+          "note": ""
+        },
+        {
+          "quest": "Oculus Illusions",
+          "giver": "Myranda the Hag",
+          "where": "Sorrow Hill, Western Plaguelands; eyes from Blackrock Spire",
+          "note": "Collect 20 Black Dragonspawn Eyes."
+        },
+        {
+          "quest": "Emberstrife",
+          "giver": "Myranda the Hag",
+          "where": "Emberstrife's den, Wyrmbog, Dustwallow Marsh",
+          "note": "Wear/use the Amulet of Draconic Subversion; it only works inside the den."
+        },
+        {
+          "quest": "The Test of Skulls, Scryer",
+          "giver": "Emberstrife",
+          "where": "Winterspring (Mazthoril)",
+          "note": "Elite dragon. Shareable."
+        },
+        {
+          "quest": "The Test of Skulls, Somnus",
+          "giver": "Emberstrife",
+          "where": "Swamp of Sorrows",
+          "note": "Elite dragon."
+        },
+        {
+          "quest": "The Test of Skulls, Chronalis",
+          "giver": "Emberstrife",
+          "where": "Tanaris",
+          "note": "Elite dragon."
+        },
+        {
+          "quest": "The Test of Skulls, Axtroz",
+          "giver": "Emberstrife",
+          "where": "Wetlands (near Grim Batol)",
+          "note": "Elite dragon; do it last."
+        },
+        {
+          "quest": "Ascension...",
+          "giver": "Emberstrife",
+          "where": "Dustwallow Marsh; take the Dull Drakefire Amulet to Rexxar in Desolace",
+          "note": ""
+        },
+        {
+          "quest": "Blood of the Black Dragon Champion",
+          "giver": "Rexxar",
+          "where": "Desolace; kill in Upper Blackrock Spire",
+          "note": "Kill General Drakkisath in UBRS for his blood, return to Rexxar for the Drakefire Amulet (item 16309)."
+        }
+      ],
+      "start_quest": "Blood and Thunder",
+      "needs_group": "raid",
+      "forever": "changed: new opening quest 'Blood and Thunder' (Wowhead Forever quest 98325) before Warlord's Command; rest is the Classic chain. Per character, not account-wide at launch; no Chipped Drakefire Amulet. Note warcraft.wiki.gg's Forever page still lists Warlord's Command as the Horde start.",
+      "open_now": false,
+      "source": "https://worldofwarcraft.blizzard.com/news/24303009"
+    },
+    {
+      "name": "Molten Core - Attunement to the Core",
+      "unlocks": "Molten Core (lets Lothos Riftwaker teleport you in). Raid NOT in Forever yet.",
+      "type": "raid",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "Attunement to the Core",
+          "giver": "Lothos Riftwaker",
+          "where": "Blackrock Mountain; Molten Core portal inside Blackrock Depths",
+          "note": "Recover a Core Fragment at the MC entry portal in BRD. Quest 7848 is present in Wowhead Forever data. Level unverified for Forever."
+        }
+      ],
+      "start_quest": "Attunement to the Core",
+      "needs_group": "dungeon",
+      "forever": "changed: raid not released. Not a launch raid; no date announced. Roadmap Summer 2027 lists an unnamed 'revamped iconic raid'; PC Games reports Blizzard called MC 'revamped/reimagined' at BlizzCon. Quest exists in game data only.",
+      "open_now": false,
+      "source": "https://www.wowhead.com/forever/quest=7848"
+    },
+    {
+      "name": "Blackwing Lair - Blackhand's Command",
+      "unlocks": "Blackwing Lair via the Orb of Command (Mark of Drakkisath). Raid NOT in Forever.",
+      "type": "raid",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "Blackhand's Command",
+          "giver": "Item: Blackhand's Command (Rend's letter to the Quartermaster); drop source unverified for Forever",
+          "where": "Upper Blackrock Spire",
+          "note": "Touch the brand behind General Drakkisath to gain the Mark of Drakkisath. Quest 7761 is present in Wowhead Forever data."
+        }
+      ],
+      "start_quest": "Blackhand's Command",
+      "needs_group": "raid",
+      "forever": "changed: raid not announced for Forever (unverified whether it will return); quest exists in game data only.",
+      "open_now": false,
+      "source": "https://www.wowhead.com/forever/quest=7761"
+    },
+    {
+      "name": "Hyjal Summit - no attunement",
+      "unlocks": "Hyjal Summit (20-player, 13 bosses, peak of Mount Hyjal near Nordrassil).",
+      "type": "raid",
+      "faction": "Both",
+      "min_level": 60,
+      "chain": [],
+      "start_quest": "",
+      "needs_group": "raid",
+      "forever": "new: no attunement or key; any level 60 can enter. Devs hint extra optional steps ('a little digging ... full experience'); ConquestCapped mentions a planned 'Taldramir, the Whispering Wood' questline (spring 2027) tied to the Sylvestris Dusksong fight (unverified).",
+      "open_now": false,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-hyjal-summit-guide/"
+    },
+    {
+      "name": "Barrow Deeps - no attunement (Brooch of the Wardens inside)",
+      "unlocks": "Barrow Deeps (10-player, 8 bosses). Entrances via Mount Hyjal, Winterspring and Blackmaw Hold (behind Varrox Bleakhoof). Brooch of the Wardens (item 277136, 'New in Forever') grants access to the Vord'anaar Prison inside the raid.",
+      "type": "raid",
+      "faction": "Both",
+      "min_level": 60,
+      "chain": [
+        {
+          "quest": "Brooch of the Wardens (item, not a quest)",
+          "giver": "unverified",
+          "where": "Barrow Deeps",
+          "note": "How to obtain it is unknown; only ConquestCapped names it, Wowhead Forever has an item page with no source."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "raid",
+      "forever": "new: no attunement to enter. One of the new raids has 'something a little familiar' from old attunements (dev quote); Brooch of the Wardens unlocks an inner area (unverified how to get).",
+      "open_now": false,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-attunements/"
+    },
+    {
+      "name": "City of Dalaran key (Alliance) - Dalaran Sewer Key",
+      "unlocks": "City of Dalaran dungeon (28-33, Alterac Mountains) via the sewer gate; one holder opens it for the party.",
+      "type": "dungeon_key",
+      "faction": "Alliance",
+      "min_level": 30,
+      "chain": [
+        {
+          "quest": "An Alarming Request",
+          "giver": "Emissary Jacques",
+          "where": "Southshore, Hillsbrad Foothills (48.3, 60.1)",
+          "note": "Requires level 30, quest 92432. Turn in to the Image of Archmage Modera at the Dalaran sewer gate."
+        },
+        {
+          "quest": "Heart of Disruption",
+          "giver": "Image of Archmage Modera",
+          "where": "Sewer gate outside Dalaran, Lordamere Lake side (wiki map: Silverpine Forest 68.6, 45.2)",
+          "note": "Alliance version, quest 92458, level 33 (requires 24). Accepting it provides the Dalaran Sewer Key; keep the quest until the group is inside. Dungeon objective: Arcane Mote. Next: Friend of the Kirin Tor."
+        }
+      ],
+      "start_quest": "An Alarming Request",
+      "needs_group": "solo",
+      "forever": "new: Forever-exclusive dungeon and key. Warcraft Tavern's quest guide claims Alliance has no attunement, which conflicts with Blizzard and Wowhead (quest 92458 provides the key).",
+      "open_now": true,
+      "source": "https://warcraft.wiki.gg/wiki/Heart_of_Disruption"
+    },
+    {
+      "name": "City of Dalaran key (Horde) - Dalaran Sewer Key",
+      "unlocks": "City of Dalaran dungeon (28-33, Alterac Mountains) via the sewer gate; one holder opens it for the party.",
+      "type": "dungeon_key",
+      "faction": "Horde",
+      "min_level": 30,
+      "chain": [
+        {
+          "quest": "Key to the City",
+          "giver": "Magus Wordeen Voidglare",
+          "where": "Tarren Mill, Hillsbrad Foothills (61.5, 20.9); Lordamere Internment Camp",
+          "note": "Quest 93680, requires 30. Get the Grimy Key from the Warden's Footlocker (Warden Belamoore). Taken together with Prison Break In. Not the Stratholme key."
+        },
+        {
+          "quest": "Prison Break In",
+          "giver": "Magus Wordeen Voidglare",
+          "where": "Tarren Mill; Lordamere Internment Camp",
+          "note": "Requires 30. Blizzard spells it 'Prison Break-In'. Four Bloodstone pieces / prisoners."
+        },
+        {
+          "quest": "Dalaran Patrols",
+          "giver": "Magus Wordeen Voidglare",
+          "where": "Slopes east of Dalaran (Old Dalaran Ruins)",
+          "note": "Kill 6 Dalaran Summoners and 8 Elemental Slaves; hardest step, a second player helps."
+        },
+        {
+          "quest": "Blood in the Streets",
+          "giver": "Magus Wordeen Voidglare",
+          "where": "Turn in to the Image of Archmage Modera at the sewer gate",
+          "note": ""
+        },
+        {
+          "quest": "Heart of Disruption",
+          "giver": "Image of Archmage Modera",
+          "where": "Dalaran sewer gate",
+          "note": "Horde version, quest 96984, level 33 (requires 24). Provides the Dalaran Sewer Key; turn in to Magus Wordeen Voidglare. Next: Shrewd Negotiations. Optional side quests Stone Tokens / Bracers of Binding (Keeper Bel'varil) are not needed."
+        }
+      ],
+      "start_quest": "Key to the City",
+      "needs_group": "solo",
+      "forever": "new: Forever-exclusive dungeon and key; Horde chain is longer than Alliance.",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/city-of-dalaran-quests/"
+    },
+    {
+      "name": "Upper Blackrock Spire key - Seal of Ascension",
+      "unlocks": "Upper Blackrock Spire door; one holder in the group opens it.",
+      "type": "dungeon_key",
+      "faction": "Both",
+      "min_level": 57,
+      "chain": [
+        {
+          "quest": "drop: Unadorned Seal of Ascension",
+          "giver": "drop: from Lower Blackrock Spire mobs",
+          "where": "Lower Blackrock Spire",
+          "note": "Needed in bags to talk to Vaelan (item 12219)."
+        },
+        {
+          "quest": "Seal of Ascension",
+          "giver": "Vaelan (Scarshield Infiltrator)",
+          "where": "Lower Blackrock Spire, ledge near the door to Hordemar City",
+          "note": "Quest 4742. Gemstones from War Master Voone, Highlord Omokk, Overlord Wyrmthalak. Not shareable."
+        },
+        {
+          "quest": "Seal of Ascension",
+          "giver": "Vaelan",
+          "where": "Emberstrife's cave, Wyrmbog, Dustwallow Marsh",
+          "note": "Quest 4743. Weaken Emberstrife (elite, group of 2-3 advised), place the Unforged Seal, use the Orb of Draconic Energy, loot the Forged Seal, return to Vaelan. Rewards Seal of Ascension (item 12344)."
+        }
+      ],
+      "start_quest": "Seal of Ascension",
+      "needs_group": "dungeon",
+      "forever": "unchanged: Wowhead Forever quest 4743 rewards Seal of Ascension (item 12344); ConquestCapped's 16 Nov update confirms it as the UBRS key (its body text still says unconfirmed). Level: 57 per ConquestCapped, 55 per Warcraft Tavern.",
+      "open_now": true,
+      "source": "https://www.wowhead.com/forever/quest=4743"
+    },
+    {
+      "name": "Blackrock Depths - Shadowforge Key",
+      "unlocks": "Shadowforge doors/gates in Blackrock Depths (incl. the way to General Angerforge / Golem Lord Argelmach).",
+      "type": "dungeon_key",
+      "faction": "Both",
+      "min_level": 48,
+      "chain": [
+        {
+          "quest": "Dark Iron Legacy",
+          "giver": "Franclorn Forgewright (ghost, visible only while dead)",
+          "where": "Forgewright's Tomb, center of Blackrock Mountain",
+          "note": "Part 1."
+        },
+        {
+          "quest": "Dark Iron Legacy",
+          "giver": "Franclorn Forgewright",
+          "where": "Blackrock Depths; Shrine of Thaurissan",
+          "note": "Part 2. Kill Fineous Darkvire, take the hammer Ironfel, place it on Franclorn's statue at the Shrine of Thaurissan to get the Shadowforge Key. Level 52, requires 48."
+        }
+      ],
+      "start_quest": "Dark Iron Legacy",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): guides say BRD content is based on Classic since BRD was not in beta; Shadowforge Key exists in Wowhead Forever data.",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-attunements/"
+    },
+    {
+      "name": "Blackrock Depths - Prison Cell Key",
+      "unlocks": "Detention Block cells in Blackrock Depths (needed for Marshal Windsor in the Alliance Onyxia chain).",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from High Interrogator Gerstahn",
+          "giver": "High Interrogator Gerstahn",
+          "where": "Blackrock Depths, Detention Block",
+          "note": "About half the time. Rogues can pick the locks."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified); item exists in Wowhead Forever data.",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-attunements/"
+    },
+    {
+      "name": "Scholomance key (Alliance) - Skeleton Key",
+      "unlocks": "Scholomance front gate; one holder needed.",
+      "type": "dungeon_key",
+      "faction": "Alliance",
+      "min_level": 55,
+      "chain": [
+        {
+          "quest": "Clear the Way",
+          "giver": "Commander Ashlam Valorfist",
+          "where": "Chillwind Camp, Western Plaguelands",
+          "note": "Kill 10 Skeletal Flayers and 10 Slavering Ghouls at Sorrow Hill. ConquestCapped's list starts at the next quest."
+        },
+        {
+          "quest": "All Along the Watchtowers",
+          "giver": "Commander Ashlam Valorfist",
+          "where": "Chillwind Camp; Ruins of Andorhal",
+          "note": "Mark the four towers with the Beacon Torch (quest 5097)."
+        },
+        {
+          "quest": "Scholomance",
+          "giver": "Commander Ashlam Valorfist",
+          "where": "Chillwind Camp",
+          "note": "Sends you to Alchemist Arbington."
+        },
+        {
+          "quest": "Skeletal Fragments",
+          "giver": "Alchemist Arbington",
+          "where": "Chillwind Camp; Andorhal / Scholomance walls",
+          "note": "Collect 15 Skeletal Fragments."
+        },
+        {
+          "quest": "Mold Rhymes With...",
+          "giver": "Alchemist Arbington",
+          "where": "Krinkle Goodsteel, Gadgetzan, Tanaris",
+          "note": "15 gold. Not shareable."
+        },
+        {
+          "quest": "Fire Plume Forged",
+          "giver": "Krinkle Goodsteel",
+          "where": "Fire Plume Ridge, Un'Goro Crater",
+          "note": "Bring the mold and 2 Thorium Bars; use at the lava lake for the Unfinished Skeleton Key."
+        },
+        {
+          "quest": "Araj's Scarab",
+          "giver": "Alchemist Arbington",
+          "where": "Ruins of Andorhal",
+          "note": "Kill Araj the Summoner (level 61 elite); group needed, no instance. Shareable."
+        },
+        {
+          "quest": "The Key to Scholomance",
+          "giver": "Alchemist Arbington",
+          "where": "Chillwind Camp",
+          "note": "Reward: Skeleton Key."
+        }
+      ],
+      "start_quest": "Clear the Way",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): guides are based on Classic as Scholomance was not in beta; Skeleton Key exists in Wowhead Forever data.",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/scholomance-quests/"
+    },
+    {
+      "name": "Scholomance key (Horde) - Skeleton Key",
+      "unlocks": "Scholomance front gate; one holder needed.",
+      "type": "dungeon_key",
+      "faction": "Horde",
+      "min_level": 55,
+      "chain": [
+        {
+          "quest": "Scarlet Diversions",
+          "giver": "High Executor Derrington",
+          "where": "The Bulwark, Tirisfal Glades",
+          "note": "Loot the Box of Incendiaries for a Flame in a Bottle; burn the Scarlet tent near Felstone Field, plant the Scourge Banner. ConquestCapped's list starts at the next quest."
+        },
+        {
+          "quest": "All Along the Watchtowers",
+          "giver": "High Executor Derrington",
+          "where": "The Bulwark; Ruins of Andorhal",
+          "note": "Quest 5098."
+        },
+        {
+          "quest": "Scholomance",
+          "giver": "High Executor Derrington",
+          "where": "The Bulwark",
+          "note": "Sends you to Apothecary Dithers."
+        },
+        {
+          "quest": "Skeletal Fragments",
+          "giver": "Apothecary Dithers",
+          "where": "The Bulwark",
+          "note": "Collect 15 Skeletal Fragments."
+        },
+        {
+          "quest": "Mold Rhymes With...",
+          "giver": "Apothecary Dithers",
+          "where": "Krinkle Goodsteel, Gadgetzan, Tanaris",
+          "note": "15 gold. Not shareable."
+        },
+        {
+          "quest": "Fire Plume Forged",
+          "giver": "Krinkle Goodsteel",
+          "where": "Fire Plume Ridge, Un'Goro Crater",
+          "note": "2 Thorium Bars."
+        },
+        {
+          "quest": "Araj's Scarab",
+          "giver": "Apothecary Dithers",
+          "where": "Ruins of Andorhal",
+          "note": "Kill Araj the Summoner (elite); group needed."
+        },
+        {
+          "quest": "The Key to Scholomance",
+          "giver": "Apothecary Dithers",
+          "where": "The Bulwark, Tirisfal Glades",
+          "note": "Reward: Skeleton Key."
+        }
+      ],
+      "start_quest": "Scarlet Diversions",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): based on Classic data.",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/scholomance-quests/"
+    },
+    {
+      "name": "Stratholme - Key to the City",
+      "unlocks": "Stratholme Service Entrance (Service Gate) and some gates inside.",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from Magistrate Barthilas",
+          "giver": "Magistrate Barthilas",
+          "where": "Stratholme",
+          "note": "Not a quest."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): based on Classic; item exists in Wowhead Forever data.",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-attunements/"
+    },
+    {
+      "name": "Dire Maul - Crescent Key",
+      "unlocks": "Dire Maul West and North wing doors (North main door; lower door near Guard Mol'dar from West).",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from Pusillin",
+          "giver": "Pusillin",
+          "where": "Dire Maul East (Warpwood Quarter)",
+          "note": "Chase the imp until he fights. Rogue 300 Lockpicking also works."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): based on Classic; item exists in Wowhead Forever data.",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/dire-maul-north/"
+    },
+    {
+      "name": "Dire Maul North - Gordok Courtyard Key",
+      "unlocks": "Gordok Courtyard Door (Dire Maul North, tribute runs).",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from Fengus's Chest",
+          "giver": "Fengus's Chest (Guard Fengus's room)",
+          "where": "Dire Maul North",
+          "note": "Not a quest."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): based on Classic.",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/dire-maul-north/"
+    },
+    {
+      "name": "Dire Maul North - Gordok Inner Door Key",
+      "unlocks": "Gordok Inner Door (Dire Maul North).",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from Guard Mol'dar",
+          "giver": "Guard Mol'dar",
+          "where": "Dire Maul North",
+          "note": "Alternatives: 300 Lockpicking, Powerful Seaforium Charge, Truesilver Skeleton Key."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): based on Classic.",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/dire-maul-north/"
+    },
+    {
+      "name": "Maraudon - Scepter of Celebras",
+      "unlocks": "Portal to inner Maraudon / Earth Song Falls (Princess Theradras).",
+      "type": "dungeon_key",
+      "faction": "Both",
+      "min_level": 41,
+      "chain": [
+        {
+          "quest": "Legends of Maraudon",
+          "giver": "Cavindra",
+          "where": "Caves outside Maraudon, Desolace",
+          "note": "Get Celebrian Rod (Noxxion) and Celebrian Diamond (Lord Vyletongue), defeat Celebras the Cursed. Shareable. Requires 41."
+        },
+        {
+          "quest": "The Scepter of Celebras",
+          "giver": "Celebras the Redeemed",
+          "where": "Inside Maraudon",
+          "note": "Follow his ritual; he forges the Scepter of Celebras. Not shareable."
+        }
+      ],
+      "start_quest": "Legends of Maraudon",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): guides based on Classic; Scepter of Celebras exists in Wowhead Forever data.",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/maraudon-quests/"
+    },
+    {
+      "name": "Zul'Farrak - Mallet of Zul'Farrak",
+      "unlocks": "Summons Gahz'rilla at the gong by the pool in Zul'Farrak (optional boss).",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: Sacred Mallet from Qiaga the Keeper",
+          "giver": "Qiaga the Keeper (level 50 elite)",
+          "where": "Altar of Zul, The Hinterlands",
+          "note": "Not a quest. Group advised."
+        },
+        {
+          "quest": "Use Sacred Mallet at the altar atop Jintha'Alor",
+          "giver": "(item use)",
+          "where": "Jintha'Alor, The Hinterlands",
+          "note": "Creates the Mallet of Zul'Farrak."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified): based on Classic; item exists in Wowhead Forever data.",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/zulfarrak-quests/"
+    },
+    {
+      "name": "Gnomeregan - Workshop Key",
+      "unlocks": "Gnomeregan back door / workshop entrance (skips early bosses).",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from Electrocutioner 6000",
+          "giver": "Electrocutioner 6000",
+          "where": "Gnomeregan, Launch Bay",
+          "note": "Not a quest."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified); item exists in Wowhead Forever data.",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-attunements/"
+    },
+    {
+      "name": "Scarlet Monastery - The Scarlet Key",
+      "unlocks": "Scarlet Monastery Armory and Cathedral doors.",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from Doan's Strongbox",
+          "giver": "Doan's Strongbox (after Arcanist Doan)",
+          "where": "Scarlet Monastery Library",
+          "note": "Not a quest."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "unchanged (unverified); item exists in Wowhead Forever data. (Not the retail Hallow's End Scarlet Key method.)",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-attunements/"
+    },
+    {
+      "name": "Krol'dok Stronghold - Krol'dok Compound Key",
+      "unlocks": "Unconfirmed: possibly a locked door after Tunk. NOT needed to enter Krol'dok Stronghold.",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 38,
+      "chain": [
+        {
+          "quest": "Krol'dok Moulding",
+          "giver": "Alliance: Alphonse Dumas (Farholde Keep 64.4, 82.0); Horde: Kreza Darkthorn (Rog'mar 59.8, 46.0)",
+          "where": "Riverglades area (zone of NPCs not stated); moulding inside Krol'dok Stronghold",
+          "note": "Quests 94980 (A) / 94973 (H). Krol'dok Moulding (item 267137) is party loot inside, reportedly after Tunk."
+        },
+        {
+          "quest": "Key Ingredients",
+          "giver": "Alphonse Dumas / Kreza Darkthorn",
+          "where": "Farholde Keep / Rog'mar",
+          "note": "Quests 94981 (A) / 94974 (H). Bring 4 Thick Leather and 12 Iron Bars; reward Krol'dok Compound Key (item 267089), not consumed. Quest level 41, from level 38."
+        }
+      ],
+      "start_quest": "Krol'dok Moulding",
+      "needs_group": "dungeon",
+      "forever": "new",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-kroldok-stronghold-guide/"
+    },
+    {
+      "name": "Krol'dok Stronghold - Krol'dok Ogre Key",
+      "unlocks": "Unconfirmed: a shortcut door down the hill skipping the bridge walk (single report).",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from Overlord Mugg",
+          "giver": "Overlord Mugg (last boss, level 45)",
+          "where": "Krol'dok Stronghold, Riverglades",
+          "note": "Item 271721."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "new",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-kroldok-stronghold-guide/"
+    },
+    {
+      "name": "Alcaz Prison - Overseer's Keyring",
+      "unlocks": "Locked door to the lower floor inside Alcaz Prison (entry itself needs no key).",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "drop: from Overseer Wrex",
+          "giver": "Overseer Wrex",
+          "where": "Alcaz Prison upper floor, Alcaz Island, Dustwallow Marsh",
+          "note": "Not a quest item."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "new",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-alcaz-prison-guide/"
+    },
+    {
+      "name": "Shaper's Terrace - Power Crystals (Archival Panels)",
+      "unlocks": "Each Archival Panel summons a boss (Red: Cinder, Blue: Snowtalon, Green: Vitrix, Yellow: Bolt); all four then let the Titan Panel summon Nanaya. Not needed to enter.",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "gather: Red/Blue/Green/Yellow Power Crystal (items 11186/11184/11185/11188)",
+          "giver": "(gathered, not a quest)",
+          "where": "Un'Goro Crater and inside Shaper's Terrace",
+          "note": "15 of one colour on you per console."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "dungeon",
+      "forever": "new",
+      "open_now": true,
+      "source": "https://www.warcrafttavern.com/forever/guides/shapers-terrace/"
+    },
+    {
+      "name": "Azsharan Key",
+      "unlocks": "unverified: tooltip has no description; nothing says what it opens.",
+      "type": "item_key",
+      "faction": "Both",
+      "min_level": 0,
+      "chain": [
+        {
+          "quest": "unverified",
+          "giver": "unverified",
+          "where": "unverified",
+          "note": "Listed as a new Forever key (common, binds on pickup) by ConquestCapped and Metaforge; no source or door known."
+        }
+      ],
+      "start_quest": "",
+      "needs_group": "solo",
+      "forever": "new",
+      "open_now": true,
+      "source": "https://conquestcapped.com/guides/wow-forever/wow-forever-attunements/"
+    }
+  ],
+  "notes": [
+    "WoW Forever launched 2026-11-04 (patch 1.60.1). All three launch raids unlock 2026-12-09 for level 60 and reset weekly: Onyxia's Lair (40), Hyjal Summit (20, 13 bosses), Barrow Deeps (10, 8 bosses).",
+    "open_now = whether the unlocked content is accessible today (2026-11-23). The Onyxia attunement chains can already be done now; only the raid is closed until 2026-12-09.",
+    "Onyxia's Lair is the only raid with an attunement at launch. Per character, not account-wide 'at least not at launch' (WoW Forever Podcast ep. 3). Amulet in bags, not equipped. Both chains end at General Drakkisath in UBRS.",
+    "Sources disagree on Drakkisath's blood: ConquestCapped says it drops for everyone on the quest; LFCarry says limited copies per UBRS clear.",
+    "Hyjal Summit and Barrow Deeps: no attunement. Devs: 'there's not something that's going to stop you from walking into them', players 'might have to do a little digging ... to get the full experience', and one new raid has something 'a little familiar' from old attunements. Brooch of the Wardens (item 277136) opens Vord'anaar Prison inside Barrow Deeps; how to get it is unknown.",
+    "Molten Core is not a launch raid and has no date; Forever is set before Molten Core's events. 'Attunement to the Core' (7848) and 'Blackhand's Command' (7761) exist in Forever game data only. Roadmap: Spring 2027 two new raids (10 and 20 players); Summer 2027 a 'revamped iconic raid' (unnamed) plus a new raid. Blackwing Lair, Zul'Gurub, Ahn'Qiraj and Naxxramas are not announced. Scarlet Enclave is a confirmed future raid (Warcraft Tavern).",
+    "City of Dalaran is the only new dungeon with an entry key (Dalaran Sewer Key, both factions). Hall of Thanes, Ruins of Lordaeron, Excavation Site, The Drowned City, Krol'dok Stronghold, Alcaz Prison, Blackmaw Hold and Shaper's Terrace need no key or attunement to enter. Hall of Thanes 'Underground Map' (Dun Morogh) starts a quest chain but does not gate entry; one search snippet called it an attunement, warcraft.wiki.gg and Warcraft Tavern show no gate.",
+    "Hall of Thanes is Alliance-oriented (13-18) and Ruins of Lordaeron Horde-oriented (15-20); the other faction can still enter.",
+    "Keys bind on pickup; usually one holder opens the door for the group. Rogue Lockpicking can open Scarlet Monastery, Scholomance, BRD and Dire Maul doors, but not raid attunements or the Dalaran sewer gate.",
+    "Many Forever guides for Classic dungeons (BRD, LBRS, Scholomance, Stratholme, Dire Maul, Maraudon, Zul'Farrak) say they are based on Classic because those instances were not in the Forever beta. Wowhead Forever has pages for all classic keys (Workshop Key, The Scarlet Key, Mallet of Zul'Farrak, Scepter of Celebras, Shadowforge Key, Prison Cell Key, Crescent Key, Skeleton Key, Key to the City, Seal of Ascension), so no key is reported removed.",
+    "Upper Blackrock Spire group size in Forever: 10 players per most guides, not officially confirmed.",
+    "Chipped Drakefire Amulet (account-bound shortcut sold by Squire Rowe / Eitrigg) is a Season of Discovery item; ConquestCapped says it is not on their Forever vendor lists.",
+    "The Horde Dalaran quest 'Key to the City' (93680) shares its name with the Stratholme key item; they are unrelated.",
+    "Gaps: Brooch of the Wardens source, Azsharan Key use, Krol'dok key doors, exact Forever levels for some Classic chains (Molten Core, Blackhand's Command) and whether Forever retuned any Classic key chain are unverified."
+  ],
+  "sources": [
+    "https://worldofwarcraft.blizzard.com/news/24303009",
+    "https://news.blizzard.com/en-us/article/24301455",
+    "https://www.warcrafttavern.com/forever/news/onyxias-lair-raid-will-still-require-attunement-in-wow-forever/",
+    "https://www.warcrafttavern.com/forever/guides/raids/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-attunements/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-onyxia-attunement/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-ubrs-key/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-dalaran-attunement/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-hyjal-summit-guide/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-kroldok-stronghold-guide/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-alcaz-prison-guide/",
+    "https://conquestcapped.com/guides/wow-forever/wow-forever-scholomance-quests/",
+    "https://lfcarry.com/guides/wow-forever-onyxia-attunement",
+    "https://warcraft.wiki.gg/wiki/Forever",
+    "https://warcraft.wiki.gg/wiki/Heart_of_Disruption",
+    "https://warcraft.wiki.gg/wiki/An_Alarming_Request",
+    "https://warcraft.wiki.gg/wiki/Hall_of_Thanes_(instance)",
+    "https://warcraft.wiki.gg/wiki/Gordok_Courtyard_Key",
+    "https://www.warcrafttavern.com/forever/guides/city-of-dalaran-quests/",
+    "https://www.warcrafttavern.com/forever/guides/lower-blackrock-spire-quests/",
+    "https://www.warcrafttavern.com/forever/guides/scholomance-quests/",
+    "https://www.warcrafttavern.com/forever/guides/maraudon-quests/",
+    "https://www.warcrafttavern.com/forever/guides/zulfarrak-quests/",
+    "https://www.warcrafttavern.com/forever/guides/dire-maul-north/",
+    "https://www.warcrafttavern.com/forever/guides/blackmaw-hold/",
+    "https://www.warcrafttavern.com/forever/guides/shapers-terrace/",
+    "https://www.warcrafttavern.com/forever/guides/hall-of-thanes-quests/",
+    "https://wow.gg/guides/kroldok-stronghold",
+    "https://www.magicgameworld.com/?p=149466",
+    "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/News/WoW-Forever-Geschmolzener-Kern-Aenderungen-1557581/",
+    "https://www.wowhead.com/forever/quest=98325/blood-and-thunder",
+    "https://www.wowhead.com/forever/quest=4903",
+    "https://www.wowhead.com/forever/quest=4182",
+    "https://www.wowhead.com/forever/quest=6566",
+    "https://www.wowhead.com/forever/quest=6602",
+    "https://www.wowhead.com/forever/quest=6502",
+    "https://www.wowhead.com/forever/quest=99435",
+    "https://www.wowhead.com/forever/quest=4743",
+    "https://www.wowhead.com/forever/quest=7848",
+    "https://www.wowhead.com/forever/quest=7761",
+    "https://www.wowhead.com/forever/quest=92458&xml",
+    "https://www.wowhead.com/forever/quest=93680/key-to-the-city",
+    "https://www.wowhead.com/forever/item=277136",
+    "https://warcraft.wiki.gg/wiki/Chipped_Drakefire_Amulet"
+  ]
+}

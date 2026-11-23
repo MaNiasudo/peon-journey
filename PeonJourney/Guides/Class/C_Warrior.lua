@@ -298,24 +298,6 @@ step
     .goto 1453,77.13,53.26
     >>Talk to |cRXP_FRIENDLY_Harry Burlguard|r
     .turnin 1638 >>Turn in A Warrior's Training
-    .accept 1639 >>Accept Bartleby the Drunk
-    .target Harry Burlguard
-step
-    .goto 1453,76.76,52.55
-    >>Talk to |cRXP_FRIENDLY_Bartleby|r
-    .turnin 1639 >>Turn in Bartleby the Drunk
-    .accept 1640 >>Accept Beat Bartleby
-    .target Bartleby
-step
-    .goto 1453,76.76,52.55
-    >>Talk to |cRXP_FRIENDLY_Bartleby|r
-    .turnin 1640 >>Turn in Beat Bartleby
-    .accept 1665 >>Accept Bartleby's Mug
-    .target Bartleby
-step
-    .goto 1453,77.13,53.26
-    >>Talk to |cRXP_FRIENDLY_Harry Burlguard|r
-    .turnin 1665 >>Turn in Bartleby's Mug
     .target Harry Burlguard
 step
     .goto 1438,47.25,63.6
@@ -346,17 +328,6 @@ step
     *Reward: Defensive Stance, Taunt, Sunder Armor
     *|cffffd200OK|r [Stormforged Protector]: Off Hand Shield, 311 armor, 5 Block, +1 Strength, +1 Stamina - early shield upgrade for a 1H+shield setup
 step
-    .goto 1438,56.22,59.2
-    >>Talk to |cRXP_FRIENDLY_Kyra Windblade|r
-    .accept 1684 >>Accept Elanaria
-    .target Kyra Windblade
-step
-    .goto 1457,57.3,34.61
-    >>Talk to |cRXP_FRIENDLY_Elanaria|r
-    .turnin 1684 >>Turn in Elanaria
-    .accept 1683 >>Accept Vorlus Vilehoof
-    .target Elanaria
-step
     .goto 2521,59.89,72.87
     >>Talk to |cRXP_FRIENDLY_Seena Skybreaker|r
     .accept 94003 >>Accept The Skybreaker Bulwark << Skyborne
@@ -373,6 +344,17 @@ step
     .turnin 94003 >>Turn in The Skybreaker Bulwark << Skyborne
     .target Seena Skybreaker
 step
+    .goto 1438,56.22,59.2
+    >>Talk to |cRXP_FRIENDLY_Kyra Windblade|r
+    .accept 1684 >>Accept Elanaria
+    .target Kyra Windblade
+step
+    .goto 1457,57.3,34.61
+    >>Talk to |cRXP_FRIENDLY_Elanaria|r
+    .turnin 1684 >>Turn in Elanaria
+    .accept 1683 >>Accept Vorlus Vilehoof
+    .target Elanaria
+step
     .goto 1429,41.09,65.77
     >>Talk to |cRXP_FRIENDLY_Lyria Du Lac|r
     .accept 1638 >>Accept A Warrior's Training
@@ -381,24 +363,6 @@ step
     .goto 1453,77.13,53.26
     >>Talk to |cRXP_FRIENDLY_Harry Burlguard|r
     .turnin 1638 >>Turn in A Warrior's Training
-    .accept 1639 >>Accept Bartleby the Drunk
-    .target Harry Burlguard
-step
-    .goto 1453,76.76,52.55
-    >>Talk to |cRXP_FRIENDLY_Bartleby|r
-    .turnin 1639 >>Turn in Bartleby the Drunk
-    .accept 1640 >>Accept Beat Bartleby
-    .target Bartleby
-step
-    .goto 1453,76.76,52.55
-    >>Talk to |cRXP_FRIENDLY_Bartleby|r
-    .turnin 1640 >>Turn in Beat Bartleby
-    .accept 1665 >>Accept Bartleby's Mug
-    .target Bartleby
-step
-    .goto 1453,77.13,53.26
-    >>Talk to |cRXP_FRIENDLY_Harry Burlguard|r
-    .turnin 1665 >>Turn in Bartleby's Mug
     .target Harry Burlguard
 step
     .goto 1438,47.25,63.6

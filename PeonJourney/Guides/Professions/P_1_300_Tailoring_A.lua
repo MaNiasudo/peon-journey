@@ -132,7 +132,7 @@ step
     .skill tailoring,260 >>Craft 12x Runecloth Boots until 260
 step
     #completewith next
-    .goto 2482,48.3,33.87
+    .goto 2482,46.89,80.68
     >>Buy the recipe from |cRXP_FRIENDLY_Pexmit|r
     .target Pexmit
 step

@@ -5,15 +5,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 10-19
-#name 13-18 Ragefire Chasm
-#displayname 13-18 Ragefire Chasm
-#next 15-20 Ruins of Lordaeron
+#name 13-18 Ragefire Chasm pre-quests
+#displayname 13-18 Ragefire Chasm pre-quests
+#next 13-18 Ragefire Chasm
 step
-    +|cRXP_WARN_Ragefire Chasm|r (levels 13-18). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: Hidden Enemies, Hidden Enemies
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Ragefire Chasm: pre-quests|r. 2 quests, solo (no group needed), roughly 20 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Hidden Enemies
 step
     .goto 1454,31.73,37.82
     >>Talk to |cRXP_FRIENDLY_Thrall|r
@@ -38,8 +35,25 @@ step
     .turnin 5727 >>Turn in Hidden Enemies
     .target Thrall
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Ragefire Chasm itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 10-19
+#name 13-18 Ragefire Chasm
+#displayname 13-18 Ragefire Chasm
+#next 15-20 Ruins of Lordaeron pre-quests
+step
+    +|cRXP_WARN_Ragefire Chasm|r (levels 13-18). Pick up 6 dungeon quests solo (roughly 50 min with the hand-ins), then ONE run with a group (roughly 1 h 20 min). No group needed until the run step. Click to start.
+    *Its 2 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1454,31.73,37.82
     >>Talk to |cRXP_FRIENDLY_Thrall|r
@@ -63,10 +77,10 @@ step
     .target Varimathras
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1454,52.6,49
-    >>Enter |cRXP_WARN_Ragefire Chasm|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Ragefire Chasm|r with your group. Quest goals inside:
     *Testing an Enemy's Strength: Search Orgrimmar for Ragefire Chasm, then kill 8 Ragefire Troggs and 8 Ragefire Shaman before returning to Rahauro in Thunder Bluff.
     *The Power to Destroy...: Bring the books Spells of Shadow and Incantations from the Nether to Varimathras in Undercity.
     *Hidden Enemies: Kill Bazzalan and Jergosh the Invoker before returning to Thrall in Orgrimmar.
@@ -104,7 +118,7 @@ step
     .target Varimathras
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1454,52.6,49
     >>Inside Ragefire Chasm: these quests start from a drop or an object in the dungeon
@@ -129,16 +143,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 10-19
-#name 15-20 Ruins of Lordaeron
-#displayname 15-20 Ruins of Lordaeron
-#next 15-24 Wailing Caverns
+#name 15-20 Ruins of Lordaeron pre-quests
+#displayname 15-20 Ruins of Lordaeron pre-quests
+#next 15-20 Ruins of Lordaeron
 step
-    +|cRXP_WARN_Ruins of Lordaeron|r (levels 15-20). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *New Forever dungeon in the ruined city above the Undercity. Before the keep, look left and climb the stairs. Alliance: entering the Undercity area flags you for PvP.
-    *Pre-quests in this guide: Rear Guard Patrol, A Recipe For Death, A Recipe For Death, A Recipe For Death, Rear Guard Patrol
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Ruins of Lordaeron: pre-quests|r. 5 quests, solo (no group needed), roughly 1 h 35 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Rear Guard Patrol, A Recipe For Death
 step
     .goto 1420,65.49,60.25
     >>Talk to |cRXP_FRIENDLY_Deathguard Linnea|r
@@ -159,7 +169,7 @@ step
     .accept 99156 >>Accept Rear Guard Patrol << Orc/Undead
     .target Deathguard Linnea
 step
-    .goto 1420,82.24,44.66
+    .goto 1420,82.62,45.54
     >>Collect |cRXP_LOOT_[Riptear's Heart]|r from |cRXP_ENEMY_Riptear|r
     *Bring Riptear's Heart to Deathguard Linnea.
     .complete 99156,1 << Orc/Undead --Rear Guard Patrol
@@ -175,7 +185,7 @@ step
     .accept 447 >>Accept A Recipe For Death
     .target Apothecary Renferrel
 step
-    .goto 1429,72.36,40.35
+    .goto 1429,72.07,40.56
     >>Collect |cRXP_LOOT_[Grizzled Bear Heart]|r from |cRXP_ENEMY_Elmpaw|r, |cRXP_ENEMY_Giant Grizzled Bear|r, |cRXP_ENEMY_Old Vicejaw|r
     *Collect 6 Grizzled Bear Hearts and 6 samples of Skittering Blood and deliver them to Master Apothecary Faranell in the Undercity.
     .complete 447,1 --A Recipe For Death
@@ -232,8 +242,26 @@ step
     .turnin 451 >>Turn in A Recipe For Death
     .target Master Apothecary Faranell
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Ruins of Lordaeron itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 10-19
+#name 15-20 Ruins of Lordaeron
+#displayname 15-20 Ruins of Lordaeron
+#next 15-24 Wailing Caverns pre-quests
+step
+    +|cRXP_WARN_Ruins of Lordaeron|r (levels 15-20). Pick up 9 dungeon quests solo (roughly 45 min with the hand-ins), then ONE run with a group (roughly 40 min). No group needed until the run step. Click to start.
+    *New Forever dungeon in the ruined city above the Undercity. Before the keep, look left and climb the stairs. Alliance: entering the Undercity area flags you for PvP.
+    *Its 5 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1458,46.31,71.91
     >>Talk to |cRXP_FRIENDLY_Theodore Griffs|r
@@ -256,7 +284,7 @@ step
     .target Deathguard Kristof
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1420,72.4,11.6
     >>Inside Ruins of Lordaeron: loot |cRXP_LOOT_[Crest of Lordaeron]|r and click it to start the quest
@@ -270,7 +298,7 @@ step
     .mob The Baron
 step
     .goto 1420,72.4,11.6
-    >>Enter |cRXP_WARN_Ruins of Lordaeron|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Ruins of Lordaeron|r with your group. Quest goals inside:
     *A Frightened Request: Investigate the disappearance of Edward Heartweaver in the Ruins of Lordaeron.
     *Light's Justice: Collect 25 Intact Limbs within The Ruins of Lordaeron for Morbin Lightbane in the Undercity.
     *The Wrath of Rath'mael: Kill Rath'mael in the Ruins of Lordaeron for Deathguard Kristof in Brill.
@@ -314,7 +342,7 @@ step
     .target Oran Snakewrithe
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1458,48.82,69.28
     >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
@@ -330,7 +358,7 @@ step
     .target Unfinished Abomination
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1458,45.88,61.7
     >>Talk to |cRXP_FRIENDLY_Unfinished Abomination|r
@@ -346,14 +374,14 @@ step
     .target Master Apothecary Faranell
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1458,48.82,69.28
     >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
     .accept 97291 >>Accept Unending Torment
     .target Master Apothecary Faranell
 step
-    .goto 1458,54,49.3
+    .goto 1458,54,49.31
     >>Collect |cRXP_LOOT_[Blisterweed]|r from |cRXP_PICK_Blisterweed|r
     *Collect a Toxic Skullcap from Tawny Grisette in the Trade Quarter, Blisterweed near the Herbalism Trainer, and Essence of Agony from the poison vendor in the Rogues' Quarter for Master Apothecary Faranell in Undercity.
     .complete 97291,2 --Unending Torment
@@ -391,15 +419,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 10-19
-#name 15-24 Wailing Caverns
-#displayname 15-24 Wailing Caverns
-#next 20-30 Shadowfang Keep
+#name 15-24 Wailing Caverns pre-quests
+#displayname 15-24 Wailing Caverns pre-quests
+#next 15-24 Wailing Caverns
 step
-    +|cRXP_WARN_Wailing Caverns|r (levels 15-24). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: Raptor Horns, The Forgotten Pools, The Stagnant Oasis, Altered Beings
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Wailing Caverns: pre-quests|r. 4 quests, solo (no group needed), roughly 20 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Raptor Horns, The Forgotten Pools, The Stagnant Oasis, Altered Beings
 step
     .goto 1413,52.26,31.93
     >>Talk to |cRXP_FRIENDLY_Tonga Runetotem|r
@@ -453,8 +478,25 @@ step
     .turnin 880 >>Turn in Altered Beings
     .target Tonga Runetotem
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Wailing Caverns itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 10-19
+#name 15-24 Wailing Caverns
+#displayname 15-24 Wailing Caverns
+#next 20-30 Shadowfang Keep
+step
+    +|cRXP_WARN_Wailing Caverns|r (levels 15-24). Pick up 9 dungeon quests solo (roughly 35 min with the hand-ins), then ONE run with a group (roughly 1 h 20 min). No group needed until the run step. Click to start.
+    *Its 4 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1413,52.26,31.93
     >>Talk to |cRXP_FRIENDLY_Tonga Runetotem|r
@@ -493,7 +535,7 @@ step
     .mob Mad Magglish
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1413,46,36.5
     >>Loot |cRXP_LOOT_[Glowing Shard]|r from |cRXP_ENEMY_Mutanus the Devourer|r, then click it to start the quest
@@ -502,7 +544,7 @@ step
     .mob Mutanus the Devourer
 step
     .goto 1413,46,36.5
-    >>Enter |cRXP_WARN_Wailing Caverns|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Wailing Caverns|r with your group. Quest goals inside:
     *Serpentbloom: Apothecary Zamah in Thunder Bluff wants you to collect 10 Serpentbloom.
     *Deviate Hides: Nalpak in the Wailing Caverns wants 20 Deviate Hides.
     *Deviate Eradication: Ebru in the Wailing Caverns wants you to kill 7 Deviate Ravagers, 7 Deviate Vipers, 7 Deviate Shamblers and 7 Deviate Dreadfangs.
@@ -554,7 +596,7 @@ step
     .target Arch Druid Hamuul Runetotem
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1456,78.62,28.56
     >>Talk to |cRXP_FRIENDLY_Arch Druid Hamuul Runetotem|r
@@ -570,7 +612,7 @@ step
     .target Nara Wildmane
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1456,75.65,31.61
     >>Talk to |cRXP_FRIENDLY_Nara Wildmane|r
@@ -578,10 +620,10 @@ step
     .target Nara Wildmane
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1413,46,36.5
-    >>Enter |cRXP_WARN_Wailing Caverns|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Wailing Caverns|r with your group. Quest goals inside:
     *Leaders of the Fang: Bring the Gems of Cobrahn, Anacondra, Pythas and Serpentis to Nara Wildmane in Thunder Bluff.
     .complete 914,1 --Leaders of the Fang
     .complete 914,2 --Leaders of the Fang
@@ -611,10 +653,10 @@ RXPGuides.RegisterGuide([[
 #displayname 20-30 Shadowfang Keep
 #next 24-32 Blackfathom Deeps
 step
-    +|cRXP_WARN_Shadowfang Keep|r (levels 20-30). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
+    +|cRXP_WARN_Shadowfang Keep|r (levels 20-30). Pick up 3 dungeon quests solo (roughly 15 min with the hand-ins), then ONE run with a group (roughly 50 min). No group needed until the run step. Click to start.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1458,53.74,54.46
     >>Talk to |cRXP_FRIENDLY_Keeper Bel'dugur|r
@@ -632,10 +674,10 @@ step
     .target High Executor Hadrec
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1421,44.8,67.8
-    >>Enter |cRXP_WARN_Shadowfang Keep|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Shadowfang Keep|r with your group. Quest goals inside:
     *The Book of Ur: Bring the Book of Ur to Keeper Bel'dugur at the Apothecarium in the Undercity.
     *Arugal Must Die: Kill Arugal and bring his head to Dalar Dawnweaver at the Sepulcher.
     .complete 1013,1 --The Book of Ur
@@ -674,10 +716,10 @@ RXPGuides.RegisterGuide([[
 #displayname 24-32 Blackfathom Deeps
 #next 26-31 Excavation Site: Wetlands
 step
-    +|cRXP_WARN_Blackfathom Deeps|r (levels 24-32). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
+    +|cRXP_WARN_Blackfathom Deeps|r (levels 24-32). Pick up 7 dungeon quests solo (roughly 25 min with the hand-ins), then ONE run with a group (roughly 1 h 40 min). No group needed until the run step. Click to start.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1442,47.36,64.25
     >>Talk to |cRXP_FRIENDLY_Tsunaman|r
@@ -696,7 +738,7 @@ step
     .target Je'neu Sancrea
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1440,14.5,14.2
     >>Inside Blackfathom Deeps: these quests start from a drop or an object in the dungeon
@@ -704,7 +746,7 @@ step
     .accept 78917 >>Accept The Heart of the Void
 step
     .goto 1440,14.5,14.2
-    >>Enter |cRXP_WARN_Blackfathom Deeps|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Blackfathom Deeps|r with your group. Quest goals inside:
     *Blackfathom Villainy: Bring the head of Twilight Lord Kelris to Bashana Runetotem in Thunder Bluff.
     *Amongst the Ruins: Bring the Fathom Core to Je'neu Sancrea at Zoram'gar Outpost, Ashenvale.
     .complete 6561,1 --Blackfathom Villainy
@@ -727,7 +769,7 @@ step
     .target Bashana Runetotem
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1440,11.56,34.29
     >>Talk to |cRXP_FRIENDLY_Je'neu Sancrea|r
@@ -741,10 +783,10 @@ step
     .complete 6563,1 --The Essence of Aku'Mai
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1440,14.5,14.2
-    >>Enter |cRXP_WARN_Blackfathom Deeps|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Blackfathom Deeps|r with your group. Quest goals inside:
     *Allegiance to the Old Gods: Kill Lorgus Jett in Blackfathom Deeps and then return to Je'neu Sancrea in Ashenvale.
     .complete 6565,1 --Allegiance to the Old Gods
 step
@@ -772,11 +814,11 @@ RXPGuides.RegisterGuide([[
 #displayname 26-31 Excavation Site: Wetlands
 #next 28-33 City of Dalaran
 step
-    +|cRXP_WARN_Excavation Site: Wetlands|r (levels 26-31). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
+    +|cRXP_WARN_Excavation Site: Wetlands|r (levels 26-31). Pick up 5 dungeon quests solo (roughly 1 h 10 min with the hand-ins), then ONE run with a group (roughly 1 h 40 min). No group needed until the run step. Click to start.
     *New Forever dungeon above Whelgar's Excavation. Take the winding path up left of Thelgen Rock to the meeting stone.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1417,74.54,35.64
     >>Talk to |cRXP_FRIENDLY_Zaruk|r
@@ -789,7 +831,7 @@ step
     .target Borstan
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1437,48.1,56.5
     >>Loot |cRXP_LOOT_[Titan Relic]|r from |cRXP_ENEMY_Relic Guardian|r, then click it to start the quest
@@ -798,7 +840,7 @@ step
     .mob Relic Guardian
 step
     .goto 1437,48.1,56.5
-    >>Enter |cRXP_WARN_Excavation Site: Wetlands|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Excavation Site: Wetlands|r with your group. Quest goals inside:
     *Elder Knowledge: Take the Titan Relic to the Elder Rise in Thunder Bluff and look for someone who can tell you more about it.
     *Changing Tastes: Enter the Excavation Sites in the Wetlands and bring back Thicket Raptor Meat.
     .complete 95664,1 --Elder Knowledge
@@ -807,10 +849,10 @@ step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
 step
-    .goto 1417,74.54,35.64
-    >>Talk to |cRXP_FRIENDLY_Zaruk|r
+    .goto 1437,51.48,59.3
+    >>Talk to |cRXP_FRIENDLY_Deathstalker Agent|r
     .turnin 95663 >>Turn in Dragonmaw Rumors
-    .target Zaruk
+    .target Deathstalker Agent
 step
     .goto 1456,71.06,34.19
     >>Talk to |cRXP_FRIENDLY_Bashana Runetotem|r
@@ -823,7 +865,12 @@ step
     .target Borstan
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1437,51.48,59.3
+    >>Talk to |cRXP_FRIENDLY_Deathstalker Agent|r
+    .accept 95682 >>Accept Open the Maw
+    .target Deathstalker Agent
 step
     .goto 1456,71.06,34.19
     >>Talk to |cRXP_FRIENDLY_Bashana Runetotem|r
@@ -831,18 +878,22 @@ step
     .target Bashana Runetotem
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1437,48.1,56.5
-    >>Inside Excavation Site: Wetlands: these quests start from a drop or an object in the dungeon
-    .accept 95682 >>Accept Open the Maw
+    >>Enter |cRXP_WARN_Excavation Site: Wetlands|r with your group. Quest goals inside:
+    *Open the Maw: Slay the Dragonmaw forces within the Excavation Site and return to the Deathstalker Agent outside with anything you recover.
+    .complete 95682,1 --Open the Maw
+    .complete 95682,2 --Open the Maw
+    .complete 95682,3 --Open the Maw
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
 step
-    .goto 1437,48.1,56.5
-    >>Inside Excavation Site: Wetlands: these quests start from a drop or an object in the dungeon
+    .goto 1437,51.48,59.3
+    >>Talk to |cRXP_FRIENDLY_Deathstalker Agent|r
     .turnin 95682 >>Turn in Open the Maw
+    .target Deathstalker Agent
 step
     .goto 1412,33.41,22.59
     >>Talk to |cRXP_FRIENDLY_Muln Earthfury|r
@@ -864,11 +915,11 @@ RXPGuides.RegisterGuide([[
 #displayname 28-33 City of Dalaran
 #next 29-38 Gnomeregan
 step
-    +|cRXP_WARN_City of Dalaran|r (levels 28-33). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
+    +|cRXP_WARN_City of Dalaran|r (levels 28-33). Pick up 8 dungeon quests solo (roughly 1 h 25 min with the hand-ins), then ONE run with a group (roughly 1 h 40 min). No group needed until the run step. Click to start.
     *New Forever dungeon. KEY NEEDED: one player with the Dalaran Sewer Key opens it for the group; the key chain is in this guide. Enter through the sewers on the Silverpine side of Lordamere Lake.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1424,61.6,20.85
     >>Talk to |cRXP_FRIENDLY_Magus Wordeen Voidglare|r
@@ -910,28 +961,26 @@ step
     .complete 544,4 --Prison Break In
     .mob Kegan Darkmar
 step
-    .goto 1416,17.6,61.8
-    >>Collect |cRXP_LOOT_[Cracked Sentry Core]|r from |cRXP_ENEMY_Unstable Sentinel|r, |cRXP_ENEMY_Fragmented Sentry|r
-    *Collect 6 Cracked Sentry Cores in the City of Dalaran for Doctor Martin Felben in Undercity.
-    .complete 96988,1 --Source of Power
-    .mob Unstable Sentinel
-    .mob Fragmented Sentry
+    .goto 1416,16.3,89.31
+    >>Collect |cRXP_LOOT_[Grimy Key]|r from |cRXP_PICK_Warden's Footlocker|r
+    *Acquire the Dalaran Sewer Key for Magus Wordeen Voidglare in Tarren Mill.
+    .complete 93680,1 --Key to the City
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1421,69.3,45.6
     >>Inside City of Dalaran: these quests start from a drop or an object in the dungeon
     .accept 96987 >>Accept Opportunistic Education
 step
     .goto 1421,69.3,45.6
-    >>Enter |cRXP_WARN_City of Dalaran|r and run it with a group. Quest goals inside:
-    *Key to the City: Acquire the Dalaran Sewer Key for Magus Wordeen Voidglare in Tarren Mill.
+    >>Enter |cRXP_WARN_City of Dalaran|r with your group. Quest goals inside:
     *The Grave Knight: Defeat Atrexis the Grave Knight in the City of Dalaran for Melisara in Tarren Mill.
     *Opportunistic Education: Collect the Founding of Dalaran from the City of Dalaran for Rexxie Copperclutch near the sewer entrance.
-    .complete 93680,1 --Key to the City
+    *Source of Power: Collect 6 Cracked Sentry Cores in the City of Dalaran for Doctor Martin Felben in Undercity.
     .complete 96986,1 --The Grave Knight
     .complete 96987,1 --Opportunistic Education
+    .complete 96988,1 --Source of Power
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
@@ -957,20 +1006,20 @@ step
     .target Doctor Martin Felben
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1424,61.6,20.85
     >>Talk to |cRXP_FRIENDLY_Magus Wordeen Voidglare|r
     .accept 545 >>Accept Dalaran Patrols
     .target Magus Wordeen Voidglare
 step
-    .goto 1416,15.92,75.52
+    .goto 1416,22.8,57.2
     >>Kill |cRXP_ENEMY_Dalaran Summoner|r
     *Kill 6 Dalaran Summoners and 12 Elemental Slaves, then return to Magus Voidglare in Tarren Mill.
     .complete 545,1 --Dalaran Patrols
     .mob Dalaran Summoner
 step
-    .goto 1416,22.41,58.63
+    .goto 1416,24.62,54.86
     >>Kill |cRXP_ENEMY_Elemental Slave|r
     *Kill 6 Dalaran Summoners and 12 Elemental Slaves, then return to Magus Voidglare in Tarren Mill.
     .complete 545,2 --Dalaran Patrols
@@ -985,39 +1034,42 @@ step
     .target Magus Wordeen Voidglare
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1424,61.6,20.85
     >>Talk to |cRXP_FRIENDLY_Magus Wordeen Voidglare|r
     .accept 92434 >>Accept Blood in the Streets
     .target Magus Wordeen Voidglare
 step
-    .goto 1421,69.15,45.21
-    >>Find a way into Dalaran along the Lordamere Lake
+    .goto 1421,68.62,45.13
+    >>Kill |cRXP_ENEMY_Image of Archmage Modera|r
     *Find a way into Dalaran along the Lordamere Lake.
     .complete 92434,1 --Blood in the Streets
+    .mob Image of Archmage Modera
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
 step
-    .goto 1421,68.6,45.1
+    .goto 1421,68.62,45.13
     >>Talk to |cRXP_FRIENDLY_Image of Archmage Modera|r
     .turnin 92434 >>Turn in Blood in the Streets
     .target Image of Archmage Modera
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
-    .goto 1421,68.6,45.1
+    .goto 1421,68.62,45.13
     >>Talk to |cRXP_FRIENDLY_Image of Archmage Modera|r
     .accept 96984 >>Accept Heart of Disruption
     .target Image of Archmage Modera
 step
-    .goto 1416,15.2,55.9
-    >>Collect |cRXP_LOOT_[Arcane Mote]|r from |cRXP_ENEMY_Shade of the Archmage|r
-    *Collect the Arcane Mote in the City of Dalaran for Magus Wordeen Voidglare in Tarren Mill.
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
+step
+    .goto 1421,69.3,45.6
+    >>Enter |cRXP_WARN_City of Dalaran|r with your group. Quest goals inside:
+    *Heart of Disruption: Collect the Arcane Mote in the City of Dalaran for Magus Wordeen Voidglare in Tarren Mill.
     .complete 96984,1 --Heart of Disruption
-    .mob Shade of the Archmage
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
@@ -1042,10 +1094,10 @@ RXPGuides.RegisterGuide([[
 #displayname 29-38 Gnomeregan
 #next 29-38 Razorfen Kraul
 step
-    +|cRXP_WARN_Gnomeregan|r (levels 29-38). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
+    +|cRXP_WARN_Gnomeregan|r (levels 29-38). Pick up 13 dungeon quests solo (roughly 1 h with the hand-ins), then ONE run with a group (roughly 1 h 40 min). No group needed until the run step. Click to start.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1454,75.99,25.41
     >>Talk to |cRXP_FRIENDLY_Nogg|r
@@ -1058,7 +1110,7 @@ step
     .target Sovik
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1426,24.3,39.8
     >>Inside Gnomeregan: these quests start from a drop or an object in the dungeon
@@ -1075,7 +1127,7 @@ step
     .mob Dark Iron Agent
 step
     .goto 1426,24.3,39.8
-    >>Enter |cRXP_WARN_Gnomeregan|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Gnomeregan|r with your group. Quest goals inside:
     *Rig Wars: Retrieve the Rig Blueprints and Thermaplugg's Safe Combination from Gnomeregan and bring them to Nogg in Orgrimmar.
     *The Sparklematic 5200!: Insert a Grime-Encrusted Item into the Sparklematic 5200, and be sure to have three silver coins to start the machine.
     *The Sparklematic 5200!: Insert a Grime-Encrusted Item into the Sparklematic 5200, and be sure to have three silver coins to start the machine.
@@ -1112,7 +1164,7 @@ step
     .target Scooty
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1434,27.6,77.48
     >>Talk to |cRXP_FRIENDLY_Scooty|r
@@ -1120,7 +1172,7 @@ step
     .target Scooty
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1426,24.3,39.8
     >>Inside Gnomeregan: these quests start from a drop or an object in the dungeon
@@ -1161,12 +1213,12 @@ RXPGuides.RegisterGuide([[
 #subgroup Levels 20-29
 #name 29-38 Razorfen Kraul
 #displayname 29-38 Razorfen Kraul
-#next 30-46 Scarlet Monastery
+#next 30-38 Scarlet Monastery Graveyard pre-quests
 step
-    +|cRXP_WARN_Razorfen Kraul|r (levels 29-38). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
+    +|cRXP_WARN_Razorfen Kraul|r (levels 29-38). Pick up 4 dungeon quests solo (roughly 1 h 10 min with the hand-ins), then ONE run with a group (roughly 50 min). No group needed until the run step. Click to start.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1456,35.97,59.92
     >>Talk to |cRXP_FRIENDLY_Auld Stonespire|r
@@ -1199,14 +1251,14 @@ step
     .complete 1221,2 --Blueleaf Tubers
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1413,42.9,90.2
     >>Inside Razorfen Kraul: these quests start from a drop or an object in the dungeon
     .accept 1144 >>Accept Willix the Importer
 step
     .goto 1413,42.9,90.2
-    >>Enter |cRXP_WARN_Razorfen Kraul|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Razorfen Kraul|r with your group. Quest goals inside:
     *A Vengeful Fate: Bring Razorflank's Heart to Auld Stonespire in Thunder Bluff.
     *Going, Going, Guano!: Bring 1 pile of Kraul Guano to Master Apothecary Faranell in the Undercity.
     *Blueleaf Tubers: Grab a Crate with Holes.
@@ -1247,16 +1299,109 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 30-39
-#name 30-46 Scarlet Monastery
-#displayname 30-46 Scarlet Monastery
-#next 35-40 The Drowned City
+#name 30-38 Scarlet Monastery Graveyard pre-quests
+#displayname 30-38 Scarlet Monastery Graveyard pre-quests
+#next 30-38 Scarlet Monastery Graveyard
 step
-    +|cRXP_WARN_Scarlet Monastery|r (levels 30-46). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
+    +|cRXP_WARN_Scarlet Monastery Graveyard: pre-quests|r. 1 quests, solo (no group needed), roughly 5 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Going, Going, Guano!
+step
+    .goto 1458,48.82,69.28
+    >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
+    .accept 1109 >>Accept Going, Going, Guano!
+    .target Master Apothecary Faranell
+step
+    >>Collect |cRXP_LOOT_[Kraul Guano]|r from |cRXP_ENEMY_Blind Hunter|r, |cRXP_ENEMY_Greater Kraul Bat|r
+    *Bring 1 pile of Kraul Guano to Master Apothecary Faranell in the Undercity.
+    .complete 1109,1 --Going, Going, Guano!
+    .mob Blind Hunter
+    .mob Greater Kraul Bat
+step
+    .goto 1458,48.82,69.28
+    >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
+    .turnin 1109 >>Turn in Going, Going, Guano!
+    .target Master Apothecary Faranell
+step
+    +|cRXP_WARN_Pre-quests done.|r Next: Scarlet Monastery Graveyard itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 30-39
+#name 30-38 Scarlet Monastery Graveyard
+#displayname 30-38 Scarlet Monastery Graveyard
+#next 33-41 Scarlet Monastery Library pre-quests
+step
+    +|cRXP_WARN_Scarlet Monastery Graveyard|r (levels 30-38). Pick up 2 dungeon quests solo (roughly 25 min with the hand-ins), then ONE run with a group (roughly 25 min). No group needed until the run step. Click to start.
+    *Door: Graveyard: the open portal farthest left. No key.
     *Four wings: Graveyard 30-38, Library 33-41, Armory 36-44, Cathedral 38-46.
-    *Pre-quests in this guide: Going, Going, Guano!, Test of Faith, Test of Endurance, Test of Strength, Test of Lore, Test of Lore, Test of Lore, Test of Lore
+    *Its 1 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
 step
     #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1458,48.82,69.28
+    >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
+    .accept 1113 >>Accept Hearts of Zeal
+    .target Master Apothecary Faranell
+step
+    .goto 1420,81.36,33.72
+    >>Collect |cRXP_LOOT_[Heart of Zeal]|r from |cRXP_ENEMY_Abominable Snowman|r, |cRXP_ENEMY_Herod|r, |cRXP_ENEMY_Arcanist Doan|r
+    *Master Apothecary Faranell in the Undercity wants 20 Hearts of Zeal.
+    .complete 1113,1 --Hearts of Zeal
+    .mob Abominable Snowman
+    .mob Herod
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
+step
+    .goto 1420,82.6,33.8
+    >>Inside Scarlet Monastery Graveyard: these quests start from a drop or an object in the dungeon
+    .accept 1051 >>Accept Vorrel's Revenge
+step
+    #completewith next
+    +|cRXP_WARN_Outside: collect what the quests you got inside need|r
+step
+    .goto 1416,32.33,32.78
+    >>Collect |cRXP_LOOT_[Vorrel's Wedding Ring]|r from |cRXP_ENEMY_Nancy Vishas|r
+    *Return Vorrel Sengutz's wedding ring to Monika Sengutz in Tarren Mill.
+    .complete 1051,1 --Vorrel's Revenge
+    .mob Nancy Vishas
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1424,62.67,18.88
+    >>Talk to |cRXP_FRIENDLY_Monika Sengutz|r
+    .turnin 1051 >>Turn in Vorrel's Revenge
+    .target Monika Sengutz
+step
+    .goto 1458,48.82,69.28
+    >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
+    .turnin 1113 >>Turn in Hearts of Zeal
+    .target Master Apothecary Faranell
+step
+    .goto 1420,82.6,33.8
+    +Dungeon entrance: Scarlet Monastery Graveyard. Done with this dungeon? Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 30-39
+#name 33-41 Scarlet Monastery Library pre-quests
+#displayname 33-41 Scarlet Monastery Library pre-quests
+#next 33-41 Scarlet Monastery Library
+step
+    +|cRXP_WARN_Scarlet Monastery Library: pre-quests|r. 7 quests, solo (no group needed), roughly 1 h. The run guide comes after this one. Click to start.
+    *Pre-quests: Test of Faith, Test of Endurance, Test of Strength, Test of Lore
 step
     .goto 1441,53.95,41.49
     >>Talk to |cRXP_FRIENDLY_Dorn Plainstalker|r
@@ -1303,22 +1448,6 @@ step
     .accept 1154 >>Accept Test of Lore
     .target Braug Dimspirit
 step
-    .goto 1458,48.82,69.28
-    >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
-    .accept 1109 >>Accept Going, Going, Guano!
-    .target Master Apothecary Faranell
-step
-    >>Collect |cRXP_LOOT_[Kraul Guano]|r from |cRXP_ENEMY_Blind Hunter|r, |cRXP_ENEMY_Greater Kraul Bat|r
-    *Bring 1 pile of Kraul Guano to Master Apothecary Faranell in the Undercity.
-    .complete 1109,1 --Going, Going, Guano!
-    .mob Blind Hunter
-    .mob Greater Kraul Bat
-step
-    .goto 1458,48.82,69.28
-    >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
-    .turnin 1109 >>Turn in Going, Going, Guano!
-    .target Master Apothecary Faranell
-step
     .goto 1440,75.57,74.37
     >>Collect |cRXP_LOOT_[Legacy of the Aspects]|r from |cRXP_PICK_The Legacy of the Aspects|r
     *Find the Legacy of the Aspects and return it to Braug Dimspirit near the entrance to Talondeep Path in Stonetalon Mountains.
@@ -1341,18 +1470,33 @@ step
     .turnin 1159 >>Turn in Test of Lore
     .target Parqual Fintallas
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Scarlet Monastery Library itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 30-39
+#name 33-41 Scarlet Monastery Library
+#displayname 33-41 Scarlet Monastery Library
+#next 35-40 The Drowned City pre-quests
+step
+    +|cRXP_WARN_Scarlet Monastery Library|r (levels 33-41). Pick up 3 dungeon quests solo (roughly 35 min with the hand-ins), then ONE run with a group (roughly 35 min). No group needed until the run step. Click to start.
+    *Door: Library: the open portal farthest right inside the main building. No key. Doan's Strongbox (behind Arcanist Doan) drops The Scarlet Key for Armory and Cathedral.
+    *Four wings: Graveyard 30-38, Library 33-41, Armory 36-44, Cathedral 38-46.
+    *Its 7 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+    *Keep for a later wing (hand in after it): Into The Scarlet Monastery
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1458,57.8,65.42
     >>Talk to |cRXP_FRIENDLY_Parqual Fintallas|r
     .accept 1160 >>Accept Test of Lore
     .target Parqual Fintallas
-step
-    .goto 1458,48.82,69.28
-    >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
-    .accept 1113 >>Accept Hearts of Zeal
-    .target Master Apothecary Faranell
 step
     .goto 1458,56.25,92.2
     >>Talk to |cRXP_FRIENDLY_Varimathras|r
@@ -1364,71 +1508,33 @@ step
     .accept 1049 >>Accept Compendium of the Fallen << Orc/Tauren/Troll
     .target Sage Truthseeker
 step
-    .goto 1420,81.36,33.72
-    >>Collect |cRXP_LOOT_[Heart of Zeal]|r from |cRXP_ENEMY_Abominable Snowman|r, |cRXP_ENEMY_Herod|r, |cRXP_ENEMY_Arcanist Doan|r
-    *Master Apothecary Faranell in the Undercity wants 20 Hearts of Zeal.
-    .complete 1113,1 --Hearts of Zeal
-    .mob Abominable Snowman
-    .mob Herod
-step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1420,82.6,33.8
-    >>Inside Scarlet Monastery: these quests start from a drop or an object in the dungeon
-    .accept 1051 >>Accept Vorrel's Revenge
-step
-    .goto 1420,82.6,33.8
-    >>Enter |cRXP_WARN_Scarlet Monastery|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Scarlet Monastery Library|r with your group. Quest goals inside:
     *Into The Scarlet Monastery: Kill High Inquisitor Whitemane, Scarlet Commander Mograine, Herod, the Scarlet Champion and Houndmaster Loksey and then report back to Varimathras in the Undercity.
     *Compendium of the Fallen: Retrieve the Compendium of the Fallen from the Monastery in Tirisfal Glades and return to Sage Truthseeker in Thunder Bluff.
     *Test of Lore: Find The Beginnings of the Undead Threat, and return it to Parqual Fintallas in Undercity.
-    .complete 1048,1 --Into The Scarlet Monastery
-    .complete 1048,2 --Into The Scarlet Monastery
-    .complete 1048,3 --Into The Scarlet Monastery
     .complete 1048,4 --Into The Scarlet Monastery
     .complete 1049,1 << Orc/Tauren/Troll --Compendium of the Fallen
     .complete 1160,1 --Test of Lore
 step
     #completewith next
-    +|cRXP_WARN_Outside: collect what the quests you got inside need|r
-step
-    .goto 1416,32.33,32.78
-    >>Collect |cRXP_LOOT_[Vorrel's Wedding Ring]|r from |cRXP_ENEMY_Nancy Vishas|r
-    *Return Vorrel Sengutz's wedding ring to Monika Sengutz in Tarren Mill.
-    .complete 1051,1 --Vorrel's Revenge
-    .mob Nancy Vishas
-step
-    #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
-step
-    .goto 1458,56.25,92.2
-    >>Talk to |cRXP_FRIENDLY_Varimathras|r
-    .turnin 1048 >>Turn in Into The Scarlet Monastery
-    .target Varimathras
-step
-    .goto 1458,48.82,69.28
-    >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
-    .turnin 1113 >>Turn in Hearts of Zeal
-    .target Master Apothecary Faranell
-step
-    .goto 1458,57.8,65.42
-    >>Talk to |cRXP_FRIENDLY_Parqual Fintallas|r
-    .turnin 1160 >>Turn in Test of Lore
-    .target Parqual Fintallas
 step
     .goto 1456,34.4,46.87
     >>Talk to |cRXP_FRIENDLY_Sage Truthseeker|r
     .turnin 1049 >>Turn in Compendium of the Fallen << Orc/Tauren/Troll
     .target Sage Truthseeker
 step
-    .goto 1424,62.67,18.88
-    >>Talk to |cRXP_FRIENDLY_Monika Sengutz|r
-    .turnin 1051 >>Turn in Vorrel's Revenge
-    .target Monika Sengutz
+    .goto 1458,57.8,65.42
+    >>Talk to |cRXP_FRIENDLY_Parqual Fintallas|r
+    .turnin 1160 >>Turn in Test of Lore
+    .target Parqual Fintallas
 step
     .goto 1420,82.6,33.8
-    +Dungeon entrance: Scarlet Monastery. Done with this dungeon? Click to finish.
+    +Dungeon entrance: Scarlet Monastery Library. Done with this dungeon? Click to finish.
 ]])
 
 RXPGuides.RegisterGuide([[
@@ -1438,16 +1544,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 30-39
-#name 35-40 The Drowned City
-#displayname 35-40 The Drowned City
-#next 37-46 Razorfen Downs
+#name 35-40 The Drowned City pre-quests
+#displayname 35-40 The Drowned City pre-quests
+#next 35-40 The Drowned City
 step
-    +|cRXP_WARN_The Drowned City|r (levels 35-40). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *New Forever dungeon, underwater off the west coast of Stranglethorn, west of Grom'gol. Bring water breathing. Nearest flights: Booty Bay, Grom'gol.
-    *Pre-quests in this guide: The Vile Reef, The Gurubashi Legends of Old, Locating the Lost City, Enemies in the Water
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_The Drowned City: pre-quests|r. 4 quests, solo (no group needed), roughly 20 min. The run guide comes after this one. Click to start.
+    *Pre-quests: The Vile Reef, The Gurubashi Legends of Old, Locating the Lost City, Enemies in the Water
 step
     .goto 1434,32.27,27.71
     >>Talk to |cRXP_FRIENDLY_Kin'weelay|r
@@ -1485,7 +1587,7 @@ step
     .accept 95770 >>Accept Locating the Lost City
     .target Kin'weelay
 step
-    .goto 1434,22.85,25.84
+    .goto 1434,22.7,25.92
     >>Collect |cRXP_LOOT_[Brinescale Trident]|r from |cRXP_ENEMY_Brinescale Skirmisher|r. Find the Drowned City Entrance
     *Gather 10 Brinescale Tridents from Brinescale Skirmishers.
     *Explore the Vile Reef and find the cavern entrance.
@@ -1503,8 +1605,26 @@ step
     .turnin 95770 >>Turn in Locating the Lost City
     .target Kin'weelay
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: The Drowned City itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 30-39
+#name 35-40 The Drowned City
+#displayname 35-40 The Drowned City
+#next 36-44 Scarlet Monastery Armory
+step
+    +|cRXP_WARN_The Drowned City|r (levels 35-40). Pick up 5 dungeon quests solo (roughly 35 min with the hand-ins), then ONE run with a group (roughly 1 h). No group needed until the run step. Click to start.
+    *New Forever dungeon, underwater off the west coast of Stranglethorn, west of Grom'gol. Bring water breathing. Nearest flights: Booty Bay, Grom'gol.
+    *Its 4 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1434,32.27,27.71
     >>Talk to |cRXP_FRIENDLY_Kin'weelay|r
@@ -1528,10 +1648,10 @@ step
     .target Mazu'kon
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1434,21.4,27.9
-    >>Enter |cRXP_WARN_The Drowned City|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_The Drowned City|r with your group. Quest goals inside:
     *The Drowned City: Use the hide and charcoal to create rubbings of the tablets found in the Drowned City.
     *The Only Good Brinescale...: Slay Var'Taka in the Drowned City.
     *Shady Saltseers: Collect 10 Voodoo Infused Artifacts from Saltseer pirates in the Drowned City.
@@ -1582,24 +1702,55 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 30-39
-#name 37-46 Razorfen Downs
-#displayname 37-46 Razorfen Downs
-#next 40-45 Krol'dok Stronghold
+#name 36-44 Scarlet Monastery Armory
+#displayname 36-44 Scarlet Monastery Armory
+#next 37-46 Razorfen Downs pre-quests
 step
-    +|cRXP_WARN_Razorfen Downs|r (levels 37-46). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: A Brief History Lesson, Forlorn Gardens, Meeting the Magister, Rot and Regret, Word of the Woods, Passing the Blame, Fragments of the Pylons, Powering the Pylons
+    +|cRXP_WARN_Scarlet Monastery Armory|r (levels 36-44). Pick up 0 dungeon quests solo (roughly 5 min with the hand-ins), then ONE run with a group (roughly 30 min). No group needed until the run step. Click to start.
+    *Door: Armory: the closed door on the right as you enter. Needs The Scarlet Key (Library).
+    *Four wings: Graveyard 30-38, Library 33-41, Armory 36-44, Cathedral 38-46.
+    *Already picked up for an earlier wing: Into The Scarlet Monastery
+    *Keep for a later wing (hand in after it): Into The Scarlet Monastery
 step
     #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
+step
+    .goto 1420,82.6,33.8
+    >>Enter |cRXP_WARN_Scarlet Monastery Armory|r with your group. Quest goals inside:
+    *Into The Scarlet Monastery: Kill High Inquisitor Whitemane, Scarlet Commander Mograine, Herod, the Scarlet Champion and Houndmaster Loksey and then report back to Varimathras in the Undercity.
+    .complete 1048,3 --Into The Scarlet Monastery
+step
+    .goto 1420,82.6,33.8
+    +Dungeon entrance: Scarlet Monastery Armory. Done with this dungeon? Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 30-39
+#name 37-46 Razorfen Downs pre-quests
+#displayname 37-46 Razorfen Downs pre-quests
+#next 37-46 Razorfen Downs
+step
+    +|cRXP_WARN_Razorfen Downs: pre-quests|r. 8 quests, solo (no group needed), roughly 45 min. The run guide comes after this one. Click to start.
+    *Pre-quests: A Brief History Lesson, Forlorn Gardens, Meeting the Magister, Rot and Regret, Word of the Woods, Passing the Blame, Fragments of the Pylons, Powering the Pylons
 step
     .goto 2652,35.17,46.61
     >>Talk to |cRXP_FRIENDLY_Mordent Evenshade|r
     .accept 96010 >>Accept Fragments of the Pylons
     .target Mordent Evenshade
 step
-    >>Collect |cRXP_LOOT_[Pylon Fragment]|r. Collect |cRXP_LOOT_[Pylon Shard]|r
+    .goto 1443,68.05,78.92
+    >>Collect |cRXP_LOOT_[Pylon Fragment]|r from |cRXP_PICK_Pylon Shard|r
     *Recover shards and fragments of the pylons, found guarded at the Magram and Gelkis villages. Return them to Mordent Evenshade.
     .complete 96010,1 --Fragments of the Pylons
+step
+    .goto 1443,36.18,85.64
+    >>Collect |cRXP_LOOT_[Pylon Shard]|r from |cRXP_PICK_Pylon Shard|r
+    *Recover shards and fragments of the pylons, found guarded at the Magram and Gelkis villages. Return them to Mordent Evenshade.
     .complete 96010,2 --Fragments of the Pylons
 step
     .goto 2652,35.17,46.61
@@ -1648,7 +1799,7 @@ step
     .target Woodwyrd
 step
     .goto 2652,69.66,71.78
-    >>Kill |cRXP_ENEMY_Woodwyrd|r. Collect |cRXP_LOOT_[Vial of Earth Song Water]|r
+    >>Kill |cRXP_ENEMY_Woodwyrd|r. Collect |cRXP_LOOT_[Vial of Earth Song Water]|r from |cRXP_PICK_Earth Song Splash|r
     *Venture to Maraudon and recover a Vial of Earth Song Water and return it to Woodwyrd at the Forlorn Gardens in Desolace.
     *|cRXP_WARN_Elite targets here. Group up or skip.|r
     .complete 93404,1 --Rot and Regret
@@ -1666,8 +1817,25 @@ step
     .turnin 93601 >>Turn in Passing the Blame
     .target Kog'thug the Brave
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Razorfen Downs itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 30-39
+#name 37-46 Razorfen Downs
+#displayname 37-46 Razorfen Downs
+#next 38-46 Scarlet Monastery Cathedral
+step
+    +|cRXP_WARN_Razorfen Downs|r (levels 37-46). Pick up 8 dungeon quests solo (roughly 2 h 20 min with the hand-ins), then ONE run with a group (roughly 2 h). No group needed until the run step. Click to start.
+    *Its 8 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 2652,72.73,31.17
     >>Talk to |cRXP_FRIENDLY_Kog'thug the Brave|r
@@ -1710,8 +1878,14 @@ step
     .complete 6626,2 --A Host of Evil
     .mob Razorfen Thornweaver
 step
+    .goto 1413,48.84,93.33
+    >>Collect |cRXP_LOOT_[Virulent Blood of Agamaggan]|r from |cRXP_ENEMY_Virulent Blood of Agamaggan|r
+    *Venture to Razorfen Downs and acquire Virulent Blood of Agamaggan, then return it to Kog'thug the Brave at Bristleback Retreat in the Desolace. Kog'thug felt it worth reminding that the Blood of Agamaggan inside Razorfen Kraul would not be sufficient.
+    .complete 93604,1 --Agamaggan's Blood
+    .mob Virulent Blood of Agamaggan
+step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1413,49,93.9
     >>Inside Razorfen Downs: these quests start from a drop or an object in the dungeon
@@ -1724,12 +1898,10 @@ step
     .mob Charlga Razorflank
 step
     .goto 1413,49,93.9
-    >>Enter |cRXP_WARN_Razorfen Downs|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Razorfen Downs|r with your group. Quest goals inside:
     *Bring the End: Andrew Brownell wants you to kill Amnennar the Coldbringer and return his skull.
-    *Agamaggan's Blood: Venture to Razorfen Downs and acquire Virulent Blood of Agamaggan, then return it to Kog'thug the Brave at Bristleback Retreat in the Desolace. Kog'thug felt it worth reminding that the Blood of Agamaggan inside Razorfen Kraul would not be sufficient.
     *The Coldbringer's Eye: Recover The Coldbringer's Eye from Razorfen Downs.
     .complete 3341,1 --Bring the End
-    .complete 93604,1 --Agamaggan's Blood
     .complete 97196,1 --The Coldbringer's Eye
 step
     #completewith next
@@ -1765,7 +1937,7 @@ step
     .target Sutara Plainstalker
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1458,56.25,92.2
     >>Talk to |cRXP_FRIENDLY_Varimathras|r
@@ -1779,7 +1951,7 @@ step
     .mob Ambassador Malcin
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1413,49,93.9
     >>Inside Razorfen Downs: these quests start from a drop or an object in the dungeon
@@ -1807,24 +1979,57 @@ RXPGuides.RegisterGuide([[
 << Horde
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
-#subgroup Levels 40-49
-#name 40-45 Krol'dok Stronghold
-#displayname 40-45 Krol'dok Stronghold
-#next 41-51 Uldaman
+#subgroup Levels 30-39
+#name 38-46 Scarlet Monastery Cathedral
+#displayname 38-46 Scarlet Monastery Cathedral
+#next 40-45 Krol'dok Stronghold pre-quests
 step
-    +|cRXP_WARN_Krol'dok Stronghold|r (levels 40-45). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *New Forever dungeon in the Riverglades, on the hill over Sunnyglade next to the closed main gates.
-    *Pre-quests in this guide: The Wayward Warrior, Carving a Path, Break Their Chains, Bring Me His Head, It Is Time, Brother..., Spread the Word, Land of Giants, Might Makes Right, Unworthy Champion, Twilight No More!, Clugfist's Decree
+    +|cRXP_WARN_Scarlet Monastery Cathedral|r (levels 38-46). Pick up 0 dungeon quests solo (roughly 5 min with the hand-ins), then ONE run with a group (roughly 40 min). No group needed until the run step. Click to start.
+    *Door: Cathedral: the closed door on the left as you enter. Needs The Scarlet Key (Library).
+    *Four wings: Graveyard 30-38, Library 33-41, Armory 36-44, Cathedral 38-46.
+    *Already picked up for an earlier wing: Into The Scarlet Monastery
 step
     #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
+step
+    .goto 1420,82.6,33.8
+    >>Enter |cRXP_WARN_Scarlet Monastery Cathedral|r with your group. Quest goals inside:
+    *Into The Scarlet Monastery: Kill High Inquisitor Whitemane, Scarlet Commander Mograine, Herod, the Scarlet Champion and Houndmaster Loksey and then report back to Varimathras in the Undercity.
+    .complete 1048,1 --Into The Scarlet Monastery
+    .complete 1048,2 --Into The Scarlet Monastery
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1458,56.25,92.2
+    >>Talk to |cRXP_FRIENDLY_Varimathras|r
+    .turnin 1048 >>Turn in Into The Scarlet Monastery
+    .target Varimathras
+step
+    .goto 1420,82.6,33.8
+    +Dungeon entrance: Scarlet Monastery Cathedral. Done with this dungeon? Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 40-49
+#name 40-45 Krol'dok Stronghold pre-quests
+#displayname 40-45 Krol'dok Stronghold pre-quests
+#next 40-45 Krol'dok Stronghold
+step
+    +|cRXP_WARN_Krol'dok Stronghold: pre-quests|r. 11 quests, solo (no group needed), roughly 55 min. The run guide comes after this one. Click to start.
+    *Pre-quests: The Wayward Warrior, Carving a Path, Break Their Chains, Bring Me His Head, It Is Time, Brother..., Spread the Word, Land of Giants, Might Makes Right, Unworthy Champion, Twilight No More!, Clugfist's Decree
 step
     .goto 2548,49.95,46.99
     >>Talk to |cRXP_FRIENDLY_Clubtoe|r
     .accept 95427 >>Accept Twilight No More!
     .target Clubtoe
 step
-    .goto 2548,45.01,51.17
+    .goto 2548,45.03,48.68
     >>Collect |cRXP_LOOT_[Chogg's Head]|r from |cRXP_ENEMY_Chogg'Zac|r. Collect |cRXP_LOOT_[Zac's Head]|r from |cRXP_ENEMY_Chogg'Zac|r
     *Kill Chogg'Zac in the Sunnyglade cave and collect their heads for Clubtoe.
     .complete 95427,1 --Twilight No More!
@@ -1850,7 +2055,7 @@ step
     .accept 95425 >>Accept Unworthy Champion
     .target Clugfist
 step
-    .goto 2548,75.33,30.99
+    .goto 2548,74.1,31.67
     >>Kill |cRXP_ENEMY_Twilight Mauler|r. Kill |cRXP_ENEMY_Twilight Firecaller|r. Collect |cRXP_LOOT_[Skullbasher]|r from |cRXP_ENEMY_Klunk|r
     *Kill 7 Twilight Maulers and 7 Twilight Firecallers for Clugfist in Bolder'ok.
     *Collect Skullthumper from Klunk for Clugfist in Bolder'ok.
@@ -1881,7 +2086,7 @@ step
     .accept 94748 >>Accept Break Their Chains
     .target Da'grosh
 step
-    .goto 2548,29.12,42.5
+    .goto 2548,29.04,42.73
     >>Kill |cRXP_ENEMY_Twilight Fanatic|r. Kill |cRXP_ENEMY_Twilight Corrupter|r. Kill |cRXP_ENEMY_Twilight Champion|r. Kill |cRXP_ENEMY_Rog'mar Scout|r
     *Defeat 8 Twilight Fanatics, 8 Twilight Corrupters, and 8 Twilight Champions within the Twilight's Shroud for Da'grosh.
     *Rescue 5 Rog'mar Scouts within the Twilight's Shroud for Da'grosh.
@@ -1918,8 +2123,26 @@ step
     .turnin 95278 >>Turn in It Is Time, Brother...
     .target Krom'rosh
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Krol'dok Stronghold itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 40-49
+#name 40-45 Krol'dok Stronghold
+#displayname 40-45 Krol'dok Stronghold
+#next 41-51 Uldaman pre-quests
+step
+    +|cRXP_WARN_Krol'dok Stronghold|r (levels 40-45). Pick up 5 dungeon quests solo (roughly 5 min with the hand-ins), then ONE run with a group (roughly 1 h 10 min). No group needed until the run step. Click to start.
+    *New Forever dungeon in the Riverglades, on the hill over Sunnyglade next to the closed main gates.
+    *Its 11 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 2548,59.37,45.6
     >>Talk to |cRXP_FRIENDLY_Krom'rosh|r
@@ -1937,7 +2160,7 @@ step
     .target Da'grosh
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 2548,39,39
     >>Loot |cRXP_LOOT_[Krol'dok Moulding]|r from |cRXP_ENEMY_Tunk|r, then click it to start the quest
@@ -1950,7 +2173,7 @@ step
     .accept 95056 >>Accept Krol'dok No More!
 step
     .goto 2548,39,39
-    >>Enter |cRXP_WARN_Krol'dok Stronghold|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Krol'dok Stronghold|r with your group. Quest goals inside:
     *Eye of Mugg: Infiltrate Krol'dok Stronghold and return to Krom'rosh with proof of their leader's demise.
     *Tome of Twilight: Recover the Tome of Twilight from Krol'dok Stronghold.
     *A Token of Vengeance: Collect 15 Cultist Ears from the Twilight's Hammer in Krol'dok Stronghold.
@@ -1996,16 +2219,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 40-49
-#name 41-51 Uldaman
-#displayname 41-51 Uldaman
-#next 44-54 Zul'Farrak
+#name 41-51 Uldaman pre-quests
+#displayname 41-51 Uldaman pre-quests
+#next 41-51 Uldaman
 step
-    +|cRXP_WARN_Uldaman|r (levels 41-51). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Forever: Annora inside Uldaman is the Artisan Enchanting trainer.
-    *Pre-quests in this guide: Badlands Reagent Run
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Uldaman: pre-quests|r. 1 quests, solo (no group needed), roughly 20 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Badlands Reagent Run
 step
     .goto 1418,2.42,46.06
     >>Talk to |cRXP_FRIENDLY_Jarkal Mossmeld|r
@@ -2038,8 +2257,26 @@ step
     .turnin 2258 >>Turn in Badlands Reagent Run
     .target Jarkal Mossmeld
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Uldaman itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 40-49
+#name 41-51 Uldaman
+#displayname 41-51 Uldaman
+#next 44-54 Zul'Farrak pre-quests
+step
+    +|cRXP_WARN_Uldaman|r (levels 41-51). Pick up 10 dungeon quests solo (roughly 1 h 35 min with the hand-ins), then ONE run with a group (roughly 3 h 30 min). No group needed until the run step. Click to start.
+    *Forever: Annora inside Uldaman is the Artisan Enchanting trainer.
+    *Its 1 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1418,2.42,46.06
     >>Talk to |cRXP_FRIENDLY_Jarkal Mossmeld|r
@@ -2077,14 +2314,14 @@ step
     .complete 2342,1 --Reclaimed Treasures
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1418,44.6,12.1
     >>Inside Uldaman: these quests start from a drop or an object in the dungeon
     .accept 2278 >>Accept The Platinum Discs
 step
     .goto 1418,44.6,12.1
-    >>Enter |cRXP_WARN_Uldaman|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Uldaman|r with your group. Quest goals inside:
     *Uldaman Reagent Run: Bring 12 Magenta Fungus Caps to Jarkal Mossmeld in Kargath.
     *Necklace Recovery: Look for a valuable necklace within the Uldaman dig site and bring it back to Dran Droffers in Orgrimmar. The necklace may be damaged.
     *Power Stones: Bring 8 Dentrium Power Stones and 8 An'Alleum Power Stones to Rigglefuzz in the Badlands.
@@ -2126,7 +2363,7 @@ step
     .target Patrick Garrett
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1454,59.49,36.57
     >>Talk to |cRXP_FRIENDLY_Dran Droffers|r
@@ -2134,7 +2371,7 @@ step
     .target Dran Droffers
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1418,44.6,12.1
     >>Inside Uldaman: these quests start from a drop or an object in the dungeon
@@ -2154,7 +2391,7 @@ step
     .target Dran Droffers
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 3)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 3)|r
 step
     .goto 1418,44.6,12.1
     >>Inside Uldaman: these quests start from a drop or an object in the dungeon
@@ -2169,7 +2406,7 @@ step
     .target Jarkal Mossmeld
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1418,2.42,46.06
     >>Talk to |cRXP_FRIENDLY_Jarkal Mossmeld|r
@@ -2201,15 +2438,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 40-49
-#name 44-54 Zul'Farrak
-#displayname 44-54 Zul'Farrak
-#next 46-55 Maraudon
+#name 44-54 Zul'Farrak pre-quests
+#displayname 44-54 Zul'Farrak pre-quests
+#next 44-54 Zul'Farrak
 step
-    +|cRXP_WARN_Zul'Farrak|r (levels 44-54). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: Venom Bottles, Undamaged Venom Sac, Consult Master Gadrin, Screecher Spirits
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Zul'Farrak: pre-quests|r. 4 quests, solo (no group needed), roughly 1 h 5 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Venom Bottles, Undamaged Venom Sac, Consult Master Gadrin, Screecher Spirits
 step
     .goto 1446,66.99,22.36
     >>Talk to |cRXP_FRIENDLY_Yeh'kinya|r
@@ -2253,8 +2487,25 @@ step
     .turnin 2935 >>Turn in Consult Master Gadrin
     .target Master Gadrin
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Zul'Farrak itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 40-49
+#name 44-54 Zul'Farrak
+#displayname 44-54 Zul'Farrak
+#next 46-55 Maraudon pre-quests
+step
+    +|cRXP_WARN_Zul'Farrak|r (levels 44-54). Pick up 10 dungeon quests solo (roughly 1 h 35 min with the hand-ins), then ONE run with a group (roughly 2 h 20 min). No group needed until the run step. Click to start.
+    *Its 4 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1411,55.95,74.72
     >>Talk to |cRXP_FRIENDLY_Master Gadrin|r
@@ -2302,10 +2553,10 @@ step
     .target Mazu'kon
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1446,38.7,20.1
-    >>Enter |cRXP_WARN_Zul'Farrak|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Zul'Farrak|r with your group. Quest goals inside:
     *Divino-matic Rod: Bring the Divino-matic Rod to Chief Engineer Bilgewhizzle in Gadgetzan.
     *Gahz'rilla: Bring Gahz'rilla's Electrified Scale to Wizzle Brassbolts in the Shimmering Flats.
     *Tiara of the Deep: Bring the Tiara of the Deep to Tabetha in Dustwallow Marsh.
@@ -2365,7 +2616,7 @@ step
     .target Mazu'kon
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1446,51.57,26.76
     >>Talk to |cRXP_FRIENDLY_Tran'rek|r
@@ -2373,10 +2624,10 @@ step
     .target Tran'rek
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1446,38.7,20.1
-    >>Enter |cRXP_WARN_Zul'Farrak|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Zul'Farrak|r with your group. Quest goals inside:
     *Scarab Shells: Bring 5 Uncracked Scarab Shells to Tran'rek in Gadgetzan.
     .complete 2865,1 --Scarab Shells
 step
@@ -2399,22 +2650,19 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 40-49
-#name 46-55 Maraudon
-#displayname 46-55 Maraudon
-#next 48-53 Alcaz Prison
+#name 46-55 Maraudon pre-quests
+#displayname 46-55 Maraudon pre-quests
+#next 46-55 Maraudon
 step
-    +|cRXP_WARN_Maraudon|r (levels 46-55). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: Strange Pylons, A Brief History Lesson, Forlorn Gardens, Meeting the Magister, Word of the Woods, Fragments of the Pylons, Powering the Pylons
+    +|cRXP_WARN_Maraudon: pre-quests|r. 7 quests, solo (no group needed), roughly 35 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Strange Pylons, A Brief History Lesson, Forlorn Gardens, Meeting the Magister, Word of the Woods, Fragments of the Pylons, Powering the Pylons
 step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
-step
-    .goto 2652,43.64,34.3
+    .goto 2652,43.65,34.31
     >>Click the |cRXP_PICK_Shen'dralar Pylon|r
     .accept 92914 >>Accept Strange Pylons
 step
-    .goto 2652,47.46,76.58
-    >>Temple pylon found
+    .goto 2652,72.76,23.11
+    >>Eastern pylon found
     *Explore Shen'dralas in an effort to find other pylons like the one you found.
     .complete 92914,1 --Strange Pylons
 step
@@ -2424,9 +2672,14 @@ step
     .accept 96010 >>Accept Fragments of the Pylons
     .target Mordent Evenshade
 step
-    >>Collect |cRXP_LOOT_[Pylon Fragment]|r. Collect |cRXP_LOOT_[Pylon Shard]|r
+    .goto 1443,68.05,78.92
+    >>Collect |cRXP_LOOT_[Pylon Fragment]|r from |cRXP_PICK_Pylon Shard|r
     *Recover shards and fragments of the pylons, found guarded at the Magram and Gelkis villages. Return them to Mordent Evenshade.
     .complete 96010,1 --Fragments of the Pylons
+step
+    .goto 1443,36.18,85.64
+    >>Collect |cRXP_LOOT_[Pylon Shard]|r from |cRXP_PICK_Pylon Shard|r
+    *Recover shards and fragments of the pylons, found guarded at the Magram and Gelkis villages. Return them to Mordent Evenshade.
     .complete 96010,2 --Fragments of the Pylons
 step
     .goto 2652,35.17,46.61
@@ -2473,8 +2726,25 @@ step
     .turnin 93594 >>Turn in Word of the Woods
     .target Woodwyrd
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Maraudon itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 40-49
+#name 46-55 Maraudon
+#displayname 46-55 Maraudon
+#next 48-53 Alcaz Prison pre-quests
+step
+    +|cRXP_WARN_Maraudon|r (levels 46-55). Pick up 10 dungeon quests solo (roughly 1 h 20 min with the hand-ins), then ONE run with a group (roughly 2 h 20 min). No group needed until the run step. Click to start.
+    *Its 7 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 2652,69.66,71.78
     >>Talk to |cRXP_FRIENDLY_Woodwyrd|r
@@ -2531,14 +2801,14 @@ step
     .mob Woodwyrd
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1443,29.1,62.5
     >>Inside Maraudon: these quests start from a drop or an object in the dungeon
     .accept 7066 >>Accept Seed of Life
 step
     .goto 1443,29.1,62.5
-    >>Enter |cRXP_WARN_Maraudon|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Maraudon|r with your group. Quest goals inside:
     *Twisted Evils: Collect 15 Theradric Crystal Carvings for Willow in Desolace.
     *Vyletongue Corruption: Fill the Coated Cerulean Vial at the orange crystal pool in Maraudon.
     *Legends of Maraudon: Recover the two parts of the Scepter of Celebras: the Celebrian Rod and the Celebrian Diamond.
@@ -2605,7 +2875,7 @@ step
     .target Olana Brighthoof
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1443,29.1,62.5
     >>Inside Maraudon: these quests start from a drop or an object in the dungeon
@@ -2629,16 +2899,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 40-49
-#name 48-53 Alcaz Prison
-#displayname 48-53 Alcaz Prison
-#next 50-60 The Temple of Atal'Hakkar
+#name 48-53 Alcaz Prison pre-quests
+#displayname 48-53 Alcaz Prison pre-quests
+#next 48-53 Alcaz Prison
 step
-    +|cRXP_WARN_Alcaz Prison|r (levels 48-53). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *New Forever dungeon on Alcaz Island off Dustwallow Marsh. The portal is in the basement of the big central keep. Elite naga patrol the climb up.
-    *Pre-quests in this guide: The Elite of the Elite, Right Place, Wrong Time
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Alcaz Prison: pre-quests|r. 2 quests, solo (no group needed), roughly 5 min. The run guide comes after this one. Click to start.
+    *Pre-quests: The Elite of the Elite, Right Place, Wrong Time
 step
     .goto 1445,35.21,30.66
     >>Talk to |cRXP_FRIENDLY_Nazeer Bloodpike|r
@@ -2656,8 +2922,26 @@ step
     .turnin 95285 >>Turn in Right Place, Wrong Time
     .target Sergeant Ulka
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Alcaz Prison itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 40-49
+#name 48-53 Alcaz Prison
+#displayname 48-53 Alcaz Prison
+#next 50-60 The Temple of Atal'Hakkar pre-quests
+step
+    +|cRXP_WARN_Alcaz Prison|r (levels 48-53). Pick up 10 dungeon quests solo (roughly 1 h 5 min with the hand-ins), then ONE run with a group (roughly 3 h 30 min). No group needed until the run step. Click to start.
+    *New Forever dungeon on Alcaz Island off Dustwallow Marsh. The portal is in the basement of the big central keep. Elite naga patrol the climb up.
+    *Its 2 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1445,70.3,18.85
     >>Talk to |cRXP_FRIENDLY_Sergeant Ulka|r
@@ -2676,20 +2960,20 @@ step
     .accept 96376 >>Accept State Secrets
     .target Nazgrel
 step
-    .goto 1434,28.51,75.78
+    .goto 1434,28.51,75.77
     >>Talk to |cRXP_FRIENDLY_Rix Xizzix|r
     .accept 96379 >>Accept State Secrets
     .target Rix Xizzix
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1445,75,15
     >>Inside Alcaz Prison: these quests start from a drop or an object in the dungeon
     .accept 96335 >>Accept The Man in the Iron Chains
 step
     .goto 1445,75,15
-    >>Enter |cRXP_WARN_Alcaz Prison|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Alcaz Prison|r with your group. Quest goals inside:
     *Blood Red Bandanas: Enter Alcaz Prison and collect 8 Blood Red Bandanas from the human guards there.
     *The Man in the Iron Chains: Recover the Alcaz Shackle Key from The Questioner in Alcaz Prison.
     *State Secrets
@@ -2725,13 +3009,13 @@ step
     .turnin 96376 >>Turn in State Secrets
     .target Nazgrel
 step
-    .goto 1434,28.51,75.78
+    .goto 1434,28.51,75.77
     >>Talk to |cRXP_FRIENDLY_Rix Xizzix|r
     .turnin 96379 >>Turn in State Secrets
     .target Rix Xizzix
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1445,75,15
     >>Inside Alcaz Prison: these quests start from a drop or an object in the dungeon
@@ -2750,7 +3034,7 @@ step
     .turnin 96337 >>Turn in More Valuable Than Gold
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 3)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 3)|r
 step
     .goto 1445,75,15
     >>Inside Alcaz Prison: these quests start from a drop or an object in the dungeon
@@ -2774,15 +3058,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 50-60
-#name 50-60 The Temple of Atal'Hakkar
-#displayname 50-60 The Temple of Atal'Hakkar
-#next 52-60 Blackrock Depths
+#name 50-60 The Temple of Atal'Hakkar pre-quests
+#displayname 50-60 The Temple of Atal'Hakkar pre-quests
+#next 50-60 The Temple of Atal'Hakkar
 step
-    +|cRXP_WARN_The Temple of Atal'Hakkar|r (levels 50-60). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: Pool of Tears, The Atal'ai Exile, Return to Fel'Zerul, The Stone Circle, Screecher Spirits, The Prophecy of Mosh'aru, Larion and Muigin, Marvon's Workshop, The Ancient Egg
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_The Temple of Atal'Hakkar: pre-quests|r. 9 quests, solo (no group needed), roughly 2 h 20 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Pool of Tears, The Atal'ai Exile, Return to Fel'Zerul, The Stone Circle, Screecher Spirits, The Prophecy of Mosh'aru, Larion and Muigin, Marvon's Workshop, The Ancient Egg
 step
     .goto 1446,66.99,22.36
     >>Talk to |cRXP_FRIENDLY_Yeh'kinya|r
@@ -2901,8 +3182,25 @@ step
     .turnin 3444 >>Turn in The Stone Circle
     .target Marvon Rivetseeker
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: The Temple of Atal'Hakkar itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 50-60 The Temple of Atal'Hakkar
+#displayname 50-60 The Temple of Atal'Hakkar
+#next 52-60 Blackrock Depths pre-quests
+step
+    +|cRXP_WARN_The Temple of Atal'Hakkar|r (levels 50-60). Pick up 9 dungeon quests solo (roughly 1 h 30 min with the hand-ins), then ONE run with a group (roughly 1 h 20 min). No group needed until the run step. Click to start.
+    *Its 9 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1446,52.71,45.92
     >>Talk to |cRXP_FRIENDLY_Marvon Rivetseeker|r
@@ -2936,7 +3234,7 @@ step
     .target Liv Rizzlefix
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1435,69.9,53.5
     >>Loot |cRXP_LOOT_[Essence of Eranikus]|r from |cRXP_ENEMY_Shade of Eranikus|r, then click it to start the quest
@@ -2949,7 +3247,7 @@ step
     .accept 8733 >>Accept Eranikus, Tyrant of the Dream
 step
     .goto 1435,69.9,53.5
-    >>Enter |cRXP_WARN_The Temple of Atal'Hakkar|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_The Temple of Atal'Hakkar|r with your group. Quest goals inside:
     *The Temple of Atal'Hakkar: Collect 20 Fetishes of Hakkar and bring them to Fel'Zerul in Stonard.
     *Jammal'an the Prophet: The Atal'ai Exile in The Hinterlands wants the Head of Jammal'an.
     *The God Hakkar: Bring the Filled Egg of Hakkar to Yeh'kinya in Tanaris.
@@ -3009,15 +3307,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 50-60
-#name 52-60 Blackrock Depths
-#displayname 52-60 Blackrock Depths
-#next 54-60 Dire Maul
+#name 52-60 Blackrock Depths pre-quests
+#displayname 52-60 Blackrock Depths pre-quests
+#next 52-60 Blackrock Depths
 step
-    +|cRXP_WARN_Blackrock Depths|r (levels 52-60). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: Forging the Shaft, The Flame's Casing, The Torch of Retribution, The Torch of Retribution, Squire Maltrake, Set Them Ablaze!, Trinkets..., Disharmony of Flame, A Taste of Flame, The Rise of the Machines, The Rise of the Machines, In Search of Anthion...
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Blackrock Depths: pre-quests|r. 15 quests, solo (no group needed), roughly 2 h 20 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Forging the Shaft, The Flame's Casing, The Torch of Retribution, Squire Maltrake, Set Them Ablaze!, Trinkets..., Disharmony of Flame, A Taste of Flame, The Rise of the Machines, In Search of Anthion, Dead Man's Plea, Anthion's Strange Request...
 step
     .goto 1427,39.06,38.99
     >>Talk to |cRXP_FRIENDLY_Kalaran Windblade|r
@@ -3185,8 +3480,25 @@ step
     .turnin 4022 >>Turn in A Taste of Flame
     .target Cyrus Therepentous
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Blackrock Depths itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 52-60 Blackrock Depths
+#displayname 52-60 Blackrock Depths
+#next 54-60 Dire Maul East pre-quests
+step
+    +|cRXP_WARN_Blackrock Depths|r (levels 52-60). Pick up 25 dungeon quests solo (roughly 2 h 55 min with the hand-ins), then ONE run with a group (roughly 4 h). No group needed until the run step. Click to start.
+    *Its 15 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1428,95.09,31.56
     >>Talk to |cRXP_FRIENDLY_Cyrus Therepentous|r
@@ -3243,7 +3555,7 @@ step
     .target Alaana Stormwalker
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1427,34.8,85.3
     >>Inside Blackrock Depths: these quests start from a drop or an object in the dungeon
@@ -3254,7 +3566,7 @@ step
     .accept 82062 >>Accept Ever After
 step
     .goto 1427,34.8,85.3
-    >>Enter |cRXP_WARN_Blackrock Depths|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Blackrock Depths|r with your group. Quest goals inside:
     *Disharmony of Fire: Enter Blackrock Depths and track down Lord Incendius. Slay him and return any source of information you may find to Thunderheart.
     *A Taste of Flame: Travel to Blackrock Depths and slay Bael'Gar.
     *The Rise of the Machines: Find and slay Golem Lord Argelmach. Return his head to Lotwil. You will also need to collect 10 Intact Elemental Cores from the Ragereaver Golems and Warbringer Constructs protecting Argelmach. You know this because you are psychic.
@@ -3379,7 +3691,7 @@ step
     .target Alaana Stormwalker
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1418,3.94,46.73
     >>Click the |cRXP_PICK_KILL ON SIGHT|r
@@ -3401,15 +3713,15 @@ step
     .target Yuka Screwspigot
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1427,34.8,85.3
     >>Inside Blackrock Depths: these quests start from a drop or an object in the dungeon
     .accept 3802 >>Accept Dark Iron Legacy
-    .accept 4001 >>Accept What Is Going On?
+    .accept 3982 >>Accept What Is Going On?
 step
     .goto 1427,34.8,85.3
-    >>Enter |cRXP_WARN_Blackrock Depths|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Blackrock Depths|r with your group. Quest goals inside:
     *Dark Iron Legacy: Slay Fineous Darkvire and recover the great hammer, Ironfel. Take Ironfel to the Shrine of Thaurissan and place it on the statue of Franclorn Forgewright.
     *KILL ON SIGHT: High Ranking Dark Iron Officials: Venture to Blackrock Depths and destroy the vile aggressors!
     *Precarious Predicament: Escort your prisoner, Grark Lorkrub, through Burning Steppes and through Blackrock Mountain to the Searing Gorge.
@@ -3429,11 +3741,7 @@ step
     .goto 1427,34.8,85.3
     >>Inside Blackrock Depths: these quests start from a drop or an object in the dungeon
     .turnin 3802 >>Turn in Dark Iron Legacy
-step
-    .goto 1454,31.73,37.82
-    >>Talk to |cRXP_FRIENDLY_Thrall|r
-    .turnin 4001 >>Turn in What Is Going On?
-    .target Thrall
+    .turnin 3982 >>Turn in What Is Going On?
 step
     .goto 1418,5.81,47.52
     >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
@@ -3456,12 +3764,7 @@ step
     .target Yuka Screwspigot
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
-step
-    .goto 1454,31.73,37.82
-    >>Talk to |cRXP_FRIENDLY_Thrall|r
-    .accept 4002 >>Accept The Eastern Kingdom
-    .target Thrall
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1418,5.81,47.52
     >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
@@ -3469,12 +3772,37 @@ step
     .target Warlord Goretooth
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 3)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 3)|r
 step
     .goto 1427,34.8,85.3
-    >>Enter |cRXP_WARN_Blackrock Depths|r and run it with a group. Quest goals inside:
+    >>Inside Blackrock Depths: these quests start from a drop or an object in the dungeon
+    .accept 4001 >>Accept What Is Going On?
+step
+    .goto 1427,34.8,85.3
+    >>Enter |cRXP_WARN_Blackrock Depths|r with your group. Quest goals inside:
     *Operation: Death to Angerforge: Travel to Blackrock Depths and slay General Angerforge! Return to Warlord Goretooth when the task is complete.
     .complete 4132,1 --Operation: Death to Angerforge
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1454,31.73,37.82
+    >>Talk to |cRXP_FRIENDLY_Thrall|r
+    .turnin 4001 >>Turn in What Is Going On?
+    .target Thrall
+step
+    .goto 1418,5.81,47.52
+    >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
+    .turnin 4132 >>Turn in Operation: Death to Angerforge
+    .target Warlord Goretooth
+step
+    #completewith next
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1454,31.73,37.82
+    >>Talk to |cRXP_FRIENDLY_Thrall|r
+    .accept 4002 >>Accept The Eastern Kingdom
+    .target Thrall
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
@@ -3484,36 +3812,8 @@ step
     .turnin 4002 >>Turn in The Eastern Kingdom
     .target Thrall
 step
-    .goto 1418,5.81,47.52
-    >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
-    .turnin 4132 >>Turn in Operation: Death to Angerforge
-    .target Warlord Goretooth
-step
-    #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
-step
-    .goto 1454,31.73,37.82
-    >>Talk to |cRXP_FRIENDLY_Thrall|r
-    .accept 4003 >>Accept The Royal Rescue
-    .target Thrall
-step
-    #completewith next
-    +|cRXP_WARN_Run the dungeon (run 4)|r
-step
-    .goto 1427,34.8,85.3
-    >>Enter |cRXP_WARN_Blackrock Depths|r and run it with a group. Quest goals inside:
-    *The Royal Rescue: Slay Emperor Dagran Thaurissan and free Princess Moira Bronzebeard from his evil spell.
-    .complete 4003,1 --The Royal Rescue
-step
-    #completewith next
-    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
-step
-    .goto 1454,31.73,37.82
-    >>Talk to |cRXP_FRIENDLY_Thrall|r
-    .turnin 4003 >>Turn in The Royal Rescue
-    .target Thrall
-step
     >>|cRXP_WARN_Also part of this dungeon (later follow-ups or missing data). Do them if they are offered:|r
+    *The Royal Rescue
     *The Princess Saved?
     +Done
 step
@@ -3528,16 +3828,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 50-60
-#name 54-60 Dire Maul
-#displayname 54-60 Dire Maul
-#next 55-60 Blackrock Spire
+#name 54-60 Dire Maul East pre-quests
+#displayname 54-60 Dire Maul East pre-quests
+#next 54-60 Dire Maul East
 step
-    +|cRXP_WARN_Dire Maul|r (levels 54-60). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *East 54-60, West 56-60, North 56-60.
-    *Pre-quests in this guide: In Search of Anthion, Dead Man's Plea, Proof of Life, Anthion's Strange Request, Three Kings of Flame, Components of Importance, Components of Importance, More Components of Importance, Bodley's Unfortunate Fate
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Dire Maul East: pre-quests|r. 1 quests, solo (no group needed), roughly 5 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Bodley's Unfortunate Fate
 step
     .goto 1454,34.95,38.29
     >>Talk to |cRXP_FRIENDLY_Mokvar|r
@@ -3547,247 +3843,9 @@ step
     .goto 1454,34.95,38.29
     >>Talk to |cRXP_FRIENDLY_Mokvar|r
     .turnin 9032 >>Turn in Bodley's Unfortunate Fate
-    .accept 8930 >>Accept In Search of Anthion
     .target Mokvar
 step
-    .goto 1423,26.11,11.3
-    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
-    .turnin 8930 >>Turn in In Search of Anthion
-    .accept 8945 >>Accept Dead Man's Plea
-    .target Anthion Harmon
-step
-    >>Kill |cRXP_ENEMY_Ysida Harmon|r
-    *Go into Stratholme and rescue Ysida Harmon from Baron Rivendare.
-    .complete 8945,1 --Dead Man's Plea
-    .mob Ysida Harmon
-step
-    .goto 1423,26.11,11.3
-    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
-    .turnin 8945 >>Turn in Dead Man's Plea
-    .accept 8947 >>Accept Anthion's Strange Request
-    .target Anthion Harmon
-step
-    >>Collect |cRXP_LOOT_[Dark Iron Bar]|r. Collect |cRXP_LOOT_[Enchanted Leather]|r. Collect |cRXP_LOOT_[Mooncloth]|r. Collect |cRXP_LOOT_[Cured Rugged Hide]|r
-    *Bring 3 Dark Iron Bars, 20 Enchanted Leather, 3 Mooncloth and 4 Cured Rugged Hides to Anthion Harmon in the Eastern Plaguelands.
-    .complete 8947,1 --Anthion's Strange Request
-    .complete 8947,2 --Anthion's Strange Request
-    .complete 8947,3 --Anthion's Strange Request
-    .complete 8947,4 --Anthion's Strange Request
-step
-    .goto 1423,26.11,11.3
-    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
-    .turnin 8947 >>Turn in Anthion's Strange Request
-    .target Anthion Harmon
-step
-    #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
-step
-    .goto 1423,26.11,11.3
-    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
-    .accept 8948 >>Accept Anthion's Old Friend
-    .target Anthion Harmon
-step
-    .goto 1444,76.91,37.35
-    >>Talk to |cRXP_FRIENDLY_Azj'Tordin|r
-    .accept 7441 >>Accept Pusillin and the Elder Azj'Tordin
-    .target Azj'Tordin
-step
-    .goto 1444,75.24,43.76
-    >>Talk to |cRXP_FRIENDLY_Sage Korolusk|r
-    .accept 7481 >>Accept Elven Legends
-    .target Sage Korolusk
-step
-    .goto 1454,37.56,75.36
-    >>Talk to |cRXP_FRIENDLY_Warcaller Gorlach|r
-    .accept 7492 >>Accept Camp Mojache
-    .target Warcaller Gorlach
-step
-    #completewith next
-    +|cRXP_WARN_Run the dungeon|r
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: these quests start from a drop or an object in the dungeon
-    .accept 1193 >>Accept A Broken Trap
-    .accept 1318 >>Accept Unfinished Gordok Business
-    .accept 5518 >>Accept The Gordok Ogre Suit
-    .accept 5525 >>Accept Free Knot!
-    .accept 5528 >>Accept The Gordok Taste Test
-    .accept 7461 >>Accept The Madness Within
-    .accept 7703 >>Accept Unfinished Gordok Business
-    .accept 8967 >>Accept The Left Piece of Lord Valthalak's Amulet
-    .accept 8990 >>Accept The Right Piece of Lord Valthalak's Amulet
-    .accept 84555 >>Accept Nostro's Compendium
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: loot |cRXP_LOOT_[Foror's Compendium of Dragon Slaying]|r and click it to start the quest
-    .accept 7507 >>Accept Foror's Compendium
-    .use 18401
-step
-    .goto 1444,59.2,45.1
-    >>Enter |cRXP_WARN_Dire Maul|r and run it with a group. Quest goals inside:
-    *A Broken Trap
-    *Unfinished Gordok Business: Find the Gauntlet of Gordok Might and return it to Captain Kromcrush in Dire Maul.
-    *The Gordok Ogre Suit: Bring 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Threads, and Ogre Tannin to Knot Thimblejack. He is currently chained inside the Gordok wing of Dire Maul.
-    *Free Knot!
-    *Pusillin and the Elder Azj'Tordin: Travel to Dire Maul and locate the Imp, Pusillin. Convince Pusillin to give you Azj'Tordin's Book of Incantations through any means necessary.
-    *The Madness Within: You must destroy the guardians surrounding the 5 Pylons that power the Prison of Immol'thar. Once the Pylons have powered down, the force field surrounding Immol'thar will have dissipated.
-    *Unfinished Gordok Business: Find the Gauntlet of Gordok Might and return it to Captain Kromcrush in Dire Maul.
-    *The Left Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth the spirit of Isalien and slay her. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak's Amulet and the Brazier of Beckoning.
-    *The Right Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth the spirit of Isalien and slay her. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak's Amulet and the Brazier of Beckoning.
-    .complete 1193,1 --A Broken Trap
-    .complete 1318,1 --Unfinished Gordok Business
-    .complete 5518,4 --The Gordok Ogre Suit
-    .complete 5525,1 --Free Knot!
-    .complete 7441,1 --Pusillin and the Elder Azj'Tordin
-    .complete 7461,1 --The Madness Within
-    .complete 7461,2 --The Madness Within
-    .complete 7703,1 --Unfinished Gordok Business
-    .complete 8967,1 --The Left Piece of Lord Valthalak's Amulet
-    .complete 8967,2 --The Left Piece of Lord Valthalak's Amulet
-    .complete 8990,1 --The Right Piece of Lord Valthalak's Amulet
-    .complete 8990,2 --The Right Piece of Lord Valthalak's Amulet
-step
-    #completewith next
-    +|cRXP_WARN_Outside: collect what the quests you got inside need|r
-step
-    .goto 1448,46.3,90.62
-    >>Collect |cRXP_LOOT_[Frost Oil]|r from |cRXP_ENEMY_Vilebranch Witch Doctor|r, |cRXP_ENEMY_Tar Creeper|r, |cRXP_ENEMY_Deadwood Gardener|r
-    .complete 1193,2 --A Broken Trap
-    .mob Vilebranch Witch Doctor
-    .mob Tar Creeper
-step
-    .goto 1451,18.3,85.84
-    >>Collect |cRXP_LOOT_[Bolt of Runecloth]|r from |cRXP_ENEMY_Twilight Lord Everun|r
-    *Bring 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Threads, and Ogre Tannin to Knot Thimblejack. He is currently chained inside the Gordok wing of Dire Maul.
-    .complete 5518,1 --The Gordok Ogre Suit
-    .mob Twilight Lord Everun
-step
-    .goto 1412,37.39,44.91
-    >>Buy |cRXP_LOOT_[Rugged Leather]|r from |cRXP_FRIENDLY_Lhara|r
-    *Bring 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Threads, and Ogre Tannin to Knot Thimblejack. He is currently chained inside the Gordok wing of Dire Maul.
-    .complete 5518,2 --The Gordok Ogre Suit
-step
-    .goto 1435,44.77,56.63
-    >>Buy |cRXP_LOOT_[Rune Thread]|r from |cRXP_FRIENDLY_Banalash|r
-    *Bring 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Threads, and Ogre Tannin to Knot Thimblejack. He is currently chained inside the Gordok wing of Dire Maul.
-    .complete 5518,3 --The Gordok Ogre Suit
-step
-    #completewith next
-    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: these quests start from a drop or an object in the dungeon
-    .turnin 1193 >>Turn in A Broken Trap
-    .turnin 1318 >>Turn in Unfinished Gordok Business
-    .turnin 5518 >>Turn in The Gordok Ogre Suit
-    .turnin 5525 >>Turn in Free Knot!
-    .turnin 5528 >>Turn in The Gordok Taste Test
-    .turnin 7461 >>Turn in The Madness Within
-    .turnin 7703 >>Turn in Unfinished Gordok Business
-    .turnin 8967 >>Turn in The Left Piece of Lord Valthalak's Amulet
-    .turnin 8990 >>Turn in The Right Piece of Lord Valthalak's Amulet
-    .turnin 84555 >>Turn in Nostro's Compendium
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: loot |cRXP_LOOT_[Foror's Compendium of Dragon Slaying]|r and click it to start the quest
-    .turnin 7507 >>Turn in Foror's Compendium
-step
-    .goto 1444,75.24,43.76
-    >>Talk to |cRXP_FRIENDLY_Sage Korolusk|r
-    .turnin 7481 >>Turn in Elven Legends
-    .target Sage Korolusk
-step
-    .goto 1444,76.18,43.83
-    >>Talk to |cRXP_FRIENDLY_Talo Thornhoof|r
-    .turnin 7492 >>Turn in Camp Mojache
-    .target Talo Thornhoof
-step
-    .goto 1444,76.91,37.35
-    >>Talk to |cRXP_FRIENDLY_Azj'Tordin|r
-    .turnin 7441 >>Turn in Pusillin and the Elder Azj'Tordin
-    .target Azj'Tordin
-step
-    .goto 1423,26.11,11.3
-    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
-    .turnin 8948 >>Turn in Anthion's Old Friend
-    .target Anthion Harmon
-step
-    #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
-step
-    .goto 1444,76.18,43.83
-    >>Talk to |cRXP_FRIENDLY_Talo Thornhoof|r
-    .accept 7489 >>Accept Lethtendris's Web
-    .target Talo Thornhoof
-step
-    #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: loot |cRXP_LOOT_[A Dull and Flat Elven Blade]|r and click it to start the quest
-    .accept 7508 >>Accept The Forging of Quel'Serrar
-    .use 18513
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: these quests start from a drop or an object in the dungeon
-    .accept 7877 >>Accept The Treasure of the Shen'dralar
-    .accept 8949 >>Accept Falrin's Vendetta
-step
-    .goto 1444,59.2,45.1
-    >>Enter |cRXP_WARN_Dire Maul|r and run it with a group. Quest goals inside:
-    *Lethtendris's Web: Bring Lethtendris's Web to Talo Thornhoof at Camp Mojache in Feralas.
-    .complete 7489,1 --Lethtendris's Web
-step
-    #completewith next
-    +|cRXP_WARN_Outside: collect what the quests you got inside need|r
-step
-    .goto 1444,59.24,43.08
-    >>Collect |cRXP_LOOT_[Ogre Warbeads]|r from |cRXP_ENEMY_Urok Enforcer|r, |cRXP_ENEMY_Urok Ogre Magus|r, |cRXP_ENEMY_Ogre Magi|r
-    *Collect 25 Ogre Warbeads from Ogres inside Dire Maul or Blackrock Spire and return to Falrin Treeshaper inside the Athenaeum in Dire Maul.
-    .complete 8949,1 --Falrin's Vendetta
-    .mob Urok Enforcer
-    .mob Urok Ogre Magus
-step
-    #completewith next
-    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: loot |cRXP_LOOT_[A Dull and Flat Elven Blade]|r and click it to start the quest
-    .turnin 7508 >>Turn in The Forging of Quel'Serrar
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: these quests start from a drop or an object in the dungeon
-    .turnin 7877 >>Turn in The Treasure of the Shen'dralar
-    .turnin 8949 >>Turn in Falrin's Vendetta
-step
-    .goto 1444,76.18,43.83
-    >>Talk to |cRXP_FRIENDLY_Talo Thornhoof|r
-    .turnin 7489 >>Turn in Lethtendris's Web
-    .target Talo Thornhoof
-step
-    #completewith next
-    +|cRXP_WARN_Run the dungeon (run 3)|r
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: these quests start from a drop or an object in the dungeon
-    .accept 8950 >>Accept The Instigator's Enchantment
-step
-    .goto 1444,59.2,45.1
-    >>Enter |cRXP_WARN_Dire Maul|r and run it with a group. Quest goals inside:
-    *The Instigator's Enchantment: Bring the following to Falrin Treeshaper inside Dire Maul: 1 Jeering Spectre's Essence, 4 Dark Runes and 8 Large Brilliant Shards.
-    .complete 8950,1 --The Instigator's Enchantment
-    .complete 8950,2 --The Instigator's Enchantment
-    .complete 8950,3 --The Instigator's Enchantment
-step
-    #completewith next
-    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
-step
-    .goto 1444,59.2,45.1
-    >>Inside Dire Maul: these quests start from a drop or an object in the dungeon
-    .turnin 8950 >>Turn in The Instigator's Enchantment
-step
-    .goto 1444,59.2,45.1
-    +Dungeon entrance: Dire Maul. Done with this dungeon? Click to finish.
+    +|cRXP_WARN_Pre-quests done.|r Next: Dire Maul East itself. That guide tells you when to find a group. Click to continue.
 ]])
 
 RXPGuides.RegisterGuide([[
@@ -3797,16 +3855,106 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 50-60
-#name 55-60 Blackrock Spire
-#displayname 55-60 Blackrock Spire
-#next 55-60 Blackmaw Hold
+#name 54-60 Dire Maul East
+#displayname 54-60 Dire Maul East
+#next 55-60 Lower Blackrock Spire pre-quests
 step
-    +|cRXP_WARN_Blackrock Spire|r (levels 55-60). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Lower Blackrock Spire 55-60, Upper Blackrock Spire 59-60.
-    *Pre-quests in this guide: Screecher Spirits, The Prophecy of Mosh'aru, The God Hakkar, Broodling Essence, The Ancient Egg, Felnok Steelspring, Chillwind Horns, Return to Tinkee, Eitrigg's Wisdom, The Lost Tablets of Mosh'aru, What the Wind Carries, The Champion of the Horde...
+    +|cRXP_WARN_Dire Maul East|r (levels 54-60). Pick up 5 dungeon quests solo (roughly 10 min with the hand-ins), then ONE run with a group (roughly 1 h 40 min). No group needed until the run step. Click to start.
+    *Door: East wall of the central courtyard. No key. Chase Pusillin: he drops the Crescent Key that opens West and North.
+    *East 54-60, West 56-60, North 56-60.
+    *Its 1 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
 step
     #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1454,37.56,75.36
+    >>Talk to |cRXP_FRIENDLY_Warcaller Gorlach|r
+    .accept 7492 >>Accept Camp Mojache
+    .target Warcaller Gorlach
+step
+    .goto 1444,76.91,37.35
+    >>Talk to |cRXP_FRIENDLY_Azj'Tordin|r
+    .accept 7441 >>Accept Pusillin and the Elder Azj'Tordin
+    .target Azj'Tordin
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
+step
+    .goto 1444,64.8,30.2
+    >>Inside Dire Maul East: these quests start from a drop or an object in the dungeon
+    .accept 8967 >>Accept The Left Piece of Lord Valthalak's Amulet
+    .accept 8990 >>Accept The Right Piece of Lord Valthalak's Amulet
+step
+    .goto 1444,64.8,30.2
+    >>Enter |cRXP_WARN_Dire Maul East|r with your group. Quest goals inside:
+    *Pusillin and the Elder Azj'Tordin: Travel to Dire Maul and locate the Imp, Pusillin. Convince Pusillin to give you Azj'Tordin's Book of Incantations through any means necessary.
+    *The Left Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth the spirit of Isalien and slay her. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak's Amulet and the Brazier of Beckoning.
+    *The Right Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth the spirit of Isalien and slay her. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak's Amulet and the Brazier of Beckoning.
+    .complete 7441,1 --Pusillin and the Elder Azj'Tordin
+    .complete 8967,1 --The Left Piece of Lord Valthalak's Amulet
+    .complete 8967,2 --The Left Piece of Lord Valthalak's Amulet
+    .complete 8990,1 --The Right Piece of Lord Valthalak's Amulet
+    .complete 8990,2 --The Right Piece of Lord Valthalak's Amulet
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1444,64.8,30.2
+    >>Inside Dire Maul East: these quests start from a drop or an object in the dungeon
+    .turnin 8967 >>Turn in The Left Piece of Lord Valthalak's Amulet
+    .turnin 8990 >>Turn in The Right Piece of Lord Valthalak's Amulet
+step
+    .goto 1444,76.91,37.35
+    >>Talk to |cRXP_FRIENDLY_Azj'Tordin|r
+    .turnin 7441 >>Turn in Pusillin and the Elder Azj'Tordin
+    .target Azj'Tordin
+step
+    .goto 1444,76.18,43.83
+    >>Talk to |cRXP_FRIENDLY_Talo Thornhoof|r
+    .turnin 7492 >>Turn in Camp Mojache
+    .target Talo Thornhoof
+step
+    #completewith next
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1444,76.18,43.83
+    >>Talk to |cRXP_FRIENDLY_Talo Thornhoof|r
+    .accept 7489 >>Accept Lethtendris's Web
+    .target Talo Thornhoof
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
+step
+    .goto 1444,64.8,30.2
+    >>Enter |cRXP_WARN_Dire Maul East|r with your group. Quest goals inside:
+    *Lethtendris's Web: Bring Lethtendris's Web to Talo Thornhoof at Camp Mojache in Feralas.
+    .complete 7489,1 --Lethtendris's Web
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1444,76.18,43.83
+    >>Talk to |cRXP_FRIENDLY_Talo Thornhoof|r
+    .turnin 7489 >>Turn in Lethtendris's Web
+    .target Talo Thornhoof
+step
+    .goto 1444,64.8,30.2
+    +Dungeon entrance: Dire Maul East. Done with this dungeon? Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 55-60 Lower Blackrock Spire pre-quests
+#displayname 55-60 Lower Blackrock Spire pre-quests
+#next 55-60 Lower Blackrock Spire
+step
+    +|cRXP_WARN_Lower Blackrock Spire: pre-quests|r. 10 quests, solo (no group needed), roughly 2 h 55 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Screecher Spirits, The Prophecy of Mosh'aru, The God Hakkar, Broodling Essence, The Ancient Egg, Felnok Steelspring, Chillwind Horns, Return to Tinkee, The Lost Tablets of Mosh'aru, Bodley's Unfortunate Fate
 step
     .goto 1446,66.99,22.36
     >>Talk to |cRXP_FRIENDLY_Yeh'kinya|r
@@ -3876,6 +4024,16 @@ step
     .turnin 4810 >>Turn in Return to Tinkee
     .target Tinkee Steamboil
 step
+    .goto 1454,34.95,38.29
+    >>Talk to |cRXP_FRIENDLY_Mokvar|r
+    .accept 9032 >>Accept Bodley's Unfortunate Fate
+    .target Mokvar
+step
+    .goto 1454,34.95,38.29
+    >>Talk to |cRXP_FRIENDLY_Mokvar|r
+    .turnin 9032 >>Turn in Bodley's Unfortunate Fate
+    .target Mokvar
+step
     .goto 1425,57.58,86.79
     >>Collect |cRXP_LOOT_[Ancient Egg]|r from |cRXP_PICK_Ancient Egg|r
     *Bring the Ancient Egg to Yeh'kinya in Tanaris.
@@ -3901,63 +4059,6 @@ step
     .accept 5065 >>Accept The Lost Tablets of Mosh'aru
     .target Prospector Ironboot
 step
-    .goto 1418,5.81,47.52
-    >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
-    .accept 4941 >>Accept Eitrigg's Wisdom
-    .target Warlord Goretooth
-step
-    .goto 1454,31.73,37.82
-    >>Talk to |cRXP_FRIENDLY_Thrall|r
-    .turnin 4941 >>Turn in Eitrigg's Wisdom
-    .accept 6566 >>Accept What the Wind Carries
-    .target Thrall
-step
-    .goto 1454,31.73,37.82
-    >>Talk to |cRXP_FRIENDLY_Thrall|r
-    .turnin 6566 >>Turn in What the Wind Carries
-    .accept 6567 >>Accept The Champion of the Horde
-    .target Thrall
-step
-    .goto 1444,46.39,18.24
-    >>Talk to |cRXP_FRIENDLY_Rexxar|r
-    .turnin 6567 >>Turn in The Champion of the Horde
-    .accept 6568 >>Accept The Testament of Rexxar
-    .target Rexxar
-step
-    .goto 1422,50.79,77.85
-    >>Talk to |cRXP_FRIENDLY_Myranda the Hag|r
-    .turnin 6568 >>Turn in The Testament of Rexxar
-    .accept 6570 >>Accept Emberstrife
-    .target Myranda the Hag
-step
-    .goto 1445,56.66,87.72
-    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
-    .turnin 6570 >>Turn in Emberstrife
-    .accept 6583 >>Accept The Test of Skulls, Somnus
-    .accept 6582 >>Accept The Test of Skulls, Scryer
-    .accept 6584 >>Accept The Test of Skulls, Chronalis
-    .target Emberstrife
-step
-    >>Collect |cRXP_LOOT_[The Skull of Scryer]|r from |cRXP_ENEMY_Icemaw|r
-    *You must find the blue dragonflight drake champion, Scryer, and slay him. Pry his skull from his corpse and return it to Emberstrife.
-    .complete 6582,1 --The Test of Skulls, Scryer
-    .mob Icemaw
-step
-    .goto 1445,56.66,87.72
-    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
-    .turnin 6582 >>Turn in The Test of Skulls, Scryer
-    .target Emberstrife
-step
-    .goto 1454,34.95,38.29
-    >>Talk to |cRXP_FRIENDLY_Mokvar|r
-    .accept 9032 >>Accept Bodley's Unfortunate Fate
-    .target Mokvar
-step
-    .goto 1454,34.95,38.29
-    >>Talk to |cRXP_FRIENDLY_Mokvar|r
-    .turnin 9032 >>Turn in Bodley's Unfortunate Fate
-    .target Mokvar
-step
     .goto 1423,63.43,7.84
     >>Collect |cRXP_LOOT_[Third Mosh'aru Tablet]|r from |cRXP_PICK_Third Mosh'aru Tablet|r. Collect |cRXP_LOOT_[Fourth Mosh'aru Tablet]|r from |cRXP_PICK_Fourth Mosh'aru Tablet|r
     *Bring the Third and Fourth Mosh'aru Tablets to Prospector Ironboot in Tanaris.
@@ -3969,48 +4070,32 @@ step
     .turnin 5065 >>Turn in The Lost Tablets of Mosh'aru
     .target Prospector Ironboot
 step
-    .goto 1446,64.16,48.49
-    >>Collect |cRXP_LOOT_[The Skull of Chronalis]|r from |cRXP_ENEMY_Chronalis|r
-    *Guarding the Caverns of Time in the Tanaris Desert is Chronalis, child of Nozdormu. Destroy him and return his skull to Emberstrife.
-    .complete 6584,1 --The Test of Skulls, Chronalis
-    .mob Chronalis
+    +|cRXP_WARN_Pre-quests done.|r Next: Lower Blackrock Spire itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 55-60 Lower Blackrock Spire
+#displayname 55-60 Lower Blackrock Spire
+#next 55-60 Blackmaw Hold pre-quests
 step
-    .goto 1445,56.66,87.72
-    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
-    .turnin 6584 >>Turn in The Test of Skulls, Chronalis
-    .target Emberstrife
-step
-    .goto 1435,74.12,68.35
-    >>Collect |cRXP_LOOT_[The Skull of Somnus]|r from |cRXP_ENEMY_Somnus|r
-    *Destroy the drake champion of the Green Flight, Somnus. Take his skull and return it to Emberstrife.
-    .complete 6583,1 --The Test of Skulls, Somnus
-    .mob Somnus
-step
-    .goto 1445,56.66,87.72
-    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
-    .turnin 6583 >>Turn in The Test of Skulls, Somnus
-    .accept 6585 >>Accept The Test of Skulls, Axtroz
-    .target Emberstrife
-step
-    .goto 1437,81.82,48.24
-    >>Collect |cRXP_LOOT_[The Skull of Axtroz]|r from |cRXP_ENEMY_Axtroz|r
-    *Travel to Grim Batol and track down Axtroz, drake champion of the Red Flight. Destroy him and take his skull. Return the skull to Emberstrife.
-    .complete 6585,1 --The Test of Skulls, Axtroz
-    .mob Axtroz
-step
-    .goto 1445,56.66,87.72
-    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
-    .turnin 6585 >>Turn in The Test of Skulls, Axtroz
-    .accept 6601 >>Accept Ascension...
-    .target Emberstrife
-step
-    .goto 1444,46.39,18.24
-    >>Talk to |cRXP_FRIENDLY_Rexxar|r
-    .turnin 6601 >>Turn in Ascension...
-    .target Rexxar
+    +|cRXP_WARN_Lower Blackrock Spire|r (levels 55-60). Pick up 16 dungeon quests solo (roughly 1 h 15 min with the hand-ins), then ONE run with a group (roughly 4 h 30 min). No group needed until the run step. Click to start.
+    *Door: Blackrock Spire door inside Blackrock Mountain. No key.
+    *Lower Blackrock Spire 55-60, Upper Blackrock Spire 59-60.
+    *Its 10 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1446,66.89,24.03
+    >>Talk to |cRXP_FRIENDLY_Prospector Ironboot|r
+    .accept 4788 >>Accept The Final Tablets
+    .target Prospector Ironboot
 step
     .goto 1418,5.96,47.73
     >>Talk to |cRXP_FRIENDLY_Galamav the Marksman|r
@@ -4025,6 +4110,7 @@ step
     .goto 1418,5.81,47.52
     >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
     .accept 4903 >>Accept Warlord's Command
+    .accept 98325 >>Accept Blood and Thunder
     .target Warlord Goretooth
 step
     .goto 1428,65.89,21.92
@@ -4038,48 +4124,23 @@ step
     .accept 4866 >>Accept Mother's Milk
     .target Ragged John
 step
-    .goto 1428,65.24,24
-    >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
-    .accept 4734 >>Accept Egg Freezing
-    .target Tinkee Steamboil
-step
-    .goto 1458,50.14,67.97
-    >>Talk to |cRXP_FRIENDLY_Apothecary Zinge|r
-    .accept 4769 >>Accept Vivian Lagrave and the Darkstone Tablet
-    .target Apothecary Zinge
-step
-    .goto 1446,66.89,24.03
-    >>Talk to |cRXP_FRIENDLY_Prospector Ironboot|r
-    .accept 4788 >>Accept The Final Tablets
-    .target Prospector Ironboot
-step
     .goto 1452,61.63,38.61
     >>Talk to |cRXP_FRIENDLY_Felnok Steelspring|r
     .accept 4907 >>Accept Tinkee Steamboil
     .target Felnok Steelspring
 step
-    .goto 1454,31.73,37.82
-    >>Talk to |cRXP_FRIENDLY_Thrall|r
-    .accept 4974 >>Accept For The Horde!
-    .target Thrall
-step
-    .goto 1422,50.79,77.85
-    >>Talk to |cRXP_FRIENDLY_Myranda the Hag|r
-    .accept 6569 >>Accept Oculus Illusions
-    .target Myranda the Hag
-step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1427,34.8,85.3
-    >>Inside Blackrock Spire: these quests start from a drop or an object in the dungeon
+    >>Inside Lower Blackrock Spire: these quests start from a drop or an object in the dungeon
     .accept 4742 >>Accept Seal of Ascension
     .accept 4867 >>Accept Urok Doomhowl
-    .accept 5047 >>Accept Finkle Einhorn, At Your Service!
-    .accept 5160 >>Accept The Matron Protectorate
+    .accept 8966 >>Accept The Left Piece of Lord Valthalak's Amulet
+    .accept 8989 >>Accept The Right Piece of Lord Valthalak's Amulet
 step
     .goto 1427,34.8,85.3
-    >>Enter |cRXP_WARN_Blackrock Spire|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Lower Blackrock Spire|r with your group. Quest goals inside:
     *The Pack Mistress: Slay Halycon, pack mistress of the Bloodaxe worg.
     *Kibler's Exotic Pets: Travel to Blackrock Spire and find Bloodaxe Worg Pups. Use the cage to carry the ferocious little beasts. Bring back a Caged Worg Pup to Kibler.
     *Seal of Ascension: Find the three gemstones of command: The Gemstone of Smolderthorn, Gemstone of Spirestone, and Gemstone of Bloodaxe. Return them, along with the Unadorned Seal of Ascension, to Vaelan.
@@ -4087,8 +4148,8 @@ step
     *En-Ay-Es-Tee-Why: Travel to Blackrock Spire and collect 15 Spire Spider Eggs for Kibler.
     *Urok Doomhowl: Read Warosh's Scroll. Bring Warosh's Mojo to Warosh.
     *Warlord's Command: Slay Highlord Omokk, War Master Voone, and Overlord Wyrmthalak. Recover Important Blackrock Documents. Return to Warlord Goretooth in Kargath when the mission has been accomplished.
-    *For The Horde!: Travel to Blackrock Spire and slay Warchief Rend Blackhand. Take his head and return to Orgrimmar.
-    *Oculus Illusions: Travel to Blackrock Spire and collect 20 Black Dragonspawn Eyes. Return to Myranda the Hag when the task is complete.
+    *The Left Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth the spirit of Mor Grayhoof and slay him. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak's Amulet and the Brazier of Beckoning.
+    *The Right Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth the spirit of Mor Grayhoof and slay him. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak's Amulet and the Brazier of Beckoning.
     .complete 4724,1 --The Pack Mistress
     .complete 4729,1 --Kibler's Exotic Pets
     .complete 4742,1 --Seal of Ascension
@@ -4103,16 +4164,20 @@ step
     .complete 4903,2 --Warlord's Command
     .complete 4903,3 --Warlord's Command
     .complete 4903,4 --Warlord's Command
-    .complete 4974,1 --For The Horde!
-    .complete 6569,1 --Oculus Illusions
+    .complete 8966,1 --The Left Piece of Lord Valthalak's Amulet
+    .complete 8966,2 --The Left Piece of Lord Valthalak's Amulet
+    .complete 8989,1 --The Right Piece of Lord Valthalak's Amulet
+    .complete 8989,2 --The Right Piece of Lord Valthalak's Amulet
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
 step
     .goto 1427,34.8,85.3
-    >>Inside Blackrock Spire: these quests start from a drop or an object in the dungeon
+    >>Inside Lower Blackrock Spire: these quests start from a drop or an object in the dungeon
     .turnin 4742 >>Turn in Seal of Ascension
     .turnin 4867 >>Turn in Urok Doomhowl
+    .turnin 8966 >>Turn in The Left Piece of Lord Valthalak's Amulet
+    .turnin 8989 >>Turn in The Right Piece of Lord Valthalak's Amulet
 step
     .goto 1418,5.96,47.73
     >>Talk to |cRXP_FRIENDLY_Galamav the Marksman|r
@@ -4127,12 +4192,8 @@ step
     .goto 1418,5.81,47.52
     >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
     .turnin 4903 >>Turn in Warlord's Command
+    .turnin 98325 >>Turn in Blood and Thunder
     .target Warlord Goretooth
-step
-    .goto 1418,2.9,47.76
-    >>Talk to |cRXP_FRIENDLY_Shadowmage Vivian Lagrave|r
-    .turnin 4769 >>Turn in Vivian Lagrave and the Darkstone Tablet
-    .target Shadowmage Vivian Lagrave
 step
     .goto 1428,65.89,21.92
     >>Talk to |cRXP_FRIENDLY_Kibler|r
@@ -4147,7 +4208,6 @@ step
 step
     .goto 1428,65.24,24
     >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
-    .turnin 4734 >>Turn in Egg Freezing
     .turnin 4907 >>Turn in Tinkee Steamboil
     .target Tinkee Steamboil
 step
@@ -4156,128 +4216,34 @@ step
     .turnin 4788 >>Turn in The Final Tablets
     .target Prospector Ironboot
 step
-    .goto 1454,31.73,37.82
-    >>Talk to |cRXP_FRIENDLY_Thrall|r
-    .turnin 4974 >>Turn in For The Horde!
-    .target Thrall
-step
-    .goto 1452,60.99,38.78
-    >>Talk to |cRXP_FRIENDLY_Malyfous Darkhammer|r
-    .turnin 5047 >>Turn in Finkle Einhorn, At Your Service!
-    .target Malyfous Darkhammer
-step
-    .goto 1452,54.55,51.2
-    >>Talk to |cRXP_FRIENDLY_Haleh|r
-    .turnin 5160 >>Turn in The Matron Protectorate
-    .target Haleh
-step
-    .goto 1422,50.79,77.85
-    >>Talk to |cRXP_FRIENDLY_Myranda the Hag|r
-    .turnin 6569 >>Turn in Oculus Illusions
-    .target Myranda the Hag
-step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
-step
-    .goto 1428,65.24,24
-    >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
-    .accept 4735 >>Accept Egg Collection
-    .target Tinkee Steamboil
-step
-    .goto 1418,2.9,47.76
-    >>Talk to |cRXP_FRIENDLY_Shadowmage Vivian Lagrave|r
-    .accept 4768 >>Accept The Darkstone Tablet
-    .target Shadowmage Vivian Lagrave
-step
-    .goto 1418,5.81,47.52
-    >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
-    .accept 98325 >>Accept Blood and Thunder
-    .target Warlord Goretooth
-step
-    .goto 1444,46.39,18.24
-    >>Talk to |cRXP_FRIENDLY_Rexxar|r
-    .accept 6602 >>Accept Blood of the Black Dragon Champion
-    .target Rexxar
-step
-    #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1427,34.8,85.3
-    >>Inside Blackrock Spire: these quests start from a drop or an object in the dungeon
+    >>Inside Lower Blackrock Spire: these quests start from a drop or an object in the dungeon
     .accept 4743 >>Accept Seal of Ascension
     .accept 4982 >>Accept Bijou's Belongings
-    .accept 8966 >>Accept The Left Piece of Lord Valthalak's Amulet
-    .accept 8989 >>Accept The Right Piece of Lord Valthalak's Amulet
-    .accept 8995 >>Accept Mea Culpa, Lord Valthalak
 step
     .goto 1427,34.8,85.3
-    >>Loot |cRXP_LOOT_[Blackhand's Command]|r from |cRXP_ENEMY_Scarshield Quartermaster|r, then click it to start the quest
-    .accept 7761 >>Accept Blackhand's Command
-    .use 18987
-    .mob Scarshield Quartermaster
-step
-    .goto 1427,34.8,85.3
-    >>Enter |cRXP_WARN_Blackrock Spire|r and run it with a group. Quest goals inside:
-    *Egg Collection: Bring 8 Collected Dragon Eggs and the Collectronic Module to Tinkee Steamboil at Flame Crest in the Burning Steppes.
+    >>Enter |cRXP_WARN_Lower Blackrock Spire|r with your group. Quest goals inside:
     *Seal of Ascension: Travel to the Wyrmbog in Dustwallow Marsh. Find the ancient drake, Emberstrife and beat him without mercy until his will is broken.
-    *The Darkstone Tablet: Bring the Darkstone Tablet to Shadow Mage Vivian Lagrave in Kargath.
     *Bijou's Belongings: Find Bijou's Belongings and return them to her. You recall her mentioning that she stashed them on the bottom floor of the city.
-    *Blood of the Black Dragon Champion: Travel to Blackrock Spire and slay General Drakkisath. Gather his blood and return it to Rexxar.
-    *The Left Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth the spirit of Mor Grayhoof and slay him. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak's Amulet and the Brazier of Beckoning.
-    *The Right Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth the spirit of Mor Grayhoof and slay him. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak's Amulet and the Brazier of Beckoning.
-    *Mea Culpa, Lord Valthalak: Use the Brazier of Beckoning to summon Lord Valthalak. Dispatch him, and use Lord Valthalak's Amulet on the corpse. Then, return Lord Valthalak's Amulet to the Spirit of Lord Valthalak.
-    .complete 4735,1 --Egg Collection
     .complete 4743,1 --Seal of Ascension
-    .complete 4768,1 --The Darkstone Tablet
     .complete 4982,1 --Bijou's Belongings
-    .complete 6602,1 --Blood of the Black Dragon Champion
-    .complete 8966,1 --The Left Piece of Lord Valthalak's Amulet
-    .complete 8966,2 --The Left Piece of Lord Valthalak's Amulet
-    .complete 8989,1 --The Right Piece of Lord Valthalak's Amulet
-    .complete 8989,2 --The Right Piece of Lord Valthalak's Amulet
-    .complete 8995,1 --Mea Culpa, Lord Valthalak
-    .complete 8995,2 --Mea Culpa, Lord Valthalak
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
 step
     .goto 1427,34.8,85.3
-    >>Inside Blackrock Spire: these quests start from a drop or an object in the dungeon
+    >>Inside Lower Blackrock Spire: these quests start from a drop or an object in the dungeon
     .turnin 4743 >>Turn in Seal of Ascension
     .turnin 4982 >>Turn in Bijou's Belongings
-    .turnin 8966 >>Turn in The Left Piece of Lord Valthalak's Amulet
-    .turnin 8989 >>Turn in The Right Piece of Lord Valthalak's Amulet
-    .turnin 8995 >>Turn in Mea Culpa, Lord Valthalak
-step
-    .goto 1427,34.8,85.3
-    >>Loot |cRXP_LOOT_[Blackhand's Command]|r from |cRXP_ENEMY_Scarshield Quartermaster|r, then click it to start the quest
-    .turnin 7761 >>Turn in Blackhand's Command
-step
-    .goto 1428,65.24,24
-    >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
-    .turnin 4735 >>Turn in Egg Collection
-    .target Tinkee Steamboil
-step
-    .goto 1418,2.9,47.76
-    >>Talk to |cRXP_FRIENDLY_Shadowmage Vivian Lagrave|r
-    .turnin 4768 >>Turn in The Darkstone Tablet
-    .target Shadowmage Vivian Lagrave
-step
-    .goto 1418,5.81,47.52
-    >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
-    .turnin 98325 >>Turn in Blood and Thunder
-    .target Warlord Goretooth
-step
-    .goto 1444,46.39,18.24
-    >>Talk to |cRXP_FRIENDLY_Rexxar|r
-    .turnin 6602 >>Turn in Blood of the Black Dragon Champion
-    .target Rexxar
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 3)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 3)|r
 step
     .goto 1427,34.8,85.3
-    >>Inside Blackrock Spire: these quests start from a drop or an object in the dungeon
+    >>Inside Lower Blackrock Spire: these quests start from a drop or an object in the dungeon
     .accept 4983 >>Accept Bijou's Reconnaissance Report
 step
     #completewith next
@@ -4289,7 +4255,7 @@ step
     .target Lexlort
 step
     .goto 1427,34.8,85.3
-    +Dungeon entrance: Blackrock Spire. Done with this dungeon? Click to finish.
+    +Dungeon entrance: Lower Blackrock Spire. Done with this dungeon? Click to finish.
 ]])
 
 RXPGuides.RegisterGuide([[
@@ -4299,16 +4265,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 50-60
-#name 55-60 Blackmaw Hold
-#displayname 55-60 Blackmaw Hold
-#next 58-60 Shaper's Terrace
+#name 55-60 Blackmaw Hold pre-quests
+#displayname 55-60 Blackmaw Hold pre-quests
+#next 55-60 Blackmaw Hold
 step
-    +|cRXP_WARN_Blackmaw Hold|r (levels 55-60). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *New Forever dungeon in north Azshara, through the furbolg tunnel (bear-head entrance). The portal is deep inside.
-    *Pre-quests in this guide: Beneath Nordrassil
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Blackmaw Hold: pre-quests|r. 1 quests, solo (no group needed), roughly 10 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Beneath Nordrassil
 step
     .goto 1447,22.56,51.42
     >>Talk to |cRXP_FRIENDLY_Jediga|r
@@ -4320,8 +4282,26 @@ step
     .turnin 92346 >>Turn in Beneath Nordrassil
     .target Nara Wildmane
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Blackmaw Hold itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 55-60 Blackmaw Hold
+#displayname 55-60 Blackmaw Hold
+#next 56-60 Dire Maul West pre-quests
+step
+    +|cRXP_WARN_Blackmaw Hold|r (levels 55-60). Pick up 8 dungeon quests solo (roughly 55 min with the hand-ins), then ONE run with a group (roughly 1 h 20 min). No group needed until the run step. Click to start.
+    *New Forever dungeon in north Azshara, through the furbolg tunnel (bear-head entrance). The portal is deep inside.
+    *Its 1 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1456,75.65,31.61
     >>Talk to |cRXP_FRIENDLY_Nara Wildmane|r
@@ -4338,7 +4318,7 @@ step
     .accept 92066 >>Accept The Twin Bears
     .target Lorekeeper Nok
 step
-    .goto 1447,35.97,25.45
+    .goto 1447,35.9,25.34
     >>Loot |cRXP_LOOT_[Feathered Charm Necklace]|r from |cRXP_ENEMY_Impaan the Imprisoner|r, |cRXP_ENEMY_Varrox Bleakhoof|r, |cRXP_ENEMY_Legashi Subjugator|r, then click it to start the quest
     .accept 92070 >>Accept A Lost Memento
     .use 249698
@@ -4355,14 +4335,14 @@ step
     .accept 97198 >>Accept Blackmaw Magic
     .target Muln Earthfury
 step
-    .goto 1447,35.97,25.45
+    .goto 1447,35.9,25.34
     >>Collect |cRXP_LOOT_[Feathered Charm Necklace]|r from |cRXP_ENEMY_Impaan the Imprisoner|r, |cRXP_ENEMY_Varrox Bleakhoof|r, |cRXP_ENEMY_Legashi Subjugator|r
     *Find the owner of the Feathered Charm Necklace.
     .complete 92070,1 --A Lost Memento
     .mob Impaan the Imprisoner
     .mob Varrox Bleakhoof
 step
-    .goto 1447,39.96,33.19
+    .goto 1447,34.87,24.25
     >>Collect |cRXP_LOOT_[Blackmaw Pouch]|r from |cRXP_ENEMY_Withermaw|r, |cRXP_ENEMY_Bonesnout the Unbroken|r, |cRXP_ENEMY_Impaan the Imprisoner|r
     *Enter Blackmaw Hold and recover 5 Blackmaw Pouches for Ekkal at the Ruins of Eldarath in Azshara.
     .complete 97327,1 --Blackmaw Pouches
@@ -4370,14 +4350,14 @@ step
     .mob Bonesnout the Unbroken
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1447,38.7,33.4
     >>Inside Blackmaw Hold: these quests start from a drop or an object in the dungeon
     .accept 92067 >>Accept Feeding Time!
 step
     .goto 1447,38.7,33.4
-    >>Enter |cRXP_WARN_Blackmaw Hold|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Blackmaw Hold|r with your group. Quest goals inside:
     *Blackmaw Reclamation: Bring Varrox Bleakhoof's Head to Gatekeeper Rageroar at Ursolan.
     *The Twin Bears: Find the Totem of Ursoc and the Totem of Ursol inside Blackmaw Hold. Then, return them to Lorekeeper Nok at Ursolan.
     *Get to the Roots of It: Gather 10 Nordrassil Root Caps inside Blackmaw Hold for Nara Wildmane in Thunder Bluff.
@@ -4426,14 +4406,14 @@ step
     .target Muln Earthfury
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1447,42,38.88
     >>Talk to |cRXP_FRIENDLY_Ekkal|r
     .accept 96246 >>Accept Blackmaw Pouches
     .target Ekkal
 step
-    .goto 1447,39.96,33.19
+    .goto 1447,34.87,24.25
     >>Collect |cRXP_LOOT_[Blackmaw Pouch]|r from |cRXP_ENEMY_Withermaw|r, |cRXP_ENEMY_Bonesnout the Unbroken|r, |cRXP_ENEMY_Impaan the Imprisoner|r
     .complete 96246,1 --Blackmaw Pouches
     .mob Withermaw
@@ -4458,15 +4438,277 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 50-60
+#name 56-60 Dire Maul West pre-quests
+#displayname 56-60 Dire Maul West pre-quests
+#next 56-60 Dire Maul West
+step
+    +|cRXP_WARN_Dire Maul West: pre-quests|r. 3 quests, solo (no group needed), roughly 40 min. The run guide comes after this one. Click to start.
+    *Pre-quests: In Search of Anthion, Dead Man's Plea, Anthion's Strange Request
+step
+    .goto 1454,34.95,38.29
+    >>Talk to |cRXP_FRIENDLY_Mokvar|r
+    .accept 8930 >>Accept In Search of Anthion
+    .target Mokvar
+step
+    .goto 1423,26.11,11.3
+    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
+    .turnin 8930 >>Turn in In Search of Anthion
+    .accept 8945 >>Accept Dead Man's Plea
+    .target Anthion Harmon
+step
+    >>Kill |cRXP_ENEMY_Ysida Harmon|r
+    *Go into Stratholme and rescue Ysida Harmon from Baron Rivendare.
+    .complete 8945,1 --Dead Man's Plea
+    .mob Ysida Harmon
+step
+    .goto 1423,26.11,11.3
+    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
+    .turnin 8945 >>Turn in Dead Man's Plea
+    .accept 8947 >>Accept Anthion's Strange Request
+    .target Anthion Harmon
+step
+    >>Collect |cRXP_LOOT_[Dark Iron Bar]|r. Collect |cRXP_LOOT_[Enchanted Leather]|r. Collect |cRXP_LOOT_[Mooncloth]|r. Collect |cRXP_LOOT_[Cured Rugged Hide]|r
+    *Bring 3 Dark Iron Bars, 20 Enchanted Leather, 3 Mooncloth and 4 Cured Rugged Hides to Anthion Harmon in the Eastern Plaguelands.
+    .complete 8947,1 --Anthion's Strange Request
+    .complete 8947,2 --Anthion's Strange Request
+    .complete 8947,3 --Anthion's Strange Request
+    .complete 8947,4 --Anthion's Strange Request
+step
+    .goto 1423,26.11,11.3
+    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
+    .turnin 8947 >>Turn in Anthion's Strange Request
+    .target Anthion Harmon
+step
+    +|cRXP_WARN_Pre-quests done.|r Next: Dire Maul West itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 56-60 Dire Maul West
+#displayname 56-60 Dire Maul West
+#next 56-60 Dire Maul North
+step
+    +|cRXP_WARN_Dire Maul West|r (levels 56-60). Pick up 11 dungeon quests solo (roughly 40 min with the hand-ins), then ONE run with a group (roughly 3 h). No group needed until the run step. Click to start.
+    *Door: West wall of the central courtyard. Needs the Crescent Key (Pusillin, Dire Maul East).
+    *East 54-60, West 56-60, North 56-60.
+    *Its 3 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
+    #completewith next
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1423,26.11,11.3
+    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
+    .accept 8948 >>Accept Anthion's Old Friend
+    .target Anthion Harmon
+step
+    .goto 1444,75.24,43.76
+    >>Talk to |cRXP_FRIENDLY_Sage Korolusk|r
+    .accept 7481 >>Accept Elven Legends
+    .target Sage Korolusk
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: these quests start from a drop or an object in the dungeon
+    .accept 1318 >>Accept Unfinished Gordok Business
+    .accept 7461 >>Accept The Madness Within
+    .accept 7703 >>Accept Unfinished Gordok Business
+    .accept 84555 >>Accept Nostro's Compendium
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: loot |cRXP_LOOT_[Foror's Compendium of Dragon Slaying]|r and click it to start the quest
+    .accept 7507 >>Accept Foror's Compendium
+    .use 18401
+step
+    .goto 1444,60.3,30.2
+    >>Enter |cRXP_WARN_Dire Maul West|r with your group. Quest goals inside:
+    *Unfinished Gordok Business: Find the Gauntlet of Gordok Might and return it to Captain Kromcrush in Dire Maul.
+    *The Madness Within: You must destroy the guardians surrounding the 5 Pylons that power the Prison of Immol'thar. Once the Pylons have powered down, the force field surrounding Immol'thar will have dissipated.
+    *Unfinished Gordok Business: Find the Gauntlet of Gordok Might and return it to Captain Kromcrush in Dire Maul.
+    .complete 1318,1 --Unfinished Gordok Business
+    .complete 7461,1 --The Madness Within
+    .complete 7461,2 --The Madness Within
+    .complete 7703,1 --Unfinished Gordok Business
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: these quests start from a drop or an object in the dungeon
+    .turnin 1318 >>Turn in Unfinished Gordok Business
+    .turnin 7461 >>Turn in The Madness Within
+    .turnin 7703 >>Turn in Unfinished Gordok Business
+    .turnin 84555 >>Turn in Nostro's Compendium
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: loot |cRXP_LOOT_[Foror's Compendium of Dragon Slaying]|r and click it to start the quest
+    .turnin 7507 >>Turn in Foror's Compendium
+step
+    .goto 1444,75.24,43.76
+    >>Talk to |cRXP_FRIENDLY_Sage Korolusk|r
+    .turnin 7481 >>Turn in Elven Legends
+    .target Sage Korolusk
+step
+    .goto 1423,26.11,11.3
+    >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
+    .turnin 8948 >>Turn in Anthion's Old Friend
+    .target Anthion Harmon
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: loot |cRXP_LOOT_[A Dull and Flat Elven Blade]|r and click it to start the quest
+    .accept 7508 >>Accept The Forging of Quel'Serrar
+    .use 18513
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: these quests start from a drop or an object in the dungeon
+    .accept 7877 >>Accept The Treasure of the Shen'dralar
+    .accept 8949 >>Accept Falrin's Vendetta
+step
+    #completewith next
+    +|cRXP_WARN_Outside: collect what the quests you got inside need|r
+step
+    .goto 1444,59.24,43.08
+    >>Collect |cRXP_LOOT_[Ogre Warbeads]|r from |cRXP_ENEMY_Urok Enforcer|r, |cRXP_ENEMY_Urok Ogre Magus|r, |cRXP_ENEMY_Ogre Magi|r
+    *Collect 25 Ogre Warbeads from Ogres inside Dire Maul or Blackrock Spire and return to Falrin Treeshaper inside the Athenaeum in Dire Maul.
+    .complete 8949,1 --Falrin's Vendetta
+    .mob Urok Enforcer
+    .mob Urok Ogre Magus
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: loot |cRXP_LOOT_[A Dull and Flat Elven Blade]|r and click it to start the quest
+    .turnin 7508 >>Turn in The Forging of Quel'Serrar
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: these quests start from a drop or an object in the dungeon
+    .turnin 7877 >>Turn in The Treasure of the Shen'dralar
+    .turnin 8949 >>Turn in Falrin's Vendetta
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 3)|r
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: these quests start from a drop or an object in the dungeon
+    .accept 8950 >>Accept The Instigator's Enchantment
+step
+    .goto 1444,60.3,30.2
+    >>Enter |cRXP_WARN_Dire Maul West|r with your group. Quest goals inside:
+    *The Instigator's Enchantment: Bring the following to Falrin Treeshaper inside Dire Maul: 1 Jeering Spectre's Essence, 4 Dark Runes and 8 Large Brilliant Shards.
+    .complete 8950,1 --The Instigator's Enchantment
+    .complete 8950,2 --The Instigator's Enchantment
+    .complete 8950,3 --The Instigator's Enchantment
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1444,60.3,30.2
+    >>Inside Dire Maul West: these quests start from a drop or an object in the dungeon
+    .turnin 8950 >>Turn in The Instigator's Enchantment
+step
+    .goto 1444,60.3,30.2
+    +Dungeon entrance: Dire Maul West. Done with this dungeon? Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 56-60 Dire Maul North
+#displayname 56-60 Dire Maul North
+#next 58-60 Shaper's Terrace
+step
+    +|cRXP_WARN_Dire Maul North|r (levels 56-60). Pick up 4 dungeon quests solo (roughly 45 min with the hand-ins), then ONE run with a group (roughly 45 min). No group needed until the run step. Click to start.
+    *Door: North wall of the central courtyard. Needs the Crescent Key.
+    *East 54-60, West 56-60, North 56-60.
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
+step
+    .goto 1444,62.5,24.9
+    >>Inside Dire Maul North: these quests start from a drop or an object in the dungeon
+    .accept 1193 >>Accept A Broken Trap
+    .accept 5518 >>Accept The Gordok Ogre Suit
+    .accept 5525 >>Accept Free Knot!
+    .accept 5528 >>Accept The Gordok Taste Test
+step
+    .goto 1444,62.5,24.9
+    >>Enter |cRXP_WARN_Dire Maul North|r with your group. Quest goals inside:
+    *A Broken Trap
+    *The Gordok Ogre Suit: Bring 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Threads, and Ogre Tannin to Knot Thimblejack. He is currently chained inside the Gordok wing of Dire Maul.
+    *Free Knot!
+    .complete 1193,1 --A Broken Trap
+    .complete 5518,4 --The Gordok Ogre Suit
+    .complete 5525,1 --Free Knot!
+step
+    #completewith next
+    +|cRXP_WARN_Outside: collect what the quests you got inside need|r
+step
+    .goto 1448,46.3,90.62
+    >>Collect |cRXP_LOOT_[Frost Oil]|r from |cRXP_ENEMY_Vilebranch Witch Doctor|r, |cRXP_ENEMY_Tar Creeper|r, |cRXP_ENEMY_Deadwood Gardener|r
+    .complete 1193,2 --A Broken Trap
+    .mob Vilebranch Witch Doctor
+    .mob Tar Creeper
+step
+    .goto 1451,18.3,85.84
+    >>Collect |cRXP_LOOT_[Bolt of Runecloth]|r from |cRXP_ENEMY_Twilight Lord Everun|r
+    *Bring 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Threads, and Ogre Tannin to Knot Thimblejack. He is currently chained inside the Gordok wing of Dire Maul.
+    .complete 5518,1 --The Gordok Ogre Suit
+    .mob Twilight Lord Everun
+step
+    .goto 1412,37.39,44.91
+    >>Buy |cRXP_LOOT_[Rugged Leather]|r from |cRXP_FRIENDLY_Lhara|r
+    *Bring 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Threads, and Ogre Tannin to Knot Thimblejack. He is currently chained inside the Gordok wing of Dire Maul.
+    .complete 5518,2 --The Gordok Ogre Suit
+step
+    .goto 1435,44.77,56.63
+    >>Buy |cRXP_LOOT_[Rune Thread]|r from |cRXP_FRIENDLY_Banalash|r
+    *Bring 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Threads, and Ogre Tannin to Knot Thimblejack. He is currently chained inside the Gordok wing of Dire Maul.
+    .complete 5518,3 --The Gordok Ogre Suit
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1444,62.5,24.9
+    >>Inside Dire Maul North: these quests start from a drop or an object in the dungeon
+    .turnin 1193 >>Turn in A Broken Trap
+    .turnin 5518 >>Turn in The Gordok Ogre Suit
+    .turnin 5525 >>Turn in Free Knot!
+    .turnin 5528 >>Turn in The Gordok Taste Test
+step
+    .goto 1444,62.5,24.9
+    +Dungeon entrance: Dire Maul North. Done with this dungeon? Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
 #name 58-60 Shaper's Terrace
 #displayname 58-60 Shaper's Terrace
-#next 58-60 Scholomance
+#next 58-60 Scholomance pre-quests
 step
-    +|cRXP_WARN_Shaper's Terrace|r (levels 58-60). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
+    +|cRXP_WARN_Shaper's Terrace|r (levels 58-60). Pick up 3 dungeon quests solo (roughly 35 min with the hand-ins), then ONE run with a group (roughly 1 h 20 min). No group needed until the run step. Click to start.
     *New Forever dungeon on the hill north of Marshal's Refuge in Un'Goro. Power-crystal consoles inside open the way. No key needed.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1458,48.82,69.28
     >>Talk to |cRXP_FRIENDLY_Master Apothecary Faranell|r
@@ -4484,10 +4726,10 @@ step
     .target Mayena Earthseeker
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1449,48.1,6.1
-    >>Enter |cRXP_WARN_Shaper's Terrace|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Shaper's Terrace|r with your group. Quest goals inside:
     *The Dark Crystal: Gather a colorless Drained Crystal Fragment near the Achromatic Crystal in the Shaper's Terrace.
     *Crystalline Elements: Bring Mayena Earthseeker a Moist Crystal, a Charged Crystal, a Noxious Crystal and a Fiery Crystal from Shaper's Terrace.
     *Essence of Seeping Slimes: Gather 8 Seeping Slime Essence in the Shaper's Terrace.
@@ -4527,15 +4769,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 50-60
-#name 58-60 Scholomance
-#displayname 58-60 Scholomance
-#next 58-60 Stratholme
+#name 58-60 Scholomance pre-quests
+#displayname 58-60 Scholomance pre-quests
+#next 58-60 Scholomance
 step
-    +|cRXP_WARN_Scholomance|r (levels 58-60). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: Broodling Essence, Egg Freezing, Egg Collection, Felnok Steelspring, Chillwind Horns, Return to Tinkee, The Human, Ras Frostwhisper, The Dying, Ras Frostwhisper, Menethil's Gift, Menethil's Gift, Soulbound Keepsake, Leonid Barthalomew...
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Scholomance: pre-quests|r. 12 quests, solo (no group needed), roughly 2 h 10 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Broodling Essence, Egg Freezing, Egg Collection, Felnok Steelspring, Chillwind Horns, Return to Tinkee, The Human, Ras Frostwhisper, The Dying, Ras Frostwhisper, Menethil's Gift, Soulbound Keepsake, Leonid Barthalomew, Bodley's Unfortunate Fate
 step
     .goto 1428,65.24,24
     >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
@@ -4645,8 +4884,25 @@ step
     .turnin 5522 >>Turn in Leonid Barthalomew
     .target Leonid Barthalomew the Revered
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Scholomance itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 58-60 Scholomance
+#displayname 58-60 Scholomance
+#next 58-60 Stratholme Live pre-quests
+step
+    +|cRXP_WARN_Scholomance|r (levels 58-60). Pick up 10 dungeon quests solo (roughly 50 min with the hand-ins), then ONE run with a group (roughly 4 h). No group needed until the run step. Click to start.
+    *Its 12 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1423,71.89,48.29
     >>Talk to |cRXP_FRIENDLY_Leonid Barthalomew the Revered|r
@@ -4674,7 +4930,7 @@ step
     .target Magistrate Marduke
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
     .goto 1422,69.7,73.2
     >>Inside Scholomance: these quests start from a drop or an object in the dungeon
@@ -4682,7 +4938,7 @@ step
     .accept 8992 >>Accept The Right Piece of Lord Valthalak's Amulet
 step
     .goto 1422,69.7,73.2
-    >>Enter |cRXP_WARN_Scholomance|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Scholomance|r with your group. Quest goals inside:
     *Barov Family Fortune: Venture to the Scholomance and recover the Barov family fortune. Four deeds make up this fortune: The Deed to Caer Darrow; The Deed to Brill; The Deed to Tarren Mill; and The Deed to Southshore. Return to Alexi Barov when you have completed this task.
     *Doctor Theolen Krastinov, the Butcher: Find Doctor Theolen Krastinov inside the Scholomance. Destroy him, then burn the Remains of Eva Sarkhoff and the Remains of Lucien Sarkhoff. Return to Eva Sarkhoff when the task is complete.
     *The Lich, Ras Frostwhisper: Find Ras Frostwhisper in the Scholomance. When you have found him, use the Soulbound Keepsake on his undead visage. Should you succeed in reverting him to a mortal, strike him down and recover the Human Head of Ras Frostwhisper. Take the head back to Magistrate Marduke.
@@ -4733,7 +4989,7 @@ step
     .target Betina Bigglezink
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1423,71.66,49.94
     >>Talk to |cRXP_FRIENDLY_Betina Bigglezink|r
@@ -4746,10 +5002,10 @@ step
     .target Eva Sarkhoff
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
     .goto 1422,69.7,73.2
-    >>Enter |cRXP_WARN_Scholomance|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Scholomance|r with your group. Quest goals inside:
     *Dawn's Gambit: Place Dawn's Gambit in the Viewing Room of the Scholomance. Defeat Vectus, then return to Betina Bigglezink.
     *Krastinov's Bag of Horrors: Locate Jandice Barov in the Scholomance and destroy her. From her corpse recover Krastinov's Bag of Horrors. Return the bag to Eva Sarkhoff.
     .complete 4771,1 --Dawn's Gambit
@@ -4769,7 +5025,7 @@ step
     .target Betina Bigglezink
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1422,70.22,73.71
     >>Talk to |cRXP_FRIENDLY_Eva Sarkhoff|r
@@ -4777,10 +5033,10 @@ step
     .target Eva Sarkhoff
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 3)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 3)|r
 step
     .goto 1422,69.7,73.2
-    >>Enter |cRXP_WARN_Scholomance|r and run it with a group. Quest goals inside:
+    >>Enter |cRXP_WARN_Scholomance|r with your group. Quest goals inside:
     *Kirtonos the Herald: Return to the Scholomance with the Blood of Innocents. Find the porch and place the Blood of Innocents in the brazier. Kirtonos will come to feast upon your soul.
     .complete 5384,1 --Kirtonos the Herald
 step
@@ -4803,14 +5059,12 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Dungeon Quests Only
 #groupweight 80
 #subgroup Levels 50-60
-#name 58-60 Stratholme
-#displayname 58-60 Stratholme
+#name 58-60 Stratholme Live pre-quests
+#displayname 58-60 Stratholme Live pre-quests
+#next 58-60 Stratholme Live
 step
-    +|cRXP_WARN_Stratholme|r (levels 58-60). Do the pick-ups below, then run the dungeon, then hand everything in. Click to start.
-    *Pre-quests in this guide: The Restless Souls, Doctor Theolen Krastinov, the Butcher, Kirtonos the Herald, The Human, Ras Frostwhisper, The Dying, Ras Frostwhisper, Krastinov's Bag of Horrors, Demon Dogs, Blood Tinged Skies, Carrion Grubbage, Redemption, Of Forgotten Memories, Of Lost Honor...
-step
-    #completewith next
-    +|cRXP_WARN_Pre-quests|r
+    +|cRXP_WARN_Stratholme Live: pre-quests|r. 9 quests, solo (no group needed), roughly 1 h 5 min. The run guide comes after this one. Click to start.
+    *Pre-quests: The Restless Souls, Demon Dogs, Blood Tinged Skies, Carrion Grubbage, Redemption, Of Forgotten Memories, Of Lost Honor, Of Love and Family, Bodley's Unfortunate Fate
 step
     .goto 1423,5.16,35.57
     >>Talk to |cRXP_FRIENDLY_Tirion Fordring|r
@@ -4832,11 +5086,6 @@ step
     >>Talk to |cRXP_FRIENDLY_Tirion Fordring|r
     .turnin 5543 >>Turn in Blood Tinged Skies
     .target Tirion Fordring
-step
-    .goto 1423,22.23,63.51
-    >>Talk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
-    .accept 6133 >>Accept The Ranger Lord's Behest
-    .target Nathanos Blightcaller
 step
     .goto 1423,47.25,48.12
     >>Kill |cRXP_ENEMY_Plaguehound|r
@@ -4881,26 +5130,15 @@ step
     .accept 5845 >>Accept Of Lost Honor
     .target Tirion Fordring
 step
-    .goto 1423,69.93,53.72
-    >>Talk to |cRXP_FRIENDLY_Caretaker Alen|r
-    .accept 5281 >>Accept The Restless Souls
-    .target Caretaker Alen
-step
     .goto 1423,62.53,26.81
     >>Collect |cRXP_LOOT_[Symbol of Lost Honor]|r from |cRXP_PICK_Symbol of Lost Honor|r
     *Travel to Northdale, in the northeastern region of the Eastern Plaguelands, and recover the Symbol of Lost Honor. Return to Tirion Fordring upon completion of your objective.
     .complete 5845,1 --Of Lost Honor
 step
-    .goto 1423,46.69,13.18
-    >>Kill |cRXP_ENEMY_Pathstrider|r. Kill |cRXP_ENEMY_Ranger|r. Kill |cRXP_ENEMY_Woodsman|r. Collect |cRXP_LOOT_[Quel'Thalas Registry]|r from |cRXP_PICK_Quel'Thalas Registry|r
-    *Travel to the northern borders of the Eastern Plaguelands and recover the Quel'Thalas Registry. The item is somewhere in the Quel'Lithien lodge.
-    .complete 6133,1 --The Ranger Lord's Behest
-    .complete 6133,2 --The Ranger Lord's Behest
-    .complete 6133,3 --The Ranger Lord's Behest
-    .complete 6133,4 --The Ranger Lord's Behest
-    .mob Pathstrider
-    .mob Ranger
-    .mob Woodsman
+    .goto 1423,69.93,53.72
+    >>Talk to |cRXP_FRIENDLY_Caretaker Alen|r
+    .accept 5281 >>Accept The Restless Souls
+    .target Caretaker Alen
 step
     .goto 1423,11.36,26.6
     >>Talk to |cRXP_FRIENDLY_Egan|r
@@ -4913,27 +5151,173 @@ step
     .accept 5846 >>Accept Of Love and Family
     .target Tirion Fordring
 step
-    .goto 1423,22.23,63.51
-    >>Talk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
-    .turnin 6133 >>Turn in The Ranger Lord's Behest
-    .accept 6135 >>Accept Duskwing, Oh How I Hate Thee...
-    .target Nathanos Blightcaller
-step
-    .goto 1423,26.08,59.03
-    >>Collect |cRXP_LOOT_[Patch of Duskwing's Fur]|r from |cRXP_ENEMY_Duskwing|r
-    *Find Duskwing and slay him. From the corpse, recover a Patch of Duskwing's Fur and return it to Nathanos Blightcaller.
-    .complete 6135,1 --Duskwing, Oh How I Hate Thee...
-    .mob Duskwing
-step
-    .goto 1423,22.23,63.51
-    >>Talk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
-    .turnin 6135 >>Turn in Duskwing, Oh How I Hate Thee...
-    .target Nathanos Blightcaller
-step
     .goto 1422,65.77,75.37
     >>Talk to |cRXP_FRIENDLY_Artist Renfray|r
     .turnin 5846 >>Turn in Of Love and Family
     .target Artist Renfray
+step
+    .goto 1454,34.95,38.29
+    >>Talk to |cRXP_FRIENDLY_Mokvar|r
+    .accept 9032 >>Accept Bodley's Unfortunate Fate
+    .target Mokvar
+step
+    .goto 1454,34.95,38.29
+    >>Talk to |cRXP_FRIENDLY_Mokvar|r
+    .turnin 9032 >>Turn in Bodley's Unfortunate Fate
+    .target Mokvar
+step
+    +|cRXP_WARN_Pre-quests done.|r Next: Stratholme Live itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 58-60 Stratholme Live
+#displayname 58-60 Stratholme Live
+#next 58-60 Stratholme Undead pre-quests
+step
+    +|cRXP_WARN_Stratholme Live|r (levels 58-60). Pick up 7 dungeon quests solo (roughly 15 min with the hand-ins), then ONE run with a group (roughly 2 h 30 min). No group needed until the run step. Click to start.
+    *Door: Main gate. No key.
+    *Its 9 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
+    #completewith next
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1423,70.88,48.43
+    >>Talk to |cRXP_FRIENDLY_Smokey LaRue|r
+    .accept 5214 >>Accept The Great Fras Siabi
+    .target Smokey LaRue
+step
+    .goto 1423,71.63,50.09
+    >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
+    .accept 5251 >>Accept The Archivist
+    .target Duke Nicholas Zverenhoff
+step
+    .goto 1423,11.36,26.6
+    >>Talk to |cRXP_FRIENDLY_Egan|r
+    .accept 5282 >>Accept The Restless Souls
+    .target Egan
+step
+    .goto 1422,65.77,75.37
+    >>Talk to |cRXP_FRIENDLY_Artist Renfray|r
+    .accept 5848 >>Accept Of Love and Family
+    .target Artist Renfray
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
+step
+    .goto 1423,26.52,10.36
+    >>Inside Stratholme Live: these quests start from a drop or an object in the dungeon
+    .accept 8968 >>Accept The Left Piece of Lord Valthalak's Amulet
+    .accept 8991 >>Accept The Right Piece of Lord Valthalak's Amulet
+step
+    .goto 1423,26.52,10.36
+    >>Enter |cRXP_WARN_Stratholme Live|r with your group. Quest goals inside:
+    *The Great Fras Siabi: Find Fras Siabi's smoke shop in Stratholme and recover a box of Siabi's Premium Tobacco. Return to Smokey LaRue when the job is done.
+    *The Archivist: Travel to Stratholme and find Archivist Galford of the Scarlet Crusade. Destroy him and burn down the Scarlet Archive.
+    *The Restless Souls: Use Egan's Blaster on the ghostly and spectral citizens of Stratholme. When the restless souls break free from their ghostly shells, use the blaster again - freedom will be theirs!
+    *Of Love and Family: Travel to Stratholme, in the northern part of the Plaguelands. It is in the Scarlet Bastion that you will find the painting 'Of Love and Family,' hidden behind another painting depicting the twin moons of our world.
+    *The Left Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth Jarien and Sothos and slay them. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak's Amulet and the Brazier of Beckoning.
+    *The Right Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth Jarien and Sothos and slay them. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak's Amulet and the Brazier of Beckoning.
+    .complete 5214,1 --The Great Fras Siabi
+    .complete 5251,1 --The Archivist
+    .complete 5251,2 --The Archivist
+    .complete 5282,1 --The Restless Souls
+    .complete 5848,1 --Of Love and Family
+    .complete 8968,1 --The Left Piece of Lord Valthalak's Amulet
+    .complete 8968,2 --The Left Piece of Lord Valthalak's Amulet
+    .complete 8968,3 --The Left Piece of Lord Valthalak's Amulet
+    .complete 8991,1 --The Right Piece of Lord Valthalak's Amulet
+    .complete 8991,2 --The Right Piece of Lord Valthalak's Amulet
+    .complete 8991,3 --The Right Piece of Lord Valthalak's Amulet
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1423,26.52,10.36
+    >>Inside Stratholme Live: these quests start from a drop or an object in the dungeon
+    .turnin 8968 >>Turn in The Left Piece of Lord Valthalak's Amulet
+    .turnin 8991 >>Turn in The Right Piece of Lord Valthalak's Amulet
+step
+    .goto 1423,11.36,26.6
+    >>Talk to |cRXP_FRIENDLY_Egan|r
+    .turnin 5282 >>Turn in The Restless Souls
+    .target Egan
+step
+    .goto 1423,5.16,35.57
+    >>Talk to |cRXP_FRIENDLY_Tirion Fordring|r
+    .turnin 5848 >>Turn in Of Love and Family
+    .target Tirion Fordring
+step
+    .goto 1423,70.88,48.43
+    >>Talk to |cRXP_FRIENDLY_Smokey LaRue|r
+    .turnin 5214 >>Turn in The Great Fras Siabi
+    .target Smokey LaRue
+step
+    .goto 1423,71.63,50.09
+    >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
+    .turnin 5251 >>Turn in The Archivist
+    .target Duke Nicholas Zverenhoff
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
+step
+    .goto 1423,26.52,10.36
+    >>Loot |cRXP_LOOT_[Head of Balnazzar]|r from |cRXP_ENEMY_Balnazzar|r, then click it to start the quest
+    .accept 5262 >>Accept The Truth Comes Crashing Down
+    .use 13250
+    .mob Balnazzar
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1423,71.63,50.09
+    >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
+    .turnin 5262 >>Turn in The Truth Comes Crashing Down
+    .target Duke Nicholas Zverenhoff
+step
+    .goto 1423,26.52,10.36
+    +Dungeon entrance: Stratholme Live. Done with this dungeon? Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 58-60 Stratholme Undead pre-quests
+#displayname 58-60 Stratholme Undead pre-quests
+#next 58-60 Stratholme Undead
+step
+    +|cRXP_WARN_Stratholme Undead: pre-quests|r. 8 quests, solo (no group needed), roughly 1 h 55 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Doctor Theolen Krastinov, the Butcher, Kirtonos the Herald, The Human, Ras Frostwhisper, The Dying, Ras Frostwhisper, Krastinov's Bag of Horrors, The Ranger Lord's Behest, Duskwing, Oh How I Hate Thee..., In Search of Anthion
+step
+    .goto 1423,22.23,63.51
+    >>Talk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
+    .accept 6133 >>Accept The Ranger Lord's Behest
+    .target Nathanos Blightcaller
+step
+    .goto 1423,46.69,13.18
+    >>Kill |cRXP_ENEMY_Pathstrider|r. Kill |cRXP_ENEMY_Ranger|r. Kill |cRXP_ENEMY_Woodsman|r. Collect |cRXP_LOOT_[Quel'Thalas Registry]|r from |cRXP_PICK_Quel'Thalas Registry|r
+    *Travel to the northern borders of the Eastern Plaguelands and recover the Quel'Thalas Registry. The item is somewhere in the Quel'Lithien lodge.
+    .complete 6133,1 --The Ranger Lord's Behest
+    .complete 6133,2 --The Ranger Lord's Behest
+    .complete 6133,3 --The Ranger Lord's Behest
+    .complete 6133,4 --The Ranger Lord's Behest
+    .mob Pathstrider
+    .mob Ranger
+    .mob Woodsman
+step
+    .goto 1423,22.23,63.51
+    >>Talk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
+    .turnin 6133 >>Turn in The Ranger Lord's Behest
+    .target Nathanos Blightcaller
 step
     .goto 1422,70.22,73.71
     >>Talk to |cRXP_FRIENDLY_Eva Sarkhoff|r
@@ -4983,19 +5367,29 @@ step
 step
     .goto 1454,34.95,38.29
     >>Talk to |cRXP_FRIENDLY_Mokvar|r
-    .accept 9032 >>Accept Bodley's Unfortunate Fate
     .accept 8930 >>Accept In Search of Anthion
-    .target Mokvar
-step
-    .goto 1454,34.95,38.29
-    >>Talk to |cRXP_FRIENDLY_Mokvar|r
-    .turnin 9032 >>Turn in Bodley's Unfortunate Fate
     .target Mokvar
 step
     .goto 1423,26.11,11.3
     >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
     .turnin 8930 >>Turn in In Search of Anthion
     .target Anthion Harmon
+step
+    .goto 1423,22.23,63.51
+    >>Talk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
+    .accept 6135 >>Accept Duskwing, Oh How I Hate Thee...
+    .target Nathanos Blightcaller
+step
+    .goto 1423,26.08,59.03
+    >>Collect |cRXP_LOOT_[Patch of Duskwing's Fur]|r from |cRXP_ENEMY_Duskwing|r
+    *Find Duskwing and slay him. From the corpse, recover a Patch of Duskwing's Fur and return it to Nathanos Blightcaller.
+    .complete 6135,1 --Duskwing, Oh How I Hate Thee...
+    .mob Duskwing
+step
+    .goto 1423,22.23,63.51
+    >>Talk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
+    .turnin 6135 >>Turn in Duskwing, Oh How I Hate Thee...
+    .target Nathanos Blightcaller
 step
     .goto 1417,17.91,69.41
     >>Collect |cRXP_LOOT_[Keepsake of Remembrance]|r from |cRXP_PICK_Keepsake of Remembrance|r
@@ -5013,19 +5407,32 @@ step
     .turnin 5462 >>Turn in The Dying, Ras Frostwhisper
     .target Leonid Barthalomew the Revered
 step
+    +|cRXP_WARN_Pre-quests done.|r Next: Stratholme Undead itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 58-60 Stratholme Undead
+#displayname 58-60 Stratholme Undead
+#next 59-60 Upper Blackrock Spire pre-quests
+step
+    +|cRXP_WARN_Stratholme Undead|r (levels 58-60). Pick up 8 dungeon quests solo (roughly 10 min with the hand-ins), then ONE run with a group (roughly 2 h 30 min). No group needed until the run step. Click to start.
+    *Door: Service gate, east of the main gate. Needs the Key to the City (Magistrate Barthilas, Stratholme Live).
+    *Its 8 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
+step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1423,71.89,48.29
     >>Talk to |cRXP_FRIENDLY_Leonid Barthalomew the Revered|r
     .accept 5243 >>Accept Houses of the Holy
     .accept 5463 >>Accept Menethil's Gift
     .target Leonid Barthalomew the Revered
-step
-    .goto 1423,70.88,48.43
-    >>Talk to |cRXP_FRIENDLY_Smokey LaRue|r
-    .accept 5214 >>Accept The Great Fras Siabi
-    .target Smokey LaRue
 step
     .goto 1423,71.66,49.94
     >>Talk to |cRXP_FRIENDLY_Betina Bigglezink|r
@@ -5034,7 +5441,7 @@ step
 step
     .goto 1423,71.63,50.09
     >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
-    .accept 5251 >>Accept The Archivist
+    .accept 5263 >>Accept Above and Beyond
     .target Duke Nicholas Zverenhoff
 step
     .goto 1423,22.23,63.51
@@ -5042,91 +5449,57 @@ step
     .accept 6163 >>Accept Ramstein
     .target Nathanos Blightcaller
 step
-    .goto 1423,11.36,26.6
-    >>Talk to |cRXP_FRIENDLY_Egan|r
-    .accept 5282 >>Accept The Restless Souls
-    .target Egan
-step
     .goto 1423,26.11,11.3
     >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
     .accept 8945 >>Accept Dead Man's Plea
     .target Anthion Harmon
 step
-    .goto 1422,65.77,75.37
-    >>Talk to |cRXP_FRIENDLY_Artist Renfray|r
-    .accept 5848 >>Accept Of Love and Family
-    .target Artist Renfray
-step
     #completewith next
-    +|cRXP_WARN_Run the dungeon|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
-    .goto 1423,26.52,10.36
-    >>Inside Stratholme: these quests start from a drop or an object in the dungeon
+    .goto 1423,41.45,17.74
+    >>Inside Stratholme Undead: these quests start from a drop or an object in the dungeon
     .accept 5125 >>Accept Aurius' Reckoning
-    .accept 8968 >>Accept The Left Piece of Lord Valthalak's Amulet
-    .accept 8991 >>Accept The Right Piece of Lord Valthalak's Amulet
 step
-    .goto 1423,26.52,10.36
-    >>Enter |cRXP_WARN_Stratholme|r and run it with a group. Quest goals inside:
+    .goto 1423,41.45,17.74
+    >>Enter |cRXP_WARN_Stratholme Undead|r with your group. Quest goals inside:
     *The Flesh Does Not Lie: Recover 10 Plagued Flesh Samples from Stratholme and return them to Betina Bigglezink. You suspect that any creature in Stratholme would have said flesh sample.
-    *The Great Fras Siabi: Find Fras Siabi's smoke shop in Stratholme and recover a box of Siabi's Premium Tobacco. Return to Smokey LaRue when the job is done.
     *Houses of the Holy: Travel to Stratholme, in the north. Search the supply crates that litter the city and recover 5 Stratholme Holy Water. Return to Leonid Barthalomew the Revered when you have collected enough of the blessed fluid.
-    *The Archivist: Travel to Stratholme and find Archivist Galford of the Scarlet Crusade. Destroy him and burn down the Scarlet Archive.
-    *The Restless Souls: Use Egan's Blaster on the ghostly and spectral citizens of Stratholme. When the restless souls break free from their ghostly shells, use the blaster again - freedom will be theirs!
-    *Of Love and Family: Travel to Stratholme, in the northern part of the Plaguelands. It is in the Scarlet Bastion that you will find the painting 'Of Love and Family,' hidden behind another painting depicting the twin moons of our world.
+    *Above and Beyond: Venture to Stratholme and destroy Baron Rivendare. Take his head and return to Duke Nicholas Zverenhoff.
     *Ramstein: Travel to Stratholme and slay Ramstein the Gorger. Take his head as a souvenir for Nathanos.
     *Dead Man's Plea: Go into Stratholme and rescue Ysida Harmon from Baron Rivendare.
-    *The Left Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth Jarien and Sothos and slay them. Return to Bodley inside Blackrock Mountain with the Left Piece of Lord Valthalak's Amulet and the Brazier of Beckoning.
-    *The Right Piece of Lord Valthalak's Amulet: Use the Brazier of Beckoning to summon forth Jarien and Sothos and slay them. Return to Bodley inside Blackrock Mountain with the recombined Lord Valthalak's Amulet and the Brazier of Beckoning.
     .complete 5212,1 --The Flesh Does Not Lie
-    .complete 5214,1 --The Great Fras Siabi
     .complete 5243,1 --Houses of the Holy
-    .complete 5251,1 --The Archivist
-    .complete 5251,2 --The Archivist
-    .complete 5282,1 --The Restless Souls
-    .complete 5848,1 --Of Love and Family
+    .complete 5263,1 --Above and Beyond
     .complete 6163,1 --Ramstein
     .complete 8945,1 --Dead Man's Plea
-    .complete 8968,1 --The Left Piece of Lord Valthalak's Amulet
-    .complete 8968,2 --The Left Piece of Lord Valthalak's Amulet
-    .complete 8968,3 --The Left Piece of Lord Valthalak's Amulet
-    .complete 8991,1 --The Right Piece of Lord Valthalak's Amulet
-    .complete 8991,2 --The Right Piece of Lord Valthalak's Amulet
-    .complete 8991,3 --The Right Piece of Lord Valthalak's Amulet
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
 step
-    .goto 1423,26.52,10.36
-    >>Inside Stratholme: these quests start from a drop or an object in the dungeon
+    .goto 1423,41.45,17.74
+    >>Inside Stratholme Undead: these quests start from a drop or an object in the dungeon
     .turnin 5125 >>Turn in Aurius' Reckoning
-    .turnin 8968 >>Turn in The Left Piece of Lord Valthalak's Amulet
-    .turnin 8991 >>Turn in The Right Piece of Lord Valthalak's Amulet
 step
     .goto 1423,26.11,11.3
     >>Talk to |cRXP_FRIENDLY_Anthion Harmon|r
     .turnin 8945 >>Turn in Dead Man's Plea
     .target Anthion Harmon
 step
-    .goto 1423,11.36,26.6
-    >>Talk to |cRXP_FRIENDLY_Egan|r
-    .turnin 5282 >>Turn in The Restless Souls
-    .target Egan
-step
-    .goto 1423,5.16,35.57
-    >>Talk to |cRXP_FRIENDLY_Tirion Fordring|r
-    .turnin 5848 >>Turn in Of Love and Family
-    .target Tirion Fordring
-step
     .goto 1423,22.23,63.51
     >>Talk to |cRXP_FRIENDLY_Nathanos Blightcaller|r
     .turnin 6163 >>Turn in Ramstein
     .target Nathanos Blightcaller
 step
-    .goto 1423,70.88,48.43
-    >>Talk to |cRXP_FRIENDLY_Smokey LaRue|r
-    .turnin 5214 >>Turn in The Great Fras Siabi
-    .target Smokey LaRue
+    .goto 1423,71.63,50.09
+    >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
+    .turnin 5263 >>Turn in Above and Beyond
+    .target Duke Nicholas Zverenhoff
+step
+    .goto 1423,71.66,49.94
+    >>Talk to |cRXP_FRIENDLY_Betina Bigglezink|r
+    .turnin 5212 >>Turn in The Flesh Does Not Lie
+    .target Betina Bigglezink
 step
     .goto 1423,71.89,48.29
     >>Talk to |cRXP_FRIENDLY_Leonid Barthalomew the Revered|r
@@ -5134,18 +5507,8 @@ step
     .turnin 5463 >>Turn in Menethil's Gift
     .target Leonid Barthalomew the Revered
 step
-    .goto 1423,71.66,49.94
-    >>Talk to |cRXP_FRIENDLY_Betina Bigglezink|r
-    .turnin 5212 >>Turn in The Flesh Does Not Lie
-    .target Betina Bigglezink
-step
-    .goto 1423,71.63,50.09
-    >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
-    .turnin 5251 >>Turn in The Archivist
-    .target Duke Nicholas Zverenhoff
-step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
     .goto 1423,71.66,49.94
     >>Talk to |cRXP_FRIENDLY_Betina Bigglezink|r
@@ -5153,16 +5516,10 @@ step
     .target Betina Bigglezink
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 2)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
 step
-    .goto 1423,26.52,10.36
-    >>Loot |cRXP_LOOT_[Head of Balnazzar]|r from |cRXP_ENEMY_Balnazzar|r, then click it to start the quest
-    .accept 5262 >>Accept The Truth Comes Crashing Down
-    .use 13250
-    .mob Balnazzar
-step
-    .goto 1423,26.52,10.36
-    >>Enter |cRXP_WARN_Stratholme|r and run it with a group. Quest goals inside:
+    .goto 1423,41.45,17.74
+    >>Enter |cRXP_WARN_Stratholme Undead|r with your group. Quest goals inside:
     *The Active Agent: Travel to Stratholme and search the ziggurats. Find and return new Scourge Data to Betina Bigglezink.
     .complete 5213,1 --The Active Agent
 step
@@ -5174,35 +5531,270 @@ step
     .turnin 5213 >>Turn in The Active Agent
     .target Betina Bigglezink
 step
-    .goto 1423,71.63,50.09
-    >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
-    .turnin 5262 >>Turn in The Truth Comes Crashing Down
-    .target Duke Nicholas Zverenhoff
+    .goto 1423,41.45,17.74
+    +Dungeon entrance: Stratholme Undead. Done with this dungeon? Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 59-60 Upper Blackrock Spire pre-quests
+#displayname 59-60 Upper Blackrock Spire pre-quests
+#next 59-60 Upper Blackrock Spire
+step
+    +|cRXP_WARN_Upper Blackrock Spire: pre-quests|r. 10 quests, solo (no group needed), roughly 2 h 55 min. The run guide comes after this one. Click to start.
+    *Pre-quests: Eitrigg's Wisdom, What the Wind Carries, The Champion of the Horde, The Testament of Rexxar, Emberstrife, The Test of Skulls, Scryer, The Test of Skulls, Somnus, The Test of Skulls, Chronalis, The Test of Skulls, Axtroz, Ascension...
+step
+    .goto 1454,31.73,37.82
+    >>Talk to |cRXP_FRIENDLY_Thrall|r
+    .accept 6566 >>Accept What the Wind Carries
+    .target Thrall
+step
+    .goto 1454,31.73,37.82
+    >>Talk to |cRXP_FRIENDLY_Thrall|r
+    .turnin 6566 >>Turn in What the Wind Carries
+    .accept 6567 >>Accept The Champion of the Horde
+    .target Thrall
+step
+    .goto 1444,46.39,18.24
+    >>Talk to |cRXP_FRIENDLY_Rexxar|r
+    .turnin 6567 >>Turn in The Champion of the Horde
+    .accept 6568 >>Accept The Testament of Rexxar
+    .target Rexxar
+step
+    .goto 1422,50.79,77.85
+    >>Talk to |cRXP_FRIENDLY_Myranda the Hag|r
+    .turnin 6568 >>Turn in The Testament of Rexxar
+    .accept 6570 >>Accept Emberstrife
+    .target Myranda the Hag
+step
+    .goto 1445,56.66,87.72
+    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
+    .turnin 6570 >>Turn in Emberstrife
+    .accept 6582 >>Accept The Test of Skulls, Scryer
+    .accept 6583 >>Accept The Test of Skulls, Somnus
+    .accept 6584 >>Accept The Test of Skulls, Chronalis
+    .target Emberstrife
+step
+    >>Collect |cRXP_LOOT_[The Skull of Scryer]|r from |cRXP_ENEMY_Icemaw|r
+    *You must find the blue dragonflight drake champion, Scryer, and slay him. Pry his skull from his corpse and return it to Emberstrife.
+    .complete 6582,1 --The Test of Skulls, Scryer
+    .mob Icemaw
+step
+    .goto 1445,56.66,87.72
+    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
+    .turnin 6582 >>Turn in The Test of Skulls, Scryer
+    .target Emberstrife
+step
+    .goto 1418,5.81,47.52
+    >>Talk to |cRXP_FRIENDLY_Warlord Goretooth|r
+    .accept 4941 >>Accept Eitrigg's Wisdom
+    .target Warlord Goretooth
+step
+    .goto 1454,31.73,37.82
+    >>Talk to |cRXP_FRIENDLY_Thrall|r
+    .turnin 4941 >>Turn in Eitrigg's Wisdom
+    .target Thrall
+step
+    .goto 1435,74.12,68.35
+    >>Collect |cRXP_LOOT_[The Skull of Somnus]|r from |cRXP_ENEMY_Somnus|r
+    *Destroy the drake champion of the Green Flight, Somnus. Take his skull and return it to Emberstrife.
+    .complete 6583,1 --The Test of Skulls, Somnus
+    .mob Somnus
+step
+    .goto 1445,56.66,87.72
+    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
+    .turnin 6583 >>Turn in The Test of Skulls, Somnus
+    .target Emberstrife
+step
+    .goto 1446,64.16,48.49
+    >>Collect |cRXP_LOOT_[The Skull of Chronalis]|r from |cRXP_ENEMY_Chronalis|r
+    *Guarding the Caverns of Time in the Tanaris Desert is Chronalis, child of Nozdormu. Destroy him and return his skull to Emberstrife.
+    .complete 6584,1 --The Test of Skulls, Chronalis
+    .mob Chronalis
+step
+    .goto 1445,56.66,87.72
+    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
+    .turnin 6584 >>Turn in The Test of Skulls, Chronalis
+    .accept 6585 >>Accept The Test of Skulls, Axtroz
+    .target Emberstrife
+step
+    .goto 1437,81.82,48.24
+    >>Collect |cRXP_LOOT_[The Skull of Axtroz]|r from |cRXP_ENEMY_Axtroz|r
+    *Travel to Grim Batol and track down Axtroz, drake champion of the Red Flight. Destroy him and take his skull. Return the skull to Emberstrife.
+    .complete 6585,1 --The Test of Skulls, Axtroz
+    .mob Axtroz
+step
+    .goto 1445,56.66,87.72
+    >>Talk to |cRXP_FRIENDLY_Emberstrife|r
+    .turnin 6585 >>Turn in The Test of Skulls, Axtroz
+    .accept 6601 >>Accept Ascension...
+    .target Emberstrife
+step
+    .goto 1444,46.39,18.24
+    >>Talk to |cRXP_FRIENDLY_Rexxar|r
+    .turnin 6601 >>Turn in Ascension...
+    .target Rexxar
+step
+    +|cRXP_WARN_Pre-quests done.|r Next: Upper Blackrock Spire itself. That guide tells you when to find a group. Click to continue.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde
+#group Peon Journey - Dungeon Quests Only
+#groupweight 80
+#subgroup Levels 50-60
+#name 59-60 Upper Blackrock Spire
+#displayname 59-60 Upper Blackrock Spire
+step
+    +|cRXP_WARN_Upper Blackrock Spire|r (levels 59-60). Pick up 11 dungeon quests solo (roughly 2 h 20 min with the hand-ins), then ONE run with a group (roughly 2 h 40 min). No group needed until the run step. Click to start.
+    *Door: Same entrance, the upstairs door on the left. One player needs the Seal of Ascension.
+    *Lower Blackrock Spire 55-60, Upper Blackrock Spire 59-60.
+    *Its 10 pre-quests are in the guide before this one. Skipped them? Some quests below won't be offered: skip those steps.
 step
     #completewith next
-    +|cRXP_WARN_Pick up the dungeon quests|r
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
 step
-    .goto 1423,71.63,50.09
-    >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
-    .accept 5263 >>Accept Above and Beyond
-    .target Duke Nicholas Zverenhoff
+    .goto 1444,46.39,18.24
+    >>Talk to |cRXP_FRIENDLY_Rexxar|r
+    .accept 6602 >>Accept Blood of the Black Dragon Champion
+    .target Rexxar
+step
+    .goto 1428,65.24,24
+    >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
+    .accept 4734 >>Accept Egg Freezing
+    .target Tinkee Steamboil
+step
+    .goto 1458,50.14,67.97
+    >>Talk to |cRXP_FRIENDLY_Apothecary Zinge|r
+    .accept 4769 >>Accept Vivian Lagrave and the Darkstone Tablet
+    .target Apothecary Zinge
+step
+    .goto 1454,31.73,37.82
+    >>Talk to |cRXP_FRIENDLY_Thrall|r
+    .accept 4974 >>Accept For The Horde!
+    .target Thrall
+step
+    .goto 1422,50.79,77.85
+    >>Talk to |cRXP_FRIENDLY_Myranda the Hag|r
+    .accept 6569 >>Accept Oculus Illusions
+    .target Myranda the Hag
 step
     #completewith next
-    +|cRXP_WARN_Run the dungeon (run 3)|r
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in.|r
 step
-    .goto 1423,26.52,10.36
-    >>Enter |cRXP_WARN_Stratholme|r and run it with a group. Quest goals inside:
-    *Above and Beyond: Venture to Stratholme and destroy Baron Rivendare. Take his head and return to Duke Nicholas Zverenhoff.
-    .complete 5263,1 --Above and Beyond
+    .goto 1427,34.8,85.3
+    >>Inside Upper Blackrock Spire: these quests start from a drop or an object in the dungeon
+    .accept 5047 >>Accept Finkle Einhorn, At Your Service!
+    .accept 5160 >>Accept The Matron Protectorate
+    .accept 8995 >>Accept Mea Culpa, Lord Valthalak
+step
+    .goto 1427,34.8,85.3
+    >>Loot |cRXP_LOOT_[Blackhand's Command]|r from |cRXP_ENEMY_Scarshield Quartermaster|r, then click it to start the quest
+    .accept 7761 >>Accept Blackhand's Command
+    .use 18987
+    .mob Scarshield Quartermaster
+step
+    .goto 1427,34.8,85.3
+    >>Enter |cRXP_WARN_Upper Blackrock Spire|r with your group. Quest goals inside:
+    *For The Horde!: Travel to Blackrock Spire and slay Warchief Rend Blackhand. Take his head and return to Orgrimmar.
+    *Oculus Illusions: Travel to Blackrock Spire and collect 20 Black Dragonspawn Eyes. Return to Myranda the Hag when the task is complete.
+    *Blood of the Black Dragon Champion: Travel to Blackrock Spire and slay General Drakkisath. Gather his blood and return it to Rexxar.
+    *Mea Culpa, Lord Valthalak: Use the Brazier of Beckoning to summon Lord Valthalak. Dispatch him, and use Lord Valthalak's Amulet on the corpse. Then, return Lord Valthalak's Amulet to the Spirit of Lord Valthalak.
+    .complete 4974,1 --For The Horde!
+    .complete 6569,1 --Oculus Illusions
+    .complete 6602,1 --Blood of the Black Dragon Champion
+    .complete 8995,1 --Mea Culpa, Lord Valthalak
+    .complete 8995,2 --Mea Culpa, Lord Valthalak
 step
     #completewith next
     +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
 step
-    .goto 1423,71.63,50.09
-    >>Talk to |cRXP_FRIENDLY_Duke Nicholas Zverenhoff|r
-    .turnin 5263 >>Turn in Above and Beyond
-    .target Duke Nicholas Zverenhoff
+    .goto 1427,34.8,85.3
+    >>Loot |cRXP_LOOT_[Blackhand's Command]|r from |cRXP_ENEMY_Scarshield Quartermaster|r, then click it to start the quest
+    .turnin 7761 >>Turn in Blackhand's Command
 step
-    .goto 1423,26.52,10.36
-    +Dungeon entrance: Stratholme. Done with this dungeon? Click to finish.
+    .goto 1427,34.8,85.3
+    >>Inside Upper Blackrock Spire: these quests start from a drop or an object in the dungeon
+    .turnin 8995 >>Turn in Mea Culpa, Lord Valthalak
+step
+    .goto 1428,65.24,24
+    >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
+    .turnin 4734 >>Turn in Egg Freezing
+    .target Tinkee Steamboil
+step
+    .goto 1418,2.9,47.76
+    >>Talk to |cRXP_FRIENDLY_Shadowmage Vivian Lagrave|r
+    .turnin 4769 >>Turn in Vivian Lagrave and the Darkstone Tablet
+    .target Shadowmage Vivian Lagrave
+step
+    .goto 1454,31.73,37.82
+    >>Talk to |cRXP_FRIENDLY_Thrall|r
+    .turnin 4974 >>Turn in For The Horde!
+    .target Thrall
+step
+    .goto 1452,60.99,38.78
+    >>Talk to |cRXP_FRIENDLY_Malyfous Darkhammer|r
+    .turnin 5047 >>Turn in Finkle Einhorn, At Your Service!
+    .target Malyfous Darkhammer
+step
+    .goto 1452,54.55,51.2
+    >>Talk to |cRXP_FRIENDLY_Haleh|r
+    .turnin 5160 >>Turn in The Matron Protectorate
+    .target Haleh
+step
+    .goto 1422,50.79,77.85
+    >>Talk to |cRXP_FRIENDLY_Myranda the Hag|r
+    .turnin 6569 >>Turn in Oculus Illusions
+    .target Myranda the Hag
+step
+    .goto 1444,46.39,18.24
+    >>Talk to |cRXP_FRIENDLY_Rexxar|r
+    .turnin 6602 >>Turn in Blood of the Black Dragon Champion
+    .target Rexxar
+step
+    #completewith next
+    +|cRXP_WARN_Pick up the dungeon quests (solo, no group yet)|r
+step
+    .goto 1428,65.24,24
+    >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
+    .accept 4735 >>Accept Egg Collection
+    .target Tinkee Steamboil
+step
+    .goto 1418,2.9,47.76
+    >>Talk to |cRXP_FRIENDLY_Shadowmage Vivian Lagrave|r
+    .accept 4768 >>Accept The Darkstone Tablet
+    .target Shadowmage Vivian Lagrave
+step
+    #completewith next
+    +|cRXP_WARN_Run the dungeon. Find a group now (Group Finder or /4 LookingForGroup). Dungeon quests can't be shared: everyone takes them before going in. (run 2)|r
+step
+    .goto 1427,34.8,85.3
+    >>Enter |cRXP_WARN_Upper Blackrock Spire|r with your group. Quest goals inside:
+    *Egg Collection: Bring 8 Collected Dragon Eggs and the Collectronic Module to Tinkee Steamboil at Flame Crest in the Burning Steppes.
+    *The Darkstone Tablet: Bring the Darkstone Tablet to Shadow Mage Vivian Lagrave in Kargath.
+    .complete 4735,1 --Egg Collection
+    .complete 4768,1 --The Darkstone Tablet
+step
+    #completewith next
+    +|cRXP_WARN_Hand everything in (go back inside for quest givers in the dungeon)|r
+step
+    .goto 1428,65.24,24
+    >>Talk to |cRXP_FRIENDLY_Tinkee Steamboil|r
+    .turnin 4735 >>Turn in Egg Collection
+    .target Tinkee Steamboil
+step
+    .goto 1418,2.9,47.76
+    >>Talk to |cRXP_FRIENDLY_Shadowmage Vivian Lagrave|r
+    .turnin 4768 >>Turn in The Darkstone Tablet
+    .target Shadowmage Vivian Lagrave
+step
+    .goto 1427,34.8,85.3
+    +Dungeon entrance: Upper Blackrock Spire. Done with this dungeon? Click to finish.
 ]])

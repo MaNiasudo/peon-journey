@@ -1,0 +1,377 @@
+{
+  "dungeons": [
+    {
+      "dungeon": "Scarlet Monastery",
+      "wings": [
+        {
+          "wing": "Graveyard",
+          "levels": "30-38",
+          "levels_source": "warcrafttavern.com/forever/guides/dungeons/ (table says it matches the in-game Looking For Group tool); same on foreverchanges.pro/dungeons, lfcarry, conquestcapped, Method (Armory). Conflicts: Warcraft Forever Wiki 26-36 (per wowforeverleveling.com), Wowhead Forever 28-38 (per search snippet), Zockify rec 30 / min 20",
+          "entrance": "Tirisfal Glades, NE corner; instance portal 84.8, 30.3 (kami-labs, beta client data). Inside the main building the portals left to right are Graveyard, Cathedral, Armory, Library; Graveyard is the open portal farthest left",
+          "key": "none",
+          "bosses": ["Interrogator Vishas", "Ironspine (rare)", "Fallen Champion (rare)", "Azshir the Sleepless (rare)", "Bloodmage Thalnos"],
+          "quests": [
+            {"name": "Vorrel's Revenge", "giver": "Vorrel Sengutz", "where": "inside Scarlet Monastery Graveyard", "faction": "Horde", "min_level": 25, "notes": "Giver is in the Graveyard; the ring itself drops from Nancy Vishas (Misty Shore, Alterac Mountains), turn in to Monika Sengutz, Tarren Mill (warcrafttavern quest guide)"},
+            {"name": "Hearts of Zeal", "giver": "Master Apothecary Faranell", "where": "Undercity", "faction": "Horde", "min_level": 30, "notes": "20 Heart of Zeal from mobs in and around SM, any wing; needs Going, Going, Guano! (Razorfen Kraul) first"},
+            {"name": "The Eye of Bhossca", "giver": "C (letter chain, dead drop near Pyrewood Village)", "where": "Silverpine Forest", "faction": "Both", "min_level": 25, "notes": "Rogue only, solo. Key from a Scarlet Scryer (pickpocket) in the Graveyard, reliquary in the Library (lfcarry lists Graveyard + Library). Min level unverified: Forever guides say 25 (quest level 35), warcraft.wiki.gg SoD page says requires 30"}
+          ],
+          "notes": "Usual first run (lowest bracket, no key). Only Vishas and Thalnos spawn every run; the three rares do not."
+        },
+        {
+          "wing": "Library",
+          "levels": "33-41",
+          "levels_source": "warcrafttavern.com LFG-tool table; same on foreverchanges.pro. Conflicts: Warcraft Forever Wiki 29-39, Wowhead 29-39",
+          "entrance": "Tirisfal Glades, same monastery portal 84.8, 30.3; Library is the open portal farthest right inside the main building",
+          "key": "none",
+          "bosses": ["Houndmaster Loksey", "Arcanist Doan"],
+          "quests": [
+            {"name": "Mythology of the Titans", "giver": "Librarian Mae Paledust", "where": "Hall of Explorers, Ironforge", "faction": "Alliance", "min_level": 28},
+            {"name": "Past Due", "giver": "Magus Olvek", "where": "Dalaran, Alterac Mountains", "faction": "Alliance", "min_level": 30, "notes": "NEW in Forever. Loot 'The Lost Magic of the Runemasters' in Arcanist Doan's room"},
+            {"name": "In the Name of the Light", "giver": "Raleigh the Devout", "where": "Southshore, Hillsbrad Foothills", "faction": "Alliance", "min_level": 34, "notes": "Kill Houndmaster Loksey here; also Herod (Armory), Mograine + Whitemane (Cathedral). Chain starts with Brother Crowley, Stormwind"},
+            {"name": "Into The Scarlet Monastery", "giver": "Varimathras", "where": "Royal Quarter, Undercity", "faction": "Horde", "min_level": 33, "notes": "Same boss objectives as In the Name of the Light"},
+            {"name": "Compendium of the Fallen", "giver": "Sage Truthseeker", "where": "Thunder Bluff", "faction": "Horde", "min_level": 28, "notes": "Tauren, Troll, Orc only (not Undead)"},
+            {"name": "Test of Lore", "giver": "Parqual Fintallas", "where": "Undercity", "faction": "Horde", "min_level": 25, "notes": "Book 'Beginnings of the Undead Threat'; chain starts with Dorn Plainstalker, Thousand Needles"},
+            {"name": "Rituals of Power", "giver": "Magus Tirth", "where": "Shimmering Flats, Thousand Needles", "faction": "Both", "min_level": 30, "notes": "Mage only; turn in to Tabetha, Dustwallow Marsh"},
+            {"name": "Hearts of Zeal", "giver": "Master Apothecary Faranell", "where": "Undercity", "faction": "Horde", "min_level": 30, "notes": "Any wing"},
+            {"name": "The Eye of Bhossca", "giver": "C (letter chain, dead drop near Pyrewood Village)", "where": "Silverpine Forest", "faction": "Both", "min_level": 25, "notes": "Rogue only; the Eye is in a reliquary in the Library. Min level unverified (25 vs 30)"}
+          ],
+          "notes": "The Scarlet Key (item 7146) drops from Doan's Strongbox behind Arcanist Doan; it opens Armory and Cathedral. Usually the second run."
+        },
+        {
+          "wing": "Armory",
+          "levels": "36-44",
+          "levels_source": "warcrafttavern.com LFG-tool table; same on foreverchanges.pro and method.gg. Conflicts: Warcraft Forever Wiki 32-42, Wowhead 32-42",
+          "entrance": "Tirisfal Glades, monastery portal 84.8, 30.3; Armory is through the closed door on the right as you enter",
+          "key": "The Scarlet Key (from the Library); rogue lockpicking also works per conquestcapped",
+          "bosses": ["Herod"],
+          "quests": [
+            {"name": "In the Name of the Light", "giver": "Raleigh the Devout", "where": "Southshore, Hillsbrad Foothills", "faction": "Alliance", "min_level": 34, "notes": "Kill Herod"},
+            {"name": "Into The Scarlet Monastery", "giver": "Varimathras", "where": "Royal Quarter, Undercity", "faction": "Horde", "min_level": 33, "notes": "Kill Herod"},
+            {"name": "Hearts of Zeal", "giver": "Master Apothecary Faranell", "where": "Undercity", "faction": "Horde", "min_level": 30, "notes": "Any wing"}
+          ],
+          "notes": "Forever change: Herod's axe now slows the wielder by 80% (conquestcapped)."
+        },
+        {
+          "wing": "Cathedral",
+          "levels": "38-46",
+          "levels_source": "warcrafttavern.com LFG-tool table; same on foreverchanges.pro. Conflicts: Warcraft Forever Wiki 35-45, Wowhead 35-45",
+          "entrance": "Tirisfal Glades, monastery portal 84.8, 30.3; Cathedral is through the closed door on the left as you enter",
+          "key": "The Scarlet Key (from the Library)",
+          "bosses": ["High Inquisitor Fairbanks (optional)", "Scarlet Commander Mograine", "High Inquisitor Whitemane"],
+          "quests": [
+            {"name": "In the Name of the Light", "giver": "Raleigh the Devout", "where": "Southshore, Hillsbrad Foothills", "faction": "Alliance", "min_level": 34, "notes": "Kill Scarlet Commander Mograine and High Inquisitor Whitemane"},
+            {"name": "Into The Scarlet Monastery", "giver": "Varimathras", "where": "Royal Quarter, Undercity", "faction": "Horde", "min_level": 33, "notes": "Kill Mograine and Whitemane"},
+            {"name": "Hearts of Zeal", "giver": "Master Apothecary Faranell", "where": "Undercity", "faction": "Horde", "min_level": 30, "notes": "Any wing"}
+          ],
+          "notes": "One unverified client-data report (search snippet) says the Forever Cathedral map gained about 870 square yards of floor and one wall; no other source confirms."
+        }
+      ],
+      "forever_changes": "Still FOUR wings in Forever (Graveyard, Library, Armory, Cathedral); every source checked says so, none lists a fifth wing (conquestcapped: 'keeps its Classic layout'). Entry capped at 5 players (Classic allowed a 10-man raid group) per kami-labs. Entry level 20, Group Finder from 30 (kami-labs, client data, where SM shows as ONE Group Finder entry, unlike Dire Maul and Blackrock Spire). New Alliance quest Past Due; Rogue quest The Eye of Bhossca now rewards Ruby-Adorned Blade. Loot reworked: new drops Painwalker Buckler (Vishas), Polished Skullcap, Houndmaster Boomerang, Spellsever Crossbow, Library Walkers, Knucklebound Thimble; Chain of the Scarlet Crusade set got new bonuses; Scarlet Banner camping cosmetic from a puzzle inside the monastery. Dungeon kill XP +50% (Nov 8-10 hotfix); 0 kill XP when a party member is 12+ levels above the mob (Nov 14 hotfix).",
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/dungeons/",
+        "https://www.warcrafttavern.com/forever/guides/scarlet-monastery/",
+        "https://www.warcrafttavern.com/forever/guides/scarlet-monastery-quests/",
+        "https://www.warcrafttavern.com/forever/guides/scarlet-monastery-graveyard-dungeon-map-location-bosses/",
+        "https://www.warcrafttavern.com/forever/guides/scarlet-monastery-library-dungeon-map-location-bosses/",
+        "https://www.warcrafttavern.com/forever/guides/scarlet-monastery-armory-dungeon-map-location-bosses/",
+        "https://www.warcrafttavern.com/forever/guides/scarlet-monastery-cathedral-dungeon-map-location-bosses/",
+        "https://foreverchanges.pro/dungeons",
+        "https://conquestcapped.com/guides/wow-forever/wow-forever-scarlet-monastery-guide/",
+        "https://lfcarry.com/guides/wow-forever-scarlet-monastery",
+        "https://kami-labs.fr/en/monastere-ecarlate-wow-forever/",
+        "https://wowforeverleveling.com/guides/scarlet-monastery-wow-forever",
+        "https://www.zockify.com/forever/dungeons/",
+        "https://www.wowhead.com/forever/quest=1053/in-the-name-of-the-light",
+        "https://warcraft.wiki.gg/wiki/The_Eye_of_Bhossca"
+      ]
+    },
+    {
+      "dungeon": "Dire Maul",
+      "wings": [
+        {
+          "wing": "Dire Maul (East)",
+          "levels": "54-60",
+          "levels_source": "warcrafttavern.com LFG-tool table; same on foreverchanges.pro and conquestcapped. kami-labs client data: Group Finder 'Dire Maul - East' level 54, entry 31",
+          "entrance": "Feralas, Eldre'Thalas. kami-labs instance portal 64.9, 29.4 (single point for the complex). East wall of the central courtyard, or from Eldreth Row; back door at Lariss Pavilion NE of Camp Mojache (needs Crescent Key)",
+          "key": "none for the main door; Crescent Key only for the Lariss Pavilion back door",
+          "bosses": ["Pusillin (chase; drops the Crescent Key)", "Lethtendris", "Hydrospawn", "Zevrim Thornhoof", "Alzzin the Wildshaper", "Isalien (Tier 0.5 summon, Brazier of Beckoning)"],
+          "quests": [
+            {"name": "Lethtendris's Web", "giver": "Latronicus Moonspear", "where": "Feathermoon Stronghold, Feralas", "faction": "Alliance", "min_level": 54},
+            {"name": "Lethtendris's Web", "giver": "Talo Thornhoof", "where": "Camp Mojache, Feralas", "faction": "Horde", "min_level": 54},
+            {"name": "Pusillin and the Elder Azj'Tordin", "giver": "Azj'Tordin", "where": "Lariss Pavilion, Feralas", "faction": "Both", "min_level": 54},
+            {"name": "Shards of the Felvine", "giver": "Rabine Saturna", "where": "Nighthaven, Moonglade", "faction": "Both", "min_level": 56},
+            {"name": "Arcane Refreshment", "giver": "Lorekeeper Lydros", "where": "Athenaeum, Dire Maul West", "faction": "Both", "min_level": 60, "notes": "Mage only; Hydrospawn Essence from Hydrospawn"},
+            {"name": "In Demand - Ancient Elven Curiosities", "giver": "Pix Xizzix", "where": "Booty Bay, Stranglethorn Vale", "faction": "Both", "min_level": null, "notes": "Weekly; listed only by conquestcapped (under East and again under North with King Gordok); details look garbled, unverified"}
+          ],
+          "notes": "Usual first Dire Maul run: no key needed and Pusillin's Crescent Key opens West and North. Min levels from warcrafttavern quest guide; conquestcapped lists 57-60 (looks like quest level). Tavern says its DM guides are Classic-based because DM was not in the Forever beta."
+        },
+        {
+          "wing": "Dire Maul (West)",
+          "levels": "56-60",
+          "levels_source": "warcrafttavern.com LFG-tool table; same on foreverchanges.pro and conquestcapped. kami-labs Group Finder 'Dire Maul - West' level 54",
+          "entrance": "Feralas, Dire Maul; western wall of the central courtyard (two entrances close together)",
+          "key": "Crescent Key (Pusillin, DM East); a rogue with 300 Lockpicking can replace it",
+          "bosses": ["Tendris Warpwood", "Magister Kalendris", "Tsu'zee (rare)", "Illyanna Ravenoak", "Immol'thar", "Prince Tortheldrin", "Lord Hel'nurath (Warlock mount quest summon)"],
+          "quests": [
+            {"name": "Elven Legends", "giver": "Scholar Runethorn", "where": "Feathermoon Stronghold, Feralas", "faction": "Alliance", "min_level": 54},
+            {"name": "Elven Legends", "giver": "Sage Korolusk", "where": "Camp Mojache, Feralas", "faction": "Horde", "min_level": 54},
+            {"name": "The Madness Within", "giver": "Shen'dralar Ancient", "where": "Dire Maul West", "faction": "Both", "min_level": 56},
+            {"name": "The Treasure of the Shen'dralar", "giver": "Shen'dralar Ancient", "where": "Dire Maul West", "faction": "Both", "min_level": 56},
+            {"name": "Unfinished Gordok Business", "giver": "Captain Kromcrush", "where": "Dire Maul North", "faction": "Both", "min_level": 56, "notes": "Objective is in West: Gauntlet of Gordok Might from The Prince's Chest after Prince Tortheldrin"},
+            {"name": "Libram of Binding", "giver": "Lorekeeper Lydros", "where": "Athenaeum, Dire Maul West", "faction": "Both", "min_level": null, "notes": "NEW in Forever (conquestcapped)"},
+            {"name": "The Broken Glaive", "giver": "Prince Tortheldrin's corpse", "where": "Dire Maul West", "faction": "Both", "min_level": null, "notes": "NEW in Forever (conquestcapped); turn in to Shen'dralar Ancient"},
+            {"name": "The Darkened Glaive", "giver": "unknown", "where": "unknown", "faction": "Both", "min_level": null, "notes": "NEW in Forever (conquestcapped), details not known; faction unverified"},
+            {"name": "Libram of Rapidity", "giver": "Lorekeeper Lydros", "where": "Athenaeum, Dire Maul West", "faction": "Both", "min_level": null},
+            {"name": "Libram of Focus", "giver": "Lorekeeper Lydros", "where": "Athenaeum, Dire Maul West", "faction": "Both", "min_level": null},
+            {"name": "Libram of Protection", "giver": "Lorekeeper Lydros", "where": "Athenaeum, Dire Maul West", "faction": "Both", "min_level": null},
+            {"name": "Nostro's Compendium", "giver": "Lorekeeper Lydros", "where": "Athenaeum, Dire Maul West", "faction": "Both", "min_level": null, "notes": "Warrior, Paladin"},
+            {"name": "Fragments of the Past", "giver": "Aurora Skycaller", "where": "Eastern Plaguelands", "faction": "Alliance", "min_level": 57, "notes": "Listed under West only by conquestcapped; unverified"}
+          ],
+          "notes": "conquestcapped also lists per-class book quests from the class Lorekeepers in the Athenaeum (names not given). Usually second."
+        },
+        {
+          "wing": "Dire Maul (North)",
+          "levels": "56-60",
+          "levels_source": "warcrafttavern.com LFG-tool table; same on foreverchanges.pro and conquestcapped. kami-labs Group Finder 'Dire Maul - North' level 54",
+          "entrance": "Feralas, Dire Maul; northern wall of the central courtyard (upper level of Mol'dar/Kreeg room), or from DM West through the Athenaeum",
+          "key": "Crescent Key (main door); inside: Gordok Inner Door Key (Guard Mol'dar), Gordok Courtyard Key (Fengus's Chest)",
+          "bosses": ["Guard Mol'dar", "Stomper Kreeg", "Guard Fengus", "Guard Slip'kik", "Captain Kromcrush", "King Gordok (with Cho'Rush the Observer)"],
+          "quests": [
+            {"name": "A Broken Trap", "giver": "Broken Trap (object)", "where": "Dire Maul North", "faction": "Both", "min_level": 56, "notes": "conquestcapped names Guard Slip'kik as giver instead; unverified"},
+            {"name": "Free Knot!", "giver": "Knot Thimblejack", "where": "Gordok Commons, Dire Maul North", "faction": "Both", "min_level": 57},
+            {"name": "The Gordok Ogre Suit", "giver": "Knot Thimblejack", "where": "Gordok Commons, Dire Maul North", "faction": "Both", "min_level": 54},
+            {"name": "The Gordok Taste Test", "giver": "Stomper Kreeg", "where": "Gordok Commons, Dire Maul North", "faction": "Both", "min_level": null},
+            {"name": "Crafty the Crafter", "giver": "Mizzle the Crafty", "where": "Dire Maul North", "faction": "Both", "min_level": null, "notes": "Hunter only; NEW in Forever (conquestcapped)"}
+          ],
+          "notes": "Tribute run (keep guards alive, kill King Gordok) gives Mol'dar's Moxie, Fengus' Ferocity, Slip'kik's Savvy. Usually third."
+        }
+      ],
+      "forever_changes": "Same three wings. conquestcapped (Nov 10 build) counts 43 Dire Maul quests, 4 new: Libram of Binding, The Broken Glaive, The Darkened Glaive, Crafty the Crafter. Loot re-examined for Forever (expcarry). Tavern and expcarry: DM was not testable in the level-30-capped beta, so most guide content is Classic.",
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/dire-maul/",
+        "https://www.warcrafttavern.com/forever/guides/dire-maul-east/",
+        "https://www.warcrafttavern.com/forever/guides/dire-maul-east-quests/",
+        "https://www.warcrafttavern.com/forever/guides/dire-maul-west/",
+        "https://www.warcrafttavern.com/forever/guides/dire-maul-west-quests/",
+        "https://www.warcrafttavern.com/forever/guides/dire-maul-north/",
+        "https://www.warcrafttavern.com/forever/guides/dire-maul-north-quests/",
+        "https://conquestcapped.com/guides/wow-forever/wow-forever-dire-maul-quests/",
+        "https://expcarry.com/wow-forever-dire-maul-wings-keys-tribute-guide",
+        "https://kami-labs.fr/en/hache-tripes-wow-forever/",
+        "https://foreverchanges.pro/dungeons"
+      ]
+    },
+    {
+      "dungeon": "Blackrock Spire",
+      "wings": [
+        {
+          "wing": "Lower Blackrock Spire",
+          "levels": "55-60",
+          "levels_source": "warcrafttavern.com LFG-tool table; same on foreverchanges.pro. kami-labs client data: Group Finder 'Lower Blackrock Spire' level 53, entry 48; Zockify rec 53 / min 44",
+          "entrance": "Blackrock Mountain; kami-labs instance portal Burning Steppes 33.2, 24.9 (Tavern lists zone as Searing Gorge). Reach the portal via the door next to the Blackrock Spire meeting stone, or climb the chain to Bodley's balcony and jump down",
+          "key": "none",
+          "bosses": ["Highlord Omokk", "Shadow Hunter Vosh'gajin", "War Master Voone", "Mor Grayhoof (quest summon)", "Bannok Grimaxe (rare)", "Mother Smolderweb", "Crystal Fang (rare)", "Urok Doomhowl (summon event)", "Quartermaster Zigris", "Halycon", "Gizrul the Slavener", "Ghok Bashguud (rare)", "Overlord Wyrmthalak"],
+          "quests": [
+            {"name": "Put Her Down", "giver": "Helendis Riverhorn", "where": "Morgan's Vigil, Burning Steppes", "faction": "Alliance", "min_level": 55},
+            {"name": "Bijou's Belongings", "giver": "Bijou", "where": "Lower Blackrock Spire", "faction": "Alliance", "min_level": 55},
+            {"name": "Message to Maxwell", "giver": "Bijou", "where": "Lower Blackrock Spire", "faction": "Alliance", "min_level": 55, "notes": "Objective is talking to Marshal Maxwell outside"},
+            {"name": "Maxwell's Mission", "giver": "Marshal Maxwell", "where": "Morgan's Vigil, Burning Steppes", "faction": "Alliance", "min_level": 55, "notes": "Kill War Master Voone, Highlord Omokk, Overlord Wyrmthalak"},
+            {"name": "General Drakkisath's Command", "giver": "item from Overlord Wyrmthalak", "where": "Lower Blackrock Spire", "faction": "Alliance", "min_level": 55},
+            {"name": "Warlord's Command", "giver": "Warlord Goretooth (via Warlord Goretooth's Command item)", "where": "Kargath, Badlands", "faction": "Horde", "min_level": 55},
+            {"name": "Operative Bijou", "giver": "Lexlort", "where": "Kargath, Badlands", "faction": "Horde", "min_level": 55},
+            {"name": "Bijou's Belongings", "giver": "Bijou", "where": "Lower Blackrock Spire", "faction": "Horde", "min_level": 55},
+            {"name": "The Pack Mistress", "giver": "Galamav the Marksman", "where": "Kargath, Badlands", "faction": "Horde", "min_level": 55, "notes": "Kill Halycon"},
+            {"name": "Kibler's Exotic Pets", "giver": "Kibler", "where": "Burning Steppes", "faction": "Both", "min_level": 55},
+            {"name": "En-Ay-Es-Tee-Why", "giver": "Kibler", "where": "Burning Steppes", "faction": "Both", "min_level": 55},
+            {"name": "Mother's Milk", "giver": "Ragged John", "where": "Burning Steppes", "faction": "Both", "min_level": 55},
+            {"name": "Urok Doomhowl", "giver": "Warosh", "where": "Lower Blackrock Spire", "faction": "Both", "min_level": 55},
+            {"name": "Seal of Ascension", "giver": "Vaelan", "where": "Lower Blackrock Spire", "faction": "Both", "min_level": 55, "notes": "Gives the UBS key; chain continues to Emberstrife, Dustwallow Marsh"},
+            {"name": "The Final Tablets", "giver": "Prospector Ironboot", "where": "Tanaris", "faction": "Both", "min_level": 40, "notes": "Min level unverified: Tavern 40, conquestcapped 58"}
+          ],
+          "notes": "Min levels from warcrafttavern; conquestcapped lists 59-60 (looks like quest level). Usual first BRS run (gives the Seal of Ascension)."
+        },
+        {
+          "wing": "Upper Blackrock Spire",
+          "levels": "59-60",
+          "levels_source": "warcrafttavern.com LFG-tool table; same on foreverchanges.pro. kami-labs Group Finder 'Upper Blackrock Spire' level 53; Zockify rec 58 / min 48",
+          "entrance": "Same Blackrock Spire portal as Lower (Burning Steppes 33.2, 24.9 per kami-labs); the upstairs door to the left of the entrance",
+          "key": "Seal of Ascension (item 12344), one group member needs it",
+          "bosses": ["Pyroguard Emberseer", "Solakar Flamewreath (Father Flame event)", "Goraluk Anvilcrack (optional)", "Jed Runewatcher (rare)", "Warchief Rend Blackhand (with Gyth)", "The Beast", "General Drakkisath", "Lord Valthalak (Tier 0.5 summon)"],
+          "quests": [
+            {"name": "Doomrigger's Clasp", "giver": "Mayara Brightwing", "where": "Burning Steppes", "faction": "Alliance", "min_level": 57},
+            {"name": "General Drakkisath's Demise", "giver": "Marshal Maxwell", "where": "Burning Steppes", "faction": "Alliance", "min_level": null},
+            {"name": "End of the Dark Horde", "giver": "drop from Warchief Rend Blackhand", "where": "Upper Blackrock Spire", "faction": "Alliance", "min_level": null, "notes": "NEW in Forever (conquestcapped, quest 84377); turn in to Master Mathias Shaw, Stormwind"},
+            {"name": "Drakefire Amulet", "giver": "drop from General Drakkisath", "where": "Upper Blackrock Spire", "faction": "Alliance", "min_level": null, "notes": "Turn in to Haleh, Winterspring"},
+            {"name": "Delivery to Ridgewell", "giver": "not stated", "where": "not stated", "faction": "Alliance", "min_level": null, "notes": "conquestcapped only"},
+            {"name": "For The Horde!", "giver": "Thrall", "where": "Orgrimmar", "faction": "Horde", "min_level": 55, "notes": "Kill Warchief Rend Blackhand"},
+            {"name": "The Darkstone Tablet", "giver": "Shadowmage Vivian Lagrave", "where": "Kargath, Badlands", "faction": "Horde", "min_level": 57},
+            {"name": "Oculus Illusions", "giver": "Myranda the Hag", "where": "Western Plaguelands", "faction": "Horde", "min_level": null},
+            {"name": "Blood of the Black Dragon Champion", "giver": "drop from General Drakkisath", "where": "Upper Blackrock Spire", "faction": "Horde", "min_level": null, "notes": "Turn in to Rexxar"},
+            {"name": "Egg Freezing", "giver": "Tinkee Steamboil", "where": "Burning Steppes", "faction": "Both", "min_level": 57},
+            {"name": "Egg Collection", "giver": "Tinkee Steamboil", "where": "Burning Steppes", "faction": "Both", "min_level": 57},
+            {"name": "Eye of the Emberseer", "giver": "Duke Hydraxis", "where": "Azshara", "faction": "Both", "min_level": 56},
+            {"name": "Pip Quickwit, At Your Service!", "giver": "Pip Quickwit", "where": "Upper Blackrock Spire", "faction": "Both", "min_level": null},
+            {"name": "The Matron Protectorate", "giver": "not stated", "where": "not stated", "faction": "Both", "min_level": null},
+            {"name": "Mea Culpa, Lord Valthalak", "giver": "not stated", "where": "not stated", "faction": "Both", "min_level": null}
+          ],
+          "notes": "Min levels from warcrafttavern where given; others listed only by conquestcapped (which shows 60 for all). kami-labs says the Spire is a 10-player instance in Forever (Classic UBS was 10-man); unverified for Lower."
+        }
+      ],
+      "forever_changes": "Same two wings. New quests per conquestcapped: End of the Dark Horde (Alliance, UBS) and Blood and Thunder (Horde, quest 98325, Warlord Goretooth, Kargath, level 60; wing not stated). Class steps listed by conquestcapped with wing not stated: The Left Piece of Lord Valthalak's Amulet (Warrior, Mage), The Right Piece of Lord Valthalak's Amulet (Paladin, Shaman, Druid), The Demon Forge (Lorax, Winterspring, armorsmith), Snakestone of the Shadow Huntress (Kilram, Everlook, axesmith). Tavern: BRS was not in the Forever beta, so its guides are Classic-based.",
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/lower-blackrock-spire/",
+        "https://www.warcrafttavern.com/forever/guides/lower-blackrock-spire-quests/",
+        "https://www.warcrafttavern.com/forever/guides/upper-blackrock-spire/",
+        "https://www.warcrafttavern.com/forever/guides/upper-blackrock-spire-quests/",
+        "https://conquestcapped.com/guides/wow-forever/wow-forever-blackrock-spire-quests/",
+        "https://kami-labs.fr/en/pic-blackrock-wow-forever/",
+        "https://foreverchanges.pro/dungeons",
+        "https://www.zockify.com/forever/dungeons/"
+      ]
+    },
+    {
+      "dungeon": "Stratholme",
+      "wings": [
+        {
+          "wing": "Stratholme (Main Gate) / Live / Living",
+          "levels": "58-60",
+          "levels_source": "warcrafttavern.com LFG-tool table ('Stratholme (Main Gate)'); foreverchanges.pro 'Stratholme Main Gate' 58-60. kami-labs client data shows ONE Group Finder entry 'Stratholme' level 55, entry 37",
+          "entrance": "Eastern Plaguelands, NW of the zone; main gate 31.3, 15.8 (kami-labs). Leads to the Scarlet Crusade half (Scarlet Bastion)",
+          "key": "none to enter; Key to the City only for the alternate route via the Undead side (King's Square Gate); Scarlet Key for doors inside the Scarlet Bastion",
+          "bosses": ["Skul (rare)", "The Unforgiven", "Hearthsinger Forresten (rare)", "Postmaster Malown (postbox summon)", "Timmy the Cruel", "Malor the Zealous", "Crimson Hammersmith (summon)", "Cannon Master Willey", "Archivist Galford", "Grand Crusader Dathrohan / Balnazzar", "Jarien and Sothos (Tier 0.5 summon)"],
+          "quests": [
+            {"name": "Of Love and Family", "giver": "Artist Renfray (chain starts with Tirion Fordring, EPL)", "where": "Caer Darrow, Western Plaguelands", "faction": "Both", "min_level": 52},
+            {"name": "The Great Ezra Grimm", "giver": "Smokey LaRue", "where": "Light's Hope Chapel, Eastern Plaguelands", "faction": "Both", "min_level": 55, "notes": "NEW name in Forever, replaces The Great Fras Siabi (conquestcapped)"},
+            {"name": "The Archivist", "giver": "Duke Nicholas Zverenhoff", "where": "Light's Hope Chapel, Eastern Plaguelands", "faction": "Both", "min_level": 55},
+            {"name": "The Truth Comes Crashing Down", "giver": "Head of Balnazzar (item)", "where": "Stratholme", "faction": "Both", "min_level": 55},
+            {"name": "The Medallion of Faith", "giver": "Aurius", "where": "Stratholme", "faction": "Both", "min_level": 55, "notes": "Medallion from Malor's Strongbox"},
+            {"name": "The Restless Souls", "giver": "Egan (lead-in from Caretaker Alen)", "where": "Eastern Plaguelands", "faction": "Both", "min_level": 55},
+            {"name": "Sweet Serenity", "giver": "Lilith the Lithe", "where": "Everlook, Winterspring", "faction": "Both", "min_level": 50, "notes": "Blacksmiths; kill the Crimson Hammersmith in the Scarlet Bastion (warcraft.wiki.gg, Classic data)"}
+          ],
+          "notes": "Usual first Stratholme run: the Service Gate is locked until you have the Key to the City (conquestcapped). Min levels from warcrafttavern; conquestcapped lists 60 for most. conquestcapped also lists The Flesh Does Not Lie and Houses of the Holy under this side (Tavern puts them under Undead). Class steps The Left/Right Piece of Lord Valthalak's Amulet (Jarien and Sothos summon) per conquestcapped, min 60."
+        },
+        {
+          "wing": "Stratholme (Service Gate) / Undead / Dead",
+          "levels": "58-60",
+          "levels_source": "warcrafttavern.com LFG-tool table ('Stratholme (Service Gate)'); foreverchanges.pro 'Stratholme Service Gate' 58-60. kami-labs: one Group Finder entry 'Stratholme' level 55",
+          "entrance": "Eastern Plaguelands, east of the main entrance; service entrance 48.4, 21.8 (kami-labs). Tavern calls it the Eastwall Gate. Leads to Baron Rivendare's half",
+          "key": "Key to the City (drops from Magistrate Barthilas); opens the Service Gate and inner gates. Lockpicking / Arcanite Skeleton Key / Seaforium reports are unverified",
+          "bosses": ["Magistrate Barthilas (location varies)", "Nerub'enkan", "Stonespine (rare)", "Black Guard Swordsmith (summon)", "Baroness Anastari", "Maleki the Pallid", "Ramstein the Gorger", "Baron Rivendare"],
+          "quests": [
+            {"name": "Ramstein", "giver": "Nathanos Blightcaller", "where": "Marris Stead, Eastern Plaguelands", "faction": "Horde", "min_level": 56},
+            {"name": "Aurius' Reckoning", "giver": "Aurius", "where": "Stratholme", "faction": "Both", "min_level": 55},
+            {"name": "Menethil's Gift", "giver": "Leonid Barthalomew the Revered (chain starts with Eva Sarkhoff, WPL)", "where": "Light's Hope Chapel, Eastern Plaguelands", "faction": "Both", "min_level": 57},
+            {"name": "The Flesh Does Not Lie", "giver": "Betina Bigglezink", "where": "Light's Hope Chapel, Eastern Plaguelands", "faction": "Both", "min_level": 55, "notes": "Side unverified: Tavern Undead, conquestcapped Live"},
+            {"name": "The Active Agent", "giver": "Betina Bigglezink", "where": "Light's Hope Chapel, Eastern Plaguelands", "faction": "Both", "min_level": 55},
+            {"name": "Above and Beyond", "giver": "Duke Nicholas Zverenhoff", "where": "Light's Hope Chapel, Eastern Plaguelands", "faction": "Both", "min_level": 55},
+            {"name": "Houses of the Holy", "giver": "Leonid Barthalomew the Revered", "where": "Light's Hope Chapel, Eastern Plaguelands", "faction": "Both", "min_level": 55, "notes": "Side unverified: Tavern Undead, conquestcapped Live"},
+            {"name": "Dead Man's Plea", "giver": "Anthion Harmon (ghost, needs Extra-Dimensional Ghost Revealer)", "where": "outside the Stratholme Main Gate", "faction": "Both", "min_level": 58, "notes": "Rescue Ysida Harmon from Baron Rivendare (engage him within 45 min). Min level 58 from warcraft.wiki.gg (Classic)"},
+            {"name": "Corruption", "giver": "Seril Scourgebane", "where": "Everlook, Winterspring", "faction": "Both", "min_level": 50, "notes": "Blacksmiths (250); Black Guard Swordsmith near Baroness at the second ziggurat (warcraft.wiki.gg, Classic data)"}
+          ],
+          "notes": "Usually second, once someone has the Key to the City."
+        }
+      ],
+      "forever_changes": "Same two sides. Ezra Grimm replaces Fras Siabi (quest The Great Ezra Grimm; kami-labs lists Ezra Grimm as a boss). New class quests per conquestcapped, side not stated: A Wee Bit O' Necromancy (Alliance Paladins, Orthas, chain level 57-59) and Collection of Goods (Horde Paladins, Ott, Tarren Mill). Item changes: Smokey's Lighter, Mask of the Unforgiven, Archivist's Foresight Girdle, Stonespine's cape, Shroud of the Nathrezim; Dungeon Set 1 bonuses changed; Deathcharger's Reins account-wide. Tavern: Stratholme was not in the Forever beta, guides are Classic-based.",
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/stratholme-living/",
+        "https://www.warcrafttavern.com/forever/guides/stratholme-living-quests/",
+        "https://www.warcrafttavern.com/forever/guides/stratholme-undead/",
+        "https://www.warcrafttavern.com/forever/guides/stratholme-undead-quests/",
+        "https://conquestcapped.com/guides/wow-forever/wow-forever-stratholme-guide/",
+        "https://conquestcapped.com/guides/wow-forever/wow-forever-stratholme-quests/",
+        "https://kami-labs.fr/en/stratholme-wow-forever/",
+        "https://foreverchanges.pro/dungeons",
+        "https://warcraft.wiki.gg/wiki/Sweet_Serenity",
+        "https://warcraft.wiki.gg/wiki/Corruption_(blacksmithing)",
+        "https://warcraft.wiki.gg/wiki/Dead_Man%27s_Plea"
+      ]
+    },
+    {
+      "dungeon": "Maraudon",
+      "wings": [
+        {
+          "wing": "Orange side (Foulspore Cavern)",
+          "levels": "46-55 (whole dungeon; no per-wing range in Forever)",
+          "levels_source": "warcrafttavern.com LFG-tool table and foreverchanges.pro list Maraudon as ONE entry 46-55; kami-labs Group Finder 42, entry 25 (single entry)",
+          "entrance": "Desolace, Valley of Spears; kami-labs entrance 29.2, 62.5 (Tavern: stone door on the west side of the valley around 38, 58). After the outer caves take the right-hand path lined with orange crystals",
+          "key": "none",
+          "bosses": ["Noxxion", "Razorlash"],
+          "quests": [
+            {"name": "Vyletongue Corruption", "giver": "Talendria", "where": "Nijel's Point, Desolace", "faction": "Alliance", "min_level": 41, "notes": "Fill vial at the orange pool, heal 8 Vylestem Vines in the orange caverns"},
+            {"name": "Vyletongue Corruption", "giver": "Vark Battlescar", "where": "Shadowprey Village, Desolace", "faction": "Horde", "min_level": 41},
+            {"name": "Legends of Maraudon", "giver": "Cavindra", "where": "pre-instance caves of Maraudon (orange section)", "faction": "Both", "min_level": 41, "notes": "Celebrian Rod from Noxxion (orange); Celebrian Diamond from Lord Vyletongue (purple)"},
+            {"name": "Twisted Evils", "giver": "Willow", "where": "Desolace", "faction": "Both", "min_level": 41, "notes": "Theradric Crystal Carvings from any mobs inside Maraudon"}
+          ],
+          "notes": "warcraft.wiki.gg: Foulspore Cavern is the first area past the portal in the ORANGE tunnels. The user's mapping (Orange = Wicked Grotto) is reversed. Older Dungeon Finder names were 'Orange Crystals', 'Purple Crystals', 'Pristine Waters'."
+        },
+        {
+          "wing": "Purple side (The Wicked Grotto)",
+          "levels": "46-55 (whole dungeon; no per-wing range in Forever)",
+          "levels_source": "warcrafttavern.com / foreverchanges.pro single Maraudon entry",
+          "entrance": "Same entrance; take the left-hand path lined with purple crystals, stay on the upper level",
+          "key": "none",
+          "bosses": ["Tinkerer Gizlock", "Lord Vyletongue", "Celebras the Cursed", "Meshlok the Harvester (rare)"],
+          "quests": [
+            {"name": "Legends of Maraudon", "giver": "Cavindra", "where": "pre-instance caves of Maraudon", "faction": "Both", "min_level": 41, "notes": "Celebrian Diamond from Lord Vyletongue"},
+            {"name": "The Scepter of Celebras", "giver": "Celebras the Redeemed (after Celebras the Cursed dies)", "where": "inside Maraudon", "faction": "Both", "min_level": 41, "notes": "Not shareable; scepter opens the shortcut to Earth Song Falls"},
+            {"name": "Twisted Evils", "giver": "Willow", "where": "Desolace", "faction": "Both", "min_level": 41}
+          ],
+          "notes": "Celebras and Meshlok sit in 'Poison Falls' per Tavern (reachable from either side); warcraft.wiki.gg groups them with The Wicked Grotto."
+        },
+        {
+          "wing": "Inner (Earth Song Falls)",
+          "levels": "46-55 (whole dungeon; no per-wing range in Forever)",
+          "levels_source": "warcrafttavern.com / foreverchanges.pro single Maraudon entry",
+          "entrance": "Through the orange or purple side and Poison Falls, or the middle gate using the Scepter of Celebras (room with four braziers behind Spirit of Kolk) per Tavern; warcraft.wiki.gg: portal east through Earth Song Gate",
+          "key": "Scepter of Celebras (optional shortcut)",
+          "bosses": ["Landslide", "Rotgrip", "Princess Theradras"],
+          "quests": [
+            {"name": "Corruption of Earth and Seed", "giver": "Keeper Marandis", "where": "Nijel's Point, Desolace", "faction": "Alliance", "min_level": 45, "notes": "Kill Princess Theradras"},
+            {"name": "Corruption of Earth and Seed", "giver": "Selendra", "where": "Shadowprey Village, Desolace", "faction": "Horde", "min_level": 45},
+            {"name": "Twisted Evils", "giver": "Willow", "where": "Desolace", "faction": "Both", "min_level": 41}
+          ],
+          "notes": "Usually last; first visit usually orange or purple side."
+        }
+      ],
+      "forever_changes": "Forever does NOT split Maraudon in the LFG/Group Finder: one entry 46-55 (Tavern, foreverchanges) / Group Finder 42 (kami-labs). Entry capped at 5 players. Quests outside any wing: Shadowshard Fragments (Archmage Tervosh, Theramore, Alliance, 38; Uthel'nay, Orgrimmar, Horde, 38) from mobs just outside Maraudon; The Pariah's Instructions (Centaur Pariah, Desolace, Both, 39), Khan spirits and Nameless Prophet location by wing unverified.",
+      "sources": [
+        "https://www.warcrafttavern.com/forever/guides/maraudon/",
+        "https://www.warcrafttavern.com/forever/guides/maraudon-quests/",
+        "https://kami-labs.fr/en/maraudon-wow-forever/",
+        "https://foreverchanges.pro/dungeons",
+        "https://warcraft.wiki.gg/wiki/Maraudon",
+        "https://warcraft.wiki.gg/wiki/Foulspore_Cavern",
+        "https://warcraft.wiki.gg/wiki/The_Wicked_Grotto",
+        "https://warcraft.wiki.gg/wiki/Legends_of_Maraudon",
+        "https://warcraft.wiki.gg/wiki/The_Pariah%27s_Instructions"
+      ]
+    }
+  ],
+  "notes": [
+    "FIVE Scarlet Monastery wings is NOT supported by any source found. Every Forever source (warcrafttavern LFG list, foreverchanges, conquestcapped, lfcarry, expcarry, wowforeverguides '[4 Wings]', wowforeverleveling, zockify, Blizzard news) lists four: Graveyard, Library, Armory, Cathedral. kami-labs (beta client data) even shows SM as a single Group Finder entry. Tirisfal Glades also holds the NEW dungeon Ruins of Lordaeron (15-22 LFG, 15-20 Blizzard), which is not an SM wing. Treat the fifth wing as unverified unless the user has a screenshot.",
+    "Wing splits in the Forever LFG list (warcrafttavern table, says it mirrors the in-game Looking For Group tool): SM 4, Dire Maul 3, Blackrock Spire 2 (Lower/Upper), Stratholme 2 (Main Gate/Service Gate). kami-labs client data agrees for Dire Maul (3) and Blackrock Spire (2) but shows SM and Stratholme as single Group Finder entries: conflict, unverified which the live tool shows.",
+    "NOT split in Forever (single LFG entry, Tavern ranges): Blackrock Depths 52-60, Maraudon 46-55, Uldaman 41-51, Gnomeregan 29-38, Sunken Temple 50-60. Razorfen Kraul 29-38 and Razorfen Downs 37-46 are two separate dungeons, not wings.",
+    "New Forever dungeons have NO wings: City of Dalaran (28-35 LFG / 28-33 Blizzard; one entrance Silverpine Forest 69.3, 45.6 via sewers, Dalaran Sewer Key; a locked door skips most of it), Excavation Site: Wetlands (26-33 LFG / 24-29 Blizzard; entrance 48.1, 56.5; 'four sub-zones, one per boss', linear), Krol'dok Stronghold (40-47 LFG / 40-45 Blizzard; Riverglades cave 37.5, 37.5; alternate routes but one entrance). Also single: Hall of Thanes, Ruins of Lordaeron, The Drowned City, Alcaz Prison, Blackmaw Hold, Shaper's Terrace.",
+    "LFG ranges vs Blizzard ranges for new dungeons differ (e.g. Hall of Thanes 13-20 LFG vs 13-18 Blizzard): Tavern says its numbers are the in-game LFG tool brackets; foreverchanges says its Classic-dungeon ranges come from the Classic Era client's Group Finder data and are not confirmed for Forever.",
+    "Quest min levels: warcrafttavern quest guides used where given; conquestcapped tables show 58-60 for nearly every endgame quest (looks like quest level, not min level). DM, BRS, Stratholme, BRD, Maraudon were not in the level-30-capped beta, so Tavern's guides for them are Classic-based.",
+    "Usual first run per dungeon: SM Graveyard (then Library for the Scarlet Key), Dire Maul East (Crescent Key), Lower Blackrock Spire (Seal of Ascension), Stratholme Main Gate/Live (Service Gate locked until Key to the City), Maraudon orange or purple side.",
+    "Wowhead Forever quest/zone pages render their Quick Facts by JavaScript and the &xml endpoint is blocked (403) for automated fetches, so Wowhead min levels could not be read directly."
+  ],
+  "sources": [
+    "https://www.warcrafttavern.com/forever/guides/dungeons/",
+    "https://www.warcrafttavern.com/forever/guides/",
+    "https://foreverchanges.pro/dungeons",
+    "https://foreverchanges.pro/dungeon-quests",
+    "https://news.blizzard.com/en-us/article/24301455",
+    "https://kami-labs.fr/en/donjons-raids-wow-forever/",
+    "https://www.zockify.com/forever/dungeons/",
+    "https://www.warcrafttavern.com/forever/guides/kroldok-stronghold/",
+    "https://www.warcrafttavern.com/forever/guides/city-of-dalaran/",
+    "https://www.warcrafttavern.com/forever/guides/excavation-site-wetlands/",
+    "https://kami-labs.fr/en/pic-blackrock-wow-forever/",
+    "https://kami-labs.fr/en/hache-tripes-wow-forever/",
+    "https://kami-labs.fr/en/stratholme-wow-forever/",
+    "https://kami-labs.fr/en/monastere-ecarlate-wow-forever/",
+    "https://warcraft.wiki.gg/wiki/Forever_campaign"
+  ]
+}

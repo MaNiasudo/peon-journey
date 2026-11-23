@@ -99,7 +99,7 @@ step
     .accept 93797 >>Accept Boughs in the Wind
     .target Belann Windwood
 step
-    .goto 2521,48.4,68.2
+    .goto 2521,48.57,67.62
     >>Collect |cRXP_LOOT_[Wind-Infused Bough]|r from |cRXP_PICK_Wind-Infused Bough|r
     *Bring a Wind-Infused Bough to Belann Windwood in Valanaar.
     .complete 93797,1 --Boughs in the Wind
@@ -332,7 +332,7 @@ step
     .accept 8251 >>Accept Magic Dust
     .target Archmage Xylem
 step
-    .goto 1447,66.42,28.93
+    .goto 1447,66.42,28.91
     >>Collect |cRXP_LOOT_[Glittering Dust]|r from |cRXP_ENEMY_Blood Elf Defender|r, |cRXP_ENEMY_Blood Elf Arcanist|r, |cRXP_ENEMY_Evin Schmidtt|r
     *Bring 10 Glittering Dust to Archmage Xylem.
     .complete 8251,1 --Magic Dust
@@ -464,7 +464,7 @@ step
     .mob Flesh Eater
     .mob Kobold Miner
 step
-    .goto 1416,14.41,69.14
+    .goto 1416,14.38,69.12
     >>Collect |cRXP_LOOT_[Dalaran Mana Gem]|r from |cRXP_ENEMY_Kirin Tor Wizard|r, |cRXP_ENEMY_Adorean Lew|r, |cRXP_ENEMY_Bitty Frostflinger|r
     *Bring 10 Linen Cloth and 6 Dalaran Mana Gems to Josef Gregorian.
     .complete 1961,2 << Orc/Undead/Troll --Gathering Materials
@@ -633,7 +633,7 @@ step
     .accept 8251 >>Accept Magic Dust
     .target Archmage Xylem
 step
-    .goto 1447,66.42,28.93
+    .goto 1447,66.42,28.91
     >>Collect |cRXP_LOOT_[Glittering Dust]|r from |cRXP_ENEMY_Blood Elf Defender|r, |cRXP_ENEMY_Blood Elf Arcanist|r, |cRXP_ENEMY_Evin Schmidtt|r
     *Bring 10 Glittering Dust to Archmage Xylem.
     .complete 8251,1 --Magic Dust

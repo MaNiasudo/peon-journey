@@ -1,4 +1,4 @@
--- Peon Journey planner window: what to do at your level, every dungeon, professions, gold.
+-- Peon Journey planner window: the three 1-60 routes, every dungeon, class quests, attunements, professions, gold.
 local ADDON = ...
 local PJ = _G.PeonJourney
 local C = PJ.colors
@@ -6,7 +6,8 @@ local C = PJ.colors
 local FONT_TITLE = "Fonts/MORPHEUS.TTF"
 local FONT_TEXT = _G.GameFontNormal:GetFont()
 local ROW_H = 46
-local WIDTH, HEIGHT = 790, 540
+local WIDTH, HEIGHT = 920, 540
+local TAB_W = 108
 
 local frame, scroll, content, tabs, activeTab
 local rows = {}
@@ -124,7 +125,7 @@ end
 
 local KIND_LABEL = {zone = "QUESTING", newzone = "NEW ZONE", start = "START", old = "FOREVER", dungeon = "DUNGEON",
                     prof = "PROFESSION", gold = "GOLD", classitem = "ITEM", classmust = "MUST DO", class60 = "LEVEL 60",
-                    classinfo = "INFO"}
+                    classinfo = "INFO", grind = "GRIND", attune = "KEY", attuneinfo = "INFO"}
 
 local function FillRow(r, e, playerLevel)
     r.entry = e
@@ -205,15 +206,27 @@ function PJ.RefreshPlanner()
 end
 
 local TAB_DEFS = {
-    {key = "full", label = "Quest+Dungeon"},
-    {key = "questing", label = "Quest Only"},
-    {key = "dungeons", label = "Dungeons Only"},
+    {key = "speed", label = "Speed+Dungeons"},
+    {key = "speedq", label = "Speed Quests"},
+    {key = "full", label = "Full Journey"},
+    {key = "dungeons", label = "Dungeons"},
     {key = "class", label = "Class"},
+    {key = "attune", label = "Attunements"},
     {key = "professions", label = "Professions"},
     {key = "gold", label = "Gold"},
 }
+local JUMP = {speed = true, speedq = true, full = true, dungeons = true, class = true, attune = true}
+
+-- a tab saved by an older version (e.g. "questing") falls back to the first route
+local function ValidTab(key)
+    for _, t in ipairs(TAB_DEFS) do
+        if t.key == key then return key end
+    end
+    return TAB_DEFS[1].key
+end
 
 local function SelectTab(key)
+    key = ValidTab(key)
     activeTab = key
     PeonJourneyDB.lastTab = key
     for _, t in ipairs(tabs) do
@@ -228,7 +241,7 @@ local function SelectTab(key)
     end
     frame.blurb:SetText((PJ.data and PJ.data.blurbs and PJ.data.blurbs[key]) or "")
     scroll:SetVerticalScroll(0)
-    frame.jumpPending = (key == "full" or key == "questing" or key == "dungeons" or key == "class")
+    frame.jumpPending = JUMP[key] or false
     PJ.RefreshPlanner()
 end
 
@@ -260,10 +273,10 @@ local function Build()
 
     tabs = {}
     for i, def in ipairs(TAB_DEFS) do
-        local t = LeatherButton(frame, def.label, 104, 24)
+        local t = LeatherButton(frame, def.label, TAB_W, 24)
         t.key = def.key
-        t:SetPoint("TOPLEFT", 12 + (i - 1) * 110, -74)
-        t.text:SetFont(FONT_TITLE, 12, "")
+        t:SetPoint("TOPLEFT", 12 + (i - 1) * (TAB_W + 4), -74)
+        t.text:SetFont(FONT_TITLE, 11, "")
         t:SetScript("OnClick", function() SelectTab(def.key) end)
         tabs[i] = t
     end
@@ -291,7 +304,7 @@ local function Build()
     frame:SetScript("OnShow", function() PJ.RefreshPlanner() end)
     frame:RegisterEvent("PLAYER_LEVEL_UP")
     frame:SetScript("OnEvent", function() C_Timer.After(0.5, PJ.RefreshPlanner) end)
-    SelectTab(PeonJourneyDB.lastTab or "full")
+    SelectTab(PeonJourneyDB.lastTab)
 end
 
 function PJ.TogglePlanner()
@@ -300,5 +313,5 @@ function PJ.TogglePlanner()
         return
     end
     frame:SetShown(not frame:IsShown())
-    if frame:IsShown() then SelectTab(activeTab or "full") end
+    if frame:IsShown() then SelectTab(activeTab) end
 end

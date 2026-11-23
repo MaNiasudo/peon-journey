@@ -9,8 +9,9 @@ from pathlib import Path
 
 ROOT, OUT = Path(sys.argv[1]), Path(sys.argv[2])
 meta = json.loads((ROOT / "out_route" / "route_meta.json").read_text())
-report = (ROOT / "route_report.txt").read_text()
-sa = ROOT / "build_sa" / "PeonJourney"
+sa = ROOT / "PeonJourney" if (ROOT / "PeonJourney" / "PeonJourney.toc").exists() else ROOT / "build_sa" / "PeonJourney"
+ROUTES = {"speed": "Peon Journey - 1-60 Speed (with Dungeons)", "speedq": "Peon Journey - 1-60 Speed (no Dungeons)",
+          "full": "Peon Journey - 1-60 Full Journey"}
 NEWZ = ("Riverglades", "Shen'dralas", "Mount Hyjal", "Azshara", "Desolace", "Wetlands")
 
 
@@ -30,11 +31,9 @@ def fits(tag, me):
 
 
 def free_rows(fac, variant):
-    grp = "Peon Journey - 1-60 Questing and Dungeons" if variant == "full" else "Peon Journey - 1-60 Questing (Skip Dungeons)"
+    grp = ROUTES[variant]
     rows = []
-    for f in (sa / "Guides" / "free").rglob("*.lua"):
-        if (variant == "full") != ("dungeon" in f.parts):
-            continue
+    for f in (sa / "Guides" / "free" / variant).rglob("*.lua"):
         for b in re.findall(r"RXPGuides\.RegisterGuide\(\[\[(.*?)\]\]\)", f.read_text(errors="replace"), re.S):
             if grp not in b:
                 continue
@@ -56,24 +55,24 @@ road = {}
 for fac in ("Alliance", "Horde"):
     road[fac] = {}
     race = {"Alliance": "Human", "Horde": "Tauren"}[fac]
-    for v in ("full", "questing", "dungeons"):
-        rows = free_rows(fac, v) if v != "dungeons" else []
+    for v in ("speed", "speedq", "full", "dungeons"):
+        rows = sorted(free_rows(fac, v), key=lambda r: (r["lo"], r["hi"])) if v != "dungeons" else []
         for it in meta[fac][v]:
             m = re.match(r"(\d+)-(\d+)\s+(.*)", it["name"])
             name = m.group(3)
-            kind = "dungeon" if it["kind"] == "dungeon" else ("newzone" if any(z in name for z in NEWZ) else "zone")
+            kind = {"dungeonpre": "dungeon", "dungeon": "dungeon", "grind": "grind"}.get(it["kind"]) or \
+                ("newzone" if any(z in name for z in NEWZ) else "zone")
             rows.append(dict(lo=int(m.group(1)), hi=int(m.group(2)), name=name, kind=kind))
-        rows.sort(key=lambda r: (r["lo"], r["hi"]))
-        road[fac][v] = rows
+        road[fac][v] = rows   # route order
 
 guides_total = sum(len(re.findall(r"RXPGuides\.RegisterGuide\(", f.read_text(errors="replace")))
                    for f in (sa / "Guides").rglob("*.lua"))
-own = sum(len(meta[f][v]) for f in meta for v in meta[f]) + 24 + 5
-ends = {}
-for line in report.splitlines():
-    m = re.match(r"\s+([AH]) ([FQ]) .*?->\s+([\d.]+)", line)
-    if m:
-        ends[(m.group(1), m.group(2))] = float(m.group(3))
+own = sum(len(meta[f][v]) for f in meta for v in ("speed", "speedq", "full", "dungeons"))
+ST = {f: meta[f]["stats"] for f in meta}
+
+
+def hrs(k):
+    return f"~{ST['Alliance'][k]['hours']:.0f} h Alliance, ~{ST['Horde'][k]['hours']:.0f} h Horde"
 
 html = r"""<!doctype html>
 <html lang="en">
@@ -117,13 +116,13 @@ p,li{line-height:1.5;font-size:17px}
 .shot figure{margin:0;text-align:center}
 .shot img{max-width:100%;border:2px solid #120a05;display:block}
 .shot figcaption{color:var(--muted);font-size:14px;margin-top:8px}
-.road{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.road{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
 .road .col{background:var(--panel);border:1px solid var(--line);max-height:430px;overflow:auto}
 .road .col h3{position:sticky;top:0;background:var(--panel);padding:10px 12px;margin:0;border-bottom:1px solid var(--line)}
 .row{display:grid;grid-template-columns:58px 1fr 92px;gap:8px;padding:6px 12px;border-bottom:1px solid #2f1f10;font-size:15px}
 .row .lv{font-family:Cinzel,Georgia,serif;color:var(--gold)}
 .row .k{font-size:11px;letter-spacing:.6px;text-align:right;align-self:center}
-.k.dungeon{color:var(--red)} .k.newzone{color:var(--ember)} .k.zone{color:var(--muted)} .k.start{color:var(--blue)}
+.k.dungeon{color:var(--red)} .k.newzone{color:var(--ember)} .k.zone{color:var(--muted)} .k.start{color:var(--blue)} .k.grind{color:var(--muted)}
 .toggle{display:flex;gap:8px;margin-bottom:12px}
 .toggle button,.nav button{font:600 14px "Source Sans 3",sans-serif;background:#331f0f;color:var(--parch);border:1px solid var(--brass);padding:6px 14px;cursor:pointer}
 .toggle button.on{background:#603214;color:var(--gold)}
@@ -143,11 +142,11 @@ ol li,ul li{margin-bottom:6px}
 
 <section class="slide cover on">
   <img class="head" src="pj-header.png" alt="Peon Journey">
-  <div class="tag">Your own WoW Forever guide: 1 to 60, every dungeon, every profession. One folder, no RestedXP needed.</div>
+  <div class="tag">Your own WoW Forever guide: 1 to 60 three ways, every dungeon and wing, attunements, every profession. One folder, no RestedXP needed.</div>
   <div class="stats">
     <div><div class="big">__GUIDES__</div><span>guides inside</span></div>
     <div><div class="big">3</div><span>routes to 60</span></div>
-    <div><div class="big">28</div><span>dungeons with pre-quests</span></div>
+    <div><div class="big">28</div><span>dungeons, big ones split into wings</span></div>
     <div><div class="big">12</div><span>professions 1-300</span></div>
   </div>
 </section>
@@ -157,21 +156,21 @@ ol li,ul li{margin-bottom:6px}
   <div class="card"><h3>The guide engine</h3><p>The free RestedXP engine is built in and renamed to Peon Journey: guide window, waypoint arrow, steps that tick themselves. You do <b class="em">not</b> install RestedXP.</p></div>
   <div class="card"><h3>Levels 1-21</h3><p>RestedXP's free, hand-made starting routes. It detects your race: Tauren start in Mulgore, Orcs and Trolls in Durotar, Undead in Tirisfal, Skyborne on Zephras Isle. The last one leads straight into Peon Journey.</p></div>
   <div class="card"><h3>Levels 21-60</h3><p>Peon Journey's own route through old <i>and</i> new zones, built from Forever's real quest data (quest IDs, NPC spots, quest XP).</p></div>
-  <div class="card"><h3>Extras</h3><p>Class quests worth doing (items, must-do abilities, level 60), professions 1-300, a gold routine, the Peon theme and the <code>/pj</code> planner window.</p></div>
+  <div class="card"><h3>Extras</h3><p>Class quests worth doing (items, must-do abilities, level 60), attunements and dungeon keys, professions 1-300, a gold routine, the Peon theme and the <code>/pj</code> planner window.</p></div>
 </div></div></section>
 
 <section class="slide"><div class="bar"><img src="rxp_logo-128.png" alt=""><h2>Three ways to 60</h2></div>
 <div class="body"><div class="cols">
-  <div class="card"><div class="big">1</div><h3>1-60 Questing and Dungeons</h3><p>Questing <b>with every dungeon at its level</b>. Before each run it does the pre-quests and chains, picks up every quest, then one run, then all hand-ins. Old zones you have out-levelled are skipped; new zones are never skipped.</p><p class="muted">Simulated: 60 reached around Blackrock Spire, Hyjal still done at 60 for its gold.</p></div>
-  <div class="card"><div class="big">2</div><h3>1-60 Questing (Skip Dungeons)</h3><p><b>No dungeons.</b> Solo questing through old and new zones. When you fall behind, a "catch-up" leg sends you to the best zone with quests at your level.</p><p class="muted">Simulated: reaches 60 for both factions (__QA__ / __QH__ at the last step).</p></div>
-  <div class="card"><div class="big">3</div><h3>Dungeon Quests Only</h3><p><b>Pick any dungeon, at any level</b> (even at 60): its pre-quests and chains, every quest, one run, all hand-ins.</p><p class="muted">28 dungeons: 19 classic + 9 new (Hall of Thanes to Shaper's Terrace).</p></div>
+  <div class="card"><div class="big">1</div><h3>1-60 Speed (with Dungeons)</h3><p>The <b>fastest</b> way to 60 in our model: every quest scored by XP per minute, one visit per zone in continent blocks, and only the dungeons worth the trip. Ends at 60.</p><p class="muted">Estimate from 21: __H_SPEED__.</p></div>
+  <div class="card"><div class="big">2</div><h3>1-60 Speed (no Dungeons)</h3><p><b>Solo.</b> The same idea without dungeons: weak quests and zones are skipped, and a short grind fills a gap when no quest is worth the time.</p><p class="muted">Estimate from 21: __H_SPEEDQ__.</p></div>
+  <div class="card"><div class="big">3</div><h3>1-60 Full Journey</h3><p><b>Everything:</b> every zone, every dungeon and wing with its pre-quests (solo guide first, then the run), in level order, Mount Hyjal last.</p><p class="muted">Estimate from 21: __H_FULL__.</p></div>
 </div></div></section>
 
 <section class="slide"><div class="bar"><img src="rxp_logo-128.png" alt=""><h2>The road, guide by guide</h2></div>
 <div class="body">
   <div class="toggle"><button data-f="Alliance" class="on">Alliance (Human start)</button><button data-f="Horde">Horde (Tauren start)</button></div>
-  <div class="legend"><span><b class="k start">RXP START</b> free 1-21</span><span><b class="k zone">QUESTING</b> old zone</span><span><b class="k newzone">NEW ZONE</b> Forever zone</span><span><b class="k dungeon">DUNGEON</b> run + its quests</span></div>
-  <div class="road"><div class="col" id="c-full"><h3>1-60 Questing and Dungeons</h3></div><div class="col" id="c-questing"><h3>1-60 Questing (Skip Dungeons)</h3></div></div>
+  <div class="legend"><span><b class="k start">RXP START</b> free 1-21</span><span><b class="k zone">QUESTING</b> old zone</span><span><b class="k newzone">NEW ZONE</b> Forever zone</span><span><b class="k dungeon">DUNGEON</b> pre-quests or run</span><span><b class="k grind">GRIND</b> no quest worth it</span></div>
+  <div class="road"><div class="col" id="c-speed"><h3>Speed (with Dungeons)</h3></div><div class="col" id="c-speedq"><h3>Speed (no Dungeons)</h3></div><div class="col" id="c-full"><h3>Full Journey</h3></div></div>
 </div></section>
 
 <section class="slide"><div class="bar"><img src="rxp_logo-128.png" alt=""><h2>How it looks in game</h2></div>
@@ -240,8 +239,8 @@ const slides=[...document.querySelectorAll('.slide')]; let i=0;
 function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>s.classList.toggle('on',k===i));document.getElementById('ctr').textContent=(i+1)+' / '+slides.length;}
 document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);
 document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown')show(i+1);if(e.key==='ArrowLeft'||e.key==='PageUp')show(i-1);});
-const LBL={start:'RXP START',zone:'QUESTING',newzone:'NEW ZONE',dungeon:'DUNGEON'};
-function fill(f){for(const v of ['full','questing']){const c=document.getElementById('c-'+v);c.querySelectorAll('.row').forEach(r=>r.remove());
+const LBL={start:'RXP START',zone:'QUESTING',newzone:'NEW ZONE',dungeon:'DUNGEON',grind:'GRIND'};
+function fill(f){for(const v of ['speed','speedq','full']){const c=document.getElementById('c-'+v);c.querySelectorAll('.row').forEach(r=>r.remove());
  for(const r of ROAD[f][v]){const d=document.createElement('div');d.className='row';
   const lv=r.lo===r.hi?String(r.lo):r.lo+'-'+r.hi;
   d.innerHTML='<span class="lv"></span><span class="n"></span><span class="k '+r.kind+'">'+LBL[r.kind]+'</span>';
@@ -253,7 +252,7 @@ fill('Alliance');show(0);
 </html>
 """
 html = html.replace("__GUIDES__", str(guides_total)).replace("__ROAD__", json.dumps(road))
-html = html.replace("__QA__", f"{ends.get(('A', 'Q'), 60):.1f}").replace("__QH__", f"{ends.get(('H', 'Q'), 60):.1f}")
+html = html.replace("__H_SPEED__", hrs("speed")).replace("__H_SPEEDQ__", hrs("speedq")).replace("__H_FULL__", hrs("full"))
 OUT.mkdir(parents=True, exist_ok=True)
 (OUT / "index.html").write_text(html)
-print("guides", guides_total, "own", own, "ends", ends)
+print("guides", guides_total, "own", own)

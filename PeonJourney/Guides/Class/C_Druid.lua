@@ -355,7 +355,7 @@ step
     .accept 98396 >>Accept The Great Cat Spirit << NightElf
     .target Great Cat Spirit
 step
-    .goto 1450,72.4,66
+    .goto 1450,72.41,65.9
     >>Collect |cRXP_LOOT_[Relic of the Fang]|r from |cRXP_PICK_Relic of the Fang|r. Collect |cRXP_LOOT_[Relic of the Claw]|r from |cRXP_PICK_Relic of the Claw|r. Collect |cRXP_LOOT_[Relic of the Silent Shadow]|r from |cRXP_PICK_Relic of the Silent Shadow|r
     *Recover the Relic of the Fang, Relic of the Claw, and Relic of the Silent Shadow from the Stormrage Barrow Den, and return them to the Great Cat Spirit.
     .complete 98396,1 << NightElf --The Great Cat Spirit
@@ -412,7 +412,7 @@ step
     .accept 98404 >>Accept The Great Windborne Cat Spirit << Skyborne
     .target Avatar of Saeyleenan
 step
-    .goto 1450,72.4,66
+    .goto 1450,72.41,65.9
     >>Collect |cRXP_LOOT_[Relic of the Fang]|r from |cRXP_PICK_Relic of the Fang|r. Collect |cRXP_LOOT_[Relic of the Claw]|r from |cRXP_PICK_Relic of the Claw|r. Collect |cRXP_LOOT_[Relic of the Silent Shadow]|r from |cRXP_PICK_Relic of the Silent Shadow|r
     *Recover the Relic of the Fang, Relic of the Claw, and Relic of the Silent Shadow from the Stormrage Barrow Den, and return them to the Avatar of Saeyleenan.
     .complete 98404,1 << Skyborne --The Great Windborne Cat Spirit
@@ -722,7 +722,7 @@ step
     .accept 98342 >>Accept The Great Cat Spirit << Tauren
     .target Great Cat Spirit
 step
-    .goto 1450,72.4,66
+    .goto 1450,72.41,65.9
     >>Collect |cRXP_LOOT_[Relic of the Fang]|r from |cRXP_PICK_Relic of the Fang|r. Collect |cRXP_LOOT_[Relic of the Claw]|r from |cRXP_PICK_Relic of the Claw|r. Collect |cRXP_LOOT_[Relic of the Silent Shadow]|r from |cRXP_PICK_Relic of the Silent Shadow|r
     *Recover the Relic of the Fang, Relic of the Claw, and Relic of the Silent Shadow from the Stormrage Barrow Den, and return them to the Great Cat Spirit.
     .complete 98342,1 << Tauren --The Great Cat Spirit
@@ -779,7 +779,7 @@ step
     .accept 98404 >>Accept The Great Windborne Cat Spirit << Skyborne
     .target Avatar of Saeyleenan
 step
-    .goto 1450,72.4,66
+    .goto 1450,72.41,65.9
     >>Collect |cRXP_LOOT_[Relic of the Fang]|r from |cRXP_PICK_Relic of the Fang|r. Collect |cRXP_LOOT_[Relic of the Claw]|r from |cRXP_PICK_Relic of the Claw|r. Collect |cRXP_LOOT_[Relic of the Silent Shadow]|r from |cRXP_PICK_Relic of the Silent Shadow|r
     *Recover the Relic of the Fang, Relic of the Claw, and Relic of the Silent Shadow from the Stormrage Barrow Den, and return them to the Avatar of Saeyleenan.
     .complete 98404,1 << Skyborne --The Great Windborne Cat Spirit

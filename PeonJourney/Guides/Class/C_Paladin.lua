@@ -107,14 +107,8 @@ step
     *|cRXP_WARN_Needs a group for part of it.|r
     *Forever: changed in Forever: 12,400 XP; Icy Veins and Wowhead data say all three items are granted, Conquest Capped says pick one (unverified). Horde (Undead) paladins have no level 50 clas
 step
-    .goto 1453,48.43,50.22
-    >>Talk to |cRXP_FRIENDLY_Lord Grayson Shadowbreaker|r
-    .accept 8415 >>Accept Chillwind Point << Human/Dwarf
-    .target Lord Grayson Shadowbreaker
-step
     .goto 1422,42.7,84.03
     >>Talk to |cRXP_FRIENDLY_Commander Ashlam Valorfist|r
-    .turnin 8415 >>Turn in Chillwind Point << Human/Dwarf
     .accept 8414 >>Accept Dispelling Evil << Human/Dwarf
     .target Commander Ashlam Valorfist
 step
@@ -152,6 +146,16 @@ step
     .goto 1422,42.7,84.03
     >>Talk to |cRXP_FRIENDLY_Commander Ashlam Valorfist|r
     .turnin 8418 >>Turn in Forging the Mightstone << Human/Dwarf
+    .target Commander Ashlam Valorfist
+step
+    .goto 1453,48.43,50.22
+    >>Talk to |cRXP_FRIENDLY_Lord Grayson Shadowbreaker|r
+    .accept 8415 >>Accept Chillwind Point << Human/Dwarf
+    .target Lord Grayson Shadowbreaker
+step
+    .goto 1422,42.7,84.03
+    >>Talk to |cRXP_FRIENDLY_Commander Ashlam Valorfist|r
+    .turnin 8415 >>Turn in Chillwind Point << Human/Dwarf
     .target Commander Ashlam Valorfist
 step
     +|cRXP_WARN_Done:|r Lightforged Blade / Chivalrous Signet +. Enjoy the loot. Click to finish.
@@ -546,7 +550,7 @@ step
     .accept 91285 >>Accept Murlocs at the Gates << Undead
     .target Breton Samuels
 step
-    .goto 1420,17.22,57.46
+    .goto 1420,16.73,58.05
     >>Kill |cRXP_ENEMY_Vile Fin Attacker|r. Kill |cRXP_ENEMY_Vile Fin Seer|r
     *Slay 8 Vile Fin Attackers and 8 Vile Fin Seers and report back to Breton Samuels when it is done.
     .complete 91285,1 << Undead --Murlocs at the Gates
@@ -604,7 +608,7 @@ step
     .accept 91285 >>Accept Murlocs at the Gates << Undead
     .target Breton Samuels
 step
-    .goto 1420,17.22,57.46
+    .goto 1420,16.73,58.05
     >>Kill |cRXP_ENEMY_Vile Fin Attacker|r. Kill |cRXP_ENEMY_Vile Fin Seer|r
     *Slay 8 Vile Fin Attackers and 8 Vile Fin Seers and report back to Breton Samuels when it is done.
     .complete 91285,1 << Undead --Murlocs at the Gates
@@ -641,7 +645,7 @@ step
     .accept 91316 >>Accept Making Repairs << Undead
     .target Jorin Croge
 step
-    .goto 1420,8.5,67.1
+    .goto 1420,8.49,67.14
     >>Collect |cRXP_LOOT_[Sturdy Lumber]|r from |cRXP_PICK_Lumber Pile|r
     *Collect 12 pieces of Sturdy Lumber from Shadowvale in Tirisfal Glades.
     .complete 91316,1 << Undead --Making Repairs
@@ -652,6 +656,51 @@ step
     .target Jorin Croge
 step
     +|cRXP_WARN_Done:|r Salvaged Wooden Tower Shield. Enjoy the loot. Click to finish.
+]])
+
+RXPGuides.RegisterGuide([[
+#forever
+#version 1
+<< Horde Paladin Orc/Horde Paladin Tauren/Horde Paladin Troll/Horde Paladin Skyborne
+#group Peon Journey - Class Quests
+#groupweight 75
+#subgroup Levels 01-19
+#name 19-22 Wolfsbane (Orc/Tauren/Troll/Skyborne)
+#displayname 19-22 Wolfsbane (Orc/Tauren/Troll/Skyborne)
+step
+    +|cRXP_WARN_ITEM: Wolfsbane|r. Click to start.
+    *Reward: Moonsilver Blade (ilvl 31 two-hander, intermediate step) then Wolfsbane: two-hand sword, ilvl 31, 25.6 DPS, +9 Sta, +10 Int, Blazewind Blast Holy proc (tripled vs wolves and worgen)
+    *Why: Horde paladin answer to Verigan's Fist; parts from Deadmines (Whitestone Oak Lumber), Shadowfang Keep (Enchanted Silver Ingot) and naga outside BFD; Old Fire-Eye is a level 25 elite (do at 22-24, solo
+    *|cRXP_WARN_Needs a group for part of it.|r
+    *Forever: new in Forever
+step
+    .goto 1420,22.09,44.66
+    >>Talk to |cRXP_FRIENDLY_Danitha Morr|r
+    .accept 91858 >>Accept Diplomatic Incident
+    .target Danitha Morr
+step
+    .goto 1421,43.39,41.1
+    >>Talk to |cRXP_FRIENDLY_Trevan Rol|r
+    .turnin 91858 >>Turn in Diplomatic Incident
+    .accept 91859 >>Accept A Curious Pair
+    .target Trevan Rol
+step
+    .goto 1421,45.81,41.88
+    >>Talk to |cRXP_FRIENDLY_Deathguard Baldren|r
+    .turnin 91859 >>Turn in A Curious Pair
+    .accept 91860 >>Accept A Grim Fate
+    .target Deathguard Baldren
+step
+    .goto 1421,65.02,34.1
+    >>Click |cRXP_PICK_Charred Remains|r
+    *Investigate Fenris Isle to the east and learn the fate of the Earthen Ring traveling party.
+    .complete 91860,1 --A Grim Fate
+step
+    .goto 1421,65.02,34.1
+    >>Click the |cRXP_PICK_Charred Remains|r
+    .turnin 91860 >>Turn in A Grim Fate
+step
+    +|cRXP_WARN_Done:|r Wolfsbane. Enjoy the loot. Click to finish.
 ]])
 
 RXPGuides.RegisterGuide([[
@@ -674,12 +723,12 @@ step
 step
     .goto 1420,22.09,44.66
     >>Talk to |cRXP_FRIENDLY_Danitha Morr|r
-    .accept 91858 >>Accept Diplomatic Incident << Undead
+    .accept 91858 >>Accept Diplomatic Incident
     .target Danitha Morr
 step
-    .goto 1421,43.4,41.1
+    .goto 1421,43.39,41.1
     >>Talk to |cRXP_FRIENDLY_Trevan Rol|r
-    .turnin 91858 >>Turn in Diplomatic Incident << Undead
+    .turnin 91858 >>Turn in Diplomatic Incident
     .accept 91859 >>Accept A Curious Pair
     .target Trevan Rol
 step
@@ -743,7 +792,7 @@ step
     .accept 95036 >>Accept A Moon-Kissed Blade << Undead
     .target Lumina Windsinger
 step
-    .goto 1421,43.4,41.1
+    .goto 1421,43.39,41.1
     >>Kill |cRXP_ENEMY_Trevan Rol|r. Collect |cRXP_LOOT_[Trevan's Weapon Notes]|r. Collect |cRXP_LOOT_[Enchanted Silver Ingot]|r. Collect |cRXP_LOOT_[Purified Kor Gem]|r
     *Speak with Trevan Rol in the Sepulcher and bring him the materials he requires.
     .complete 95036,1 << Undead --A Moon-Kissed Blade
@@ -759,7 +808,7 @@ step
     .complete 95036,3 << Undead --A Moon-Kissed Blade
     .mob Goblin Woodcarver
 step
-    .goto 1421,43.4,41.1
+    .goto 1421,43.39,41.1
     >>Talk to |cRXP_FRIENDLY_Trevan Rol|r
     .turnin 95036 >>Turn in A Moon-Kissed Blade << Undead
     .accept 95111 >>Accept An Underrated Talent
@@ -783,7 +832,7 @@ step
     .accept 95126 >>Accept The Moonsilver Blade
     .target Ott
 step
-    .goto 1421,43.4,41.1
+    .goto 1421,43.39,41.1
     >>Talk to |cRXP_FRIENDLY_Trevan Rol|r
     .turnin 95126 >>Turn in The Moonsilver Blade
     .target Trevan Rol
@@ -793,7 +842,7 @@ step
     .accept 95140 >>Accept Old Fire-Eye << Undead
     .target Lumina Windsinger
 step
-    .goto 1421,47.84,85.03
+    .goto 1421,47.75,84.96
     >>Kill |cRXP_ENEMY_Old Fire-Eye|r
     *Use the Moonsilver Blade to destroy Old Fire-Eye in Silverpine Forest.
     *|cRXP_WARN_Elite targets here. Group up or skip.|r
@@ -861,24 +910,24 @@ step
 RXPGuides.RegisterGuide([[
 #forever
 #version 1
-<< Horde Paladin Undead/Horde Paladin Tauren
+<< Horde Paladin
 #group Peon Journey - Class Quests
 #groupweight 75
 #subgroup Levels 40-49
-#name 40 Level 40 mount (Undead/Tauren)
-#displayname 40 Level 40 mount (Undead/Tauren)
+#name 40 Level 40 mount
+#displayname 40 Level 40 mount
 step
     +|cRXP_WARN_MUST DO: Level 40 mount|r. Click to start.
     *Reward: Summon Warhorse; paladins skip the 100 gold riding cost this way (Icy Veins news)
 step
     .goto 1420,22.09,44.66
     >>Talk to |cRXP_FRIENDLY_Danitha Morr|r
-    .accept 94971 >>Accept A Paladin's Steed << Undead/Tauren
+    .accept 94971 >>Accept A Paladin's Steed
     .target Danitha Morr
 step
     .goto 1420,22.09,44.66
     >>Talk to |cRXP_FRIENDLY_Danitha Morr|r
-    .turnin 94971 >>Turn in A Paladin's Steed << Undead/Tauren
+    .turnin 94971 >>Turn in A Paladin's Steed
     .target Danitha Morr
 step
     +|cRXP_WARN_Done:|r Level 40 mount. Enjoy the loot. Click to finish.

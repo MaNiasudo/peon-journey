@@ -142,7 +142,8 @@ step
     .accept 1804 >>Accept Tome of the Cabal
     .target Krom Stoutarm
 step
-    .goto 1437,49.44,46.88
+    .goto 1437,48.1,56.5
+    *|cRXP_WARN_Inside Excavation Site: Wetlands: bring a group.|r
     >>Collect |cRXP_LOOT_[Rod of Channeling]|r from |cRXP_ENEMY_Dragonmaw Thaumaturgist|r, |cRXP_ENEMY_Dragonmaw Bonewarder|r
     *Bring the Reconstructed Tome and 3 Rods of Channeling to Strahad Farsan in Ratchet.
     .complete 1804,1 --Tome of the Cabal
@@ -261,7 +262,7 @@ step
     .accept 7602 >>Accept Flawless Fel Essence
     .target Impsy
 step
-    .goto 1447,65.82,19.22
+    .goto 1447,65.72,18.82
     >>Collect |cRXP_LOOT_[Flawless Fel Essence (Azshara)]|r from |cRXP_ENEMY_Legashi Soulstealer|r, |cRXP_ENEMY_Legashi Hellraiser|r, |cRXP_ENEMY_Legashi Blackguard|r
     *Impsy in Felwood has asked that you bring him three Flawless Fel Essences originating from three distinct locations.
     .complete 7602,1 --Flawless Fel Essence
@@ -956,7 +957,8 @@ step
     .accept 1805 >>Accept Tome of the Cabal
     .target Jorah Annison
 step
-    .goto 1437,49.44,46.88
+    .goto 1437,48.1,56.5
+    *|cRXP_WARN_Inside Excavation Site: Wetlands: bring a group.|r
     >>Collect |cRXP_LOOT_[Rod of Channeling]|r from |cRXP_ENEMY_Dragonmaw Thaumaturgist|r, |cRXP_ENEMY_Dragonmaw Bonewarder|r
     *Bring the Reconstructed Tome and 3 Rods of Channeling to Strahad Farsan in Ratchet.
     .complete 1805,1 --Tome of the Cabal
@@ -998,6 +1000,11 @@ step
     *|cRXP_WARN_Needs a group for part of it.|r
     *Forever: classic unchanged (removed from retail in 4.0.3a, still in Classic and Forever; final quest exists on Wowhead Forever)
 step
+    .goto 1413,62.51,35.45
+    >>Talk to |cRXP_FRIENDLY_Menara Voidrender|r
+    .accept 1799 >>Accept Fragments of the Orb of Orahil
+    .target Menara Voidrender
+step
     .goto 1458,86.21,15.93
     >>Talk to |cRXP_FRIENDLY_Kaal Soulreaper|r
     .accept 4969 >>Accept Knowledge of the Orb of Orahil
@@ -1006,7 +1013,6 @@ step
     .goto 1413,62.51,35.45
     >>Talk to |cRXP_FRIENDLY_Menara Voidrender|r
     .turnin 4969 >>Turn in Knowledge of the Orb of Orahil
-    .accept 1799 >>Accept Fragments of the Orb of Orahil
     .target Menara Voidrender
 step
     .goto 1443,80.3,76.98
@@ -1075,7 +1081,7 @@ step
     .accept 7602 >>Accept Flawless Fel Essence
     .target Impsy
 step
-    .goto 1447,65.82,19.22
+    .goto 1447,65.72,18.82
     >>Collect |cRXP_LOOT_[Flawless Fel Essence (Azshara)]|r from |cRXP_ENEMY_Legashi Soulstealer|r, |cRXP_ENEMY_Legashi Hellraiser|r, |cRXP_ENEMY_Legashi Blackguard|r
     *Impsy in Felwood has asked that you bring him three Flawless Fel Essences originating from three distinct locations.
     .complete 7602,1 --Flawless Fel Essence

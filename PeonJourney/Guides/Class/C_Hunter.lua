@@ -328,7 +328,7 @@ step
     .accept 94978 >>Accept Taming the Beast << Skyborne
     .target Quel'ana Quickgale
 step
-    .goto 2521,47.2,47.09
+    .goto 2521,46.86,48.45
     >>Kill |cRXP_ENEMY_Windsong Crawler|r
     *Use the Taming Rod to tame a Windsong Crawler found near bodies of water.
     .complete 94978,1 << Skyborne --Taming the Beast
@@ -346,7 +346,7 @@ step
     .accept 94979 >>Accept Taming the Beast << Skyborne
     .target Quel'ana Quickgale
 step
-    .goto 2521,50.16,78.77
+    .goto 2521,50.14,78.39
     >>Kill |cRXP_ENEMY_Ornery Galestrider|r
     *Use the Taming Rod to tame an Ornery Galestrider in the Gustberry Lowlands.
     .complete 94979,1 << Skyborne --Taming the Beast
@@ -358,7 +358,7 @@ step
     .accept 94013 >>Accept Taming the Beast << Skyborne
     .target Quel'ana Quickgale
 step
-    .goto 2521,51.72,80.37
+    .goto 2521,50.54,80.33
     >>Kill |cRXP_ENEMY_Vuldren Alpha|r
     *Use the Taming Rod to tame a Vuldren Alpha in the Gustberry Lowlands. Practice your skills, then return the Taming Rod to Quel'ana Quickgale in Valanaar.
     .complete 94013,1 << Skyborne --Taming the Beast

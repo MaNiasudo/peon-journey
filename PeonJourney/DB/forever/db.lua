@@ -32,11 +32,11 @@ end
 
 local L = addon.locale.Get
 if faction == "Horde" then
-    addon.defaultGroup = "Peon Journey - 1-60 Questing and Dungeons"
-    addon.defaultGroupHC = "Peon Journey - 1-60 Questing and Dungeons"
+    addon.defaultGroup = "Peon Journey - 1-60 Speed (with Dungeons)"
+    addon.defaultGroupHC = "Peon Journey - 1-60 Speed (with Dungeons)"
 elseif faction == "Alliance" then
-    addon.defaultGroup = "Peon Journey - 1-60 Questing and Dungeons"
-    addon.defaultGroupHC = "Peon Journey - 1-60 Questing and Dungeons"
+    addon.defaultGroup = "Peon Journey - 1-60 Speed (with Dungeons)"
+    addon.defaultGroupHC = "Peon Journey - 1-60 Speed (with Dungeons)"
 end
 
 

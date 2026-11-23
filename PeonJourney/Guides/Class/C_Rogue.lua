@@ -151,12 +151,13 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Class Quests
 #groupweight 75
 #subgroup Levels 20-29
-#name 20-23 Pyrewood Signet Ring
-#displayname 20-23 Pyrewood Signet Ring
+#name 20-35 Pyrewood Signet Ring
+#displayname 20-35 Pyrewood Signet Ring
 step
     +|cRXP_WARN_ITEM: Pyrewood Signet Ring|r. Click to start.
     *Reward: Pyrewood Signet Ring (+4 Agility, +4 Stamina, small hit bonus)
     *|cff40ff40GOOD|r [Pyrewood Signet Ring]: Finger, +4 Agility, +4 Stamina - rare ring with Agi and hit; ring slots are usually empty at this stage. req_level 1 is from the item json (tooltip shows none)
+    *|cff40ff40GOOD|r [Ruby-Adorned Blade]: One-Hand Sword, 23.91 DPS, +3 Agility, +8 Stamina - rare ilvl 36 sword at req 25; strong main hand for a sword rogue
     *Why: Free ring and the required step to unlock the Eye of Bhossca; horn is in Shadowfang Keep, solo only
     *Forever: new in Forever (reworked from a Season of Discovery chain)
 step
@@ -167,35 +168,7 @@ step
     .goto 1421,47.12,70.99
     >>Click the |cRXP_PICK_Dead Drop|r
     .turnin 78261 >>Turn in The Horn of Xelthos
-step
-    +|cRXP_WARN_Done:|r Pyrewood Signet Ring. Enjoy the loot. Click to finish.
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-#version 1
-<< Alliance Rogue
-#group Peon Journey - Class Quests
-#groupweight 75
-#subgroup Levels 30-39
-#name 32-35 Ruby-Adorned Blade
-#displayname 32-35 Ruby-Adorned Blade
-step
-    +|cRXP_WARN_ITEM: Ruby-Adorned Blade|r. Click to start.
-    *Reward: Ruby-Adorned Blade: rare one-hand sword, ilvl 36, 2.30 speed, 23.9 DPS, +3 Agi, +8 Sta, plus 75 silver
-    *|cff40ff40GOOD|r [Pyrewood Signet Ring]: Finger, +4 Agility, +4 Stamina - rare ring with Agi and hit; ring slots are usually empty at this stage. req_level 1 is from the item json (tooltip shows none)
-    *|cff40ff40GOOD|r [Ruby-Adorned Blade]: One-Hand Sword, 23.91 DPS, +3 Agility, +8 Stamina - rare ilvl 36 sword at req 25; strong main hand for a sword rogue
-    *Why: Strong main-hand for its level; database says 25 but many beta rogues got the letter at 30, so plan for 30
-    *Forever: new in Forever (sword reward added, level moved to 25 from 30 in SoD; the old Rune of Shadowstep still shows in the database but was not given)
-step
-    .goto 1421,47.12,70.99
-    >>Click the |cRXP_PICK_Dead Drop|r
     .accept 78676 >>Accept The Eye of Bhossca
-    .accept 78261 >>Accept The Horn of Xelthos
-step
-    .goto 1421,47.12,70.99
-    >>Click the |cRXP_PICK_Dead Drop|r
-    .turnin 78261 >>Turn in The Horn of Xelthos
 step
     >>Collect |cRXP_LOOT_[Eye of Bhossca]|r from |cRXP_PICK_Padlocked Reliquary|r
     *Find The Eye of Bhossca inside of the Scarlet Monastery. Then, return it to C's dead drop near Pyrewood Village. You must complete the job alone.
@@ -205,7 +178,7 @@ step
     >>Click the |cRXP_PICK_Dead Drop|r
     .turnin 78676 >>Turn in The Eye of Bhossca
 step
-    +|cRXP_WARN_Done:|r Ruby-Adorned Blade. Enjoy the loot. Click to finish.
+    +|cRXP_WARN_Done:|r Pyrewood Signet Ring. Enjoy the loot. Click to finish.
 ]])
 
 RXPGuides.RegisterGuide([[
@@ -238,7 +211,7 @@ step
     .accept 8234 >>Accept Sealed Azure Bag
     .target Lord Jorach Ravenholdt
 step
-    .goto 1447,45.56,25.52
+    .goto 1447,45.36,24.96
     >>Collect |cRXP_LOOT_[Sealed Azure Bag]|r from |cRXP_ENEMY_Blackmaw Shaman|r
     *Retrieve the Sealed Azure Bag from the Timbermaw Shaman in Azshara. Then take the bag to Archmage Xylem, also found in Azshara.
     .complete 8234,1 --Sealed Azure Bag
@@ -448,12 +421,13 @@ RXPGuides.RegisterGuide([[
 #group Peon Journey - Class Quests
 #groupweight 75
 #subgroup Levels 20-29
-#name 20-23 Pyrewood Signet Ring
-#displayname 20-23 Pyrewood Signet Ring
+#name 20-35 Pyrewood Signet Ring
+#displayname 20-35 Pyrewood Signet Ring
 step
     +|cRXP_WARN_ITEM: Pyrewood Signet Ring|r. Click to start.
     *Reward: Pyrewood Signet Ring (+4 Agility, +4 Stamina, small hit bonus)
     *|cff40ff40GOOD|r [Pyrewood Signet Ring]: Finger, +4 Agility, +4 Stamina - rare ring with Agi and hit; ring slots are usually empty at this stage. req_level 1 is from the item json (tooltip shows none)
+    *|cff40ff40GOOD|r [Ruby-Adorned Blade]: One-Hand Sword, 23.91 DPS, +3 Agility, +8 Stamina - rare ilvl 36 sword at req 25; strong main hand for a sword rogue
     *Why: Free ring and the required step to unlock the Eye of Bhossca; horn is in Shadowfang Keep, solo only
     *Forever: new in Forever (reworked from a Season of Discovery chain)
 step
@@ -464,35 +438,7 @@ step
     .goto 1421,47.12,70.99
     >>Click the |cRXP_PICK_Dead Drop|r
     .turnin 78261 >>Turn in The Horn of Xelthos
-step
-    +|cRXP_WARN_Done:|r Pyrewood Signet Ring. Enjoy the loot. Click to finish.
-]])
-
-RXPGuides.RegisterGuide([[
-#forever
-#version 1
-<< Horde Rogue
-#group Peon Journey - Class Quests
-#groupweight 75
-#subgroup Levels 30-39
-#name 32-35 Ruby-Adorned Blade
-#displayname 32-35 Ruby-Adorned Blade
-step
-    +|cRXP_WARN_ITEM: Ruby-Adorned Blade|r. Click to start.
-    *Reward: Ruby-Adorned Blade: rare one-hand sword, ilvl 36, 2.30 speed, 23.9 DPS, +3 Agi, +8 Sta, plus 75 silver
-    *|cff40ff40GOOD|r [Pyrewood Signet Ring]: Finger, +4 Agility, +4 Stamina - rare ring with Agi and hit; ring slots are usually empty at this stage. req_level 1 is from the item json (tooltip shows none)
-    *|cff40ff40GOOD|r [Ruby-Adorned Blade]: One-Hand Sword, 23.91 DPS, +3 Agility, +8 Stamina - rare ilvl 36 sword at req 25; strong main hand for a sword rogue
-    *Why: Strong main-hand for its level; database says 25 but many beta rogues got the letter at 30, so plan for 30
-    *Forever: new in Forever (sword reward added, level moved to 25 from 30 in SoD; the old Rune of Shadowstep still shows in the database but was not given)
-step
-    .goto 1421,47.12,70.99
-    >>Click the |cRXP_PICK_Dead Drop|r
     .accept 78676 >>Accept The Eye of Bhossca
-    .accept 78261 >>Accept The Horn of Xelthos
-step
-    .goto 1421,47.12,70.99
-    >>Click the |cRXP_PICK_Dead Drop|r
-    .turnin 78261 >>Turn in The Horn of Xelthos
 step
     >>Collect |cRXP_LOOT_[Eye of Bhossca]|r from |cRXP_PICK_Padlocked Reliquary|r
     *Find The Eye of Bhossca inside of the Scarlet Monastery. Then, return it to C's dead drop near Pyrewood Village. You must complete the job alone.
@@ -502,7 +448,7 @@ step
     >>Click the |cRXP_PICK_Dead Drop|r
     .turnin 78676 >>Turn in The Eye of Bhossca
 step
-    +|cRXP_WARN_Done:|r Ruby-Adorned Blade. Enjoy the loot. Click to finish.
+    +|cRXP_WARN_Done:|r Pyrewood Signet Ring. Enjoy the loot. Click to finish.
 ]])
 
 RXPGuides.RegisterGuide([[
@@ -535,7 +481,7 @@ step
     .accept 8234 >>Accept Sealed Azure Bag
     .target Lord Jorach Ravenholdt
 step
-    .goto 1447,45.56,25.52
+    .goto 1447,45.36,24.96
     >>Collect |cRXP_LOOT_[Sealed Azure Bag]|r from |cRXP_ENEMY_Blackmaw Shaman|r
     *Retrieve the Sealed Azure Bag from the Timbermaw Shaman in Azshara. Then take the bag to Archmage Xylem, also found in Azshara.
     .complete 8234,1 --Sealed Azure Bag
